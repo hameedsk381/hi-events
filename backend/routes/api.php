@@ -446,6 +446,10 @@ $router->prefix('/public')->group(
         // Stripe payment gateway
         $router->post('/events/{event_id}/order/{order_short_id}/stripe/payment_intent', CreatePaymentIntentActionPublic::class);
         $router->get('/events/{event_id}/order/{order_short_id}/stripe/payment_intent', GetPaymentIntentActionPublic::class);
+        $router->post('/events/{event_id}/order/{order_short_id}/razorpay/order', \HiEvents\Http\Actions\Orders\Payment\Razorpay\CreateRazorpayOrderActionPublic::class);
+        $router->post('/events/{event_id}/order/{order_short_id}/razorpay/verify', \HiEvents\Http\Actions\Orders\Payment\Razorpay\VerifyRazorpayPaymentActionPublic::class);
+
+
 
         // Questions
         $router->get('/events/{event_id}/questions', GetQuestionsPublicAction::class);

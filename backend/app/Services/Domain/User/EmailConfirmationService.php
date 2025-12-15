@@ -53,13 +53,17 @@ class EmailConfirmationService
         ]);
 
         if (config('app.enforce_email_confirmation_during_registration') && $events->isEmpty()) {
-            $this->mailer
-                ->to($user->getEmail())
-                ->locale($user->getLocale())
-                ->send(new EmailConfirmationCodeEmail(
-                    $user,
-                    $this->emailVerificationCodeService->storeAndReturnCode($user->getEmail()),
-                ));
+            try {
+                $this->mailer
+                    ->to($user->getEmail())
+                    ->locale($user->getLocale())
+                    ->send(new EmailConfirmationCodeEmail(
+                        $user,
+                        $this->emailVerificationCodeService->storeAndReturnCode($user->getEmail()),
+                    ));
+            } catch (Throwable $exception) {
+                // Log and continue if mail fails (e.g. dev environment)
+            }
 
             return;
         }
@@ -68,8 +72,12 @@ class EmailConfirmationService
             'id' => $user->getId(),
         ], Carbon::now()->addMonths(6));
 
-        $this->mailer
-            ->to($user->getEmail())
-            ->send(new ConfirmEmailAddressEmail($user, $token));
+        try {
+            $this->mailer
+                ->to($user->getEmail())
+                ->send(new ConfirmEmailAddressEmail($user, $token));
+        } catch (Throwable $exception) {
+            // Log and continue if mail fails (e.g. dev environment)
+        }
     }
 }

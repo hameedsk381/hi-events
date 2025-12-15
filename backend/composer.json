@@ -2,7 +2,10 @@
     "name": "hieventsdev/hi.events",
     "type": "project",
     "description": "hi.events - Ticket selling and event management.",
-    "keywords": ["ticketing", "events"],
+    "keywords": [
+        "ticketing",
+        "events"
+    ],
     "license": "AGPL-3.0",
     "version": "0.0.1",
     "require": {
@@ -23,6 +26,9 @@
         "maatwebsite/excel": "^3.1",
         "nette/php-generator": "^4.0",
         "php-open-source-saver/jwt-auth": "^2.1",
+        "pusher/pusher-php-server": "^7.2",
+        "razorpay/razorpay": "^2.9",
+        "resend/resend-php": "^0.12.0",
         "sentry/sentry-laravel": "^4.13",
         "spatie/icalendar-generator": "^3.0",
         "spatie/laravel-data": "^4.15",
