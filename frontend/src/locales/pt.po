@@ -14,12 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/components/layouts/Event/index.tsx:183
-#: src/components/layouts/OrganizerLayout/index.tsx:207
+#: src/components/layouts/OrganizerLayout/index.tsx:187
 msgid "- Click to Publish"
 msgstr "- Clique para publicar"
 
 #: src/components/layouts/Event/index.tsx:185
-#: src/components/layouts/OrganizerLayout/index.tsx:209
+#: src/components/layouts/OrganizerLayout/index.tsx:189
 msgid "- Click to Unpublish"
 msgstr "- Clique para despublicar"
 
@@ -29,7 +29,7 @@ msgstr "'Não há nada para mostrar ainda'"
 
 #: src/components/routes/admin/Attribution/index.tsx:148
 msgid "(empty)"
-msgstr ""
+msgstr "(vazio)"
 
 #: src/components/common/OrganizerReportTable/index.tsx:314
 #: src/components/common/ReportTable/index.tsx:303
@@ -149,23 +149,23 @@ msgstr "<0>O número de produtos disponíveis para este produto</0><1>Esse valor
 msgid "<0>Webhooks instantly notify external services when events happen, like adding a new attendee to your CRM or mailing list upon registration, ensuring seamless automation.</0><1>Use third-party services like <2>Zapier</2>, <3>IFTTT</3> or <4>Make</4> to create custom workflows and automate tasks.</1>"
 msgstr "<0>Os webhooks notificam instantaneamente serviços externos quando eventos ocorrem, como adicionar um novo participante ao seu CRM ou lista de e-mails no momento do registro, garantindo uma automação perfeita.</0><1>Use serviços de terceiros como <2>Zapier</2>, <3>IFTTT</3> ou <4>Make</4> para criar fluxos de trabalho personalizados e automatizar tarefas.</1>"
 
-#: src/components/routes/event/GettingStarted/index.tsx:139
+#: src/components/routes/event/GettingStarted/index.tsx:138
 msgid "⚡️ Set up your event"
 msgstr "⚡️ Configure seu evento"
 
-#: src/components/routes/event/GettingStarted/index.tsx:124
+#: src/components/routes/event/GettingStarted/index.tsx:123
 msgid "🎟️ Add tickets"
 msgstr "🎟️ Adicionar ingressos"
 
-#: src/components/routes/event/GettingStarted/index.tsx:167
+#: src/components/routes/event/GettingStarted/index.tsx:152
 msgid "🎨 Customize your event page"
 msgstr "🎨 Personalize a página do seu evento"
 
 #: src/components/routes/event/GettingStarted/index.tsx:152
-msgid "💳 Connect with Razorpay"
-msgstr "💳 Conecte-se com Razorpay"
+#~ msgid "💳 Connect with Razorpay"
+#~ msgstr "💳 Conecte-se com Razorpay"
 
-#: src/components/routes/event/GettingStarted/index.tsx:181
+#: src/components/routes/event/GettingStarted/index.tsx:166
 msgid "🚀 Set your event live"
 msgstr "🚀 Defina seu evento ao vivo"
 
@@ -284,8 +284,8 @@ msgstr "Sobre"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:433
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:462
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:680
-msgid "About Razorpay Connect"
-msgstr "Sobre o Razorpay Connect"
+#~ msgid "About Razorpay Connect"
+#~ msgstr "Sobre o Razorpay Connect"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:164
 msgid "Absorb fee"
@@ -305,8 +305,12 @@ msgid "Accept bank transfers, checks, or other offline payment methods"
 msgstr "Aceitar transferências bancárias, cheques ou outros métodos de pagamento offline"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
-msgid "Accept credit card payments with Razorpay"
-msgstr "Aceitar pagamentos com cartão de crédito através do Razorpay"
+msgid "Accept credit card and other online payments with Razorpay"
+msgstr ""
+
+#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
+#~ msgid "Accept credit card payments with Razorpay"
+#~ msgstr "Aceitar pagamentos com cartão de crédito através do Razorpay"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:87
 msgid "Accept invitation"
@@ -318,8 +322,8 @@ msgstr "Aceitar convite"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:357
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:608
-msgid "Access Denied"
-msgstr "Acesso negado"
+#~ msgid "Access Denied"
+#~ msgstr "Acesso negado"
 
 #: src/components/common/AdminOrdersTable/index.tsx:68
 #: src/components/routes/account/ManageAccount/index.tsx:24
@@ -328,8 +332,8 @@ msgid "Account"
 msgstr "Conta"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:342
-msgid "Account already connected!"
-msgstr "Conta já conectada!"
+#~ msgid "Account already connected!"
+#~ msgstr "Conta já conectada!"
 
 #: src/components/modals/EditAccountConfigurationModal/index.tsx:70
 msgid "Account configuration updated successfully"
@@ -356,6 +360,11 @@ msgstr "Configurações de Conta"
 msgid "Account updated successfully"
 msgstr "Conta atualizada com sucesso"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:348
+#: src/components/modals/SendMessageModal/index.tsx:154
+msgid "Account verification required"
+msgstr ""
+
 #: src/components/common/AdminUsersTable/index.tsx:127
 #: src/components/layouts/Admin/index.tsx:14
 #: src/components/routes/admin/Accounts/index.tsx:57
@@ -364,8 +373,8 @@ msgid "Accounts"
 msgstr "Contas"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:70
-msgid "Action Required: Reconnect Your Razorpay Account"
-msgstr "Ação necessária: Reconecte sua conta Razorpay"
+#~ msgid "Action Required: Reconnect Your Razorpay Account"
+#~ msgstr "Ação necessária: Reconecte sua conta Razorpay"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/index.tsx:57
 msgid "Action Required: VAT Information Needed"
@@ -390,7 +399,7 @@ msgstr "Data de ativação"
 #: src/components/common/AffiliateTable/index.tsx:131
 #: src/components/common/AttendeeTable/index.tsx:283
 #: src/components/common/CheckInListList/index.tsx:114
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:267
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:266
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
 #: src/components/modals/EditUserModal/index.tsx:110
@@ -426,7 +435,7 @@ msgstr "Adicione perguntas personalizadas para coletar informações adicionais 
 msgid "Add description"
 msgstr "Adicionar descrição"
 
-#: src/components/routes/event/GettingStarted/index.tsx:142
+#: src/components/routes/event/GettingStarted/index.tsx:141
 msgid "Add event details and manage event settings."
 msgstr "Adicione detalhes do evento e gerencie as configurações do evento."
 
@@ -434,7 +443,7 @@ msgstr "Adicione detalhes do evento e gerencie as configurações do evento."
 msgid "Add instructions for offline payments (e.g., bank transfer details, where to send checks, payment deadlines)"
 msgstr "Adicione instruções para pagamentos offline (por exemplo, detalhes de transferência bancária, onde enviar cheques, prazos de pagamento)"
 
-#: src/components/routes/event/GettingStarted/index.tsx:132
+#: src/components/routes/event/GettingStarted/index.tsx:131
 msgid "Add More tickets"
 msgstr "Adicionar mais ingressos"
 
@@ -467,7 +476,7 @@ msgstr "Adicionar imposto ou taxa"
 msgid "Add this event to your calendar"
 msgstr "Adicione este evento ao seu calendário"
 
-#: src/components/routes/event/GettingStarted/index.tsx:132
+#: src/components/routes/event/GettingStarted/index.tsx:131
 msgid "Add tickets"
 msgstr "Adicionar ingressos"
 
@@ -595,7 +604,7 @@ msgstr "Todos os eventos arquivados"
 msgid "All attendees"
 msgstr "Todos os participantes"
 
-#: src/components/modals/SendMessageModal/index.tsx:177
+#: src/components/modals/SendMessageModal/index.tsx:172
 msgid "All attendees of this event"
 msgstr "Todos os participantes deste evento"
 
@@ -604,8 +613,8 @@ msgid "All Currencies"
 msgstr "Todas as moedas"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:184
-msgid "All done! You're now using our upgraded payment system."
-msgstr "Tudo pronto! Agora está a usar o nosso sistema de pagamentos melhorado."
+#~ msgid "All done! You're now using our upgraded payment system."
+#~ msgstr "Tudo pronto! Agora está a usar o nosso sistema de pagamentos melhorado."
 
 #: src/components/routes/events/Dashboard/index.tsx:74
 msgid "All Ended Events"
@@ -635,12 +644,12 @@ msgstr "Permitir que mecanismos de pesquisa indexem este evento"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:204
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:416
-msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
-msgstr "Quase lá! Termine de conectar sua conta Razorpay para começar a aceitar pagamentos."
+#~ msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
+#~ msgstr "Quase lá! Termine de conectar sua conta Razorpay para começar a aceitar pagamentos."
 
 #: src/components/routes/product-widget/PaymentReturn/index.tsx:90
-msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
-msgstr "Quase lá! Estamos apenas a aguardar que o seu pagamento seja processado. Isto deve demorar apenas alguns segundos."
+#~ msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
+#~ msgstr "Quase lá! Estamos apenas a aguardar que o seu pagamento seja processado. Isto deve demorar apenas alguns segundos."
 
 #: src/components/routes/auth/Register/index.tsx:75
 msgid "Already have an account? <0>{0}</0>"
@@ -694,8 +703,8 @@ msgid "An optional message to display on the highlighted product, e.g. \"Selling
 msgstr "Uma mensagem opcional para exibir no produto destacado, por exemplo \"A vender rapidamente 🔥\" ou \"Melhor valor\""
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:40
-msgid "An unexpected error occurred."
-msgstr "Um erro inesperado ocorreu."
+#~ msgid "An unexpected error occurred."
+#~ msgstr "Um erro inesperado ocorreu."
 
 #: src/hooks/useFormErrorResponseHandler.tsx:48
 msgid "An unexpected error occurred. Please try again."
@@ -774,11 +783,11 @@ msgstr "Tem certeza de que deseja excluir esta configuração? Isso pode afetar 
 msgid "Are you sure you want to delete this promo code?"
 msgstr "Tem certeza de que deseja excluir este código promocional?"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:101
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:100
 msgid "Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the default template."
 msgstr "Tem certeza de que deseja excluir este modelo? Esta ação não pode ser desfeita e os e-mails voltarão ao modelo padrão."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:100
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:99
 msgid "Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the organizer or default template."
 msgstr "Tem certeza de que deseja excluir este modelo? Esta ação não pode ser desfeita e os e-mails voltarão ao modelo do organizador ou padrão."
 
@@ -791,20 +800,20 @@ msgid "Are you sure you want to leave?"
 msgstr "Tem a certeza de que quer sair?"
 
 #: src/components/layouts/Event/index.tsx:149
-#: src/components/routes/event/EventDashboard/index.tsx:73
+#: src/components/routes/event/EventDashboard/index.tsx:67
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr "Tem certeza de que deseja fazer o rascunho deste evento? Isso tornará o evento invisível para o público"
 
 #: src/components/layouts/Event/index.tsx:150
-#: src/components/routes/event/EventDashboard/index.tsx:74
+#: src/components/routes/event/EventDashboard/index.tsx:68
 msgid "Are you sure you want to make this event public? This will make the event visible to the public"
 msgstr "Tem certeza de que deseja tornar este evento público? Isso tornará o evento visível ao público"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:123
+#: src/components/layouts/OrganizerLayout/index.tsx:119
 msgid "Are you sure you want to make this organizer draft? This will make the organizer page invisible to the public"
 msgstr "Tem certeza de que deseja definir este organizador como rascunho? Isso tornará a página do organizador invisível ao público."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:124
+#: src/components/layouts/OrganizerLayout/index.tsx:120
 msgid "Are you sure you want to make this organizer public? This will make the organizer page visible to the public"
 msgstr "Tem certeza de que deseja tornar este organizador público? Isso tornará a página do organizador visível ao público."
 
@@ -939,7 +948,7 @@ msgid "Attendee Status"
 msgstr "Status do Participante"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:95
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:201
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:200
 #: src/components/modals/ManageAttendeeModal/index.tsx:172
 msgid "Attendee Ticket"
 msgstr "Bilhete do Participante"
@@ -970,11 +979,11 @@ msgstr "Participantes exportados"
 msgid "Attendees registered"
 msgstr "Participantes registados"
 
-#: src/components/routes/event/EventDashboard/index.tsx:275
+#: src/components/routes/event/EventDashboard/index.tsx:211
 msgid "Attendees Registered"
 msgstr "Participantes Registrados"
 
-#: src/components/modals/SendMessageModal/index.tsx:173
+#: src/components/modals/SendMessageModal/index.tsx:168
 msgid "Attendees with a specific ticket"
 msgstr "Participantes com um ingresso específico"
 
@@ -982,21 +991,20 @@ msgstr "Participantes com um ingresso específico"
 msgid "Attendees:"
 msgstr "Participantes:"
 
-#: src/components/layouts/Admin/index.tsx:18
-msgid "Attribution"
-msgstr ""
+#~ msgid "Attribution"
+#~ msgstr "Atribuição"
 
 #: src/components/routes/admin/Attribution/index.tsx:29
 msgid "Attribution Analytics"
-msgstr ""
+msgstr "Análise de atribuição"
 
 #: src/components/routes/admin/Attribution/index.tsx:97
 msgid "Attribution Breakdown"
-msgstr ""
+msgstr "Detalhamento de atribuição"
 
 #: src/components/routes/admin/Attribution/index.tsx:124
 msgid "Attribution Value"
-msgstr ""
+msgstr "Valor de atribuição"
 
 #: src/components/common/WidgetEditor/index.tsx:236
 msgid "Auto Resize"
@@ -1019,7 +1027,7 @@ msgid "Available Tokens"
 msgstr "Tokens disponíveis"
 
 #: src/components/common/OrderStatusBadge/index.tsx:15
-#: src/components/modals/SendMessageModal/index.tsx:221
+#: src/components/modals/SendMessageModal/index.tsx:216
 msgid "Awaiting offline payment"
 msgstr "Aguardando pagamento offline"
 
@@ -1056,7 +1064,6 @@ msgstr "Impressionante Organizador Ltd."
 msgid "Back to Accounts"
 msgstr "Voltar para Contas"
 
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:108
 #: src/components/routes/product-widget/CollectInformation/index.tsx:327
 #: src/components/routes/product-widget/CollectInformation/index.tsx:357
 #: src/components/routes/product-widget/CollectInformation/index.tsx:380
@@ -1186,13 +1193,13 @@ msgstr "Scanner de câmera"
 
 #: src/components/routes/admin/Attribution/index.tsx:107
 msgid "Campaign"
-msgstr ""
+msgstr "Campanha"
 
 #: src/components/common/AttendeeTable/index.tsx:370
 #: src/components/common/CheckIn/CheckInOptionsModal.tsx:59
 #: src/components/common/CheckIn/ScannerSelectionModal.tsx:57
 #: src/components/common/ContactOrganizerModal/index.tsx:104
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:121
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:120
 #: src/components/common/PromoCodeTable/index.tsx:40
 #: src/components/common/QuestionAndAnswerList/index.tsx:149
 #: src/utilites/confirmationDialog.tsx:11
@@ -1516,7 +1523,7 @@ msgstr "O código deve ter entre 3 e 50 caracteres"
 msgid "Code must be no more than 20 characters"
 msgstr "O código não deve ter mais de 20 caracteres"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:162
+#: src/components/layouts/OrganizerLayout/index.tsx:158
 msgid "Collaborate with your team to create amazing events together."
 msgstr "Colabore com sua equipe para criar eventos incríveis juntos."
 
@@ -1586,14 +1593,14 @@ msgstr "Concluir pagamento"
 
 #: src/components/common/RazorpayConnectButton/index.tsx:87
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Complete Razorpay Setup"
-msgstr "Concluir configuração do Razorpay"
+#~ msgid "Complete Razorpay Setup"
+#~ msgstr "Concluir configuração do Razorpay"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:114
-msgid "Complete the setup below to continue"
-msgstr "Complete a configuração abaixo para continuar"
+#~ msgid "Complete the setup below to continue"
+#~ msgstr "Complete a configuração abaixo para continuar"
 
-#: src/components/routes/event/EventDashboard/index.tsx:163
+#: src/components/routes/event/EventDashboard/index.tsx:133
 msgid "Complete these steps to start selling tickets for your event."
 msgstr "Complete estas etapas para começar a vender ingressos para o seu evento."
 
@@ -1606,7 +1613,7 @@ msgid "Complete your profile to join the team."
 msgstr "Complete o seu perfil para se juntar à equipa."
 
 #: src/components/common/OrdersTable/index.tsx:405
-#: src/components/modals/SendMessageModal/index.tsx:220
+#: src/components/modals/SendMessageModal/index.tsx:215
 #: src/components/routes/event/GettingStarted/index.tsx:75
 #: src/components/routes/event/orders.tsx:23
 #: src/components/routes/my-tickets/index.tsx:34
@@ -1618,7 +1625,7 @@ msgstr "Concluído"
 msgid "Completed orders"
 msgstr "Pedidos concluídos"
 
-#: src/components/routes/event/EventDashboard/index.tsx:273
+#: src/components/routes/event/EventDashboard/index.tsx:209
 msgid "Completed Orders"
 msgstr "Pedidos concluídos"
 
@@ -1710,7 +1717,7 @@ msgstr "Confirme sua senha"
 msgid "Confirm your email to access all features."
 msgstr "Confirme seu e-mail para acessar todos os recursos."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:296
+#: src/components/layouts/OrganizerLayout/index.tsx:276
 msgid "Confirmation email sent! Please check your inbox."
 msgstr "E-mail de confirmação enviado! Verifique sua caixa de entrada."
 
@@ -1727,66 +1734,66 @@ msgid "Congratulations on creating an event!"
 msgstr "Parabéns por criar um evento!"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
-msgid "Connect & Upgrade"
-msgstr "Conectar e atualizar"
+#~ msgid "Connect & Upgrade"
+#~ msgstr "Conectar e atualizar"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:652
-msgid "Connect Documentation"
-msgstr "Documentação de conexão"
+#~ msgid "Connect Documentation"
+#~ msgstr "Documentação de conexão"
 
 #: src/components/routes/event/EventDashboard/index.tsx:228
-msgid "Connect payment processing"
-msgstr "Conectar processamento de pagamento"
+#~ msgid "Connect payment processing"
+#~ msgstr "Conectar processamento de pagamento"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:175
 #: src/components/layouts/OrganizerLayout/index.tsx:183
-msgid "Connect Razorpay"
-msgstr "Conectar faixa"
+#~ msgid "Connect Razorpay"
+#~ msgstr "Conectar faixa"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:349
-msgid "Connect Razorpay to enable email template editing"
-msgstr "Conecte o Razorpay para ativar a edição de modelos de email"
+#~ msgid "Connect Razorpay to enable email template editing"
+#~ msgstr "Conecte o Razorpay para ativar a edição de modelos de email"
 
 #: src/components/modals/SendMessageModal/index.tsx:156
-msgid "Connect Razorpay to enable messaging"
-msgstr "Conecte o Razorpay para ativar mensagens"
+#~ msgid "Connect Razorpay to enable messaging"
+#~ msgstr "Conecte o Razorpay para ativar mensagens"
 
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Connect to Razorpay"
-msgstr "Conectar ao Razorpay"
+#~ msgid "Connect to Razorpay"
+#~ msgstr "Conectar ao Razorpay"
 
 #: src/components/common/RazorpayConnectButton/index.tsx:85
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:453
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:670
 #: src/components/routes/event/GettingStarted/index.tsx:159
-msgid "Connect with Razorpay"
-msgstr "Conecte-se com Razorpay"
+#~ msgid "Connect with Razorpay"
+#~ msgstr "Conecte-se com Razorpay"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:176
-msgid "Connect your Razorpay account to accept payments for tickets and products."
-msgstr "Conecte sua conta Razorpay para aceitar pagamentos de ingressos e produtos."
+#~ msgid "Connect your Razorpay account to accept payments for tickets and products."
+#~ msgstr "Conecte sua conta Razorpay para aceitar pagamentos de ingressos e produtos."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:222
-msgid "Connect your Razorpay account to accept payments."
-msgstr "Conecte sua conta Razorpay para aceitar pagamentos."
+#~ msgid "Connect your Razorpay account to accept payments."
+#~ msgstr "Conecte sua conta Razorpay para aceitar pagamentos."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:445
-msgid "Connect your Razorpay account to start accepting payments for your events."
-msgstr "Conecte sua conta Razorpay para começar a aceitar pagamentos para os seus eventos."
+#~ msgid "Connect your Razorpay account to start accepting payments for your events."
+#~ msgstr "Conecte sua conta Razorpay para começar a aceitar pagamentos para os seus eventos."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:220
-msgid "Connect your Razorpay account to start accepting payments."
-msgstr "Conecte sua conta Razorpay para começar a aceitar pagamentos."
+#~ msgid "Connect your Razorpay account to start accepting payments."
+#~ msgstr "Conecte sua conta Razorpay para começar a aceitar pagamentos."
 
 #: src/components/routes/event/GettingStarted/index.tsx:155
-msgid "Connect your Razorpay account to start receiving payments."
-msgstr "Conecte sua conta Razorpay para começar a receber pagamentos."
+#~ msgid "Connect your Razorpay account to start receiving payments."
+#~ msgstr "Conecte sua conta Razorpay para começar a receber pagamentos."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:391
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:628
-msgid "Connected to Razorpay"
-msgstr "Conectado ao Razorpay"
+#~ msgid "Connected to Razorpay"
+#~ msgstr "Conectado ao Razorpay"
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:98
 msgid "Connection Details"
@@ -1821,7 +1828,7 @@ msgstr "Continuar"
 msgid "Continue Button Text"
 msgstr "Texto do botão Continuar"
 
-#: src/components/routes/event/GettingStarted/index.tsx:145
+#: src/components/routes/event/GettingStarted/index.tsx:144
 msgid "Continue set up"
 msgstr "Continuar a configuração"
 
@@ -2029,11 +2036,11 @@ msgstr "Criar Lista de Registro"
 msgid "Create Configuration"
 msgstr "Criar Configuração"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:311
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:310
 msgid "Create custom email templates for this event that override the organizer defaults"
 msgstr "Criar modelos de e-mail personalizados para este evento que substituem os padrões do organizador"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:301
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:300
 msgid "Create Custom Template"
 msgstr "Criar modelo personalizado"
 
@@ -2042,7 +2049,7 @@ msgid "Create discounts, access codes for hidden tickets, and special offers."
 msgstr "Crie descontos, códigos de acesso para ingressos ocultos e ofertas especiais."
 
 #: src/components/common/NoEventsBlankSlate/index.tsx:27
-#: src/components/layouts/OrganizerLayout/index.tsx:152
+#: src/components/layouts/OrganizerLayout/index.tsx:148
 #: src/components/routes/organizer/Events/index.tsx:62
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:257
 msgid "Create Event"
@@ -2085,7 +2092,7 @@ msgstr "Criar imposto ou taxa"
 msgid "Create Ticket or Product"
 msgstr "Criar ingresso ou produto"
 
-#: src/components/routes/event/GettingStarted/index.tsx:127
+#: src/components/routes/event/GettingStarted/index.tsx:126
 msgid "Create tickets for your event, set prices, and manage available quantity."
 msgstr "Crie ingressos para o seu evento, defina preços e gerencie a quantidade disponível."
 
@@ -2155,8 +2162,8 @@ msgid "Current Password"
 msgstr "Senha atual"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:163
-msgid "Current payment processor"
-msgstr "Processador de pagamentos atual"
+#~ msgid "Current payment processor"
+#~ msgstr "Processador de pagamentos atual"
 
 #: src/components/modals/EditAccountVatSettingsModal/index.tsx:156
 msgid "Current VAT number is validated"
@@ -2192,7 +2199,7 @@ msgstr "Perguntas personalizadas"
 msgid "Custom Range"
 msgstr "Intervalo personalizado"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:223
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:222
 msgid "Custom template"
 msgstr "Modelo personalizado"
 
@@ -2225,7 +2232,7 @@ msgstr "Clientes"
 msgid "Customize the email and notification settings for this event"
 msgstr "Personalize as configurações de e-mail e notificação deste evento"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:313
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:312
 msgid "Customize the emails sent to your customers using Liquid templating. These templates will be used as defaults for all events in your organization."
 msgstr "Personalize os e-mails enviados aos seus clientes usando modelos Liquid. Estes modelos serão usados como padrões para todos os eventos em sua organização."
 
@@ -2258,11 +2265,11 @@ msgstr "Personalize o texto exibido no botão continuar"
 msgid "Customize your email template using Liquid templating"
 msgstr "Personalize seu modelo de e-mail usando modelos Liquid"
 
-#: src/components/routes/event/GettingStarted/index.tsx:174
+#: src/components/routes/event/GettingStarted/index.tsx:159
 msgid "Customize your event page"
 msgstr "Personalize a página do seu evento"
 
-#: src/components/routes/event/GettingStarted/index.tsx:170
+#: src/components/routes/event/GettingStarted/index.tsx:155
 msgid "Customize your event page to match your brand and style."
 msgstr "Personalize a página do seu evento para combinar com sua marca e estilo."
 
@@ -2346,7 +2353,7 @@ msgstr "Recolha predefinida de informações do participante"
 msgid "Default Fee Handling"
 msgstr "Gestão de taxas padrão"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:213
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:212
 msgid "Default template will be used"
 msgstr "O modelo padrão será usado"
 
@@ -2382,7 +2389,7 @@ msgstr "Excluir código"
 msgid "Delete image"
 msgstr "Excluir imagem"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:121
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:120
 msgid "Delete Template"
 msgstr "Excluir modelo"
 
@@ -2460,8 +2467,8 @@ msgid "Document Label"
 msgstr "Etiqueta do documento"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:691
-msgid "Documentation"
-msgstr "Documentação"
+#~ msgid "Documentation"
+#~ msgstr "Documentação"
 
 #: src/components/common/AddToCalendarCTA/index.tsx:19
 msgid "Don't forget!"
@@ -2514,7 +2521,7 @@ msgstr "A baixar fatura"
 
 #: src/components/common/EventCard/index.tsx:84
 #: src/components/layouts/Event/index.tsx:182
-#: src/components/layouts/OrganizerLayout/index.tsx:206
+#: src/components/layouts/OrganizerLayout/index.tsx:186
 msgid "Draft"
 msgstr "Rascunho"
 
@@ -2522,17 +2529,25 @@ msgstr "Rascunho"
 msgid "Dropdown selection"
 msgstr "Seleção suspensa"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:350
+msgid "Due to the high risk of spam, you must complete account verification before you can modify email templates. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information."
+msgstr ""
+
+#: src/components/modals/SendMessageModal/index.tsx:155
+msgid "Due to the high risk of spam, you must complete account verification before you can send messages. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information."
+msgstr ""
+
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:351
-msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
-msgstr "Devido ao alto risco de spam, deve conectar uma conta Razorpay antes de poder modificar modelos de email. Isto é para garantir que todos os organizadores de eventos sejam verificados e responsáveis."
+#~ msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
+#~ msgstr "Devido ao alto risco de spam, deve conectar uma conta Razorpay antes de poder modificar modelos de email. Isto é para garantir que todos os organizadores de eventos sejam verificados e responsáveis."
 
 #: src/components/modals/SendMessageModal/index.tsx:157
-msgid ""
-"Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
-"This is to ensure that all event organizers are verified and accountable."
-msgstr ""
-"Devido ao alto risco de spam, você deve conectar uma conta Razorpay antes de poder enviar mensagens aos participantes.\n"
-"Isso é para garantir que todos os organizadores de eventos sejam verificados e responsáveis."
+#~ msgid ""
+#~ "Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
+#~ "This is to ensure that all event organizers are verified and accountable."
+#~ msgstr ""
+#~ "Devido ao alto risco de spam, você deve conectar uma conta Razorpay antes de poder enviar mensagens aos participantes.\n"
+#~ "Isso é para garantir que todos os organizadores de eventos sejam verificados e responsáveis."
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:473
 msgid "Duplicate"
@@ -2564,7 +2579,7 @@ msgstr "Holandês"
 msgid "e.g., Get Tickets, Register Now"
 msgstr "ex.: Comprar ingressos, Registrar-se agora"
 
-#: src/components/modals/SendMessageModal/index.tsx:235
+#: src/components/modals/SendMessageModal/index.tsx:230
 msgid "e.g., Important update about your tickets"
 msgstr "por exemplo, Atualização importante sobre os seus bilhetes"
 
@@ -2766,7 +2781,7 @@ msgid "Email confirmation resent"
 msgstr "Confirmação de e-mail reenviada"
 
 #: src/components/layouts/Event/index.tsx:71
-#: src/components/layouts/OrganizerLayout/index.tsx:96
+#: src/components/layouts/OrganizerLayout/index.tsx:92
 #: src/components/routes/profile/ManageProfile/index.tsx:100
 msgid "Email confirmation resent successfully"
 msgstr "Confirmação de e-mail reenviada com sucesso"
@@ -2787,12 +2802,12 @@ msgstr "E-mail não verificado"
 msgid "Email Preview"
 msgstr "Visualização do e-mail"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:336
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:335
 #: src/components/routes/organizer/Settings/index.tsx:64
 msgid "Email Templates"
 msgstr "Modelos de e-mail"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:275
+#: src/components/layouts/OrganizerLayout/index.tsx:255
 msgid "Email Verification Required"
 msgstr "Verificação de e-mail necessária"
 
@@ -2974,7 +2989,7 @@ msgstr "Categoria do evento"
 msgid "Event Cover Image"
 msgstr "Imagem de capa do evento"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:223
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:222
 msgid "Event custom template"
 msgstr "Modelo personalizado do evento"
 
@@ -3071,7 +3086,7 @@ msgstr "Configurações do evento"
 #: src/components/common/EventCard/index.tsx:70
 #: src/components/common/StatusToggle/index.tsx:63
 #: src/components/layouts/Event/index.tsx:161
-#: src/components/routes/event/EventDashboard/index.tsx:88
+#: src/components/routes/event/EventDashboard/index.tsx:82
 #: src/components/routes/event/GettingStarted/index.tsx:68
 msgid "Event status update failed. Please try again later"
 msgstr "Falha na atualização do status do evento. Por favor, tente novamente mais tarde"
@@ -3079,7 +3094,7 @@ msgstr "Falha na atualização do status do evento. Por favor, tente novamente m
 #: src/components/common/EventCard/index.tsx:67
 #: src/components/common/StatusToggle/index.tsx:55
 #: src/components/layouts/Event/index.tsx:158
-#: src/components/routes/event/EventDashboard/index.tsx:85
+#: src/components/routes/event/EventDashboard/index.tsx:79
 #: src/components/routes/event/GettingStarted/index.tsx:65
 msgid "Event status updated"
 msgstr "Status do evento atualizado"
@@ -3117,7 +3132,7 @@ msgstr "Local do Evento"
 
 #: src/components/common/AdminAccountsTable/index.tsx:74
 #: src/components/layouts/Admin/index.tsx:16
-#: src/components/layouts/OrganizerLayout/index.tsx:84
+#: src/components/layouts/OrganizerLayout/index.tsx:80
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:123
 #: src/components/routes/admin/Attribution/index.tsx:126
 #: src/components/routes/admin/Events/index.tsx:77
@@ -3220,8 +3235,8 @@ msgstr "Falha ao criar afiliado"
 msgid "Failed to create configuration"
 msgstr "Falha ao criar configuração"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:182
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:185
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:181
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:184
 msgid "Failed to create template"
 msgstr "Falha ao criar modelo"
 
@@ -3233,8 +3248,8 @@ msgstr "Falha ao excluir configuração"
 msgid "Failed to delete question"
 msgstr "Falha ao excluir pergunta"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:115
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:116
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:117
 msgid "Failed to delete template"
 msgstr "Falha ao excluir modelo"
 
@@ -3254,6 +3269,10 @@ msgstr "Falha ao exportar participantes"
 #: src/components/routes/event/orders.tsx:99
 msgid "Failed to export orders"
 msgstr "Falha ao exportar pedidos"
+
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:95
+msgid "Failed to initialize payment."
+msgstr ""
 
 #: src/components/modals/EditCheckInListModal/index.tsx:79
 msgid "Failed to load Check-In List"
@@ -3275,10 +3294,10 @@ msgstr "Falha ao reenviar e-mail do ticket"
 msgid "Failed to resend verification code"
 msgstr "Falha ao reenviar código de verificação"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:148
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:151
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:154
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:179
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:147
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:150
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:153
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:178
 msgid "Failed to save template"
 msgstr "Falha ao salvar modelo"
 
@@ -3365,7 +3384,7 @@ msgstr "Gestão de taxas"
 msgid "Fees"
 msgstr "Tarifas"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:290
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:77
 msgid "Fees are subject to change. You will be notified of any changes to your fee structure."
 msgstr "As taxas estão sujeitas a alterações. Você será notificado sobre quaisquer mudanças na estrutura de taxas."
 
@@ -3399,14 +3418,14 @@ msgstr "Filtros"
 msgid "Filters ({activeFilterCount})"
 msgstr "Filtros ({activeFilterCount})"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:213
-msgid "Finish Setup"
-msgstr "Terminar configuração"
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:424
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:671
-msgid "Finish Razorpay Setup"
-msgstr "Terminar configuração do Razorpay"
+#~ msgid "Finish Razorpay Setup"
+#~ msgstr "Terminar configuração do Razorpay"
+
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:213
+#~ msgid "Finish Setup"
+#~ msgstr "Terminar configuração"
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:474
 msgid "First attendee"
@@ -3474,7 +3493,7 @@ msgstr "Taxa fixa cobrada por transação em USD"
 msgid "Fixed fee must be 0 or greater"
 msgstr "A taxa fixa deve ser 0 ou maior"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:275
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:62
 msgid "Fixed Fee:"
 msgstr "Taxa fixa:"
 
@@ -3559,8 +3578,12 @@ msgid "Get Directions"
 msgstr "Obter direções"
 
 #: src/components/layouts/AuthLayout/index.tsx:36
+#~ msgid "Get paid immediately via Razorpay Connect"
+#~ msgstr "Receba imediatamente via Razorpay Connect"
+
+#: src/components/layouts/AuthLayout/index.tsx:36
 msgid "Get paid immediately via Razorpay Connect"
-msgstr "Receba imediatamente via Razorpay Connect"
+msgstr ""
 
 #: src/components/routes/auth/Register/index.tsx:73
 msgid "Get started"
@@ -3570,7 +3593,7 @@ msgstr "Começar"
 msgid "Get Tickets"
 msgstr "Obter Bilhetes"
 
-#: src/components/routes/event/EventDashboard/index.tsx:161
+#: src/components/routes/event/EventDashboard/index.tsx:131
 msgid "Get your event ready"
 msgstr "Prepare seu evento"
 
@@ -3615,7 +3638,7 @@ msgstr "Receita Bruta"
 msgid "Gross sales"
 msgstr "Vendas brutas"
 
-#: src/components/routes/event/EventDashboard/index.tsx:312
+#: src/components/routes/event/EventDashboard/index.tsx:248
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:119
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:30
 msgid "Gross Sales"
@@ -3659,10 +3682,10 @@ msgid "Here is your affiliate link"
 msgstr "Aqui está o seu link de afiliado"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:83
-msgid "Here's what to expect:"
-msgstr "Aqui está o que esperar:"
+#~ msgid "Here's what to expect:"
+#~ msgstr "Aqui está o que esperar:"
 
-#: src/components/routes/event/EventDashboard/index.tsx:113
+#: src/components/routes/event/EventDashboard/index.tsx:106
 msgid "Hi {0} 👋"
 msgstr "Oi {0} 👋"
 
@@ -3764,7 +3787,7 @@ msgid "Homepage Design"
 msgstr "Design da página inicial"
 
 #: src/components/layouts/Event/index.tsx:102
-#: src/components/layouts/OrganizerLayout/index.tsx:88
+#: src/components/layouts/OrganizerLayout/index.tsx:84
 msgid "Homepage Designer"
 msgstr "Designer de página inicial"
 
@@ -3815,7 +3838,7 @@ msgstr "Húngaro"
 msgid "I agree to the <0>terms and conditions</0>"
 msgstr "Concordo com os <0>termos e condições</0>"
 
-#: src/components/modals/SendMessageModal/index.tsx:250
+#: src/components/modals/SendMessageModal/index.tsx:245
 msgid "I confirm this is a transactional message related to this event"
 msgstr "Confirmo que esta é uma mensagem transacional relacionada com este evento"
 
@@ -3885,8 +3908,8 @@ msgid "Impersonation stopped"
 msgstr "Personificação parada"
 
 #: src/components/routes/event/EventDashboard/index.tsx:129
-msgid "Important: Razorpay reconnection required"
-msgstr "Importante: Reconexão Razorpay necessária"
+#~ msgid "Important: Razorpay reconnection required"
+#~ msgstr "Importante: Reconexão Razorpay necessária"
 
 #: src/components/routes/admin/Dashboard/index.tsx:29
 msgid "In {diffHours} hours"
@@ -3898,7 +3921,7 @@ msgstr "Em {diffMinutes} minutos"
 
 #: src/components/common/AffiliateTable/index.tsx:131
 #: src/components/common/CheckInListList/index.tsx:114
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:267
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:266
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
 #: src/components/modals/EditUserModal/index.tsx:111
@@ -3978,8 +4001,8 @@ msgstr "Formato de email inválido"
 msgid "Invalid file type. Please upload an image."
 msgstr "Tipo de ficheiro inválido. Por favor, carregue uma imagem."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:144
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:175
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:143
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:174
 msgid "Invalid Liquid syntax. Please correct it and try again."
 msgstr "Sintaxe Liquid inválida. Por favor, corrija-a e tente novamente."
 
@@ -4003,7 +4026,7 @@ msgstr "Convidar um membro da equipe"
 msgid "Invite Team Member"
 msgstr "Convidar membro da equipe"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:164
+#: src/components/layouts/OrganizerLayout/index.tsx:160
 msgid "Invite Team Members"
 msgstr "Convidar membros da equipe"
 
@@ -4015,7 +4038,7 @@ msgstr "Convide membros ilimitados da equipa com funções personalizadas"
 msgid "Invite User"
 msgstr "Convidar Usuário"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:161
+#: src/components/layouts/OrganizerLayout/index.tsx:157
 msgid "Invite Your Team"
 msgstr "Convide sua equipe"
 
@@ -4078,8 +4101,8 @@ msgid "Join from anywhere"
 msgstr "Participe de qualquer lugar"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:119
-msgid "Just click the button below to reconnect your Razorpay account."
-msgstr "Basta clicar no botão abaixo para reconectar sua conta Razorpay."
+#~ msgid "Just click the button below to reconnect your Razorpay account."
+#~ msgstr "Basta clicar no botão abaixo para reconectar sua conta Razorpay."
 
 #: src/components/routes/auth/Login/index.tsx:121
 msgid "Just looking for your tickets?"
@@ -4199,8 +4222,8 @@ msgid "Link to ticket"
 msgstr "Link para o ingresso"
 
 #: src/components/routes/event/EventDashboard/index.tsx:230
-msgid "Link your Razorpay account to receive funds from ticket sales."
-msgstr "Conecte sua conta Razorpay para receber fundos das vendas de ingressos."
+#~ msgid "Link your Razorpay account to receive funds from ticket sales."
+#~ msgstr "Conecte sua conta Razorpay para receber fundos das vendas de ingressos."
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:61
 msgid "LinkedIn"
@@ -4208,7 +4231,7 @@ msgstr "LinkedIn"
 
 #: src/components/common/EventCard/index.tsx:87
 #: src/components/layouts/Event/index.tsx:184
-#: src/components/layouts/OrganizerLayout/index.tsx:208
+#: src/components/layouts/OrganizerLayout/index.tsx:188
 msgid "Live"
 msgstr "Ao vivo"
 
@@ -4295,7 +4318,7 @@ msgstr "Tornar o endereço de cobrança obrigatório durante o checkout"
 msgid "Make this question mandatory"
 msgstr "Torne esta pergunta obrigatória"
 
-#: src/components/routes/event/EventDashboard/index.tsx:184
+#: src/components/routes/event/EventDashboard/index.tsx:154
 msgid "Make your event live"
 msgstr "Torne seu evento ao vivo"
 
@@ -4304,7 +4327,7 @@ msgstr "Torne seu evento ao vivo"
 #: src/components/common/OrdersTable/index.tsx:150
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:446
 #: src/components/common/PromoCodeTable/index.tsx:167
-#: src/components/layouts/OrganizerLayout/index.tsx:83
+#: src/components/layouts/OrganizerLayout/index.tsx:79
 msgid "Manage"
 msgstr "Gerenciar"
 
@@ -4340,9 +4363,13 @@ msgstr "Gerenciar ingressos"
 msgid "Manage your account details and default settings"
 msgstr "Gerencie os detalhes da sua conta e configurações padrão"
 
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:106
+msgid "Manage your payment processing and fee structure."
+msgstr ""
+
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:816
-msgid "Manage your payment processing and view platform fees"
-msgstr "Gerencie seu processamento de pagamentos e visualize as taxas da plataforma"
+#~ msgid "Manage your payment processing and view platform fees"
+#~ msgstr "Gerencie seu processamento de pagamentos e visualize as taxas da plataforma"
 
 #: src/components/routes/account/ManageAccount/sections/Users/index.tsx:143
 msgid "Manage your users and their permissions"
@@ -4371,12 +4398,12 @@ msgstr "Máximo por pedido"
 
 #: src/components/routes/admin/Attribution/index.tsx:108
 msgid "Medium"
-msgstr ""
+msgstr "Meio"
 
 #: src/components/common/AttendeeTable/index.tsx:188
 #: src/components/common/ContactOrganizerModal/index.tsx:88
 #: src/components/common/OrdersTable/index.tsx:247
-#: src/components/modals/SendMessageModal/index.tsx:240
+#: src/components/modals/SendMessageModal/index.tsx:235
 msgid "Message"
 msgstr "Mensagem"
 
@@ -4388,7 +4415,7 @@ msgstr "Participante da mensagem"
 msgid "Message Attendees"
 msgstr "Participantes da mensagem"
 
-#: src/components/modals/SendMessageModal/index.tsx:197
+#: src/components/modals/SendMessageModal/index.tsx:192
 msgid "Message attendees with specific tickets"
 msgstr "Enviar mensagens aos participantes com tickets específicos"
 
@@ -4400,7 +4427,7 @@ msgstr "Comprador de mensagens"
 msgid "Message cannot exceed 5000 characters"
 msgstr "A mensagem não pode exceder 5000 caracteres"
 
-#: src/components/modals/SendMessageModal/index.tsx:71
+#: src/components/modals/SendMessageModal/index.tsx:70
 msgid "Message individual attendees"
 msgstr "Mensagem para participantes individuais"
 
@@ -4408,11 +4435,11 @@ msgstr "Mensagem para participantes individuais"
 msgid "Message is required"
 msgstr "A mensagem é obrigatória"
 
-#: src/components/modals/SendMessageModal/index.tsx:209
+#: src/components/modals/SendMessageModal/index.tsx:204
 msgid "Message order owners with specific products"
 msgstr "Enviar mensagem para proprietários de pedidos com produtos específicos"
 
-#: src/components/modals/SendMessageModal/index.tsx:118
+#: src/components/modals/SendMessageModal/index.tsx:117
 msgid "Message Sent"
 msgstr "Mensagem enviada"
 
@@ -4585,7 +4612,7 @@ msgstr "Nenhum participante para mostrar"
 
 #: src/components/routes/admin/Attribution/index.tsx:139
 msgid "No attribution data found"
-msgstr ""
+msgstr "Nenhum dado de atribuição encontrado"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:42
 msgid "No Capacity Assignments"
@@ -4648,8 +4675,8 @@ msgid "No filters available"
 msgstr "Nenhum filtro disponível"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:85
-msgid "No impact on your current or past transactions"
-msgstr "Sem impacto nas suas transações atuais ou passadas"
+#~ msgid "No impact on your current or past transactions"
+#~ msgstr "Sem impacto nas suas transações atuais ou passadas"
 
 #: src/components/common/OrdersTable/index.tsx:299
 msgid "No invoice"
@@ -4876,8 +4903,8 @@ msgid "On sale {0}"
 msgstr "Em promoção {0}"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:552
-msgid "Once you complete the upgrade, your old account will only be used for refunds."
-msgstr "Depois de completar a atualização, sua conta antiga será usada apenas para reembolsos."
+#~ msgid "Once you complete the upgrade, your old account will only be used for refunds."
+#~ msgstr "Depois de completar a atualização, sua conta antiga será usada apenas para reembolsos."
 
 #: src/components/common/NoEventsBlankSlate/index.tsx:19
 msgid "Once you create an event, you'll see it here."
@@ -4887,7 +4914,7 @@ msgstr "Depois de criar um evento, você o verá aqui."
 msgid "Once you start collecting data, you'll see it here."
 msgstr "Assim que você começar a coletar dados, eles aparecerão aqui."
 
-#: src/components/routes/event/GettingStarted/index.tsx:184
+#: src/components/routes/event/GettingStarted/index.tsx:169
 msgid "Once you're ready, set your event live and start selling products."
 msgstr "Quando estiver pronto, coloque seu evento ao vivo e comece a vender produtos."
 
@@ -4911,7 +4938,11 @@ msgstr "Evento online"
 msgid "Online Event Details"
 msgstr "Detalhes do evento on-line"
 
-#: src/components/modals/SendMessageModal/index.tsx:217
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:89
+msgid "Online payments are processed via Razorpay. To configure your Razorpay credentials, please contact the system administrator."
+msgstr ""
+
+#: src/components/modals/SendMessageModal/index.tsx:212
 msgid "Only send to orders with these statuses"
 msgstr "Enviar apenas para pedidos com esses status"
 
@@ -4924,15 +4955,15 @@ msgstr "Apenas visível com código promocional"
 msgid "Open Check-In Page"
 msgstr "Abrir Página de Check-In"
 
-#: src/components/layouts/AppLayout/index.tsx:29
-msgid "Open sidebar"
-msgstr "Abrir barra lateral"
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:195
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:404
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:641
-msgid "Open Razorpay Dashboard"
-msgstr "Abrir painel do Razorpay"
+#~ msgid "Open Razorpay Dashboard"
+#~ msgstr "Abrir painel do Razorpay"
+
+#: src/components/layouts/AppLayout/index.tsx:29
+msgid "Open sidebar"
+msgstr "Abrir barra lateral"
 
 #: src/components/forms/QuestionForm/index.tsx:45
 msgid "Option {i}"
@@ -5001,7 +5032,7 @@ msgid "Order complete"
 msgstr "Pedido concluído"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:94
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:200
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:199
 msgid "Order Confirmation"
 msgstr "Confirmação do pedido"
 
@@ -5089,7 +5120,7 @@ msgstr "Número do pedido"
 msgid "Order owner"
 msgstr "Proprietário do pedido"
 
-#: src/components/modals/SendMessageModal/index.tsx:181
+#: src/components/modals/SendMessageModal/index.tsx:176
 msgid "Order owners with a specific product"
 msgstr "Proprietários de pedidos com um produto específico"
 
@@ -5115,7 +5146,7 @@ msgstr "Pedido reembolsado"
 msgid "Order Status"
 msgstr "Status do pedido"
 
-#: src/components/modals/SendMessageModal/index.tsx:218
+#: src/components/modals/SendMessageModal/index.tsx:213
 msgid "Order statuses"
 msgstr "Status dos pedidos"
 
@@ -5166,7 +5197,7 @@ msgstr "Encomendas:"
 
 #: src/components/routes/admin/Attribution/index.tsx:62
 msgid "Organic Accounts"
-msgstr ""
+msgstr "Contas orgânicas"
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:44
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:45
@@ -5199,7 +5230,7 @@ msgid "Organizer"
 msgstr "Organizador"
 
 #: src/components/layouts/Event/index.tsx:81
-#: src/components/layouts/OrganizerLayout/index.tsx:75
+#: src/components/layouts/OrganizerLayout/index.tsx:71
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:160
 msgid "Organizer Dashboard"
 msgstr "Painel do organizador"
@@ -5238,16 +5269,16 @@ msgid "Organizer statistics are not available for the selected currency or an er
 msgstr "As estatísticas do organizador não estão disponíveis para a moeda selecionada ou ocorreu um erro."
 
 #: src/components/common/StatusToggle/index.tsx:64
-#: src/components/layouts/OrganizerLayout/index.tsx:135
+#: src/components/layouts/OrganizerLayout/index.tsx:131
 msgid "Organizer status update failed. Please try again later"
 msgstr "Falha ao atualizar o status do organizador. Por favor, tente novamente mais tarde."
 
 #: src/components/common/StatusToggle/index.tsx:56
-#: src/components/layouts/OrganizerLayout/index.tsx:132
+#: src/components/layouts/OrganizerLayout/index.tsx:128
 msgid "Organizer status updated"
 msgstr "Status do organizador atualizado"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:212
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:211
 msgid "Organizer/default template will be used"
 msgstr "O modelo do organizador/padrão será usado"
 
@@ -5275,8 +5306,8 @@ msgid "Padding"
 msgstr "Preenchimento"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:106
-msgid "Page no longer available"
-msgstr "Página já não disponível"
+#~ msgid "Page no longer available"
+#~ msgstr "Página já não disponível"
 
 #: src/components/common/ErrorDisplay/index.tsx:14
 msgid "Page not found"
@@ -5300,7 +5331,7 @@ msgstr "pago"
 
 #: src/components/routes/admin/Attribution/index.tsx:51
 msgid "Paid Accounts"
-msgstr ""
+msgstr "Contas pagas"
 
 #: src/components/forms/ProductForm/index.tsx:154
 msgid "Paid Product"
@@ -5395,7 +5426,6 @@ msgstr "Pagar para desbloquear"
 
 #: src/components/common/OrdersTable/index.tsx:368
 #: src/components/common/ProgressStepper/index.tsx:19
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:127
 msgid "Payment"
 msgstr "Pagamento"
 
@@ -5432,9 +5462,7 @@ msgstr "Método de pagamento"
 msgid "Payment Methods"
 msgstr "Métodos de pagamento"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:473
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:485
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:619
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:87
 msgid "Payment Processing"
 msgstr "Processamento de pagamento"
 
@@ -5443,14 +5471,14 @@ msgid "Payment provider"
 msgstr "Provedor de pagamento"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:94
-msgid "Payment received"
-msgstr "Pagamento recebido"
+#~ msgid "Payment received"
+#~ msgstr "Pagamento recebido"
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:44
 msgid "Payment Received"
 msgstr "Pagamento recebido"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:815
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:105
 msgid "Payment Settings"
 msgstr "Configurações de pagamento"
 
@@ -5459,20 +5487,24 @@ msgid "Payment Status"
 msgstr "Status do pagamento"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:60
-msgid "Payment succeeded!"
-msgstr "Pagamento realizado com sucesso!"
+#~ msgid "Payment succeeded!"
+#~ msgstr "Pagamento realizado com sucesso!"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:214
 msgid "Payment Terms"
 msgstr "Termos de pagamento"
 
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:75
+msgid "Payment verification failed. Please contact support."
+msgstr ""
+
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:49
-msgid "Payments not available"
-msgstr "Pagamentos não disponíveis"
+#~ msgid "Payments not available"
+#~ msgstr "Pagamentos não disponíveis"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:86
-msgid "Payments will continue to flow without interruption"
-msgstr "Os pagamentos continuarão a fluir sem interrupção"
+#~ msgid "Payments will continue to flow without interruption"
+#~ msgstr "Os pagamentos continuarão a fluir sem interrupção"
 
 #: src/components/common/QuestionsTable/index.tsx:315
 msgid "Per Attendee"
@@ -5553,7 +5585,7 @@ msgstr "Taxa da plataforma"
 msgid "Platform fee of {0} deducted from your payout"
 msgstr "Taxa da plataforma de {0} deduzida do seu pagamento"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:247
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:36
 #: src/components/routes/event/Settings/index.tsx:81
 #: src/components/routes/event/Settings/Sections/PlatformFeesSettings/index.tsx:42
 #: src/components/routes/organizer/Settings/index.tsx:73
@@ -5619,8 +5651,8 @@ msgid "Please provide an image."
 msgstr "Por favor, forneça uma imagem."
 
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:65
-msgid "Please restart the checkout process."
-msgstr "Por favor, reinicie o processo de compra."
+#~ msgid "Please restart the checkout process."
+#~ msgstr "Por favor, reinicie o processo de compra."
 
 #: src/components/layouts/Checkout/index.tsx:251
 msgid "Please return to the event page to start over."
@@ -5807,7 +5839,7 @@ msgstr "Produto excluído com sucesso"
 msgid "Product Price Type"
 msgstr "Tipo de Preço do Produto"
 
-#: src/components/routes/event/EventDashboard/index.tsx:253
+#: src/components/routes/event/EventDashboard/index.tsx:189
 #: src/components/routes/event/Reports/index.tsx:17
 msgid "Product Sales"
 msgstr "Vendas de Produtos"
@@ -5842,7 +5874,7 @@ msgstr "Produtos"
 msgid "Products sold"
 msgstr "Produtos vendidos"
 
-#: src/components/routes/event/EventDashboard/index.tsx:274
+#: src/components/routes/event/EventDashboard/index.tsx:210
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:125
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:68
 msgid "Products Sold"
@@ -5899,7 +5931,7 @@ msgstr "Relatório de códigos promocionais"
 msgid "Promo Only"
 msgstr "Apenas Promoção"
 
-#: src/components/modals/SendMessageModal/index.tsx:292
+#: src/components/modals/SendMessageModal/index.tsx:287
 msgid "Promotional emails may result in account suspension"
 msgstr "Emails promocionais podem resultar na suspensão da conta"
 
@@ -5913,7 +5945,7 @@ msgstr "Forneça contexto adicional ou instruções para esta pergunta. Use este
 msgid "Publish"
 msgstr "Publicar"
 
-#: src/components/routes/event/EventDashboard/index.tsx:195
+#: src/components/routes/event/EventDashboard/index.tsx:165
 msgid "Publish Event"
 msgstr "Publicar Evento"
 
@@ -5967,13 +5999,32 @@ msgstr "Opção de rádio"
 msgid "Rate"
 msgstr "Taxa"
 
+#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
+msgid "Razorpay"
+msgstr "Razorpay"
+
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
+#~ msgid "Razorpay Connect"
+#~ msgstr "Razorpay Connect"
+
+#~ msgid "Razorpay Connected"
+#~ msgstr "Razorpay ligado"
+
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
+#~ msgid "Razorpay payments are not enabled for this event."
+#~ msgstr "Os pagamentos via Razorpay não estão ativados para este evento."
+
+#: src/components/common/RazorpayConnectButton/index.tsx:69
+#~ msgid "Razorpay setup is already complete."
+#~ msgstr "A configuração do Razorpay já está completa."
+
 #: src/components/common/MessageList/index.tsx:59
 msgid "Read less"
 msgstr "Leia menos"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:223
-msgid "Ready to upgrade? This takes only a few minutes."
-msgstr "Pronto para atualizar? Isto demora apenas alguns minutos."
+#~ msgid "Ready to upgrade? This takes only a few minutes."
+#~ msgstr "Pronto para atualizar? Isto demora apenas alguns minutos."
 
 #: src/components/layouts/AuthLayout/index.tsx:40
 msgid "Real-Time Analytics"
@@ -5989,17 +6040,17 @@ msgstr "Receber atualizações de produtos do {0}."
 msgid "Recent Orders"
 msgstr "Pedidos recentes"
 
-#: src/components/modals/SendMessageModal/index.tsx:37
+#: src/components/modals/SendMessageModal/index.tsx:36
 msgid "Recipient"
 msgstr "Destinatário"
 
-#: src/components/modals/SendMessageModal/index.tsx:184
+#: src/components/modals/SendMessageModal/index.tsx:179
 msgid "Recipients"
 msgstr "Destinatários"
 
 #: src/components/routes/event/EventDashboard/index.tsx:135
-msgid "Reconnect Razorpay →"
-msgstr "Reconectar Razorpay →"
+#~ msgid "Reconnect Razorpay →"
+#~ msgstr "Reconectar Razorpay →"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
@@ -6011,12 +6062,12 @@ msgstr "Reddit"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:338
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:578
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:596
-msgid "Redirecting to Razorpay..."
-msgstr "Redirecionando para o Razorpay..."
+#~ msgid "Redirecting to Razorpay..."
+#~ msgstr "Redirecionando para o Razorpay..."
 
 #: src/components/routes/admin/Attribution/index.tsx:73
 msgid "Referral Accounts"
-msgstr ""
+msgstr "Contas de referência"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:175
 msgid "Refresh Preview"
@@ -6102,7 +6153,7 @@ msgid "Report not found"
 msgstr "Relatório não encontrado"
 
 #: src/components/layouts/Event/index.tsx:94
-#: src/components/layouts/OrganizerLayout/index.tsx:78
+#: src/components/layouts/OrganizerLayout/index.tsx:74
 #: src/components/routes/event/Reports/index.tsx:39
 #: src/components/routes/organizer/Reports/index.tsx:45
 msgid "Reports"
@@ -6124,7 +6175,7 @@ msgstr "Obrigatório"
 msgid "Resend code"
 msgstr "Reenviar código"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:292
+#: src/components/layouts/OrganizerLayout/index.tsx:272
 msgid "Resend Confirmation Email"
 msgstr "Reenviar e-mail de confirmação"
 
@@ -6183,8 +6234,8 @@ msgstr "Restaurar evento"
 
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:52
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:67
-msgid "Return to Event"
-msgstr "Voltar ao evento"
+#~ msgid "Return to Event"
+#~ msgstr "Voltar ao evento"
 
 #: src/components/layouts/Checkout/index.tsx:258
 msgid "Return to Event Page"
@@ -6193,7 +6244,7 @@ msgstr "Voltar para a página do evento"
 #: src/components/common/AffiliateTable/index.tsx:157
 #: src/components/common/EventCard/index.tsx:235
 #: src/components/routes/admin/Attribution/index.tsx:130
-#: src/components/routes/event/EventDashboard/index.tsx:285
+#: src/components/routes/event/EventDashboard/index.tsx:221
 msgid "Revenue"
 msgstr "Receita"
 
@@ -6448,7 +6499,7 @@ msgstr "Selecionar tudo"
 msgid "Select an organizer to view their dashboard and events."
 msgstr "Selecione um organizador para ver seu painel e eventos."
 
-#: src/components/modals/SendMessageModal/index.tsx:186
+#: src/components/modals/SendMessageModal/index.tsx:181
 msgid "Select attendee group"
 msgstr "Selecione o grupo de participantes"
 
@@ -6497,7 +6548,7 @@ msgid "Select Product Tier"
 msgstr "Selecione o Nível do Produto"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:49
-#: src/components/modals/SendMessageModal/index.tsx:210
+#: src/components/modals/SendMessageModal/index.tsx:205
 msgid "Select products"
 msgstr "Selecione os produtos"
 
@@ -6526,7 +6577,7 @@ msgid "Select Ticket"
 msgstr "Selecione o ingresso"
 
 #: src/components/forms/CheckInListForm/index.tsx:43
-#: src/components/modals/SendMessageModal/index.tsx:198
+#: src/components/modals/SendMessageModal/index.tsx:193
 msgid "Select tickets"
 msgstr "Selecionar ingressos"
 
@@ -6540,7 +6591,7 @@ msgstr "Selecione o período de tempo"
 msgid "Select timezone"
 msgstr "Selecionar fuso horário"
 
-#: src/components/modals/SendMessageModal/index.tsx:185
+#: src/components/modals/SendMessageModal/index.tsx:180
 msgid "Select which attendees should receive this message"
 msgstr "Selecione quais participantes devem receber esta mensagem"
 
@@ -6570,11 +6621,11 @@ msgstr "Vendendo rápido 🔥"
 msgid "Send"
 msgstr "Enviar"
 
-#: src/components/modals/SendMessageModal/index.tsx:139
+#: src/components/modals/SendMessageModal/index.tsx:138
 msgid "Send a message"
 msgstr "Envie uma mensagem"
 
-#: src/components/modals/SendMessageModal/index.tsx:278
+#: src/components/modals/SendMessageModal/index.tsx:273
 msgid "Send as test"
 msgstr "Enviar como teste"
 
@@ -6582,12 +6633,12 @@ msgstr "Enviar como teste"
 msgid "Send emails to attendees and view your message history."
 msgstr "Envie emails para participantes e veja seu histórico de mensagens."
 
-#: src/components/modals/SendMessageModal/index.tsx:285
+#: src/components/modals/SendMessageModal/index.tsx:280
 msgid "Send me a copy"
 msgstr "Envie-me uma cópia"
 
 #: src/components/common/ContactOrganizerModal/index.tsx:112
-#: src/components/modals/SendMessageModal/index.tsx:261
+#: src/components/modals/SendMessageModal/index.tsx:256
 #: src/components/routes/event/messages.tsx:43
 msgid "Send Message"
 msgstr "Enviar Mensagem"
@@ -6608,7 +6659,7 @@ msgstr "Enviar email de notificação de reembolso"
 msgid "Send reset link"
 msgstr "Enviar link de redefinição"
 
-#: src/components/modals/SendMessageModal/index.tsx:261
+#: src/components/modals/SendMessageModal/index.tsx:256
 msgid "Send Test"
 msgstr "Enviar teste"
 
@@ -6616,11 +6667,11 @@ msgstr "Enviar teste"
 msgid "Sending..."
 msgstr "A enviar..."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:205
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:204
 msgid "Sent to customers when they place an order"
 msgstr "Enviado aos clientes quando fazem um pedido"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:206
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:205
 msgid "Sent to each attendee with their ticket details"
 msgstr "Enviado a cada participante com os detalhes do seu ingresso"
 
@@ -6673,7 +6724,7 @@ msgstr "Defina o número inicial para a numeração das faturas. Isso não poder
 msgid "Set up check-in lists for different entrances, sessions, or days."
 msgstr "Configure listas de check-in para diferentes entradas, sessões ou dias."
 
-#: src/components/routes/event/GettingStarted/index.tsx:145
+#: src/components/routes/event/GettingStarted/index.tsx:144
 msgid "Set up your event"
 msgstr "Configure seu evento"
 
@@ -6681,7 +6732,7 @@ msgstr "Configure seu evento"
 msgid "Set up your organization"
 msgstr "Configure a sua organização"
 
-#: src/components/routes/event/GettingStarted/index.tsx:188
+#: src/components/routes/event/GettingStarted/index.tsx:173
 msgid "Set your event live"
 msgstr "Defina seu evento ao vivo"
 
@@ -6695,7 +6746,7 @@ msgstr "Configuração atualizada"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:81
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:82
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:83
-#: src/components/layouts/OrganizerLayout/index.tsx:85
+#: src/components/layouts/OrganizerLayout/index.tsx:81
 #: src/components/modals/DuplicateEventModal/index.tsx:26
 msgid "Settings"
 msgstr "Configurações"
@@ -6706,7 +6757,7 @@ msgstr "Configuração e design"
 
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/index.tsx:293
-#: src/components/layouts/OrganizerLayout/index.tsx:228
+#: src/components/layouts/OrganizerLayout/index.tsx:208
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
 #: src/components/modals/ShareModal/index.tsx:186
@@ -6723,8 +6774,8 @@ msgstr "Partilhar link de afiliado"
 msgid "Share Event"
 msgstr "Compartilhar evento"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:225
-#: src/components/layouts/OrganizerLayout/index.tsx:260
+#: src/components/layouts/OrganizerLayout/index.tsx:205
+#: src/components/layouts/OrganizerLayout/index.tsx:240
 msgid "Share Organizer Page"
 msgstr "Compartilhar página do organizador"
 
@@ -6829,7 +6880,6 @@ msgstr "Vendido"
 #: src/components/common/ErrorDisplay/index.tsx:15
 #: src/components/routes/auth/AcceptInvitation/index.tsx:48
 #: src/components/routes/product-widget/CollectInformation/index.tsx:377
-#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:64
 msgid "Something went wrong"
 msgstr "Algo correu mal"
 
@@ -6847,11 +6897,11 @@ msgid "Something went wrong! Please try again"
 msgstr "Algo deu errado! Por favor, tente novamente"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:69
-msgid "Something went wrong."
-msgstr "Algo deu errado."
+#~ msgid "Something went wrong."
+#~ msgstr "Algo deu errado."
 
 #: src/components/layouts/Event/index.tsx:75
-#: src/components/layouts/OrganizerLayout/index.tsx:100
+#: src/components/layouts/OrganizerLayout/index.tsx:96
 #: src/components/routes/auth/Login/index.tsx:72
 #: src/components/routes/my-tickets/index.tsx:145
 #: src/components/routes/profile/ManageProfile/index.tsx:90
@@ -6860,8 +6910,8 @@ msgid "Something went wrong. Please try again."
 msgstr "Algo deu errado. Por favor, tente novamente."
 
 #: src/components/routes/event/EventDashboard/index.tsx:131
-msgid "Sorry for the inconvenience."
-msgstr "Desculpe o inconveniente."
+#~ msgid "Sorry for the inconvenience."
+#~ msgstr "Desculpe o inconveniente."
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:284
 msgid "Sorry, this promo code is not recognized"
@@ -6869,7 +6919,7 @@ msgstr "Desculpe, este código promocional não é reconhecido"
 
 #: src/components/routes/admin/Attribution/index.tsx:106
 msgid "Source"
-msgstr ""
+msgstr "Fonte"
 
 #: src/components/common/LanguageSwitcher/index.tsx:20
 msgid "Spanish"
@@ -6920,7 +6970,7 @@ msgstr "Estatísticas"
 
 #: src/components/routes/admin/Attribution/index.tsx:35
 msgid "Statistics are based on account creation date"
-msgstr ""
+msgstr "As estatísticas são baseadas na data de criação da conta"
 
 #: src/components/common/AdminEventsTable/index.tsx:107
 #: src/components/common/AdminOrdersTable/index.tsx:82
@@ -6940,36 +6990,23 @@ msgid "Status"
 msgstr "Status"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:182
-msgid "Still handling refunds for your older transactions."
-msgstr "Ainda a processar reembolsos para as suas transações mais antigas."
+#~ msgid "Still handling refunds for your older transactions."
+#~ msgstr "Ainda a processar reembolsos para as suas transações mais antigas."
 
 #: src/components/common/ImpersonationBanner/index.tsx:53
 msgid "Stop Impersonating"
 msgstr "Parar Personificação"
 
 #: src/components/common/OrdersTable/index.tsx:377
-#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
 msgid "Razorpay"
-msgstr "Razorpay"
-
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
-msgid "Razorpay Connect"
-msgstr "Razorpay Connect"
+msgstr ""
 
 #: src/components/routes/admin/Attribution/index.tsx:128
 msgid "Razorpay Connected"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
-msgid "Razorpay payments are not enabled for this event."
-msgstr "Os pagamentos via Razorpay não estão ativados para este evento."
-
-#: src/components/common/RazorpayConnectButton/index.tsx:69
-msgid "Razorpay setup is already complete."
-msgstr "A configuração do Razorpay já está completa."
-
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:127
-#: src/components/modals/SendMessageModal/index.tsx:234
+#: src/components/modals/SendMessageModal/index.tsx:229
 msgid "Subject"
 msgstr "Assunto"
 
@@ -6981,7 +7018,7 @@ msgstr "O assunto é obrigatório"
 msgid "Subject will appear here"
 msgstr "O assunto aparecerá aqui"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:255
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:254
 msgid "Subject:"
 msgstr "Assunto:"
 
@@ -7148,7 +7185,7 @@ msgstr "Festival de Música de Verão 2025"
 msgid "Support Email"
 msgstr "E-mail de suporte"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:68
+#: src/components/layouts/OrganizerLayout/index.tsx:64
 #: src/components/modals/SwitchOrganizerModal/index.tsx:33
 msgid "Switch Organizer"
 msgstr "Trocar organizador"
@@ -7162,8 +7199,8 @@ msgid "T-shirt"
 msgstr "Camiseta"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:84
-msgid "Takes just a few minutes"
-msgstr "Demora apenas alguns minutos"
+#~ msgid "Takes just a few minutes"
+#~ msgstr "Demora apenas alguns minutos"
 
 #: src/components/common/AdminOrdersTable/index.tsx:81
 #: src/components/common/OrdersTable/index.tsx:351
@@ -7258,15 +7295,15 @@ msgstr "Fale-nos sobre a sua organização. Esta informação será exibida nas 
 msgid "Template Active"
 msgstr "Modelo ativo"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:164
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:163
 msgid "Template created successfully"
 msgstr "Modelo criado com sucesso"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:112
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:111
 msgid "Template deleted successfully"
 msgstr "Modelo excluído com sucesso"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:133
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:132
 msgid "Template saved successfully"
 msgstr "Modelo salvo com sucesso"
 
@@ -7284,8 +7321,8 @@ msgid "Thank you for attending!"
 msgstr "Obrigado por participar!"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:90
-msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
-msgstr "Obrigado pelo seu apoio enquanto continuamos a crescer e melhorar o Hi.Events!"
+#~ msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
+#~ msgstr "Obrigado pelo seu apoio enquanto continuamos a crescer e melhorar o Hi.Events!"
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:176
 #: src/components/routes/product-widget/SelectProducts/index.tsx:224
@@ -7378,8 +7415,8 @@ msgstr "O preço apresentado ao cliente não incluirá impostos e taxas. Eles se
 msgid "The primary brand color used for buttons and highlights"
 msgstr "A cor principal da marca usada para botões e destaques"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:145
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:176
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:144
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:175
 msgid "The template body contains invalid Liquid syntax. Please correct it and try again."
 msgstr "O corpo do modelo contém sintaxe Liquid inválida. Por favor, corrija-a e tente novamente."
 
@@ -7433,11 +7470,11 @@ msgstr "Estes detalhes só serão mostrados se o pedido for concluído com suces
 msgid "These settings apply only to copied embed code and won't be stored."
 msgstr "Estas configurações se aplicam apenas ao código de incorporação copiado e não serão armazenadas."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:326
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:325
 msgid "These templates will be used as defaults for all events in your organization. Individual events can override these templates with their own custom versions."
 msgstr "Estes modelos serão usados como padrões para todos os eventos em sua organização. Eventos individuais podem substituir estes modelos por suas próprias versões personalizadas."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:319
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:318
 msgid "These templates will override the organizer defaults for this event only. If no custom template is set here, the organizer template will be used instead."
 msgstr "Estes modelos substituirão os padrões do organizador apenas para este evento. Se nenhum modelo personalizado for definido aqui, o modelo do organizador será usado em vez disso."
 
@@ -7518,8 +7555,8 @@ msgid "This name is visible to end users"
 msgstr "Este nome é visível aos utilizadores finais"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:95
-msgid "This order has already been paid."
-msgstr "Este pedido já foi pago."
+#~ msgid "This order has already been paid."
+#~ msgstr "Este pedido já foi pago."
 
 #: src/components/modals/RefundOrderModal/index.tsx:185
 msgid "This order has already been refunded."
@@ -7542,8 +7579,8 @@ msgid "This order is complete."
 msgstr "Este pedido está completo."
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:107
-msgid "This order page is no longer available."
-msgstr "Esta página de pedido não está mais disponível."
+#~ msgid "This order page is no longer available."
+#~ msgstr "Esta página de pedido não está mais disponível."
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:325
 msgid "This order was abandoned. You can start a new order anytime."
@@ -7766,14 +7803,14 @@ msgid "To edit configurations, go to the Configurations section in the admin men
 msgstr "Para editar configurações, aceda à secção Configurações no menu de administração."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:661
-msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
-msgstr "Para receber pagamentos com cartão de crédito, você precisa conectar sua conta do Razorpay. O Razorpay é nosso parceiro de processamento de pagamentos que garante transações seguras e pagamentos pontuais."
+#~ msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
+#~ msgstr "Para receber pagamentos com cartão de crédito, você precisa conectar sua conta do Razorpay. O Razorpay é nosso parceiro de processamento de pagamentos que garante transações seguras e pagamentos pontuais."
 
 #: src/components/common/ColumnVisibilityToggle/index.tsx:26
 msgid "Toggle columns"
 msgstr "Alternar colunas"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:87
+#: src/components/layouts/OrganizerLayout/index.tsx:83
 msgid "Tools"
 msgstr "Ferramentas"
 
@@ -7807,7 +7844,7 @@ msgstr "Total Cobrado"
 msgid "Total Discount Amount"
 msgstr "Montante total do desconto"
 
-#: src/components/routes/event/EventDashboard/index.tsx:311
+#: src/components/routes/event/EventDashboard/index.tsx:247
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:149
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:97
 msgid "Total Fees"
@@ -7829,11 +7866,11 @@ msgstr "Total de pedidos"
 msgid "Total refunded"
 msgstr "Total reembolsado"
 
-#: src/components/routes/event/EventDashboard/index.tsx:314
+#: src/components/routes/event/EventDashboard/index.tsx:250
 msgid "Total Refunded"
 msgstr "Total Reembolsado"
 
-#: src/components/routes/event/EventDashboard/index.tsx:313
+#: src/components/routes/event/EventDashboard/index.tsx:249
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:143
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:91
 msgid "Total Tax"
@@ -7845,13 +7882,13 @@ msgstr "Total de Usuários"
 
 #: src/components/routes/admin/Attribution/index.tsx:32
 msgid "Track account growth and performance by attribution source"
-msgstr ""
+msgstr "Acompanhe o crescimento e desempenho da conta por fonte de atribuição"
 
 #: src/components/layouts/AuthLayout/index.tsx:41
 msgid "Track sales, revenue, and attendance with detailed reports"
 msgstr "Acompanhe vendas, receitas e participação com relatórios detalhados"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:263
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:50
 msgid "Transaction Fee:"
 msgstr "Taxa de transação:"
 
@@ -7934,7 +7971,7 @@ msgstr "Não foi possível atualizar a pergunta. Por favor verifique os seus dad
 
 #: src/components/routes/admin/Attribution/index.tsx:84
 msgid "Unattributed Accounts"
-msgstr ""
+msgstr "Contas não atribuídas"
 
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:30
 msgid "Unique Customers"
@@ -7979,7 +8016,7 @@ msgstr "Usos ilimitados permitidos"
 msgid "Unpaid Order"
 msgstr "Pedido não pago"
 
-#: src/components/routes/event/EventDashboard/index.tsx:206
+#: src/components/routes/event/EventDashboard/index.tsx:176
 msgid "Unpublish Event"
 msgstr "Despublicar Evento"
 
@@ -8012,8 +8049,8 @@ msgid "Update profile"
 msgstr "Atualizar perfil"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:169
-msgid "Upgrade Available"
-msgstr "Atualização disponível"
+#~ msgid "Upgrade Available"
+#~ msgstr "Atualização disponível"
 
 #: src/components/routes/organizer/Settings/Sections/ImageAssetSettings/index.tsx:39
 msgid "Upload a cover image for your organizer"
@@ -8125,6 +8162,10 @@ msgstr "Os usuários podem alterar o e-mail em <0>Configurações do perfil</0>"
 msgid "UTC"
 msgstr "UTC"
 
+#: src/components/layouts/Admin/index.tsx:18
+msgid "UTM Analytics"
+msgstr "Análise UTM"
+
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:206
 msgid "Valid"
 msgstr "Válido"
@@ -8230,7 +8271,7 @@ msgstr "Código de verificação"
 
 #: src/components/routes/admin/Attribution/index.tsx:129
 msgid "Verified"
-msgstr ""
+msgstr "Verificado"
 
 #: src/components/routes/welcome/index.tsx:187
 msgid "Verify Email"
@@ -8306,7 +8347,6 @@ msgstr "Ver no Google Maps"
 msgid "View Order"
 msgstr "Ver pedido"
 
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:96
 #: src/components/routes/product-widget/CollectInformation/index.tsx:347
 msgid "View Order Details"
 msgstr "Ver detalhes do pedido"
@@ -8315,8 +8355,8 @@ msgstr "Ver detalhes do pedido"
 msgid "View order details, issue refunds, and resend confirmations."
 msgstr "Veja detalhes de pedidos, emita reembolsos e reenvie confirmações."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:243
-#: src/components/layouts/OrganizerLayout/index.tsx:246
+#: src/components/layouts/OrganizerLayout/index.tsx:223
+#: src/components/layouts/OrganizerLayout/index.tsx:226
 msgid "View Organizer Homepage"
 msgstr "Ver página inicial do organizador"
 
@@ -8362,7 +8402,7 @@ msgstr "A aguardar pagamento"
 msgid "Warning: This is the system default configuration. Changes will affect all accounts that don't have a specific configuration assigned."
 msgstr "Aviso: Esta é a configuração padrão do sistema. As alterações afetarão todas as contas que não tenham uma configuração específica atribuída."
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:89
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:68
 msgid "We could not process your payment. Please try again or contact support."
 msgstr "Não foi possível processar seu pagamento. Tente novamente ou entre em contato com o suporte."
 
@@ -8407,7 +8447,7 @@ msgstr "Recomendamos dimensões de 2160px por 1080px e tamanho máximo de arquiv
 msgid "We recommend dimensions of 400px by 400px, and a maximum file size of 5MB"
 msgstr "Recomendamos dimensões de 400px por 400px e tamanho máximo de 5MB"
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:100
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:78
 msgid "We were unable to confirm your payment. Please try again or contact support."
 msgstr "Não foi possível confirmar seu pagamento. Tente novamente ou entre em contato com o suporte."
 
@@ -8423,17 +8463,17 @@ msgstr "Enviaremos os seus bilhetes para este e-mail"
 msgid "We'll validate your VAT number in the background. If there are any issues, we'll let you know."
 msgstr "Validaremos o seu número de IVA em segundo plano. Se houver algum problema, informaremos."
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:91
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:69
 msgid "We're processing your order. Please wait..."
 msgstr "Estamos processando seu pedido. Por favor, aguarde..."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:73
-msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
-msgstr "Mudámos oficialmente a nossa sede para a Irlanda 🇮🇪. Como parte desta transição, agora usamos o Razorpay Irlanda em vez do Razorpay Canadá. Para manter os seus pagamentos funcionando sem problemas, precisará reconectar sua conta Razorpay."
+#~ msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
+#~ msgstr "Mudámos oficialmente a nossa sede para a Irlanda 🇮🇪. Como parte desta transição, agora usamos o Razorpay Irlanda em vez do Razorpay Canadá. Para manter os seus pagamentos funcionando sem problemas, precisará reconectar sua conta Razorpay."
 
 #: src/components/routes/event/EventDashboard/index.tsx:130
-msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
-msgstr "Mudámos a nossa sede para a Irlanda. Como resultado, precisamos que reconecte a sua conta Razorpay. Este processo rápido demora apenas alguns minutos. As suas vendas e dados existentes permanecem completamente inalterados."
+#~ msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
+#~ msgstr "Mudámos a nossa sede para a Irlanda. Como resultado, precisamos que reconecte a sua conta Razorpay. Este processo rápido demora apenas alguns minutos. As suas vendas e dados existentes permanecem completamente inalterados."
 
 #: src/components/routes/welcome/index.tsx:145
 msgid "We've sent a 5-digit verification code to:"
@@ -8485,7 +8525,7 @@ msgstr "Bem vindo a bordo! Por favor faça o login para continuar."
 msgid "Welcome back"
 msgstr "Bem-vindo de volta"
 
-#: src/components/routes/event/EventDashboard/index.tsx:107
+#: src/components/routes/event/EventDashboard/index.tsx:100
 msgid "Welcome back{0} 👋"
 msgstr "Bem vindo de volta{0} 👋"
 
@@ -8768,7 +8808,7 @@ msgstr "Você adicionou taxas e impostos a um produto gratuito. Deseja removê-l
 msgid "You haven't sent any messages yet. You can send messages to all attendees, or to specific product holders."
 msgstr "Você ainda não enviou nenhuma mensagem. Você pode enviar mensagens para todos os participantes ou para portadores de produtos específicos."
 
-#: src/components/modals/SendMessageModal/index.tsx:108
+#: src/components/modals/SendMessageModal/index.tsx:107
 msgid "You must acknowledge that this email is not promotional"
 msgstr "Você deve reconhecer que este e-mail não é promocional"
 
@@ -8784,15 +8824,15 @@ msgstr "Você deve criar um ticket antes de poder adicionar manualmente um parti
 msgid "You must have at least one price tier"
 msgstr "Você deve ter pelo menos uma faixa de preço"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:281
+#: src/components/layouts/OrganizerLayout/index.tsx:261
 msgid "You must verify your email address before you can update the organizer status."
 msgstr "Você precisa verificar seu e-mail antes de atualizar o status do organizador."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:343
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:342
 msgid "You need to verify your account email before you can modify email templates."
 msgstr "Precisa de verificar o email da sua conta antes de poder modificar modelos de email."
 
-#: src/components/modals/SendMessageModal/index.tsx:150
+#: src/components/modals/SendMessageModal/index.tsx:149
 msgid "You need to verify your account email before you can send messages."
 msgstr "Você precisa verificar o e-mail da sua conta antes de poder enviar mensagens."
 
@@ -8821,8 +8861,8 @@ msgid "You'll need at least one product to get started. Free, paid or let the us
 msgstr "Você precisará de pelo menos um produto para começar. Grátis, pago ou deixe o usuário decidir o que pagar."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:181
-msgid "You're all set! Your payments are being processed smoothly."
-msgstr "Está tudo pronto! Os seus pagamentos estão a ser processados sem problemas."
+#~ msgid "You're all set! Your payments are being processed smoothly."
+#~ msgstr "Está tudo pronto! Os seus pagamentos estão a ser processados sem problemas."
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:118
 msgid "You're going to {0}!"
@@ -8868,7 +8908,7 @@ msgstr "Seu e-mail"
 msgid "Your email request change to <0>{0}</0> is pending. Please check your email to confirm"
 msgstr "Sua solicitação de e-mail para <0>{0}</0> está pendente. Por favor, verifique seu e-mail para confirmar"
 
-#: src/components/routes/event/EventDashboard/index.tsx:186
+#: src/components/routes/event/EventDashboard/index.tsx:156
 msgid "Your event must be live before you can sell tickets to attendees."
 msgstr "Seu evento deve estar ativo antes que você possa vender ingressos para os participantes."
 
@@ -8926,37 +8966,37 @@ msgid "Your password"
 msgstr "Sua senha"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:63
-msgid "Your payment is processing."
-msgstr "Seu pagamento está sendo processado."
+#~ msgid "Your payment is processing."
+#~ msgstr "Seu pagamento está sendo processado."
 
 #: src/components/common/InlineOrderSummary/index.tsx:216
 msgid "Your payment is protected with bank-level encryption"
 msgstr "O seu pagamento está protegido com encriptação de nível bancário"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:66
-msgid "Your payment was not successful, please try again."
-msgstr "Seu pagamento não foi bem-sucedido, tente novamente."
+#~ msgid "Your payment was not successful, please try again."
+#~ msgstr "Seu pagamento não foi bem-sucedido, tente novamente."
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:130
-msgid "Your payment was unsuccessful. Please try again."
-msgstr "Seu pagamento não foi bem-sucedido. Por favor, tente novamente."
+#~ msgid "Your payment was unsuccessful. Please try again."
+#~ msgstr "Seu pagamento não foi bem-sucedido. Por favor, tente novamente."
 
 #: src/components/common/PlatformFeesSettings/index.tsx:126
 msgid "Your Plan"
 msgstr "Seu plano"
 
-#: src/components/modals/RefundOrderModal/index.tsx:58
-msgid "Your refund is processing."
-msgstr "Seu reembolso está sendo processado."
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:178
-msgid "Your Razorpay account is connected and processing payments."
-msgstr "Sua conta Razorpay está conectada e processando pagamentos."
+#~ msgid "Your Razorpay account is connected and processing payments."
+#~ msgstr "Sua conta Razorpay está conectada e processando pagamentos."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:395
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:632
-msgid "Your Razorpay account is connected and ready to process payments."
-msgstr "Sua conta Razorpay está conectada e pronta para processar pagamentos."
+#~ msgid "Your Razorpay account is connected and ready to process payments."
+#~ msgstr "Sua conta Razorpay está conectada e pronta para processar pagamentos."
+
+#: src/components/modals/RefundOrderModal/index.tsx:58
+msgid "Your refund is processing."
+msgstr "Seu reembolso está sendo processado."
 
 #: src/components/routes/product-widget/AttendeeProductAndInformation/index.tsx:36
 msgid "Your ticket for"
@@ -8991,57 +9031,3 @@ msgstr "CEP ou Código postal"
 #: src/components/routes/product-widget/CollectInformation/index.tsx:523
 msgid "ZIP or Postal Code"
 msgstr "CEP ou Código Postal"
-
-msgid "(empty)"
-msgstr "(vazio)"
-
-msgid "Attribution"
-msgstr "Atribuição"
-
-msgid "Attribution Analytics"
-msgstr "Análise de atribuição"
-
-msgid "Attribution Breakdown"
-msgstr "Detalhamento de atribuição"
-
-msgid "Attribution Value"
-msgstr "Valor de atribuição"
-
-msgid "Campaign"
-msgstr "Campanha"
-
-msgid "Medium"
-msgstr "Meio"
-
-msgid "No attribution data found"
-msgstr "Nenhum dado de atribuição encontrado"
-
-msgid "Organic Accounts"
-msgstr "Contas orgânicas"
-
-msgid "Paid Accounts"
-msgstr "Contas pagas"
-
-msgid "Referral Accounts"
-msgstr "Contas de referência"
-
-msgid "Source"
-msgstr "Fonte"
-
-msgid "Statistics are based on account creation date"
-msgstr "As estatísticas são baseadas na data de criação da conta"
-
-msgid "Razorpay Connected"
-msgstr "Razorpay ligado"
-
-msgid "Track account growth and performance by attribution source"
-msgstr "Acompanhe o crescimento e desempenho da conta por fonte de atribuição"
-
-msgid "Unattributed Accounts"
-msgstr "Contas não atribuídas"
-
-msgid "Verified"
-msgstr "Verificado"
-
-msgid "UTM Analytics"
-msgstr "Análise UTM"

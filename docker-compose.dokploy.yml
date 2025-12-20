@@ -4,8 +4,6 @@ services:
       context: .
       dockerfile: Dockerfile.all-in-one
     restart: unless-stopped
-    ports:
-      - "8123:80"
     environment:
       - VITE_FRONTEND_URL=${VITE_FRONTEND_URL}
       - VITE_API_URL_CLIENT=${VITE_API_URL_CLIENT}

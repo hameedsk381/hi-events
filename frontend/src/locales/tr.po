@@ -14,12 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/components/layouts/Event/index.tsx:183
-#: src/components/layouts/OrganizerLayout/index.tsx:207
+#: src/components/layouts/OrganizerLayout/index.tsx:187
 msgid "- Click to Publish"
 msgstr "- Yayınlamak için Tıklayın"
 
 #: src/components/layouts/Event/index.tsx:185
-#: src/components/layouts/OrganizerLayout/index.tsx:209
+#: src/components/layouts/OrganizerLayout/index.tsx:189
 msgid "- Click to Unpublish"
 msgstr "- Yayından Kaldırmak için Tıklayın"
 
@@ -29,7 +29,7 @@ msgstr "Henüz gösterilecek bir şey yok"
 
 #: src/components/routes/admin/Attribution/index.tsx:148
 msgid "(empty)"
-msgstr ""
+msgstr "(boş)"
 
 #: src/components/common/OrganizerReportTable/index.tsx:314
 #: src/components/common/ReportTable/index.tsx:303
@@ -149,23 +149,23 @@ msgstr "<0>Bu ürün için mevcut ürün sayısı</0><1>Bu değer, bu ürünle i
 msgid "<0>Webhooks instantly notify external services when events happen, like adding a new attendee to your CRM or mailing list upon registration, ensuring seamless automation.</0><1>Use third-party services like <2>Zapier</2>, <3>IFTTT</3> or <4>Make</4> to create custom workflows and automate tasks.</1>"
 msgstr "<0>Webhook'lar, kayıt sırasında CRM'inize veya posta listenize yeni bir katılımcı eklemek gibi olaylar gerçekleştiğinde harici hizmetleri anında bilgilendirir ve kusursuz otomasyon sağlar.</0><1>Özel iş akışları oluşturmak ve görevleri otomatikleştirmek için <2>Zapier</2>, <3>IFTTT</3> veya <4>Make</4> gibi üçüncü taraf hizmetleri kullanın.</1>"
 
-#: src/components/routes/event/GettingStarted/index.tsx:139
+#: src/components/routes/event/GettingStarted/index.tsx:138
 msgid "⚡️ Set up your event"
 msgstr "⚡️ Etkinliğinizi kurun"
 
-#: src/components/routes/event/GettingStarted/index.tsx:124
+#: src/components/routes/event/GettingStarted/index.tsx:123
 msgid "🎟️ Add tickets"
 msgstr "🎟️ Bilet ekle"
 
-#: src/components/routes/event/GettingStarted/index.tsx:167
+#: src/components/routes/event/GettingStarted/index.tsx:152
 msgid "🎨 Customize your event page"
 msgstr "🎨 Etkinlik sayfanızı özelleştirin"
 
 #: src/components/routes/event/GettingStarted/index.tsx:152
-msgid "💳 Connect with Razorpay"
-msgstr "💳 Razorpay ile bağlanın"
+#~ msgid "💳 Connect with Razorpay"
+#~ msgstr "💳 Razorpay ile bağlanın"
 
-#: src/components/routes/event/GettingStarted/index.tsx:181
+#: src/components/routes/event/GettingStarted/index.tsx:166
 msgid "🚀 Set your event live"
 msgstr "🚀 Etkinliğinizi yayına alın"
 
@@ -284,8 +284,8 @@ msgstr "Hakkında"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:433
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:462
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:680
-msgid "About Razorpay Connect"
-msgstr "Razorpay Connect Hakkında"
+#~ msgid "About Razorpay Connect"
+#~ msgstr "Razorpay Connect Hakkında"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:164
 msgid "Absorb fee"
@@ -305,8 +305,12 @@ msgid "Accept bank transfers, checks, or other offline payment methods"
 msgstr "Banka havalesi, çek veya diğer çevrimdışı ödeme yöntemlerini kabul et"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
-msgid "Accept credit card payments with Razorpay"
-msgstr "Razorpay ile kredi kartı ödemelerini kabul et"
+msgid "Accept credit card and other online payments with Razorpay"
+msgstr ""
+
+#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
+#~ msgid "Accept credit card payments with Razorpay"
+#~ msgstr "Razorpay ile kredi kartı ödemelerini kabul et"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:87
 msgid "Accept invitation"
@@ -318,8 +322,8 @@ msgstr "Davetiyeyi Kabul Et"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:357
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:608
-msgid "Access Denied"
-msgstr "Erişim Reddedildi"
+#~ msgid "Access Denied"
+#~ msgstr "Erişim Reddedildi"
 
 #: src/components/common/AdminOrdersTable/index.tsx:68
 #: src/components/routes/account/ManageAccount/index.tsx:24
@@ -328,8 +332,8 @@ msgid "Account"
 msgstr "Hesap"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:342
-msgid "Account already connected!"
-msgstr "Hesap zaten bağlı!"
+#~ msgid "Account already connected!"
+#~ msgstr "Hesap zaten bağlı!"
 
 #: src/components/modals/EditAccountConfigurationModal/index.tsx:70
 msgid "Account configuration updated successfully"
@@ -356,6 +360,11 @@ msgstr "Hesap Ayarları"
 msgid "Account updated successfully"
 msgstr "Hesap başarıyla güncellendi"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:348
+#: src/components/modals/SendMessageModal/index.tsx:154
+msgid "Account verification required"
+msgstr ""
+
 #: src/components/common/AdminUsersTable/index.tsx:127
 #: src/components/layouts/Admin/index.tsx:14
 #: src/components/routes/admin/Accounts/index.tsx:57
@@ -364,8 +373,8 @@ msgid "Accounts"
 msgstr "Hesaplar"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:70
-msgid "Action Required: Reconnect Your Razorpay Account"
-msgstr "Gerekli İşlem: Razorpay Hesabınızı Yeniden Bağlayın"
+#~ msgid "Action Required: Reconnect Your Razorpay Account"
+#~ msgstr "Gerekli İşlem: Razorpay Hesabınızı Yeniden Bağlayın"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/index.tsx:57
 msgid "Action Required: VAT Information Needed"
@@ -390,7 +399,7 @@ msgstr "Etkinleştirme tarihi"
 #: src/components/common/AffiliateTable/index.tsx:131
 #: src/components/common/AttendeeTable/index.tsx:283
 #: src/components/common/CheckInListList/index.tsx:114
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:267
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:266
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
 #: src/components/modals/EditUserModal/index.tsx:110
@@ -426,7 +435,7 @@ msgstr "Ödeme sırasında ek bilgi toplamak için özel sorular ekleyin"
 msgid "Add description"
 msgstr "Açıklama ekle"
 
-#: src/components/routes/event/GettingStarted/index.tsx:142
+#: src/components/routes/event/GettingStarted/index.tsx:141
 msgid "Add event details and manage event settings."
 msgstr "Etkinlik detaylarını ekleyin ve etkinlik ayarlarını yönetin."
 
@@ -434,7 +443,7 @@ msgstr "Etkinlik detaylarını ekleyin ve etkinlik ayarlarını yönetin."
 msgid "Add instructions for offline payments (e.g., bank transfer details, where to send checks, payment deadlines)"
 msgstr "Çevrimdışı ödemeler için talimatlar ekleyin (örn. banka havalesi detayları, çeklerin nereye gönderileceği, ödeme tarihleri)"
 
-#: src/components/routes/event/GettingStarted/index.tsx:132
+#: src/components/routes/event/GettingStarted/index.tsx:131
 msgid "Add More tickets"
 msgstr "Daha fazla bilet ekle"
 
@@ -467,7 +476,7 @@ msgstr "Vergi veya Ücret Ekle"
 msgid "Add this event to your calendar"
 msgstr "Bu etkinliği takviminize ekleyin"
 
-#: src/components/routes/event/GettingStarted/index.tsx:132
+#: src/components/routes/event/GettingStarted/index.tsx:131
 msgid "Add tickets"
 msgstr "Bilet ekle"
 
@@ -595,7 +604,7 @@ msgstr "Tüm Arşivlenmiş Etkinlikler"
 msgid "All attendees"
 msgstr "Tüm katılımcılar"
 
-#: src/components/modals/SendMessageModal/index.tsx:177
+#: src/components/modals/SendMessageModal/index.tsx:172
 msgid "All attendees of this event"
 msgstr "Bu etkinliğin tüm katılımcıları"
 
@@ -604,8 +613,8 @@ msgid "All Currencies"
 msgstr "Tüm Para Birimleri"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:184
-msgid "All done! You're now using our upgraded payment system."
-msgstr "Tamamlandı! Artık yükseltilmiş ödeme sistemimizi kullanıyorsunuz."
+#~ msgid "All done! You're now using our upgraded payment system."
+#~ msgstr "Tamamlandı! Artık yükseltilmiş ödeme sistemimizi kullanıyorsunuz."
 
 #: src/components/routes/events/Dashboard/index.tsx:74
 msgid "All Ended Events"
@@ -635,12 +644,12 @@ msgstr "Arama motorlarının bu etkinliği indekslemesine izin ver"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:204
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:416
-msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
-msgstr "Neredeyse tamam! Ödeme almaya başlamak için Razorpay hesabınızı bağlamayı tamamlayın."
+#~ msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
+#~ msgstr "Neredeyse tamam! Ödeme almaya başlamak için Razorpay hesabınızı bağlamayı tamamlayın."
 
 #: src/components/routes/product-widget/PaymentReturn/index.tsx:90
-msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
-msgstr "Neredeyse bitti! Ödemenizin işlenmesini bekliyoruz. Bu sadece birkaç saniye sürmelidir."
+#~ msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
+#~ msgstr "Neredeyse bitti! Ödemenizin işlenmesini bekliyoruz. Bu sadece birkaç saniye sürmelidir."
 
 #: src/components/routes/auth/Register/index.tsx:75
 msgid "Already have an account? <0>{0}</0>"
@@ -694,8 +703,8 @@ msgid "An optional message to display on the highlighted product, e.g. \"Selling
 msgstr "Vurgulanan üründe görüntülenecek isteğe bağlı bir mesaj, örn. \"Hızlı satılıyor 🔥\" veya \"En iyi değer\""
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:40
-msgid "An unexpected error occurred."
-msgstr "Beklenmeyen bir hata oluştu."
+#~ msgid "An unexpected error occurred."
+#~ msgstr "Beklenmeyen bir hata oluştu."
 
 #: src/hooks/useFormErrorResponseHandler.tsx:48
 msgid "An unexpected error occurred. Please try again."
@@ -774,11 +783,11 @@ msgstr "Bu yapılandırmayı silmek istediğinizden emin misiniz? Bu işlem, onu
 msgid "Are you sure you want to delete this promo code?"
 msgstr "Bu promosyon kodunu silmek istediğinizden emin misiniz?"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:101
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:100
 msgid "Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the default template."
 msgstr "Bu şablonu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz ve e-postalar varsayılan şablona geri dönecektir."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:100
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:99
 msgid "Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the organizer or default template."
 msgstr "Bu şablonu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz ve e-postalar organizatör veya varsayılan şablona geri dönecektir."
 
@@ -791,20 +800,20 @@ msgid "Are you sure you want to leave?"
 msgstr "Ayrılmak istediğinizden emin misiniz?"
 
 #: src/components/layouts/Event/index.tsx:149
-#: src/components/routes/event/EventDashboard/index.tsx:73
+#: src/components/routes/event/EventDashboard/index.tsx:67
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr "Bu etkinliği taslak yapmak istediğinizden emin misiniz? Bu işlem etkinliği halka görünmez yapacaktır"
 
 #: src/components/layouts/Event/index.tsx:150
-#: src/components/routes/event/EventDashboard/index.tsx:74
+#: src/components/routes/event/EventDashboard/index.tsx:68
 msgid "Are you sure you want to make this event public? This will make the event visible to the public"
 msgstr "Bu etkinliği herkese açık yapmak istediğinizden emin misiniz? Bu işlem etkinliği halka görünür yapacaktır"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:123
+#: src/components/layouts/OrganizerLayout/index.tsx:119
 msgid "Are you sure you want to make this organizer draft? This will make the organizer page invisible to the public"
 msgstr "Bu organizatörü taslak yapmak istediğinizden emin misiniz? Bu, organizatör sayfasını kamuya görünmez yapacaktır"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:124
+#: src/components/layouts/OrganizerLayout/index.tsx:120
 msgid "Are you sure you want to make this organizer public? This will make the organizer page visible to the public"
 msgstr "Bu organizatörü herkese açık yapmak istediğinizden emin misiniz? Bu, organizatör sayfasını kamuya görünür yapacaktır"
 
@@ -939,7 +948,7 @@ msgid "Attendee Status"
 msgstr "Katılımcı Durumu"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:95
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:201
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:200
 #: src/components/modals/ManageAttendeeModal/index.tsx:172
 msgid "Attendee Ticket"
 msgstr "Katılımcı Bileti"
@@ -970,11 +979,11 @@ msgstr "Katılımcılar Dışa Aktarıldı"
 msgid "Attendees registered"
 msgstr "Kayıtlı katılımcılar"
 
-#: src/components/routes/event/EventDashboard/index.tsx:275
+#: src/components/routes/event/EventDashboard/index.tsx:211
 msgid "Attendees Registered"
 msgstr "Kayıtlı Katılımcılar"
 
-#: src/components/modals/SendMessageModal/index.tsx:173
+#: src/components/modals/SendMessageModal/index.tsx:168
 msgid "Attendees with a specific ticket"
 msgstr "Belirli bir bilete sahip katılımcılar"
 
@@ -982,21 +991,20 @@ msgstr "Belirli bir bilete sahip katılımcılar"
 msgid "Attendees:"
 msgstr "Katılımcılar:"
 
-#: src/components/layouts/Admin/index.tsx:18
-msgid "Attribution"
-msgstr ""
+#~ msgid "Attribution"
+#~ msgstr "Atıf"
 
 #: src/components/routes/admin/Attribution/index.tsx:29
 msgid "Attribution Analytics"
-msgstr ""
+msgstr "Atıf Analitiği"
 
 #: src/components/routes/admin/Attribution/index.tsx:97
 msgid "Attribution Breakdown"
-msgstr ""
+msgstr "Atıf Dağılımı"
 
 #: src/components/routes/admin/Attribution/index.tsx:124
 msgid "Attribution Value"
-msgstr ""
+msgstr "Atıf Değeri"
 
 #: src/components/common/WidgetEditor/index.tsx:236
 msgid "Auto Resize"
@@ -1019,7 +1027,7 @@ msgid "Available Tokens"
 msgstr "Mevcut Token'lar"
 
 #: src/components/common/OrderStatusBadge/index.tsx:15
-#: src/components/modals/SendMessageModal/index.tsx:221
+#: src/components/modals/SendMessageModal/index.tsx:216
 msgid "Awaiting offline payment"
 msgstr "Çevrimdışı ödeme bekleniyor"
 
@@ -1056,7 +1064,6 @@ msgstr "Harika Organizatör Ltd."
 msgid "Back to Accounts"
 msgstr "Hesaplara Dön"
 
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:108
 #: src/components/routes/product-widget/CollectInformation/index.tsx:327
 #: src/components/routes/product-widget/CollectInformation/index.tsx:357
 #: src/components/routes/product-widget/CollectInformation/index.tsx:380
@@ -1186,13 +1193,13 @@ msgstr "Kamera Tarayıcı"
 
 #: src/components/routes/admin/Attribution/index.tsx:107
 msgid "Campaign"
-msgstr ""
+msgstr "Kampanya"
 
 #: src/components/common/AttendeeTable/index.tsx:370
 #: src/components/common/CheckIn/CheckInOptionsModal.tsx:59
 #: src/components/common/CheckIn/ScannerSelectionModal.tsx:57
 #: src/components/common/ContactOrganizerModal/index.tsx:104
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:121
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:120
 #: src/components/common/PromoCodeTable/index.tsx:40
 #: src/components/common/QuestionAndAnswerList/index.tsx:149
 #: src/utilites/confirmationDialog.tsx:11
@@ -1516,7 +1523,7 @@ msgstr "Kod 3 ile 50 karakter arasında olmalıdır"
 msgid "Code must be no more than 20 characters"
 msgstr "Kod en fazla 20 karakter olmalıdır"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:162
+#: src/components/layouts/OrganizerLayout/index.tsx:158
 msgid "Collaborate with your team to create amazing events together."
 msgstr "Birlikte harika etkinlikler oluşturmak için ekibinizle işbirliği yapın."
 
@@ -1586,14 +1593,14 @@ msgstr "Ödemeyi Tamamla"
 
 #: src/components/common/RazorpayConnectButton/index.tsx:87
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Complete Razorpay Setup"
-msgstr "Razorpay Kurulumunu Tamamla"
+#~ msgid "Complete Razorpay Setup"
+#~ msgstr "Razorpay Kurulumunu Tamamla"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:114
-msgid "Complete the setup below to continue"
-msgstr "Devam etmek için aşağıdaki kurulumu tamamlayın"
+#~ msgid "Complete the setup below to continue"
+#~ msgstr "Devam etmek için aşağıdaki kurulumu tamamlayın"
 
-#: src/components/routes/event/EventDashboard/index.tsx:163
+#: src/components/routes/event/EventDashboard/index.tsx:133
 msgid "Complete these steps to start selling tickets for your event."
 msgstr "Etkinliğiniz için bilet satmaya başlamak için bu adımları tamamlayın."
 
@@ -1606,7 +1613,7 @@ msgid "Complete your profile to join the team."
 msgstr "Ekibe katılmak için profilinizi tamamlayın."
 
 #: src/components/common/OrdersTable/index.tsx:405
-#: src/components/modals/SendMessageModal/index.tsx:220
+#: src/components/modals/SendMessageModal/index.tsx:215
 #: src/components/routes/event/GettingStarted/index.tsx:75
 #: src/components/routes/event/orders.tsx:23
 #: src/components/routes/my-tickets/index.tsx:34
@@ -1618,7 +1625,7 @@ msgstr "Tamamlandı"
 msgid "Completed orders"
 msgstr "Tamamlanan siparişler"
 
-#: src/components/routes/event/EventDashboard/index.tsx:273
+#: src/components/routes/event/EventDashboard/index.tsx:209
 msgid "Completed Orders"
 msgstr "Tamamlanan Siparişler"
 
@@ -1710,7 +1717,7 @@ msgstr "Şifreyi Onayla"
 msgid "Confirm your email to access all features."
 msgstr "Tüm özelliklere erişmek için e-postanızı onaylayın."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:296
+#: src/components/layouts/OrganizerLayout/index.tsx:276
 msgid "Confirmation email sent! Please check your inbox."
 msgstr "Onay e-postası gönderildi! Lütfen gelen kutunuzu kontrol edin."
 
@@ -1727,66 +1734,66 @@ msgid "Congratulations on creating an event!"
 msgstr "Bir etkinlik oluşturduğunuz için tebrikler!"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
-msgid "Connect & Upgrade"
-msgstr "Bağlan ve Yükselt"
+#~ msgid "Connect & Upgrade"
+#~ msgstr "Bağlan ve Yükselt"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:652
-msgid "Connect Documentation"
-msgstr "Dokümantasyonu Bağla"
+#~ msgid "Connect Documentation"
+#~ msgstr "Dokümantasyonu Bağla"
 
 #: src/components/routes/event/EventDashboard/index.tsx:228
-msgid "Connect payment processing"
-msgstr "Ödeme işlemeyi bağla"
+#~ msgid "Connect payment processing"
+#~ msgstr "Ödeme işlemeyi bağla"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:175
 #: src/components/layouts/OrganizerLayout/index.tsx:183
-msgid "Connect Razorpay"
-msgstr "Razorpay'ı Bağla"
+#~ msgid "Connect Razorpay"
+#~ msgstr "Razorpay'ı Bağla"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:349
-msgid "Connect Razorpay to enable email template editing"
-msgstr "E-posta şablon düzenlemesini etkinleştirmek için Razorpay'ı bağlayın"
+#~ msgid "Connect Razorpay to enable email template editing"
+#~ msgstr "E-posta şablon düzenlemesini etkinleştirmek için Razorpay'ı bağlayın"
 
 #: src/components/modals/SendMessageModal/index.tsx:156
-msgid "Connect Razorpay to enable messaging"
-msgstr "Mesajlaşmayı etkinleştirmek için Razorpay'ı bağlayın"
+#~ msgid "Connect Razorpay to enable messaging"
+#~ msgstr "Mesajlaşmayı etkinleştirmek için Razorpay'ı bağlayın"
 
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Connect to Razorpay"
-msgstr "Razorpay'a Bağlan"
+#~ msgid "Connect to Razorpay"
+#~ msgstr "Razorpay'a Bağlan"
 
 #: src/components/common/RazorpayConnectButton/index.tsx:85
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:453
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:670
 #: src/components/routes/event/GettingStarted/index.tsx:159
-msgid "Connect with Razorpay"
-msgstr "Razorpay ile Bağlan"
+#~ msgid "Connect with Razorpay"
+#~ msgstr "Razorpay ile Bağlan"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:176
-msgid "Connect your Razorpay account to accept payments for tickets and products."
-msgstr "Bilet ve ürünler için ödeme almak üzere Razorpay hesabınızı bağlayın."
+#~ msgid "Connect your Razorpay account to accept payments for tickets and products."
+#~ msgstr "Bilet ve ürünler için ödeme almak üzere Razorpay hesabınızı bağlayın."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:222
-msgid "Connect your Razorpay account to accept payments."
-msgstr "Ödeme almak için Razorpay hesabınızı bağlayın."
+#~ msgid "Connect your Razorpay account to accept payments."
+#~ msgstr "Ödeme almak için Razorpay hesabınızı bağlayın."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:445
-msgid "Connect your Razorpay account to start accepting payments for your events."
-msgstr "Etkinlikleriniz için ödeme almaya başlamak üzere Razorpay hesabınızı bağlayın."
+#~ msgid "Connect your Razorpay account to start accepting payments for your events."
+#~ msgstr "Etkinlikleriniz için ödeme almaya başlamak üzere Razorpay hesabınızı bağlayın."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:220
-msgid "Connect your Razorpay account to start accepting payments."
-msgstr "Ödeme almaya başlamak için Razorpay hesabınızı bağlayın."
+#~ msgid "Connect your Razorpay account to start accepting payments."
+#~ msgstr "Ödeme almaya başlamak için Razorpay hesabınızı bağlayın."
 
 #: src/components/routes/event/GettingStarted/index.tsx:155
-msgid "Connect your Razorpay account to start receiving payments."
-msgstr "Ödeme almaya başlamak için Razorpay hesabınızı bağlayın."
+#~ msgid "Connect your Razorpay account to start receiving payments."
+#~ msgstr "Ödeme almaya başlamak için Razorpay hesabınızı bağlayın."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:391
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:628
-msgid "Connected to Razorpay"
-msgstr "Razorpay'a Bağlandı"
+#~ msgid "Connected to Razorpay"
+#~ msgstr "Razorpay'a Bağlandı"
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:98
 msgid "Connection Details"
@@ -1821,7 +1828,7 @@ msgstr "Devam Et"
 msgid "Continue Button Text"
 msgstr "Devam Butonu Metni"
 
-#: src/components/routes/event/GettingStarted/index.tsx:145
+#: src/components/routes/event/GettingStarted/index.tsx:144
 msgid "Continue set up"
 msgstr "Kuruluma devam et"
 
@@ -2029,11 +2036,11 @@ msgstr "Check-In Listesi Oluştur"
 msgid "Create Configuration"
 msgstr "Yapılandırma Oluştur"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:311
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:310
 msgid "Create custom email templates for this event that override the organizer defaults"
 msgstr "Organizatör varsayılanlarını geçersiz kılan bu etkinlik için özel e-posta şablonları oluşturun"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:301
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:300
 msgid "Create Custom Template"
 msgstr "Özel Şablon Oluştur"
 
@@ -2042,7 +2049,7 @@ msgid "Create discounts, access codes for hidden tickets, and special offers."
 msgstr "İndirimler, gizli biletler için erişim kodları ve özel teklifler oluşturun."
 
 #: src/components/common/NoEventsBlankSlate/index.tsx:27
-#: src/components/layouts/OrganizerLayout/index.tsx:152
+#: src/components/layouts/OrganizerLayout/index.tsx:148
 #: src/components/routes/organizer/Events/index.tsx:62
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:257
 msgid "Create Event"
@@ -2085,7 +2092,7 @@ msgstr "Vergi veya Ücret Oluştur"
 msgid "Create Ticket or Product"
 msgstr "Bilet veya Ürün Oluştur"
 
-#: src/components/routes/event/GettingStarted/index.tsx:127
+#: src/components/routes/event/GettingStarted/index.tsx:126
 msgid "Create tickets for your event, set prices, and manage available quantity."
 msgstr "Etkinliğiniz için biletler oluşturun, fiyatları belirleyin ve mevcut miktarı yönetin."
 
@@ -2155,8 +2162,8 @@ msgid "Current Password"
 msgstr "Mevcut Şifre"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:163
-msgid "Current payment processor"
-msgstr "Mevcut ödeme işlemcisi"
+#~ msgid "Current payment processor"
+#~ msgstr "Mevcut ödeme işlemcisi"
 
 #: src/components/modals/EditAccountVatSettingsModal/index.tsx:156
 msgid "Current VAT number is validated"
@@ -2192,7 +2199,7 @@ msgstr "Özel Sorular"
 msgid "Custom Range"
 msgstr "Özel Aralık"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:223
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:222
 msgid "Custom template"
 msgstr "Özel şablon"
 
@@ -2225,7 +2232,7 @@ msgstr "Müşteriler"
 msgid "Customize the email and notification settings for this event"
 msgstr "Bu etkinlik için e-posta ve bildirim ayarlarını özelleştirin"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:313
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:312
 msgid "Customize the emails sent to your customers using Liquid templating. These templates will be used as defaults for all events in your organization."
 msgstr "Liquid şablonu kullanarak müşterilerinize gönderilen e-postaları özelleştirin. Bu şablonlar kuruluşunuzdaki tüm etkinlikler için varsayılan olarak kullanılacaktır."
 
@@ -2258,11 +2265,11 @@ msgstr "Devam düğmesinde gösterilen metni özelleştirin"
 msgid "Customize your email template using Liquid templating"
 msgstr "Liquid şablonu kullanarak e-posta şablonunuzu özelleştirin"
 
-#: src/components/routes/event/GettingStarted/index.tsx:174
+#: src/components/routes/event/GettingStarted/index.tsx:159
 msgid "Customize your event page"
 msgstr "Etkinlik sayfanızı özelleştirin"
 
-#: src/components/routes/event/GettingStarted/index.tsx:170
+#: src/components/routes/event/GettingStarted/index.tsx:155
 msgid "Customize your event page to match your brand and style."
 msgstr "Etkinlik sayfanızı markanız ve tarzınıza uyacak şekilde özelleştirin."
 
@@ -2346,7 +2353,7 @@ msgstr "Varsayılan katılımcı bilgi toplama"
 msgid "Default Fee Handling"
 msgstr "Varsayılan ücret işleme"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:213
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:212
 msgid "Default template will be used"
 msgstr "Varsayılan şablon kullanılacak"
 
@@ -2382,7 +2389,7 @@ msgstr "Kodu sil"
 msgid "Delete image"
 msgstr "Görseli sil"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:121
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:120
 msgid "Delete Template"
 msgstr "Şablonu Sil"
 
@@ -2460,8 +2467,8 @@ msgid "Document Label"
 msgstr "Belge Etiketi"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:691
-msgid "Documentation"
-msgstr "Dokümantasyon"
+#~ msgid "Documentation"
+#~ msgstr "Dokümantasyon"
 
 #: src/components/common/AddToCalendarCTA/index.tsx:19
 msgid "Don't forget!"
@@ -2514,7 +2521,7 @@ msgstr "Fatura İndiriliyor"
 
 #: src/components/common/EventCard/index.tsx:84
 #: src/components/layouts/Event/index.tsx:182
-#: src/components/layouts/OrganizerLayout/index.tsx:206
+#: src/components/layouts/OrganizerLayout/index.tsx:186
 msgid "Draft"
 msgstr "Taslak"
 
@@ -2522,17 +2529,25 @@ msgstr "Taslak"
 msgid "Dropdown selection"
 msgstr "Açılır seçim"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:350
+msgid "Due to the high risk of spam, you must complete account verification before you can modify email templates. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information."
+msgstr ""
+
+#: src/components/modals/SendMessageModal/index.tsx:155
+msgid "Due to the high risk of spam, you must complete account verification before you can send messages. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information."
+msgstr ""
+
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:351
-msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
-msgstr "Yüksek spam riski nedeniyle, e-posta şablonlarını değiştirmeden önce bir Razorpay hesabı bağlamanız gerekir. Bu, tüm etkinlik organizatörlerinin doğrulanmış ve sorumlu olmasını sağlamak içindir."
+#~ msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
+#~ msgstr "Yüksek spam riski nedeniyle, e-posta şablonlarını değiştirmeden önce bir Razorpay hesabı bağlamanız gerekir. Bu, tüm etkinlik organizatörlerinin doğrulanmış ve sorumlu olmasını sağlamak içindir."
 
 #: src/components/modals/SendMessageModal/index.tsx:157
-msgid ""
-"Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
-"This is to ensure that all event organizers are verified and accountable."
-msgstr ""
-"Yüksek spam riski nedeniyle, katılımcılara mesaj göndermeden önce bir Razorpay hesabı bağlamanız gerekir.\n"
-"Bu, tüm etkinlik organizatörlerinin doğrulanmış ve sorumlu olmasını sağlamak içindir."
+#~ msgid ""
+#~ "Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
+#~ "This is to ensure that all event organizers are verified and accountable."
+#~ msgstr ""
+#~ "Yüksek spam riski nedeniyle, katılımcılara mesaj göndermeden önce bir Razorpay hesabı bağlamanız gerekir.\n"
+#~ "Bu, tüm etkinlik organizatörlerinin doğrulanmış ve sorumlu olmasını sağlamak içindir."
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:473
 msgid "Duplicate"
@@ -2564,7 +2579,7 @@ msgstr "Felemenkçe"
 msgid "e.g., Get Tickets, Register Now"
 msgstr "örn., Bilet Al, Şimdi Kaydol"
 
-#: src/components/modals/SendMessageModal/index.tsx:235
+#: src/components/modals/SendMessageModal/index.tsx:230
 msgid "e.g., Important update about your tickets"
 msgstr "örn., Biletleriniz hakkında önemli güncelleme"
 
@@ -2766,7 +2781,7 @@ msgid "Email confirmation resent"
 msgstr "E-posta onayı yeniden gönderildi"
 
 #: src/components/layouts/Event/index.tsx:71
-#: src/components/layouts/OrganizerLayout/index.tsx:96
+#: src/components/layouts/OrganizerLayout/index.tsx:92
 #: src/components/routes/profile/ManageProfile/index.tsx:100
 msgid "Email confirmation resent successfully"
 msgstr "E-posta onayı başarıyla yeniden gönderildi"
@@ -2787,12 +2802,12 @@ msgstr "E-posta doğrulanmamış"
 msgid "Email Preview"
 msgstr "E-posta Önizlemesi"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:336
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:335
 #: src/components/routes/organizer/Settings/index.tsx:64
 msgid "Email Templates"
 msgstr "E-posta Şablonları"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:275
+#: src/components/layouts/OrganizerLayout/index.tsx:255
 msgid "Email Verification Required"
 msgstr "E-posta Doğrulaması Gerekli"
 
@@ -2974,7 +2989,7 @@ msgstr "Etkinlik Kategorisi"
 msgid "Event Cover Image"
 msgstr "Etkinlik Kapak Görseli"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:223
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:222
 msgid "Event custom template"
 msgstr "Etkinlik özel şablonu"
 
@@ -3071,7 +3086,7 @@ msgstr "Etkinlik ayarları"
 #: src/components/common/EventCard/index.tsx:70
 #: src/components/common/StatusToggle/index.tsx:63
 #: src/components/layouts/Event/index.tsx:161
-#: src/components/routes/event/EventDashboard/index.tsx:88
+#: src/components/routes/event/EventDashboard/index.tsx:82
 #: src/components/routes/event/GettingStarted/index.tsx:68
 msgid "Event status update failed. Please try again later"
 msgstr "Etkinlik durumu güncellenemedi. Lütfen daha sonra tekrar deneyin"
@@ -3079,7 +3094,7 @@ msgstr "Etkinlik durumu güncellenemedi. Lütfen daha sonra tekrar deneyin"
 #: src/components/common/EventCard/index.tsx:67
 #: src/components/common/StatusToggle/index.tsx:55
 #: src/components/layouts/Event/index.tsx:158
-#: src/components/routes/event/EventDashboard/index.tsx:85
+#: src/components/routes/event/EventDashboard/index.tsx:79
 #: src/components/routes/event/GettingStarted/index.tsx:65
 msgid "Event status updated"
 msgstr "Etkinlik durumu güncellendi"
@@ -3117,7 +3132,7 @@ msgstr "Etkinlik Mekanı"
 
 #: src/components/common/AdminAccountsTable/index.tsx:74
 #: src/components/layouts/Admin/index.tsx:16
-#: src/components/layouts/OrganizerLayout/index.tsx:84
+#: src/components/layouts/OrganizerLayout/index.tsx:80
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:123
 #: src/components/routes/admin/Attribution/index.tsx:126
 #: src/components/routes/admin/Events/index.tsx:77
@@ -3220,8 +3235,8 @@ msgstr "Bağlı kuruluş oluşturulamadı"
 msgid "Failed to create configuration"
 msgstr "Yapılandırma oluşturulamadı"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:182
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:185
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:181
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:184
 msgid "Failed to create template"
 msgstr "Şablon oluşturulamadı"
 
@@ -3233,8 +3248,8 @@ msgstr "Yapılandırma silinemedi"
 msgid "Failed to delete question"
 msgstr "Soru silinemedi"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:115
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:116
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:117
 msgid "Failed to delete template"
 msgstr "Şablon silinemedi"
 
@@ -3254,6 +3269,10 @@ msgstr "Katılımcılar dışa aktarılamadı"
 #: src/components/routes/event/orders.tsx:99
 msgid "Failed to export orders"
 msgstr "Siparişler dışa aktarılamadı"
+
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:95
+msgid "Failed to initialize payment."
+msgstr ""
 
 #: src/components/modals/EditCheckInListModal/index.tsx:79
 msgid "Failed to load Check-In List"
@@ -3275,10 +3294,10 @@ msgstr "Bilet e-postası yeniden gönderilemedi"
 msgid "Failed to resend verification code"
 msgstr "Doğrulama kodu yeniden gönderilemedi"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:148
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:151
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:154
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:179
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:147
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:150
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:153
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:178
 msgid "Failed to save template"
 msgstr "Şablon kaydedilemedi"
 
@@ -3365,7 +3384,7 @@ msgstr "Ücret işleme"
 msgid "Fees"
 msgstr "Ücretler"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:290
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:77
 msgid "Fees are subject to change. You will be notified of any changes to your fee structure."
 msgstr "Ücretler değişebilir. Ücret yapınızdaki herhangi bir değişiklik size bildirilecektir."
 
@@ -3399,14 +3418,14 @@ msgstr "Filtreler"
 msgid "Filters ({activeFilterCount})"
 msgstr "Filtreler ({activeFilterCount})"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:213
-msgid "Finish Setup"
-msgstr "Kurulumu Tamamla"
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:424
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:671
-msgid "Finish Razorpay Setup"
-msgstr "Razorpay Kurulumunu Tamamla"
+#~ msgid "Finish Razorpay Setup"
+#~ msgstr "Razorpay Kurulumunu Tamamla"
+
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:213
+#~ msgid "Finish Setup"
+#~ msgstr "Kurulumu Tamamla"
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:474
 msgid "First attendee"
@@ -3474,7 +3493,7 @@ msgstr "İşlem başına USD olarak alınan sabit ücret"
 msgid "Fixed fee must be 0 or greater"
 msgstr "Sabit ücret 0 veya daha büyük olmalıdır"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:275
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:62
 msgid "Fixed Fee:"
 msgstr "Sabit Ücret:"
 
@@ -3559,8 +3578,12 @@ msgid "Get Directions"
 msgstr "Yol Tarifi Al"
 
 #: src/components/layouts/AuthLayout/index.tsx:36
+#~ msgid "Get paid immediately via Razorpay Connect"
+#~ msgstr "Razorpay Connect üzerinden anında ödeme alın"
+
+#: src/components/layouts/AuthLayout/index.tsx:36
 msgid "Get paid immediately via Razorpay Connect"
-msgstr "Razorpay Connect üzerinden anında ödeme alın"
+msgstr ""
 
 #: src/components/routes/auth/Register/index.tsx:73
 msgid "Get started"
@@ -3570,7 +3593,7 @@ msgstr "Başlayın"
 msgid "Get Tickets"
 msgstr "Bilet Al"
 
-#: src/components/routes/event/EventDashboard/index.tsx:161
+#: src/components/routes/event/EventDashboard/index.tsx:131
 msgid "Get your event ready"
 msgstr "Etkinliğinizi hazırlayın"
 
@@ -3615,7 +3638,7 @@ msgstr "Brüt Gelir"
 msgid "Gross sales"
 msgstr "Brüt satışlar"
 
-#: src/components/routes/event/EventDashboard/index.tsx:312
+#: src/components/routes/event/EventDashboard/index.tsx:248
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:119
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:30
 msgid "Gross Sales"
@@ -3659,10 +3682,10 @@ msgid "Here is your affiliate link"
 msgstr "Bağlı kuruluş bağlantınız burada"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:83
-msgid "Here's what to expect:"
-msgstr "Neleri beklemelisiniz:"
+#~ msgid "Here's what to expect:"
+#~ msgstr "Neleri beklemelisiniz:"
 
-#: src/components/routes/event/EventDashboard/index.tsx:113
+#: src/components/routes/event/EventDashboard/index.tsx:106
 msgid "Hi {0} 👋"
 msgstr "Merhaba {0} 👋"
 
@@ -3764,7 +3787,7 @@ msgid "Homepage Design"
 msgstr "Ana Sayfa Tasarımı"
 
 #: src/components/layouts/Event/index.tsx:102
-#: src/components/layouts/OrganizerLayout/index.tsx:88
+#: src/components/layouts/OrganizerLayout/index.tsx:84
 msgid "Homepage Designer"
 msgstr "Ana Sayfa Tasarımcısı"
 
@@ -3815,7 +3838,7 @@ msgstr "Macarca"
 msgid "I agree to the <0>terms and conditions</0>"
 msgstr "<0>Şartlar ve koşulları</0> kabul ediyorum"
 
-#: src/components/modals/SendMessageModal/index.tsx:250
+#: src/components/modals/SendMessageModal/index.tsx:245
 msgid "I confirm this is a transactional message related to this event"
 msgstr "Bunun bu etkinlikle ilgili işlemsel bir mesaj olduğunu onaylıyorum"
 
@@ -3885,8 +3908,8 @@ msgid "Impersonation stopped"
 msgstr "Taklit durduruldu"
 
 #: src/components/routes/event/EventDashboard/index.tsx:129
-msgid "Important: Razorpay reconnection required"
-msgstr "Önemli: Razorpay yeniden bağlantısı gerekli"
+#~ msgid "Important: Razorpay reconnection required"
+#~ msgstr "Önemli: Razorpay yeniden bağlantısı gerekli"
 
 #: src/components/routes/admin/Dashboard/index.tsx:29
 msgid "In {diffHours} hours"
@@ -3898,7 +3921,7 @@ msgstr "{diffMinutes} dakika içinde"
 
 #: src/components/common/AffiliateTable/index.tsx:131
 #: src/components/common/CheckInListList/index.tsx:114
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:267
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:266
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
 #: src/components/modals/EditUserModal/index.tsx:111
@@ -3978,8 +4001,8 @@ msgstr "Geçersiz e-posta formatı"
 msgid "Invalid file type. Please upload an image."
 msgstr "Geçersiz dosya türü. Lütfen bir resim yükleyin."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:144
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:175
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:143
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:174
 msgid "Invalid Liquid syntax. Please correct it and try again."
 msgstr "Geçersiz Liquid sözdizimi. Lütfen düzeltin ve tekrar deneyin."
 
@@ -4003,7 +4026,7 @@ msgstr "Bir ekip üyesi davet et"
 msgid "Invite Team Member"
 msgstr "Ekip Üyesi Davet Et"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:164
+#: src/components/layouts/OrganizerLayout/index.tsx:160
 msgid "Invite Team Members"
 msgstr "Ekip Üyelerini Davet Et"
 
@@ -4015,7 +4038,7 @@ msgstr "Özel rollerle sınırsız takım üyesi davet edin"
 msgid "Invite User"
 msgstr "Kullanıcı Davet Et"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:161
+#: src/components/layouts/OrganizerLayout/index.tsx:157
 msgid "Invite Your Team"
 msgstr "Ekibinizi Davet Edin"
 
@@ -4078,8 +4101,8 @@ msgid "Join from anywhere"
 msgstr "Her yerden katılın"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:119
-msgid "Just click the button below to reconnect your Razorpay account."
-msgstr "Razorpay hesabınızı yeniden bağlamak için aşağıdaki düğmeye tıklayın."
+#~ msgid "Just click the button below to reconnect your Razorpay account."
+#~ msgstr "Razorpay hesabınızı yeniden bağlamak için aşağıdaki düğmeye tıklayın."
 
 #: src/components/routes/auth/Login/index.tsx:121
 msgid "Just looking for your tickets?"
@@ -4199,8 +4222,8 @@ msgid "Link to ticket"
 msgstr "Bilete bağlantı"
 
 #: src/components/routes/event/EventDashboard/index.tsx:230
-msgid "Link your Razorpay account to receive funds from ticket sales."
-msgstr "Bilet satışlarından gelir almak için Razorpay hesabınızı bağlayın."
+#~ msgid "Link your Razorpay account to receive funds from ticket sales."
+#~ msgstr "Bilet satışlarından gelir almak için Razorpay hesabınızı bağlayın."
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:61
 msgid "LinkedIn"
@@ -4208,7 +4231,7 @@ msgstr "LinkedIn"
 
 #: src/components/common/EventCard/index.tsx:87
 #: src/components/layouts/Event/index.tsx:184
-#: src/components/layouts/OrganizerLayout/index.tsx:208
+#: src/components/layouts/OrganizerLayout/index.tsx:188
 msgid "Live"
 msgstr "Canlı"
 
@@ -4295,7 +4318,7 @@ msgstr "Ödeme sırasında fatura adresini zorunlu kıl"
 msgid "Make this question mandatory"
 msgstr "Bu soruyu zorunlu kıl"
 
-#: src/components/routes/event/EventDashboard/index.tsx:184
+#: src/components/routes/event/EventDashboard/index.tsx:154
 msgid "Make your event live"
 msgstr "Etkinliğinizi canlı yapın"
 
@@ -4304,7 +4327,7 @@ msgstr "Etkinliğinizi canlı yapın"
 #: src/components/common/OrdersTable/index.tsx:150
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:446
 #: src/components/common/PromoCodeTable/index.tsx:167
-#: src/components/layouts/OrganizerLayout/index.tsx:83
+#: src/components/layouts/OrganizerLayout/index.tsx:79
 msgid "Manage"
 msgstr "Yönet"
 
@@ -4340,9 +4363,13 @@ msgstr "Biletleri yönet"
 msgid "Manage your account details and default settings"
 msgstr "Hesap bilgilerinizi ve varsayılan ayarlarını yönetin"
 
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:106
+msgid "Manage your payment processing and fee structure."
+msgstr ""
+
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:816
-msgid "Manage your payment processing and view platform fees"
-msgstr "Ödeme işlemenizi yönetin ve platform ücretlerini görüntüleyin"
+#~ msgid "Manage your payment processing and view platform fees"
+#~ msgstr "Ödeme işlemenizi yönetin ve platform ücretlerini görüntüleyin"
 
 #: src/components/routes/account/ManageAccount/sections/Users/index.tsx:143
 msgid "Manage your users and their permissions"
@@ -4371,12 +4398,12 @@ msgstr "Sipariş Başına Maksimum"
 
 #: src/components/routes/admin/Attribution/index.tsx:108
 msgid "Medium"
-msgstr ""
+msgstr "Ortam"
 
 #: src/components/common/AttendeeTable/index.tsx:188
 #: src/components/common/ContactOrganizerModal/index.tsx:88
 #: src/components/common/OrdersTable/index.tsx:247
-#: src/components/modals/SendMessageModal/index.tsx:240
+#: src/components/modals/SendMessageModal/index.tsx:235
 msgid "Message"
 msgstr "Mesaj"
 
@@ -4388,7 +4415,7 @@ msgstr "Katılımcıya mesaj gönder"
 msgid "Message Attendees"
 msgstr "Katılımcılara Mesaj"
 
-#: src/components/modals/SendMessageModal/index.tsx:197
+#: src/components/modals/SendMessageModal/index.tsx:192
 msgid "Message attendees with specific tickets"
 msgstr "Belirli biletlere sahip katılımcılara mesaj gönderin"
 
@@ -4400,7 +4427,7 @@ msgstr "Alıcıya mesaj gönder"
 msgid "Message cannot exceed 5000 characters"
 msgstr "Mesaj 5000 karakteri geçemez"
 
-#: src/components/modals/SendMessageModal/index.tsx:71
+#: src/components/modals/SendMessageModal/index.tsx:70
 msgid "Message individual attendees"
 msgstr "Bireysel katılımcılara mesaj gönder"
 
@@ -4408,11 +4435,11 @@ msgstr "Bireysel katılımcılara mesaj gönder"
 msgid "Message is required"
 msgstr "Mesaj gerekli"
 
-#: src/components/modals/SendMessageModal/index.tsx:209
+#: src/components/modals/SendMessageModal/index.tsx:204
 msgid "Message order owners with specific products"
 msgstr "Belirli ürünlere sahip sipariş sahiplerine mesaj gönderin"
 
-#: src/components/modals/SendMessageModal/index.tsx:118
+#: src/components/modals/SendMessageModal/index.tsx:117
 msgid "Message Sent"
 msgstr "Mesaj Gönderildi"
 
@@ -4585,7 +4612,7 @@ msgstr "Gösterilecek Katılımcı yok"
 
 #: src/components/routes/admin/Attribution/index.tsx:139
 msgid "No attribution data found"
-msgstr ""
+msgstr "Atıf verisi bulunamadı"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:42
 msgid "No Capacity Assignments"
@@ -4648,8 +4675,8 @@ msgid "No filters available"
 msgstr "Filtre mevcut değil"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:85
-msgid "No impact on your current or past transactions"
-msgstr "Mevcut veya geçmiş işlemleriniz üzerinde etkisi yok"
+#~ msgid "No impact on your current or past transactions"
+#~ msgstr "Mevcut veya geçmiş işlemleriniz üzerinde etkisi yok"
 
 #: src/components/common/OrdersTable/index.tsx:299
 msgid "No invoice"
@@ -4876,8 +4903,8 @@ msgid "On sale {0}"
 msgstr "{0} satışta"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:552
-msgid "Once you complete the upgrade, your old account will only be used for refunds."
-msgstr "Yükseltmeyi tamamladığınızda, eski hesabınız yalnızca iadeler için kullanılacaktır."
+#~ msgid "Once you complete the upgrade, your old account will only be used for refunds."
+#~ msgstr "Yükseltmeyi tamamladığınızda, eski hesabınız yalnızca iadeler için kullanılacaktır."
 
 #: src/components/common/NoEventsBlankSlate/index.tsx:19
 msgid "Once you create an event, you'll see it here."
@@ -4887,7 +4914,7 @@ msgstr "Bir etkinlik oluşturduğunuzda, burada göreceksiniz."
 msgid "Once you start collecting data, you'll see it here."
 msgstr "Veri toplamaya başladığınızda, burada göreceksiniz."
 
-#: src/components/routes/event/GettingStarted/index.tsx:184
+#: src/components/routes/event/GettingStarted/index.tsx:169
 msgid "Once you're ready, set your event live and start selling products."
 msgstr "Hazır olduğunuzda, etkinliğinizi yayına alın ve ürün satmaya başlayın."
 
@@ -4911,7 +4938,11 @@ msgstr "Çevrimiçi Etkinlik"
 msgid "Online Event Details"
 msgstr "Online Etkinlik Detayları"
 
-#: src/components/modals/SendMessageModal/index.tsx:217
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:89
+msgid "Online payments are processed via Razorpay. To configure your Razorpay credentials, please contact the system administrator."
+msgstr ""
+
+#: src/components/modals/SendMessageModal/index.tsx:212
 msgid "Only send to orders with these statuses"
 msgstr "Yalnızca bu durumlara sahip siparişlere gönder"
 
@@ -4924,15 +4955,15 @@ msgstr "Yalnızca promosyon koduyla görünür"
 msgid "Open Check-In Page"
 msgstr "Check-In Sayfasını Aç"
 
-#: src/components/layouts/AppLayout/index.tsx:29
-msgid "Open sidebar"
-msgstr "Kenar çubuğunu aç"
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:195
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:404
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:641
-msgid "Open Razorpay Dashboard"
-msgstr "Razorpay Panosunu Aç"
+#~ msgid "Open Razorpay Dashboard"
+#~ msgstr "Razorpay Panosunu Aç"
+
+#: src/components/layouts/AppLayout/index.tsx:29
+msgid "Open sidebar"
+msgstr "Kenar çubuğunu aç"
 
 #: src/components/forms/QuestionForm/index.tsx:45
 msgid "Option {i}"
@@ -5001,7 +5032,7 @@ msgid "Order complete"
 msgstr "Sipariş tamamlandı"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:94
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:200
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:199
 msgid "Order Confirmation"
 msgstr "Sipariş Onayı"
 
@@ -5089,7 +5120,7 @@ msgstr "Sipariş Numarası"
 msgid "Order owner"
 msgstr "Sipariş sahibi"
 
-#: src/components/modals/SendMessageModal/index.tsx:181
+#: src/components/modals/SendMessageModal/index.tsx:176
 msgid "Order owners with a specific product"
 msgstr "Belirli bir ürüne sahip sipariş sahipleri"
 
@@ -5115,7 +5146,7 @@ msgstr "Sipariş İade Edildi"
 msgid "Order Status"
 msgstr "Sipariş Durumu"
 
-#: src/components/modals/SendMessageModal/index.tsx:218
+#: src/components/modals/SendMessageModal/index.tsx:213
 msgid "Order statuses"
 msgstr "Sipariş durumları"
 
@@ -5166,7 +5197,7 @@ msgstr "Siparişler:"
 
 #: src/components/routes/admin/Attribution/index.tsx:62
 msgid "Organic Accounts"
-msgstr ""
+msgstr "Organik Hesaplar"
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:44
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:45
@@ -5199,7 +5230,7 @@ msgid "Organizer"
 msgstr "Organizatör"
 
 #: src/components/layouts/Event/index.tsx:81
-#: src/components/layouts/OrganizerLayout/index.tsx:75
+#: src/components/layouts/OrganizerLayout/index.tsx:71
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:160
 msgid "Organizer Dashboard"
 msgstr "Organizatör Paneli"
@@ -5238,16 +5269,16 @@ msgid "Organizer statistics are not available for the selected currency or an er
 msgstr "Seçilen para birimi için organizatör istatistikleri mevcut değil veya bir hata oluştu."
 
 #: src/components/common/StatusToggle/index.tsx:64
-#: src/components/layouts/OrganizerLayout/index.tsx:135
+#: src/components/layouts/OrganizerLayout/index.tsx:131
 msgid "Organizer status update failed. Please try again later"
 msgstr "Organizatör durum güncellemesi başarısız oldu. Lütfen daha sonra tekrar deneyin"
 
 #: src/components/common/StatusToggle/index.tsx:56
-#: src/components/layouts/OrganizerLayout/index.tsx:132
+#: src/components/layouts/OrganizerLayout/index.tsx:128
 msgid "Organizer status updated"
 msgstr "Organizatör durumu güncellendi"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:212
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:211
 msgid "Organizer/default template will be used"
 msgstr "Organizatör/varsayılan şablon kullanılacak"
 
@@ -5275,8 +5306,8 @@ msgid "Padding"
 msgstr "İç Boşluk"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:106
-msgid "Page no longer available"
-msgstr "Sayfa artık mevcut değil"
+#~ msgid "Page no longer available"
+#~ msgstr "Sayfa artık mevcut değil"
 
 #: src/components/common/ErrorDisplay/index.tsx:14
 msgid "Page not found"
@@ -5300,7 +5331,7 @@ msgstr "ödendi"
 
 #: src/components/routes/admin/Attribution/index.tsx:51
 msgid "Paid Accounts"
-msgstr ""
+msgstr "Ücretli Hesaplar"
 
 #: src/components/forms/ProductForm/index.tsx:154
 msgid "Paid Product"
@@ -5395,7 +5426,6 @@ msgstr "Kilidi açmak için öde"
 
 #: src/components/common/OrdersTable/index.tsx:368
 #: src/components/common/ProgressStepper/index.tsx:19
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:127
 msgid "Payment"
 msgstr "Ödeme"
 
@@ -5432,9 +5462,7 @@ msgstr "Ödeme yöntemi"
 msgid "Payment Methods"
 msgstr "Ödeme Yöntemleri"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:473
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:485
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:619
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:87
 msgid "Payment Processing"
 msgstr "Ödeme İşleme"
 
@@ -5443,14 +5471,14 @@ msgid "Payment provider"
 msgstr "Ödeme sağlayıcısı"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:94
-msgid "Payment received"
-msgstr "Ödeme alındı"
+#~ msgid "Payment received"
+#~ msgstr "Ödeme alındı"
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:44
 msgid "Payment Received"
 msgstr "Ödeme Alındı"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:815
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:105
 msgid "Payment Settings"
 msgstr "Ödeme Ayarları"
 
@@ -5459,20 +5487,24 @@ msgid "Payment Status"
 msgstr "Ödeme Durumu"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:60
-msgid "Payment succeeded!"
-msgstr "Ödeme başarılı!"
+#~ msgid "Payment succeeded!"
+#~ msgstr "Ödeme başarılı!"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:214
 msgid "Payment Terms"
 msgstr "Ödeme Koşulları"
 
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:75
+msgid "Payment verification failed. Please contact support."
+msgstr ""
+
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:49
-msgid "Payments not available"
-msgstr "Ödemeler mevcut değil"
+#~ msgid "Payments not available"
+#~ msgstr "Ödemeler mevcut değil"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:86
-msgid "Payments will continue to flow without interruption"
-msgstr "Ödemeler kesintisiz devam edecek"
+#~ msgid "Payments will continue to flow without interruption"
+#~ msgstr "Ödemeler kesintisiz devam edecek"
 
 #: src/components/common/QuestionsTable/index.tsx:315
 msgid "Per Attendee"
@@ -5553,7 +5585,7 @@ msgstr "Platform ücreti"
 msgid "Platform fee of {0} deducted from your payout"
 msgstr "Ödemenizden {0} platform ücreti düşülür"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:247
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:36
 #: src/components/routes/event/Settings/index.tsx:81
 #: src/components/routes/event/Settings/Sections/PlatformFeesSettings/index.tsx:42
 #: src/components/routes/organizer/Settings/index.tsx:73
@@ -5619,8 +5651,8 @@ msgid "Please provide an image."
 msgstr "Lütfen bir görsel sağlayın."
 
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:65
-msgid "Please restart the checkout process."
-msgstr "Lütfen ödeme işlemini yeniden başlatın."
+#~ msgid "Please restart the checkout process."
+#~ msgstr "Lütfen ödeme işlemini yeniden başlatın."
 
 #: src/components/layouts/Checkout/index.tsx:251
 msgid "Please return to the event page to start over."
@@ -5807,7 +5839,7 @@ msgstr "Ürün başarıyla silindi"
 msgid "Product Price Type"
 msgstr "Ürün Fiyat Türü"
 
-#: src/components/routes/event/EventDashboard/index.tsx:253
+#: src/components/routes/event/EventDashboard/index.tsx:189
 #: src/components/routes/event/Reports/index.tsx:17
 msgid "Product Sales"
 msgstr "Ürün Satışları"
@@ -5842,7 +5874,7 @@ msgstr "Ürünler"
 msgid "Products sold"
 msgstr "Satılan ürünler"
 
-#: src/components/routes/event/EventDashboard/index.tsx:274
+#: src/components/routes/event/EventDashboard/index.tsx:210
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:125
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:68
 msgid "Products Sold"
@@ -5899,7 +5931,7 @@ msgstr "Promosyon Kodları Raporu"
 msgid "Promo Only"
 msgstr "Yalnızca Promosyon"
 
-#: src/components/modals/SendMessageModal/index.tsx:292
+#: src/components/modals/SendMessageModal/index.tsx:287
 msgid "Promotional emails may result in account suspension"
 msgstr "Promosyon e-postaları hesap askıya alınmasına neden olabilir"
 
@@ -5915,7 +5947,7 @@ msgstr ""
 msgid "Publish"
 msgstr "Yayınla"
 
-#: src/components/routes/event/EventDashboard/index.tsx:195
+#: src/components/routes/event/EventDashboard/index.tsx:165
 msgid "Publish Event"
 msgstr "Etkinliği Yayınla"
 
@@ -5969,13 +6001,32 @@ msgstr "Radyo Seçeneği"
 msgid "Rate"
 msgstr "Oran"
 
+#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
+msgid "Razorpay"
+msgstr "Razorpay"
+
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
+#~ msgid "Razorpay Connect"
+#~ msgstr "Razorpay Connect"
+
+#~ msgid "Razorpay Connected"
+#~ msgstr "Razorpay Bağlı"
+
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
+#~ msgid "Razorpay payments are not enabled for this event."
+#~ msgstr "Bu etkinlik için Razorpay ödemeleri etkinleştirilmemiş."
+
+#: src/components/common/RazorpayConnectButton/index.tsx:69
+#~ msgid "Razorpay setup is already complete."
+#~ msgstr "Razorpay kurulumu zaten tamamlandı."
+
 #: src/components/common/MessageList/index.tsx:59
 msgid "Read less"
 msgstr "Daha az oku"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:223
-msgid "Ready to upgrade? This takes only a few minutes."
-msgstr "Yükseltmeye hazır mısınız? Bu sadece birkaç dakika sürer."
+#~ msgid "Ready to upgrade? This takes only a few minutes."
+#~ msgstr "Yükseltmeye hazır mısınız? Bu sadece birkaç dakika sürer."
 
 #: src/components/layouts/AuthLayout/index.tsx:40
 msgid "Real-Time Analytics"
@@ -5991,17 +6042,17 @@ msgstr "{0}'ten ürün güncellemeleri alın."
 msgid "Recent Orders"
 msgstr "Son Siparişler"
 
-#: src/components/modals/SendMessageModal/index.tsx:37
+#: src/components/modals/SendMessageModal/index.tsx:36
 msgid "Recipient"
 msgstr "Alıcı"
 
-#: src/components/modals/SendMessageModal/index.tsx:184
+#: src/components/modals/SendMessageModal/index.tsx:179
 msgid "Recipients"
 msgstr "Alıcılar"
 
 #: src/components/routes/event/EventDashboard/index.tsx:135
-msgid "Reconnect Razorpay →"
-msgstr "Razorpay'ı Yeniden Bağla →"
+#~ msgid "Reconnect Razorpay →"
+#~ msgstr "Razorpay'ı Yeniden Bağla →"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
@@ -6013,12 +6064,12 @@ msgstr "Reddit"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:338
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:578
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:596
-msgid "Redirecting to Razorpay..."
-msgstr "Razorpay'a yönlendiriliyor..."
+#~ msgid "Redirecting to Razorpay..."
+#~ msgstr "Razorpay'a yönlendiriliyor..."
 
 #: src/components/routes/admin/Attribution/index.tsx:73
 msgid "Referral Accounts"
-msgstr ""
+msgstr "Yönlendirme Hesapları"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:175
 msgid "Refresh Preview"
@@ -6104,7 +6155,7 @@ msgid "Report not found"
 msgstr "Rapor bulunamadı"
 
 #: src/components/layouts/Event/index.tsx:94
-#: src/components/layouts/OrganizerLayout/index.tsx:78
+#: src/components/layouts/OrganizerLayout/index.tsx:74
 #: src/components/routes/event/Reports/index.tsx:39
 #: src/components/routes/organizer/Reports/index.tsx:45
 msgid "Reports"
@@ -6126,7 +6177,7 @@ msgstr "Gerekli"
 msgid "Resend code"
 msgstr "Kodu yeniden gönder"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:292
+#: src/components/layouts/OrganizerLayout/index.tsx:272
 msgid "Resend Confirmation Email"
 msgstr "Onay E-postasını Yeniden Gönder"
 
@@ -6185,8 +6236,8 @@ msgstr "Etkinliği geri yükle"
 
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:52
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:67
-msgid "Return to Event"
-msgstr "Etkinliğe Dön"
+#~ msgid "Return to Event"
+#~ msgstr "Etkinliğe Dön"
 
 #: src/components/layouts/Checkout/index.tsx:258
 msgid "Return to Event Page"
@@ -6195,7 +6246,7 @@ msgstr "Etkinlik Sayfasına Dön"
 #: src/components/common/AffiliateTable/index.tsx:157
 #: src/components/common/EventCard/index.tsx:235
 #: src/components/routes/admin/Attribution/index.tsx:130
-#: src/components/routes/event/EventDashboard/index.tsx:285
+#: src/components/routes/event/EventDashboard/index.tsx:221
 msgid "Revenue"
 msgstr "Gelir"
 
@@ -6450,7 +6501,7 @@ msgstr "Tümünü Seç"
 msgid "Select an organizer to view their dashboard and events."
 msgstr "Pano ve etkinliklerini görüntülemek için bir organizatör seçin."
 
-#: src/components/modals/SendMessageModal/index.tsx:186
+#: src/components/modals/SendMessageModal/index.tsx:181
 msgid "Select attendee group"
 msgstr "Katılımcı grubu seçin"
 
@@ -6499,7 +6550,7 @@ msgid "Select Product Tier"
 msgstr "Ürün Katmanı Seç"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:49
-#: src/components/modals/SendMessageModal/index.tsx:210
+#: src/components/modals/SendMessageModal/index.tsx:205
 msgid "Select products"
 msgstr "Ürünleri seç"
 
@@ -6528,7 +6579,7 @@ msgid "Select Ticket"
 msgstr "Bilet Seç"
 
 #: src/components/forms/CheckInListForm/index.tsx:43
-#: src/components/modals/SendMessageModal/index.tsx:198
+#: src/components/modals/SendMessageModal/index.tsx:193
 msgid "Select tickets"
 msgstr "Biletleri seç"
 
@@ -6542,7 +6593,7 @@ msgstr "Zaman aralığı seç"
 msgid "Select timezone"
 msgstr "Saat dilimi seçin"
 
-#: src/components/modals/SendMessageModal/index.tsx:185
+#: src/components/modals/SendMessageModal/index.tsx:180
 msgid "Select which attendees should receive this message"
 msgstr "Bu mesajı hangi katılımcıların alacağını seçin"
 
@@ -6572,11 +6623,11 @@ msgstr "Hızlı satılıyor 🔥"
 msgid "Send"
 msgstr "Gönder"
 
-#: src/components/modals/SendMessageModal/index.tsx:139
+#: src/components/modals/SendMessageModal/index.tsx:138
 msgid "Send a message"
 msgstr "Mesaj gönder"
 
-#: src/components/modals/SendMessageModal/index.tsx:278
+#: src/components/modals/SendMessageModal/index.tsx:273
 msgid "Send as test"
 msgstr "Test olarak gönder"
 
@@ -6584,12 +6635,12 @@ msgstr "Test olarak gönder"
 msgid "Send emails to attendees and view your message history."
 msgstr "Katılımcılara e-posta gönderin ve mesaj geçmişinizi görüntüleyin."
 
-#: src/components/modals/SendMessageModal/index.tsx:285
+#: src/components/modals/SendMessageModal/index.tsx:280
 msgid "Send me a copy"
 msgstr "Bana bir kopya gönder"
 
 #: src/components/common/ContactOrganizerModal/index.tsx:112
-#: src/components/modals/SendMessageModal/index.tsx:261
+#: src/components/modals/SendMessageModal/index.tsx:256
 #: src/components/routes/event/messages.tsx:43
 msgid "Send Message"
 msgstr "Mesaj Gönder"
@@ -6610,7 +6661,7 @@ msgstr "İade bildirim e-postası gönder"
 msgid "Send reset link"
 msgstr "Sıfırlama bağlantısı gönder"
 
-#: src/components/modals/SendMessageModal/index.tsx:261
+#: src/components/modals/SendMessageModal/index.tsx:256
 msgid "Send Test"
 msgstr "Test Gönder"
 
@@ -6618,11 +6669,11 @@ msgstr "Test Gönder"
 msgid "Sending..."
 msgstr "Gönderiliyor..."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:205
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:204
 msgid "Sent to customers when they place an order"
 msgstr "Müşterilere sipariş verdiklerinde gönderilir"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:206
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:205
 msgid "Sent to each attendee with their ticket details"
 msgstr "Her katılımcıya bilet detaylarıyla birlikte gönderilir"
 
@@ -6675,7 +6726,7 @@ msgstr "Fatura numaralandırması için başlangıç numarasını ayarlayın. Fa
 msgid "Set up check-in lists for different entrances, sessions, or days."
 msgstr "Farklı girişler, oturumlar veya günler için giriş listeleri oluşturun."
 
-#: src/components/routes/event/GettingStarted/index.tsx:145
+#: src/components/routes/event/GettingStarted/index.tsx:144
 msgid "Set up your event"
 msgstr "Etkinliğinizi kurun"
 
@@ -6683,7 +6734,7 @@ msgstr "Etkinliğinizi kurun"
 msgid "Set up your organization"
 msgstr "Organizasyonunuzu kurun"
 
-#: src/components/routes/event/GettingStarted/index.tsx:188
+#: src/components/routes/event/GettingStarted/index.tsx:173
 msgid "Set your event live"
 msgstr "Etkinliğinizi yayına alın"
 
@@ -6697,7 +6748,7 @@ msgstr "Ayar güncellendi"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:81
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:82
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:83
-#: src/components/layouts/OrganizerLayout/index.tsx:85
+#: src/components/layouts/OrganizerLayout/index.tsx:81
 #: src/components/modals/DuplicateEventModal/index.tsx:26
 msgid "Settings"
 msgstr "Ayarlar"
@@ -6708,7 +6759,7 @@ msgstr "Kurulum ve Tasarım"
 
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/index.tsx:293
-#: src/components/layouts/OrganizerLayout/index.tsx:228
+#: src/components/layouts/OrganizerLayout/index.tsx:208
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
 #: src/components/modals/ShareModal/index.tsx:186
@@ -6725,8 +6776,8 @@ msgstr "Bağlı Kuruluş Bağlantısını Paylaş"
 msgid "Share Event"
 msgstr "Etkinliği Paylaş"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:225
-#: src/components/layouts/OrganizerLayout/index.tsx:260
+#: src/components/layouts/OrganizerLayout/index.tsx:205
+#: src/components/layouts/OrganizerLayout/index.tsx:240
 msgid "Share Organizer Page"
 msgstr "Organizatör Sayfasını Paylaş"
 
@@ -6831,7 +6882,6 @@ msgstr "Tükendi"
 #: src/components/common/ErrorDisplay/index.tsx:15
 #: src/components/routes/auth/AcceptInvitation/index.tsx:48
 #: src/components/routes/product-widget/CollectInformation/index.tsx:377
-#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:64
 msgid "Something went wrong"
 msgstr "Bir şeyler yanlış gitti"
 
@@ -6849,11 +6899,11 @@ msgid "Something went wrong! Please try again"
 msgstr "Bir şeyler yanlış gitti! Lütfen tekrar deneyin"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:69
-msgid "Something went wrong."
-msgstr "Bir şeyler yanlış gitti."
+#~ msgid "Something went wrong."
+#~ msgstr "Bir şeyler yanlış gitti."
 
 #: src/components/layouts/Event/index.tsx:75
-#: src/components/layouts/OrganizerLayout/index.tsx:100
+#: src/components/layouts/OrganizerLayout/index.tsx:96
 #: src/components/routes/auth/Login/index.tsx:72
 #: src/components/routes/my-tickets/index.tsx:145
 #: src/components/routes/profile/ManageProfile/index.tsx:90
@@ -6862,8 +6912,8 @@ msgid "Something went wrong. Please try again."
 msgstr "Bir şeyler yanlış gitti. Lütfen tekrar deneyin."
 
 #: src/components/routes/event/EventDashboard/index.tsx:131
-msgid "Sorry for the inconvenience."
-msgstr "Rahatsızlık için özür dileriz."
+#~ msgid "Sorry for the inconvenience."
+#~ msgstr "Rahatsızlık için özür dileriz."
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:284
 msgid "Sorry, this promo code is not recognized"
@@ -6871,7 +6921,7 @@ msgstr "Üzgünüz, bu promosyon kodu tanınmıyor"
 
 #: src/components/routes/admin/Attribution/index.tsx:106
 msgid "Source"
-msgstr ""
+msgstr "Kaynak"
 
 #: src/components/common/LanguageSwitcher/index.tsx:20
 msgid "Spanish"
@@ -6922,7 +6972,7 @@ msgstr "İstatistikler"
 
 #: src/components/routes/admin/Attribution/index.tsx:35
 msgid "Statistics are based on account creation date"
-msgstr ""
+msgstr "İstatistikler hesap oluşturma tarihine göre hesaplanır"
 
 #: src/components/common/AdminEventsTable/index.tsx:107
 #: src/components/common/AdminOrdersTable/index.tsx:82
@@ -6942,36 +6992,23 @@ msgid "Status"
 msgstr "Durum"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:182
-msgid "Still handling refunds for your older transactions."
-msgstr "Eski işlemleriniz için hala iadeleri işliyoruz."
+#~ msgid "Still handling refunds for your older transactions."
+#~ msgstr "Eski işlemleriniz için hala iadeleri işliyoruz."
 
 #: src/components/common/ImpersonationBanner/index.tsx:53
 msgid "Stop Impersonating"
 msgstr "Taklidi Durdur"
 
 #: src/components/common/OrdersTable/index.tsx:377
-#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
 msgid "Razorpay"
-msgstr "Razorpay"
-
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
-msgid "Razorpay Connect"
-msgstr "Razorpay Connect"
+msgstr ""
 
 #: src/components/routes/admin/Attribution/index.tsx:128
 msgid "Razorpay Connected"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
-msgid "Razorpay payments are not enabled for this event."
-msgstr "Bu etkinlik için Razorpay ödemeleri etkinleştirilmemiş."
-
-#: src/components/common/RazorpayConnectButton/index.tsx:69
-msgid "Razorpay setup is already complete."
-msgstr "Razorpay kurulumu zaten tamamlandı."
-
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:127
-#: src/components/modals/SendMessageModal/index.tsx:234
+#: src/components/modals/SendMessageModal/index.tsx:229
 msgid "Subject"
 msgstr "Konu"
 
@@ -6983,7 +7020,7 @@ msgstr "Konu gerekli"
 msgid "Subject will appear here"
 msgstr "Konu burada görünecek"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:255
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:254
 msgid "Subject:"
 msgstr "Konu:"
 
@@ -7150,7 +7187,7 @@ msgstr "Yaz Müzik Festivali 2025"
 msgid "Support Email"
 msgstr "Destek E-postası"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:68
+#: src/components/layouts/OrganizerLayout/index.tsx:64
 #: src/components/modals/SwitchOrganizerModal/index.tsx:33
 msgid "Switch Organizer"
 msgstr "Organizatör Değiştir"
@@ -7164,8 +7201,8 @@ msgid "T-shirt"
 msgstr "Tişört"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:84
-msgid "Takes just a few minutes"
-msgstr "Sadece birkaç dakika sürer"
+#~ msgid "Takes just a few minutes"
+#~ msgstr "Sadece birkaç dakika sürer"
 
 #: src/components/common/AdminOrdersTable/index.tsx:81
 #: src/components/common/OrdersTable/index.tsx:351
@@ -7260,15 +7297,15 @@ msgstr "Organizasyonunuz hakkında bize bilgi verin. Bu bilgiler etkinlik sayfal
 msgid "Template Active"
 msgstr "Şablon Aktif"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:164
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:163
 msgid "Template created successfully"
 msgstr "Şablon başarıyla oluşturuldu"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:112
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:111
 msgid "Template deleted successfully"
 msgstr "Şablon başarıyla silindi"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:133
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:132
 msgid "Template saved successfully"
 msgstr "Şablon başarıyla kaydedildi"
 
@@ -7286,8 +7323,8 @@ msgid "Thank you for attending!"
 msgstr "Katıldığınız için teşekkürler!"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:90
-msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
-msgstr "Hi.Events'i büyütmeye ve geliştirmeye devam ederken desteğiniz için teşekkürler!"
+#~ msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
+#~ msgstr "Hi.Events'i büyütmeye ve geliştirmeye devam ederken desteğiniz için teşekkürler!"
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:176
 #: src/components/routes/product-widget/SelectProducts/index.tsx:224
@@ -7380,8 +7417,8 @@ msgstr "Müşteriye gösterilen fiyat vergi ve ücretleri içermeyecektir. Bunla
 msgid "The primary brand color used for buttons and highlights"
 msgstr "Düğmeler ve vurgular için kullanılan birincil marka rengi"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:145
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:176
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:144
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:175
 msgid "The template body contains invalid Liquid syntax. Please correct it and try again."
 msgstr "Şablon gövdesi geçersiz Liquid sözdizimi içeriyor. Lütfen düzeltin ve tekrar deneyin."
 
@@ -7435,11 +7472,11 @@ msgstr "Bu detaylar yalnızca sipariş başarıyla tamamlanırsa gösterilecekti
 msgid "These settings apply only to copied embed code and won't be stored."
 msgstr "Bu ayarlar yalnızca kopyalanan yerleştirme kodu için geçerlidir ve saklanmayacaktır."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:326
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:325
 msgid "These templates will be used as defaults for all events in your organization. Individual events can override these templates with their own custom versions."
 msgstr "Bu şablonlar organizasyonunuzdaki tüm etkinlikler için varsayılan olarak kullanılacaktır. Bireysel etkinlikler bu şablonları kendi özel sürümleriyle geçersiz kılabilir."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:319
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:318
 msgid "These templates will override the organizer defaults for this event only. If no custom template is set here, the organizer template will be used instead."
 msgstr "Bu şablonlar yalnızca bu etkinlik için organizatör varsayılanlarını geçersiz kılacaktır. Burada özel bir şablon ayarlanmazsa, organizatör şablonu kullanılacaktır."
 
@@ -7520,8 +7557,8 @@ msgid "This name is visible to end users"
 msgstr "Bu isim son kullanıcılara görünür"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:95
-msgid "This order has already been paid."
-msgstr "Bu sipariş zaten ödenmiş."
+#~ msgid "This order has already been paid."
+#~ msgstr "Bu sipariş zaten ödenmiş."
 
 #: src/components/modals/RefundOrderModal/index.tsx:185
 msgid "This order has already been refunded."
@@ -7544,8 +7581,8 @@ msgid "This order is complete."
 msgstr "Bu sipariş tamamlandı."
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:107
-msgid "This order page is no longer available."
-msgstr "Bu sipariş sayfası artık mevcut değil."
+#~ msgid "This order page is no longer available."
+#~ msgstr "Bu sipariş sayfası artık mevcut değil."
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:325
 msgid "This order was abandoned. You can start a new order anytime."
@@ -7768,14 +7805,14 @@ msgid "To edit configurations, go to the Configurations section in the admin men
 msgstr "Yapılandırmaları düzenlemek için yönetici menüsündeki Yapılandırmalar bölümüne gidin."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:661
-msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
-msgstr "Kredi kartı ödemelerini almak için Razorpay hesabınızı bağlamanız gerekir. Razorpay, güvenli işlemler ve zamanında ödemeler sağlayan ödeme işleme ortağımızdır."
+#~ msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
+#~ msgstr "Kredi kartı ödemelerini almak için Razorpay hesabınızı bağlamanız gerekir. Razorpay, güvenli işlemler ve zamanında ödemeler sağlayan ödeme işleme ortağımızdır."
 
 #: src/components/common/ColumnVisibilityToggle/index.tsx:26
 msgid "Toggle columns"
 msgstr "Sütunları değiştir"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:87
+#: src/components/layouts/OrganizerLayout/index.tsx:83
 msgid "Tools"
 msgstr "Araçlar"
 
@@ -7809,7 +7846,7 @@ msgstr "Toplam Toplanan"
 msgid "Total Discount Amount"
 msgstr "Toplam İndirim Tutarı"
 
-#: src/components/routes/event/EventDashboard/index.tsx:311
+#: src/components/routes/event/EventDashboard/index.tsx:247
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:149
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:97
 msgid "Total Fees"
@@ -7831,11 +7868,11 @@ msgstr "Toplam Siparişler"
 msgid "Total refunded"
 msgstr "Toplam iade edilen"
 
-#: src/components/routes/event/EventDashboard/index.tsx:314
+#: src/components/routes/event/EventDashboard/index.tsx:250
 msgid "Total Refunded"
 msgstr "Toplam İade Edilen"
 
-#: src/components/routes/event/EventDashboard/index.tsx:313
+#: src/components/routes/event/EventDashboard/index.tsx:249
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:143
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:91
 msgid "Total Tax"
@@ -7847,13 +7884,13 @@ msgstr "Toplam Kullanıcılar"
 
 #: src/components/routes/admin/Attribution/index.tsx:32
 msgid "Track account growth and performance by attribution source"
-msgstr ""
+msgstr "Atıf kaynağına göre hesap büyümesini ve performansını takip edin"
 
 #: src/components/layouts/AuthLayout/index.tsx:41
 msgid "Track sales, revenue, and attendance with detailed reports"
 msgstr "Detaylı raporlarla satışları, gelirleri ve katılımı takip edin"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:263
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:50
 msgid "Transaction Fee:"
 msgstr "İşlem Ücreti:"
 
@@ -7936,7 +7973,7 @@ msgstr "Soru güncellenemedi. Lütfen bilgilerinizi kontrol edin"
 
 #: src/components/routes/admin/Attribution/index.tsx:84
 msgid "Unattributed Accounts"
-msgstr ""
+msgstr "Atıfsız Hesaplar"
 
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:30
 msgid "Unique Customers"
@@ -7981,7 +8018,7 @@ msgstr "Sınırsız kullanıma izin verildi"
 msgid "Unpaid Order"
 msgstr "Ödenmemiş Sipariş"
 
-#: src/components/routes/event/EventDashboard/index.tsx:206
+#: src/components/routes/event/EventDashboard/index.tsx:176
 msgid "Unpublish Event"
 msgstr "Etkinliği Yayından Kaldır"
 
@@ -8014,8 +8051,8 @@ msgid "Update profile"
 msgstr "Profili güncelle"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:169
-msgid "Upgrade Available"
-msgstr "Yükseltme Mevcut"
+#~ msgid "Upgrade Available"
+#~ msgstr "Yükseltme Mevcut"
 
 #: src/components/routes/organizer/Settings/Sections/ImageAssetSettings/index.tsx:39
 msgid "Upload a cover image for your organizer"
@@ -8127,6 +8164,10 @@ msgstr "Kullanıcılar e-postalarını <0>Profil Ayarları</0>'nda değiştirebi
 msgid "UTC"
 msgstr "UTC"
 
+#: src/components/layouts/Admin/index.tsx:18
+msgid "UTM Analytics"
+msgstr "UTM Analitiği"
+
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:206
 msgid "Valid"
 msgstr "Geçerli"
@@ -8232,7 +8273,7 @@ msgstr "Doğrulama kodu"
 
 #: src/components/routes/admin/Attribution/index.tsx:129
 msgid "Verified"
-msgstr ""
+msgstr "Doğrulandı"
 
 #: src/components/routes/welcome/index.tsx:187
 msgid "Verify Email"
@@ -8308,7 +8349,6 @@ msgstr "Google Haritalar'da görüntüle"
 msgid "View Order"
 msgstr "Siparişi Görüntüle"
 
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:96
 #: src/components/routes/product-widget/CollectInformation/index.tsx:347
 msgid "View Order Details"
 msgstr "Sipariş Detaylarını Görüntüle"
@@ -8317,8 +8357,8 @@ msgstr "Sipariş Detaylarını Görüntüle"
 msgid "View order details, issue refunds, and resend confirmations."
 msgstr "Sipariş detaylarını görüntüleyin, iade yapın ve onayları yeniden gönderin."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:243
-#: src/components/layouts/OrganizerLayout/index.tsx:246
+#: src/components/layouts/OrganizerLayout/index.tsx:223
+#: src/components/layouts/OrganizerLayout/index.tsx:226
 msgid "View Organizer Homepage"
 msgstr "Organizatör Ana Sayfasını Görüntüle"
 
@@ -8364,7 +8404,7 @@ msgstr "Ödeme bekleniyor"
 msgid "Warning: This is the system default configuration. Changes will affect all accounts that don't have a specific configuration assigned."
 msgstr "Uyarı: Bu sistem varsayılan yapılandırmasıdır. Değişiklikler, belirli bir yapılandırması atanmamış tüm hesapları etkileyecektir."
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:89
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:68
 msgid "We could not process your payment. Please try again or contact support."
 msgstr "Ödemenizi işleyemedik. Lütfen tekrar deneyin veya destek ile iletişime geçin."
 
@@ -8409,7 +8449,7 @@ msgstr "1950px x 650px boyutlarında, 3:1 oranında ve maksimum 5MB dosya boyutu
 msgid "We recommend dimensions of 400px by 400px, and a maximum file size of 5MB"
 msgstr "400px x 400px boyutlarını ve maksimum 5MB dosya boyutunu öneriyoruz"
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:100
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:78
 msgid "We were unable to confirm your payment. Please try again or contact support."
 msgstr "Ödemenizi onaylayamadık. Lütfen tekrar deneyin veya destek ile iletişime geçin."
 
@@ -8425,17 +8465,17 @@ msgstr "Biletlerinizi bu e-postaya göndereceğiz"
 msgid "We'll validate your VAT number in the background. If there are any issues, we'll let you know."
 msgstr "KDV numaranızı arka planda doğrulayacağız. Herhangi bir sorun olursa sizi bilgilendireceğiz."
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:91
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:69
 msgid "We're processing your order. Please wait..."
 msgstr "Siparişinizi işliyoruz. Lütfen bekleyin..."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:73
-msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
-msgstr "Genel merkezimizi resmi olarak İrlanda'ya taşıdık 🇮🇪. Bu geçişin bir parçası olarak, artık Razorpay Kanada yerine Razorpay İrlanda kullanıyoruz. Ödemelerinizin sorunsuz devam etmesi için Razorpay hesabınızı yeniden bağlamanız gerekecek."
+#~ msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
+#~ msgstr "Genel merkezimizi resmi olarak İrlanda'ya taşıdık 🇮🇪. Bu geçişin bir parçası olarak, artık Razorpay Kanada yerine Razorpay İrlanda kullanıyoruz. Ödemelerinizin sorunsuz devam etmesi için Razorpay hesabınızı yeniden bağlamanız gerekecek."
 
 #: src/components/routes/event/EventDashboard/index.tsx:130
-msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
-msgstr "Genel merkezimizi İrlanda'ya taşıdık. Bunun sonucunda Razorpay hesabınızı yeniden bağlamanız gerekiyor. Bu hızlı işlem sadece birkaç dakika sürer. Satışlarınız ve mevcut verileriniz tamamen etkilenmeden kalır."
+#~ msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
+#~ msgstr "Genel merkezimizi İrlanda'ya taşıdık. Bunun sonucunda Razorpay hesabınızı yeniden bağlamanız gerekiyor. Bu hızlı işlem sadece birkaç dakika sürer. Satışlarınız ve mevcut verileriniz tamamen etkilenmeden kalır."
 
 #: src/components/routes/welcome/index.tsx:145
 msgid "We've sent a 5-digit verification code to:"
@@ -8487,7 +8527,7 @@ msgstr "Hoş geldiniz! Devam etmek için lütfen giriş yapın."
 msgid "Welcome back"
 msgstr "Tekrar hoş geldiniz"
 
-#: src/components/routes/event/EventDashboard/index.tsx:107
+#: src/components/routes/event/EventDashboard/index.tsx:100
 msgid "Welcome back{0} 👋"
 msgstr "Tekrar hoş geldin{0} 👋"
 
@@ -8770,7 +8810,7 @@ msgstr "Ücretsiz Bir Ürüne eklenen vergiler ve ücretleriniz var. Bunları ka
 msgid "You haven't sent any messages yet. You can send messages to all attendees, or to specific product holders."
 msgstr "Henüz hiç mesaj göndermediniz. Tüm katılımcılara veya belirli ürün sahiplerine mesaj gönderebilirsiniz."
 
-#: src/components/modals/SendMessageModal/index.tsx:108
+#: src/components/modals/SendMessageModal/index.tsx:107
 msgid "You must acknowledge that this email is not promotional"
 msgstr "Bu e-postanın tanıtım amaçlı olmadığını kabul etmelisiniz"
 
@@ -8786,15 +8826,15 @@ msgstr "Elle katılımcı ekleyebilmek için önce bir bilet oluşturmalısını
 msgid "You must have at least one price tier"
 msgstr "En az bir fiyat seviyeniz olmalı"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:281
+#: src/components/layouts/OrganizerLayout/index.tsx:261
 msgid "You must verify your email address before you can update the organizer status."
 msgstr "Organizatör durumunu güncelleyebilmek için e-posta adresinizi doğrulamanız gerekir."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:343
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:342
 msgid "You need to verify your account email before you can modify email templates."
 msgstr "E-posta şablonlarını değiştirebilmek için hesap e-postanızı doğrulamanız gerekir."
 
-#: src/components/modals/SendMessageModal/index.tsx:150
+#: src/components/modals/SendMessageModal/index.tsx:149
 msgid "You need to verify your account email before you can send messages."
 msgstr "Mesaj göndermeden önce hesap e-postanızı doğrulamanız gerekir."
 
@@ -8823,8 +8863,8 @@ msgid "You'll need at least one product to get started. Free, paid or let the us
 msgstr "Başlamak için en az bir ürüne ihtiyacınız var. Ücretsiz, ücretli veya kullanıcının ne kadar ödeyeceğine karar vermesine izin verin."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:181
-msgid "You're all set! Your payments are being processed smoothly."
-msgstr "Her şey hazır! Ödemeleriniz sorunsuz bir şekilde işleniyor."
+#~ msgid "You're all set! Your payments are being processed smoothly."
+#~ msgstr "Her şey hazır! Ödemeleriniz sorunsuz bir şekilde işleniyor."
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:118
 msgid "You're going to {0}!"
@@ -8870,7 +8910,7 @@ msgstr "E-postanız"
 msgid "Your email request change to <0>{0}</0> is pending. Please check your email to confirm"
 msgstr "<0>{0}</0> adresine e-posta değişiklik talebiniz beklemede. Onaylamak için lütfen e-postanızı kontrol edin"
 
-#: src/components/routes/event/EventDashboard/index.tsx:186
+#: src/components/routes/event/EventDashboard/index.tsx:156
 msgid "Your event must be live before you can sell tickets to attendees."
 msgstr "Katılımcılara bilet satmadan önce etkinliğinizin canlı olması gerekir."
 
@@ -8928,37 +8968,37 @@ msgid "Your password"
 msgstr "Şifreniz"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:63
-msgid "Your payment is processing."
-msgstr "Ödemeniz işleniyor."
+#~ msgid "Your payment is processing."
+#~ msgstr "Ödemeniz işleniyor."
 
 #: src/components/common/InlineOrderSummary/index.tsx:216
 msgid "Your payment is protected with bank-level encryption"
 msgstr "Ödemeniz banka düzeyinde şifreleme ile korunmaktadır"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:66
-msgid "Your payment was not successful, please try again."
-msgstr "Ödemeniz başarısız oldu, lütfen tekrar deneyin."
+#~ msgid "Your payment was not successful, please try again."
+#~ msgstr "Ödemeniz başarısız oldu, lütfen tekrar deneyin."
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:130
-msgid "Your payment was unsuccessful. Please try again."
-msgstr "Ödemeniz başarısız oldu. Lütfen tekrar deneyin."
+#~ msgid "Your payment was unsuccessful. Please try again."
+#~ msgstr "Ödemeniz başarısız oldu. Lütfen tekrar deneyin."
 
 #: src/components/common/PlatformFeesSettings/index.tsx:126
 msgid "Your Plan"
 msgstr "Planınız"
 
-#: src/components/modals/RefundOrderModal/index.tsx:58
-msgid "Your refund is processing."
-msgstr "İadeniz işleniyor."
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:178
-msgid "Your Razorpay account is connected and processing payments."
-msgstr "Razorpay hesabınız bağlı ve ödemeleri işliyor."
+#~ msgid "Your Razorpay account is connected and processing payments."
+#~ msgstr "Razorpay hesabınız bağlı ve ödemeleri işliyor."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:395
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:632
-msgid "Your Razorpay account is connected and ready to process payments."
-msgstr "Razorpay hesabınız bağlı ve ödemeleri işlemeye hazır."
+#~ msgid "Your Razorpay account is connected and ready to process payments."
+#~ msgstr "Razorpay hesabınız bağlı ve ödemeleri işlemeye hazır."
+
+#: src/components/modals/RefundOrderModal/index.tsx:58
+msgid "Your refund is processing."
+msgstr "İadeniz işleniyor."
 
 #: src/components/routes/product-widget/AttendeeProductAndInformation/index.tsx:36
 msgid "Your ticket for"
@@ -8993,57 +9033,3 @@ msgstr "Posta Kodu"
 #: src/components/routes/product-widget/CollectInformation/index.tsx:523
 msgid "ZIP or Postal Code"
 msgstr "Posta Kodu"
-
-msgid "(empty)"
-msgstr "(boş)"
-
-msgid "Attribution"
-msgstr "Atıf"
-
-msgid "Attribution Analytics"
-msgstr "Atıf Analitiği"
-
-msgid "Attribution Breakdown"
-msgstr "Atıf Dağılımı"
-
-msgid "Attribution Value"
-msgstr "Atıf Değeri"
-
-msgid "Campaign"
-msgstr "Kampanya"
-
-msgid "Medium"
-msgstr "Ortam"
-
-msgid "No attribution data found"
-msgstr "Atıf verisi bulunamadı"
-
-msgid "Organic Accounts"
-msgstr "Organik Hesaplar"
-
-msgid "Paid Accounts"
-msgstr "Ücretli Hesaplar"
-
-msgid "Referral Accounts"
-msgstr "Yönlendirme Hesapları"
-
-msgid "Source"
-msgstr "Kaynak"
-
-msgid "Statistics are based on account creation date"
-msgstr "İstatistikler hesap oluşturma tarihine göre hesaplanır"
-
-msgid "Razorpay Connected"
-msgstr "Razorpay Bağlı"
-
-msgid "Track account growth and performance by attribution source"
-msgstr "Atıf kaynağına göre hesap büyümesini ve performansını takip edin"
-
-msgid "Unattributed Accounts"
-msgstr "Atıfsız Hesaplar"
-
-msgid "Verified"
-msgstr "Doğrulandı"
-
-msgid "UTM Analytics"
-msgstr "UTM Analitiği"

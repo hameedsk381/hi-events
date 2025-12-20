@@ -14,12 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/components/layouts/Event/index.tsx:183
-#: src/components/layouts/OrganizerLayout/index.tsx:207
+#: src/components/layouts/OrganizerLayout/index.tsx:187
 msgid "- Click to Publish"
 msgstr "- Kattintson a közzétételhez"
 
 #: src/components/layouts/Event/index.tsx:185
-#: src/components/layouts/OrganizerLayout/index.tsx:209
+#: src/components/layouts/OrganizerLayout/index.tsx:189
 msgid "- Click to Unpublish"
 msgstr "- Kattintson a visszavonáshoz"
 
@@ -29,7 +29,7 @@ msgstr "'Még semmi sem látható'"
 
 #: src/components/routes/admin/Attribution/index.tsx:148
 msgid "(empty)"
-msgstr ""
+msgstr "(üres)"
 
 #: src/components/common/OrganizerReportTable/index.tsx:314
 #: src/components/common/ReportTable/index.tsx:303
@@ -149,23 +149,23 @@ msgstr "<0>A termékhez elérhető termékek száma</0><1>Ez az érték felülí
 msgid "<0>Webhooks instantly notify external services when events happen, like adding a new attendee to your CRM or mailing list upon registration, ensuring seamless automation.</0><1>Use third-party services like <2>Zapier</2>, <3>IFTTT</3> or <4>Make</4> to create custom workflows and automate tasks.</1>"
 msgstr "<0>A webhookok azonnal értesítik a külső szolgáltatásokat, amikor események történnek, például új résztvevő hozzáadása a CRM-hez vagy levelezési listához regisztrációkor, biztosítva a zökkenőmentes automatizálást.</0><1>Használjon harmadik féltől származó szolgáltatásokat, mint a <2>Zapier</2>, <3>IFTTT</3> vagy <4>Make</4> egyedi munkafolyamatok létrehozásához és feladatok automatizálásához.</1>"
 
-#: src/components/routes/event/GettingStarted/index.tsx:139
+#: src/components/routes/event/GettingStarted/index.tsx:138
 msgid "⚡️ Set up your event"
 msgstr "⚡️ Esemény beállítása"
 
-#: src/components/routes/event/GettingStarted/index.tsx:124
+#: src/components/routes/event/GettingStarted/index.tsx:123
 msgid "🎟️ Add tickets"
 msgstr "🎟️ Jegyek hozzáadása"
 
-#: src/components/routes/event/GettingStarted/index.tsx:167
+#: src/components/routes/event/GettingStarted/index.tsx:152
 msgid "🎨 Customize your event page"
 msgstr "🎨 Eseményoldal testreszabása"
 
 #: src/components/routes/event/GettingStarted/index.tsx:152
-msgid "💳 Connect with Razorpay"
-msgstr "💳 Kapcsolódás a Razorpay-hoz"
+#~ msgid "💳 Connect with Razorpay"
+#~ msgstr "💳 Kapcsolódás a Razorpay-hoz"
 
-#: src/components/routes/event/GettingStarted/index.tsx:181
+#: src/components/routes/event/GettingStarted/index.tsx:166
 msgid "🚀 Set your event live"
 msgstr "🚀 Indítsa el az eseményt"
 
@@ -284,8 +284,8 @@ msgstr "Rólunk"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:433
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:462
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:680
-msgid "About Razorpay Connect"
-msgstr "A Razorpay Connectről"
+#~ msgid "About Razorpay Connect"
+#~ msgstr "A Razorpay Connectről"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:164
 msgid "Absorb fee"
@@ -305,8 +305,12 @@ msgid "Accept bank transfers, checks, or other offline payment methods"
 msgstr "Banki átutalások, csekkek vagy egyéb offline fizetési módok elfogadása"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
-msgid "Accept credit card payments with Razorpay"
-msgstr "Hitelkártyás fizetések elfogadása a Razorpay-pal"
+msgid "Accept credit card and other online payments with Razorpay"
+msgstr ""
+
+#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
+#~ msgid "Accept credit card payments with Razorpay"
+#~ msgstr "Hitelkártyás fizetések elfogadása a Razorpay-pal"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:87
 msgid "Accept invitation"
@@ -318,8 +322,8 @@ msgstr "Meghívó elfogadása"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:357
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:608
-msgid "Access Denied"
-msgstr "Hozzáférés megtagadva"
+#~ msgid "Access Denied"
+#~ msgstr "Hozzáférés megtagadva"
 
 #: src/components/common/AdminOrdersTable/index.tsx:68
 #: src/components/routes/account/ManageAccount/index.tsx:24
@@ -328,8 +332,8 @@ msgid "Account"
 msgstr "Fiók"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:342
-msgid "Account already connected!"
-msgstr "A fiók már csatlakoztatva van!"
+#~ msgid "Account already connected!"
+#~ msgstr "A fiók már csatlakoztatva van!"
 
 #: src/components/modals/EditAccountConfigurationModal/index.tsx:70
 msgid "Account configuration updated successfully"
@@ -356,6 +360,11 @@ msgstr "Fiókbeállítások"
 msgid "Account updated successfully"
 msgstr "Fiók sikeresen frissítve"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:348
+#: src/components/modals/SendMessageModal/index.tsx:154
+msgid "Account verification required"
+msgstr ""
+
 #: src/components/common/AdminUsersTable/index.tsx:127
 #: src/components/layouts/Admin/index.tsx:14
 #: src/components/routes/admin/Accounts/index.tsx:57
@@ -364,8 +373,8 @@ msgid "Accounts"
 msgstr "Fiókok"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:70
-msgid "Action Required: Reconnect Your Razorpay Account"
-msgstr "Beavatkozás szükséges: Csatlakoztassa újra Razorpay fiókját"
+#~ msgid "Action Required: Reconnect Your Razorpay Account"
+#~ msgstr "Beavatkozás szükséges: Csatlakoztassa újra Razorpay fiókját"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/index.tsx:57
 msgid "Action Required: VAT Information Needed"
@@ -390,7 +399,7 @@ msgstr "Aktiválás dátuma"
 #: src/components/common/AffiliateTable/index.tsx:131
 #: src/components/common/AttendeeTable/index.tsx:283
 #: src/components/common/CheckInListList/index.tsx:114
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:267
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:266
 #: src/components/forms/AffiliateForm/index.tsx:21
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:19
 #: src/components/modals/EditUserModal/index.tsx:110
@@ -426,7 +435,7 @@ msgstr "Egyedi kérdések hozzáadása további információk gyűjtéséhez a p
 msgid "Add description"
 msgstr "Leírás hozzáadása"
 
-#: src/components/routes/event/GettingStarted/index.tsx:142
+#: src/components/routes/event/GettingStarted/index.tsx:141
 msgid "Add event details and manage event settings."
 msgstr "Adja meg az esemény részleteit és kezelje az esemény beállításait."
 
@@ -434,7 +443,7 @@ msgstr "Adja meg az esemény részleteit és kezelje az esemény beállításait
 msgid "Add instructions for offline payments (e.g., bank transfer details, where to send checks, payment deadlines)"
 msgstr "Adjon hozzá utasításokat az offline fizetésekhez (pl. banki átutalás részletei, hová küldje a csekkeket, fizetési határidők)"
 
-#: src/components/routes/event/GettingStarted/index.tsx:132
+#: src/components/routes/event/GettingStarted/index.tsx:131
 msgid "Add More tickets"
 msgstr "További jegyek hozzáadása"
 
@@ -467,7 +476,7 @@ msgstr "Adó vagy díj hozzáadása"
 msgid "Add this event to your calendar"
 msgstr "Adja hozzá ezt az eseményt a naptárához"
 
-#: src/components/routes/event/GettingStarted/index.tsx:132
+#: src/components/routes/event/GettingStarted/index.tsx:131
 msgid "Add tickets"
 msgstr "Jegyek hozzáadása"
 
@@ -595,7 +604,7 @@ msgstr "Összes archivált esemény"
 msgid "All attendees"
 msgstr "Minden résztvevő"
 
-#: src/components/modals/SendMessageModal/index.tsx:177
+#: src/components/modals/SendMessageModal/index.tsx:172
 msgid "All attendees of this event"
 msgstr "Az esemény összes résztvevője"
 
@@ -604,8 +613,8 @@ msgid "All Currencies"
 msgstr "Minden pénznem"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:184
-msgid "All done! You're now using our upgraded payment system."
-msgstr "Kész! Most már a fejlesztett fizetési rendszerünket használja."
+#~ msgid "All done! You're now using our upgraded payment system."
+#~ msgstr "Kész! Most már a fejlesztett fizetési rendszerünket használja."
 
 #: src/components/routes/events/Dashboard/index.tsx:74
 msgid "All Ended Events"
@@ -635,12 +644,12 @@ msgstr "Engedélyezze a keresőmotoroknak az esemény indexelését"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:204
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:416
-msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
-msgstr "Majdnem kész! Fejezze be Razorpay fiókja csatlakoztatását a kifizetések fogadásának megkezdéséhez."
+#~ msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
+#~ msgstr "Majdnem kész! Fejezze be Razorpay fiókja csatlakoztatását a kifizetések fogadásának megkezdéséhez."
 
 #: src/components/routes/product-widget/PaymentReturn/index.tsx:90
-msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
-msgstr "Majdnem kész! Csak a fizetés feldolgozására várunk. Ez csak néhány másodpercet vesz igénybe."
+#~ msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
+#~ msgstr "Majdnem kész! Csak a fizetés feldolgozására várunk. Ez csak néhány másodpercet vesz igénybe."
 
 #: src/components/routes/auth/Register/index.tsx:75
 msgid "Already have an account? <0>{0}</0>"
@@ -694,8 +703,8 @@ msgid "An optional message to display on the highlighted product, e.g. \"Selling
 msgstr "Opcionális üzenet a kiemelt termék megjelenítéséhez, pl. \"Gyorsan fogy 🔥\" vagy \"Legjobb ár\""
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:40
-msgid "An unexpected error occurred."
-msgstr "Váratlan hiba történt."
+#~ msgid "An unexpected error occurred."
+#~ msgstr "Váratlan hiba történt."
 
 #: src/hooks/useFormErrorResponseHandler.tsx:48
 msgid "An unexpected error occurred. Please try again."
@@ -774,11 +783,11 @@ msgstr "Biztosan törölni szeretné ezt a konfigurációt? Ez hatással lehet a
 msgid "Are you sure you want to delete this promo code?"
 msgstr "Biztosan törölni szeretné ezt a promóciós kódot?"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:101
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:100
 msgid "Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the default template."
 msgstr "Biztosan törli ezt a sablont? Ez a művelet nem vonható vissza, és az e-mailek az alapértelmezett sablont fogják használni."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:100
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:99
 msgid "Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the organizer or default template."
 msgstr "Biztosan törli ezt a sablont? Ez a művelet nem vonható vissza, és az e-mailek a szervező vagy az alapértelmezett sablont fogják használni."
 
@@ -791,20 +800,20 @@ msgid "Are you sure you want to leave?"
 msgstr "Biztos, hogy el akarsz menni?"
 
 #: src/components/layouts/Event/index.tsx:149
-#: src/components/routes/event/EventDashboard/index.tsx:73
+#: src/components/routes/event/EventDashboard/index.tsx:67
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr "Biztosan piszkozatba szeretné tenni ezt az eseményt? Ezzel az esemény láthatatlanná válik a nyilvánosság számára."
 
 #: src/components/layouts/Event/index.tsx:150
-#: src/components/routes/event/EventDashboard/index.tsx:74
+#: src/components/routes/event/EventDashboard/index.tsx:68
 msgid "Are you sure you want to make this event public? This will make the event visible to the public"
 msgstr "Biztosan nyilvánossá szeretné tenni ezt az eseményt? Ezzel az esemény láthatóvá válik a nyilvánosság számára."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:123
+#: src/components/layouts/OrganizerLayout/index.tsx:119
 msgid "Are you sure you want to make this organizer draft? This will make the organizer page invisible to the public"
 msgstr "Biztosan piszkozatba szeretné tenni ezt a szervezőt? Ezzel a szervezői oldal láthatatlanná válik a nyilvánosság számára."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:124
+#: src/components/layouts/OrganizerLayout/index.tsx:120
 msgid "Are you sure you want to make this organizer public? This will make the organizer page visible to the public"
 msgstr "Biztosan nyilvánossá szeretné tenni ezt a szervezőt? Ezzel a szervezői oldal láthatóvá válik a nyilvánosság számára."
 
@@ -939,7 +948,7 @@ msgid "Attendee Status"
 msgstr "Résztvevő állapota"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:95
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:201
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:200
 #: src/components/modals/ManageAttendeeModal/index.tsx:172
 msgid "Attendee Ticket"
 msgstr "Résztvevői jegy"
@@ -970,11 +979,11 @@ msgstr "Résztvevők exportálva"
 msgid "Attendees registered"
 msgstr "Regisztrált résztvevők"
 
-#: src/components/routes/event/EventDashboard/index.tsx:275
+#: src/components/routes/event/EventDashboard/index.tsx:211
 msgid "Attendees Registered"
 msgstr "Regisztrált résztvevők"
 
-#: src/components/modals/SendMessageModal/index.tsx:173
+#: src/components/modals/SendMessageModal/index.tsx:168
 msgid "Attendees with a specific ticket"
 msgstr "Résztvevők meghatározott jeggyel"
 
@@ -982,21 +991,20 @@ msgstr "Résztvevők meghatározott jeggyel"
 msgid "Attendees:"
 msgstr "Résztvevők:"
 
-#: src/components/layouts/Admin/index.tsx:18
-msgid "Attribution"
-msgstr ""
+#~ msgid "Attribution"
+#~ msgstr "Hozzárendelés"
 
 #: src/components/routes/admin/Attribution/index.tsx:29
 msgid "Attribution Analytics"
-msgstr ""
+msgstr "Hozzárendelési elemzés"
 
 #: src/components/routes/admin/Attribution/index.tsx:97
 msgid "Attribution Breakdown"
-msgstr ""
+msgstr "Hozzárendelési bontás"
 
 #: src/components/routes/admin/Attribution/index.tsx:124
 msgid "Attribution Value"
-msgstr ""
+msgstr "Hozzárendelési érték"
 
 #: src/components/common/WidgetEditor/index.tsx:236
 msgid "Auto Resize"
@@ -1019,7 +1027,7 @@ msgid "Available Tokens"
 msgstr "Elérhető tokenek"
 
 #: src/components/common/OrderStatusBadge/index.tsx:15
-#: src/components/modals/SendMessageModal/index.tsx:221
+#: src/components/modals/SendMessageModal/index.tsx:216
 msgid "Awaiting offline payment"
 msgstr "Offline fizetésre vár"
 
@@ -1056,7 +1064,6 @@ msgstr "Awesome Organizer Kft."
 msgid "Back to Accounts"
 msgstr "Vissza a fiókokhoz"
 
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:108
 #: src/components/routes/product-widget/CollectInformation/index.tsx:327
 #: src/components/routes/product-widget/CollectInformation/index.tsx:357
 #: src/components/routes/product-widget/CollectInformation/index.tsx:380
@@ -1186,13 +1193,13 @@ msgstr "Kamera szkenner"
 
 #: src/components/routes/admin/Attribution/index.tsx:107
 msgid "Campaign"
-msgstr ""
+msgstr "Kampány"
 
 #: src/components/common/AttendeeTable/index.tsx:370
 #: src/components/common/CheckIn/CheckInOptionsModal.tsx:59
 #: src/components/common/CheckIn/ScannerSelectionModal.tsx:57
 #: src/components/common/ContactOrganizerModal/index.tsx:104
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:121
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:120
 #: src/components/common/PromoCodeTable/index.tsx:40
 #: src/components/common/QuestionAndAnswerList/index.tsx:149
 #: src/utilites/confirmationDialog.tsx:11
@@ -1516,7 +1523,7 @@ msgstr "A kódnak 3 és 50 karakter között kell lennie"
 msgid "Code must be no more than 20 characters"
 msgstr "A kód legfeljebb 20 karakter hosszúságú lehet"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:162
+#: src/components/layouts/OrganizerLayout/index.tsx:158
 msgid "Collaborate with your team to create amazing events together."
 msgstr "Kollaboráljon csapatával, hogy csodálatos eseményeket hozzanak létre együtt."
 
@@ -1586,14 +1593,14 @@ msgstr "Fizetés befejezése"
 
 #: src/components/common/RazorpayConnectButton/index.tsx:87
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Complete Razorpay Setup"
-msgstr "Razorpay beállításának befejezése"
+#~ msgid "Complete Razorpay Setup"
+#~ msgstr "Razorpay beállításának befejezése"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:114
-msgid "Complete the setup below to continue"
-msgstr "Fejezze be az alábbi beállítást a folytatáshoz"
+#~ msgid "Complete the setup below to continue"
+#~ msgstr "Fejezze be az alábbi beállítást a folytatáshoz"
 
-#: src/components/routes/event/EventDashboard/index.tsx:163
+#: src/components/routes/event/EventDashboard/index.tsx:133
 msgid "Complete these steps to start selling tickets for your event."
 msgstr "Fejezze be ezeket a lépéseket, hogy elkezdhesse jegyek értékesítését az eseményéhez."
 
@@ -1606,7 +1613,7 @@ msgid "Complete your profile to join the team."
 msgstr "Töltse ki a profilját a csapathoz való csatlakozáshoz."
 
 #: src/components/common/OrdersTable/index.tsx:405
-#: src/components/modals/SendMessageModal/index.tsx:220
+#: src/components/modals/SendMessageModal/index.tsx:215
 #: src/components/routes/event/GettingStarted/index.tsx:75
 #: src/components/routes/event/orders.tsx:23
 #: src/components/routes/my-tickets/index.tsx:34
@@ -1618,7 +1625,7 @@ msgstr "Befejezett"
 msgid "Completed orders"
 msgstr "Befejezett megrendelések"
 
-#: src/components/routes/event/EventDashboard/index.tsx:273
+#: src/components/routes/event/EventDashboard/index.tsx:209
 msgid "Completed Orders"
 msgstr "Befejezett megrendelések"
 
@@ -1710,7 +1717,7 @@ msgstr "Jelszó megerősítése"
 msgid "Confirm your email to access all features."
 msgstr "Erősítse meg e-mail címét az összes funkció eléréséhez."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:296
+#: src/components/layouts/OrganizerLayout/index.tsx:276
 msgid "Confirmation email sent! Please check your inbox."
 msgstr "Megerősítő e-mail elküldve! Kérjük, ellenőrizze postaládáját."
 
@@ -1727,66 +1734,66 @@ msgid "Congratulations on creating an event!"
 msgstr "Gratulálunk az esemény létrehozásához!"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
-msgid "Connect & Upgrade"
-msgstr "Csatlakozás és frissítés"
+#~ msgid "Connect & Upgrade"
+#~ msgstr "Csatlakozás és frissítés"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:652
-msgid "Connect Documentation"
-msgstr "Dokumentáció csatlakoztatása"
+#~ msgid "Connect Documentation"
+#~ msgstr "Dokumentáció csatlakoztatása"
 
 #: src/components/routes/event/EventDashboard/index.tsx:228
-msgid "Connect payment processing"
-msgstr "Fizetésfeldolgozás csatlakoztatása"
+#~ msgid "Connect payment processing"
+#~ msgstr "Fizetésfeldolgozás csatlakoztatása"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:175
 #: src/components/layouts/OrganizerLayout/index.tsx:183
-msgid "Connect Razorpay"
-msgstr "Razorpay csatlakoztatása"
+#~ msgid "Connect Razorpay"
+#~ msgstr "Razorpay csatlakoztatása"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:349
-msgid "Connect Razorpay to enable email template editing"
-msgstr "Kapcsolja be a Razorpay-ot az e-mail sablon szerkesztéséhez"
+#~ msgid "Connect Razorpay to enable email template editing"
+#~ msgstr "Kapcsolja be a Razorpay-ot az e-mail sablon szerkesztéséhez"
 
 #: src/components/modals/SendMessageModal/index.tsx:156
-msgid "Connect Razorpay to enable messaging"
-msgstr "Kapcsolja be a Razorpay-ot az üzenetküldéshez"
+#~ msgid "Connect Razorpay to enable messaging"
+#~ msgstr "Kapcsolja be a Razorpay-ot az üzenetküldéshez"
 
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Connect to Razorpay"
-msgstr "Csatlakozás a Razorpay-hoz"
+#~ msgid "Connect to Razorpay"
+#~ msgstr "Csatlakozás a Razorpay-hoz"
 
 #: src/components/common/RazorpayConnectButton/index.tsx:85
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:453
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:670
 #: src/components/routes/event/GettingStarted/index.tsx:159
-msgid "Connect with Razorpay"
-msgstr "Csatlakozás a Razorpay-hoz"
+#~ msgid "Connect with Razorpay"
+#~ msgstr "Csatlakozás a Razorpay-hoz"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:176
-msgid "Connect your Razorpay account to accept payments for tickets and products."
-msgstr "Csatlakoztassa Razorpay fiókját, hogy elfogadja a jegyek és termékek fizetését."
+#~ msgid "Connect your Razorpay account to accept payments for tickets and products."
+#~ msgstr "Csatlakoztassa Razorpay fiókját, hogy elfogadja a jegyek és termékek fizetését."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:222
-msgid "Connect your Razorpay account to accept payments."
-msgstr "Kapcsolja össze a Razorpay fiókját a fizetések fogadásához."
+#~ msgid "Connect your Razorpay account to accept payments."
+#~ msgstr "Kapcsolja össze a Razorpay fiókját a fizetések fogadásához."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:445
-msgid "Connect your Razorpay account to start accepting payments for your events."
-msgstr "Kapcsolja össze a Razorpay fiókját, hogy elkezdjen fizetéseket fogadni az eseményeihez."
+#~ msgid "Connect your Razorpay account to start accepting payments for your events."
+#~ msgstr "Kapcsolja össze a Razorpay fiókját, hogy elkezdjen fizetéseket fogadni az eseményeihez."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:220
-msgid "Connect your Razorpay account to start accepting payments."
-msgstr "Kapcsolja össze a Razorpay fiókját a fizetések fogadásának megkezdéséhez."
+#~ msgid "Connect your Razorpay account to start accepting payments."
+#~ msgstr "Kapcsolja össze a Razorpay fiókját a fizetések fogadásának megkezdéséhez."
 
 #: src/components/routes/event/GettingStarted/index.tsx:155
-msgid "Connect your Razorpay account to start receiving payments."
-msgstr "Csatlakoztassa Razorpay fiókját, hogy elkezdhesse a fizetések fogadását."
+#~ msgid "Connect your Razorpay account to start receiving payments."
+#~ msgstr "Csatlakoztassa Razorpay fiókját, hogy elkezdhesse a fizetések fogadását."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:391
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:628
-msgid "Connected to Razorpay"
-msgstr "Csatlakoztatva a Razorpay-hoz"
+#~ msgid "Connected to Razorpay"
+#~ msgstr "Csatlakoztatva a Razorpay-hoz"
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:98
 msgid "Connection Details"
@@ -1821,7 +1828,7 @@ msgstr "Folytatás"
 msgid "Continue Button Text"
 msgstr "Folytatás gomb szövege"
 
-#: src/components/routes/event/GettingStarted/index.tsx:145
+#: src/components/routes/event/GettingStarted/index.tsx:144
 msgid "Continue set up"
 msgstr "Beállítás folytatása"
 
@@ -2029,11 +2036,11 @@ msgstr "Bejelentkezési lista létrehozása"
 msgid "Create Configuration"
 msgstr "Konfiguráció létrehozása"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:311
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:310
 msgid "Create custom email templates for this event that override the organizer defaults"
 msgstr "Hozzon létre egyedi e-mail sablonokat ehhez az eseményhez, amelyek felülírják a szervező alapértelmezéseit"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:301
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:300
 msgid "Create Custom Template"
 msgstr "Egyedi sablon létrehozása"
 
@@ -2042,7 +2049,7 @@ msgid "Create discounts, access codes for hidden tickets, and special offers."
 msgstr "Kedvezmények, hozzáférési kódok rejtett jegyekhez és különleges ajánlatok létrehozása."
 
 #: src/components/common/NoEventsBlankSlate/index.tsx:27
-#: src/components/layouts/OrganizerLayout/index.tsx:152
+#: src/components/layouts/OrganizerLayout/index.tsx:148
 #: src/components/routes/organizer/Events/index.tsx:62
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:257
 msgid "Create Event"
@@ -2085,7 +2092,7 @@ msgstr "Adó vagy díj létrehozása"
 msgid "Create Ticket or Product"
 msgstr "Jegy vagy termék létrehozása"
 
-#: src/components/routes/event/GettingStarted/index.tsx:127
+#: src/components/routes/event/GettingStarted/index.tsx:126
 msgid "Create tickets for your event, set prices, and manage available quantity."
 msgstr "Hozzon létre jegyeket az eseményéhez, állítsa be az árakat és kezelje az elérhető mennyiséget."
 
@@ -2155,8 +2162,8 @@ msgid "Current Password"
 msgstr "Jelenlegi jelszó"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:163
-msgid "Current payment processor"
-msgstr "Jelenlegi fizetési szolgáltató"
+#~ msgid "Current payment processor"
+#~ msgstr "Jelenlegi fizetési szolgáltató"
 
 #: src/components/modals/EditAccountVatSettingsModal/index.tsx:156
 msgid "Current VAT number is validated"
@@ -2192,7 +2199,7 @@ msgstr "Egyedi kérdések"
 msgid "Custom Range"
 msgstr "Egyedi tartomány"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:223
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:222
 msgid "Custom template"
 msgstr "Egyedi sablon"
 
@@ -2225,7 +2232,7 @@ msgstr "Vásárlók"
 msgid "Customize the email and notification settings for this event"
 msgstr "Testreszabhatja az esemény e-mail és értesítési beállításait."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:313
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:312
 msgid "Customize the emails sent to your customers using Liquid templating. These templates will be used as defaults for all events in your organization."
 msgstr "Testreszabhatja az ügyfeleknek küldött e-maileket Liquid sablonok használatával. Ezek a sablonok alapértelmezettként lesznek használva a szervezet összes eseményéhez."
 
@@ -2258,11 +2265,11 @@ msgstr "Testreszabhatja a folytatás gomb szövegét."
 msgid "Customize your email template using Liquid templating"
 msgstr "Testreszabhatja az e-mail sablonját Liquid sablonok használatával"
 
-#: src/components/routes/event/GettingStarted/index.tsx:174
+#: src/components/routes/event/GettingStarted/index.tsx:159
 msgid "Customize your event page"
 msgstr "Testreszabhatja eseményoldalát"
 
-#: src/components/routes/event/GettingStarted/index.tsx:170
+#: src/components/routes/event/GettingStarted/index.tsx:155
 msgid "Customize your event page to match your brand and style."
 msgstr "Testreszabhatja eseményoldalát, hogy illeszkedjen márkájához és stílusához."
 
@@ -2346,7 +2353,7 @@ msgstr "Alapértelmezett résztvevői információgyűjtés"
 msgid "Default Fee Handling"
 msgstr "Alapértelmezett díjkezelés"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:213
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:212
 msgid "Default template will be used"
 msgstr "Alapértelmezett sablon lesz használva"
 
@@ -2382,7 +2389,7 @@ msgstr "Kód törlése"
 msgid "Delete image"
 msgstr "Kép törlése"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:121
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:120
 msgid "Delete Template"
 msgstr "Sablon törlése"
 
@@ -2460,8 +2467,8 @@ msgid "Document Label"
 msgstr "Dokumentum címke"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:691
-msgid "Documentation"
-msgstr "Dokumentáció"
+#~ msgid "Documentation"
+#~ msgstr "Dokumentáció"
 
 #: src/components/common/AddToCalendarCTA/index.tsx:19
 msgid "Don't forget!"
@@ -2514,7 +2521,7 @@ msgstr "Számla letöltése"
 
 #: src/components/common/EventCard/index.tsx:84
 #: src/components/layouts/Event/index.tsx:182
-#: src/components/layouts/OrganizerLayout/index.tsx:206
+#: src/components/layouts/OrganizerLayout/index.tsx:186
 msgid "Draft"
 msgstr "Piszkozat"
 
@@ -2522,17 +2529,25 @@ msgstr "Piszkozat"
 msgid "Dropdown selection"
 msgstr "Legördülő menü kiválasztása"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:350
+msgid "Due to the high risk of spam, you must complete account verification before you can modify email templates. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information."
+msgstr ""
+
+#: src/components/modals/SendMessageModal/index.tsx:155
+msgid "Due to the high risk of spam, you must complete account verification before you can send messages. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information."
+msgstr ""
+
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:351
-msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
-msgstr "A spam magas kockázata miatt csatlakoztatnia kell egy Razorpay fiókot, mielőtt módosíthatná az e-mail sablonokat. Ez biztosítja, hogy minden eseményszervező ellenőrzött és felelősségre vonható legyen."
+#~ msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
+#~ msgstr "A spam magas kockázata miatt csatlakoztatnia kell egy Razorpay fiókot, mielőtt módosíthatná az e-mail sablonokat. Ez biztosítja, hogy minden eseményszervező ellenőrzött és felelősségre vonható legyen."
 
 #: src/components/modals/SendMessageModal/index.tsx:157
-msgid ""
-"Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
-"This is to ensure that all event organizers are verified and accountable."
-msgstr ""
-"A spam magas kockázata miatt csatlakoztatnia kell egy Razorpay fiókot, mielőtt üzeneteket küldhetne a résztvevőknek.\n"
-"Ez biztosítja, hogy minden eseményszervező ellenőrzött és felelősségre vonható legyen."
+#~ msgid ""
+#~ "Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
+#~ "This is to ensure that all event organizers are verified and accountable."
+#~ msgstr ""
+#~ "A spam magas kockázata miatt csatlakoztatnia kell egy Razorpay fiókot, mielőtt üzeneteket küldhetne a résztvevőknek.\n"
+#~ "Ez biztosítja, hogy minden eseményszervező ellenőrzött és felelősségre vonható legyen."
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:473
 msgid "Duplicate"
@@ -2564,7 +2579,7 @@ msgstr "Holland"
 msgid "e.g., Get Tickets, Register Now"
 msgstr "pl. Jegyek beszerzése, Regisztráció most"
 
-#: src/components/modals/SendMessageModal/index.tsx:235
+#: src/components/modals/SendMessageModal/index.tsx:230
 msgid "e.g., Important update about your tickets"
 msgstr "pl. Fontos frissítés a jegyeiről"
 
@@ -2766,7 +2781,7 @@ msgid "Email confirmation resent"
 msgstr "E-mail megerősítés újraküldve"
 
 #: src/components/layouts/Event/index.tsx:71
-#: src/components/layouts/OrganizerLayout/index.tsx:96
+#: src/components/layouts/OrganizerLayout/index.tsx:92
 #: src/components/routes/profile/ManageProfile/index.tsx:100
 msgid "Email confirmation resent successfully"
 msgstr "E-mail megerősítés sikeresen újraküldve"
@@ -2787,12 +2802,12 @@ msgstr "E-mail nem ellenőrzött"
 msgid "Email Preview"
 msgstr "E-mail előnézet"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:336
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:335
 #: src/components/routes/organizer/Settings/index.tsx:64
 msgid "Email Templates"
 msgstr "E-mail sablonok"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:275
+#: src/components/layouts/OrganizerLayout/index.tsx:255
 msgid "Email Verification Required"
 msgstr "E-mail ellenőrzés szükséges"
 
@@ -2974,7 +2989,7 @@ msgstr "Eseménykategória"
 msgid "Event Cover Image"
 msgstr "Esemény borítóképe"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:223
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:222
 msgid "Event custom template"
 msgstr "Esemény egyedi sablon"
 
@@ -3071,7 +3086,7 @@ msgstr "Esemény beállítások"
 #: src/components/common/EventCard/index.tsx:70
 #: src/components/common/StatusToggle/index.tsx:63
 #: src/components/layouts/Event/index.tsx:161
-#: src/components/routes/event/EventDashboard/index.tsx:88
+#: src/components/routes/event/EventDashboard/index.tsx:82
 #: src/components/routes/event/GettingStarted/index.tsx:68
 msgid "Event status update failed. Please try again later"
 msgstr "Esemény állapotának frissítése sikertelen. Kérjük, próbálja újra később."
@@ -3079,7 +3094,7 @@ msgstr "Esemény állapotának frissítése sikertelen. Kérjük, próbálja új
 #: src/components/common/EventCard/index.tsx:67
 #: src/components/common/StatusToggle/index.tsx:55
 #: src/components/layouts/Event/index.tsx:158
-#: src/components/routes/event/EventDashboard/index.tsx:85
+#: src/components/routes/event/EventDashboard/index.tsx:79
 #: src/components/routes/event/GettingStarted/index.tsx:65
 msgid "Event status updated"
 msgstr "Esemény állapota frissítve"
@@ -3117,7 +3132,7 @@ msgstr "Esemény helyszíne"
 
 #: src/components/common/AdminAccountsTable/index.tsx:74
 #: src/components/layouts/Admin/index.tsx:16
-#: src/components/layouts/OrganizerLayout/index.tsx:84
+#: src/components/layouts/OrganizerLayout/index.tsx:80
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:123
 #: src/components/routes/admin/Attribution/index.tsx:126
 #: src/components/routes/admin/Events/index.tsx:77
@@ -3220,8 +3235,8 @@ msgstr "Nem sikerült létrehozni a partnert."
 msgid "Failed to create configuration"
 msgstr "A konfiguráció létrehozása sikertelen"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:182
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:185
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:181
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:184
 msgid "Failed to create template"
 msgstr "A sablon létrehozása sikertelen"
 
@@ -3233,8 +3248,8 @@ msgstr "A konfiguráció törlése sikertelen"
 msgid "Failed to delete question"
 msgstr "A kérdés törlése sikertelen"
 
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:115
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:116
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:117
 msgid "Failed to delete template"
 msgstr "A sablon törlése sikertelen"
 
@@ -3254,6 +3269,10 @@ msgstr "Résztvevők exportálása sikertelen"
 #: src/components/routes/event/orders.tsx:99
 msgid "Failed to export orders"
 msgstr "Megrendelések exportálása sikertelen"
+
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:95
+msgid "Failed to initialize payment."
+msgstr ""
 
 #: src/components/modals/EditCheckInListModal/index.tsx:79
 msgid "Failed to load Check-In List"
@@ -3275,10 +3294,10 @@ msgstr "Jegy e-mail újraküldése sikertelen"
 msgid "Failed to resend verification code"
 msgstr "Ellenőrző kód újraküldése sikertelen"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:148
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:151
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:154
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:179
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:147
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:150
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:153
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:178
 msgid "Failed to save template"
 msgstr "A sablon mentése sikertelen"
 
@@ -3365,7 +3384,7 @@ msgstr "Díjkezelés"
 msgid "Fees"
 msgstr "Díjak"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:290
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:77
 msgid "Fees are subject to change. You will be notified of any changes to your fee structure."
 msgstr "A díjak változhatnak. Értesítést kap minden díjstruktúrájában bekövetkező változásról."
 
@@ -3399,14 +3418,14 @@ msgstr "Szűrők"
 msgid "Filters ({activeFilterCount})"
 msgstr "Szűrők ({activeFilterCount})"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:213
-msgid "Finish Setup"
-msgstr "Beállítás befejezése"
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:424
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:671
-msgid "Finish Razorpay Setup"
-msgstr "Razorpay beállítás befejezése"
+#~ msgid "Finish Razorpay Setup"
+#~ msgstr "Razorpay beállítás befejezése"
+
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:213
+#~ msgid "Finish Setup"
+#~ msgstr "Beállítás befejezése"
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:474
 msgid "First attendee"
@@ -3474,7 +3493,7 @@ msgstr "Tranzakciónként felszámított fix díj USD-ben"
 msgid "Fixed fee must be 0 or greater"
 msgstr "A fix díjnak 0 vagy nagyobbnak kell lennie"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:275
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:62
 msgid "Fixed Fee:"
 msgstr "Fix díj:"
 
@@ -3559,8 +3578,12 @@ msgid "Get Directions"
 msgstr "Útvonal"
 
 #: src/components/layouts/AuthLayout/index.tsx:36
+#~ msgid "Get paid immediately via Razorpay Connect"
+#~ msgstr "Azonnali kifizetés Razorpay Connect-en keresztül"
+
+#: src/components/layouts/AuthLayout/index.tsx:36
 msgid "Get paid immediately via Razorpay Connect"
-msgstr "Azonnali kifizetés Razorpay Connect-en keresztül"
+msgstr ""
 
 #: src/components/routes/auth/Register/index.tsx:73
 msgid "Get started"
@@ -3570,7 +3593,7 @@ msgstr "Kezdés"
 msgid "Get Tickets"
 msgstr "Jegyek vásárlása"
 
-#: src/components/routes/event/EventDashboard/index.tsx:161
+#: src/components/routes/event/EventDashboard/index.tsx:131
 msgid "Get your event ready"
 msgstr "Készítse elő eseményét"
 
@@ -3615,7 +3638,7 @@ msgstr "Bruttó bevétel"
 msgid "Gross sales"
 msgstr "Bruttó értékesítés"
 
-#: src/components/routes/event/EventDashboard/index.tsx:312
+#: src/components/routes/event/EventDashboard/index.tsx:248
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:119
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:30
 msgid "Gross Sales"
@@ -3659,10 +3682,10 @@ msgid "Here is your affiliate link"
 msgstr "Íme az affiliate linkje"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:83
-msgid "Here's what to expect:"
-msgstr "Mire számíthat:"
+#~ msgid "Here's what to expect:"
+#~ msgstr "Mire számíthat:"
 
-#: src/components/routes/event/EventDashboard/index.tsx:113
+#: src/components/routes/event/EventDashboard/index.tsx:106
 msgid "Hi {0} 👋"
 msgstr "Szia {0} 👋"
 
@@ -3764,7 +3787,7 @@ msgid "Homepage Design"
 msgstr "Honlaptervezés"
 
 #: src/components/layouts/Event/index.tsx:102
-#: src/components/layouts/OrganizerLayout/index.tsx:88
+#: src/components/layouts/OrganizerLayout/index.tsx:84
 msgid "Homepage Designer"
 msgstr "Honlaptervező"
 
@@ -3815,7 +3838,7 @@ msgstr "Magyar"
 msgid "I agree to the <0>terms and conditions</0>"
 msgstr "Elfogadom az <0>általános szerződési feltételeket</0>"
 
-#: src/components/modals/SendMessageModal/index.tsx:250
+#: src/components/modals/SendMessageModal/index.tsx:245
 msgid "I confirm this is a transactional message related to this event"
 msgstr "Megerősítem, hogy ez egy tranzakciós üzenet az eseményhez kapcsolódóan"
 
@@ -3885,8 +3908,8 @@ msgid "Impersonation stopped"
 msgstr "Megszemélyesítés leállítva"
 
 #: src/components/routes/event/EventDashboard/index.tsx:129
-msgid "Important: Razorpay reconnection required"
-msgstr "Fontos: Razorpay újracsatlakozás szükséges"
+#~ msgid "Important: Razorpay reconnection required"
+#~ msgstr "Fontos: Razorpay újracsatlakozás szükséges"
 
 #: src/components/routes/admin/Dashboard/index.tsx:29
 msgid "In {diffHours} hours"
@@ -3898,7 +3921,7 @@ msgstr "{diffMinutes} perc múlva"
 
 #: src/components/common/AffiliateTable/index.tsx:131
 #: src/components/common/CheckInListList/index.tsx:114
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:267
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:266
 #: src/components/forms/AffiliateForm/index.tsx:27
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:25
 #: src/components/modals/EditUserModal/index.tsx:111
@@ -3978,8 +4001,8 @@ msgstr "Érvénytelen e-mail formátum"
 msgid "Invalid file type. Please upload an image."
 msgstr "Érvénytelen fájltípus. Kérjük, töltsön fel egy képet."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:144
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:175
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:143
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:174
 msgid "Invalid Liquid syntax. Please correct it and try again."
 msgstr "Érvénytelen Liquid szintaxis. Kérjük, javítsa ki és próbálja újra."
 
@@ -4003,7 +4026,7 @@ msgstr "Csapattag meghívása"
 msgid "Invite Team Member"
 msgstr "Csapattag meghívása"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:164
+#: src/components/layouts/OrganizerLayout/index.tsx:160
 msgid "Invite Team Members"
 msgstr "Csapattagok meghívása"
 
@@ -4015,7 +4038,7 @@ msgstr "Korlátlan számú csapattag meghívása egyedi szerepkörökkel"
 msgid "Invite User"
 msgstr "Felhasználó meghívása"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:161
+#: src/components/layouts/OrganizerLayout/index.tsx:157
 msgid "Invite Your Team"
 msgstr "Hívja meg csapatát"
 
@@ -4078,8 +4101,8 @@ msgid "Join from anywhere"
 msgstr "Csatlakozzon bárhonnan"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:119
-msgid "Just click the button below to reconnect your Razorpay account."
-msgstr "Csak kattintson az alábbi gombra a Razorpay fiók újracsatlakoztatásához."
+#~ msgid "Just click the button below to reconnect your Razorpay account."
+#~ msgstr "Csak kattintson az alábbi gombra a Razorpay fiók újracsatlakoztatásához."
 
 #: src/components/routes/auth/Login/index.tsx:121
 msgid "Just looking for your tickets?"
@@ -4199,8 +4222,8 @@ msgid "Link to ticket"
 msgstr "Link a jegyhez"
 
 #: src/components/routes/event/EventDashboard/index.tsx:230
-msgid "Link your Razorpay account to receive funds from ticket sales."
-msgstr "Linkelje Razorpay fiókját, hogy jegyértékesítésből származó bevételeket fogadjon."
+#~ msgid "Link your Razorpay account to receive funds from ticket sales."
+#~ msgstr "Linkelje Razorpay fiókját, hogy jegyértékesítésből származó bevételeket fogadjon."
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:61
 msgid "LinkedIn"
@@ -4208,7 +4231,7 @@ msgstr "LinkedIn"
 
 #: src/components/common/EventCard/index.tsx:87
 #: src/components/layouts/Event/index.tsx:184
-#: src/components/layouts/OrganizerLayout/index.tsx:208
+#: src/components/layouts/OrganizerLayout/index.tsx:188
 msgid "Live"
 msgstr "Élő"
 
@@ -4295,7 +4318,7 @@ msgstr "Tegye kötelezővé a számlázási címet a fizetés során"
 msgid "Make this question mandatory"
 msgstr "Tegye kötelezővé ezt a kérdést"
 
-#: src/components/routes/event/EventDashboard/index.tsx:184
+#: src/components/routes/event/EventDashboard/index.tsx:154
 msgid "Make your event live"
 msgstr "Tegye élővé eseményét"
 
@@ -4304,7 +4327,7 @@ msgstr "Tegye élővé eseményét"
 #: src/components/common/OrdersTable/index.tsx:150
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:446
 #: src/components/common/PromoCodeTable/index.tsx:167
-#: src/components/layouts/OrganizerLayout/index.tsx:83
+#: src/components/layouts/OrganizerLayout/index.tsx:79
 msgid "Manage"
 msgstr "Kezelés"
 
@@ -4340,9 +4363,13 @@ msgstr "Jegyek kezelése"
 msgid "Manage your account details and default settings"
 msgstr "Kezelje fiókadatait és alapértelmezett beállításait."
 
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:106
+msgid "Manage your payment processing and fee structure."
+msgstr ""
+
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:816
-msgid "Manage your payment processing and view platform fees"
-msgstr "Kezelje fizetésfeldolgozását és tekintse meg a platformdíjakat."
+#~ msgid "Manage your payment processing and view platform fees"
+#~ msgstr "Kezelje fizetésfeldolgozását és tekintse meg a platformdíjakat."
 
 #: src/components/routes/account/ManageAccount/sections/Users/index.tsx:143
 msgid "Manage your users and their permissions"
@@ -4371,12 +4398,12 @@ msgstr "Maximum megrendelésenként"
 
 #: src/components/routes/admin/Attribution/index.tsx:108
 msgid "Medium"
-msgstr ""
+msgstr "Médium"
 
 #: src/components/common/AttendeeTable/index.tsx:188
 #: src/components/common/ContactOrganizerModal/index.tsx:88
 #: src/components/common/OrdersTable/index.tsx:247
-#: src/components/modals/SendMessageModal/index.tsx:240
+#: src/components/modals/SendMessageModal/index.tsx:235
 msgid "Message"
 msgstr "Üzenet"
 
@@ -4388,7 +4415,7 @@ msgstr "Üzenet a résztvevőnek"
 msgid "Message Attendees"
 msgstr "Üzenet a résztvevőknek"
 
-#: src/components/modals/SendMessageModal/index.tsx:197
+#: src/components/modals/SendMessageModal/index.tsx:192
 msgid "Message attendees with specific tickets"
 msgstr "Üzenet a résztvevőknek meghatározott jegyekkel"
 
@@ -4400,7 +4427,7 @@ msgstr "Üzenet a vásárlónak"
 msgid "Message cannot exceed 5000 characters"
 msgstr "Az üzenet nem haladhatja meg az 5000 karaktert"
 
-#: src/components/modals/SendMessageModal/index.tsx:71
+#: src/components/modals/SendMessageModal/index.tsx:70
 msgid "Message individual attendees"
 msgstr "Egyéni résztvevők üzenete"
 
@@ -4408,11 +4435,11 @@ msgstr "Egyéni résztvevők üzenete"
 msgid "Message is required"
 msgstr "Üzenet kötelező"
 
-#: src/components/modals/SendMessageModal/index.tsx:209
+#: src/components/modals/SendMessageModal/index.tsx:204
 msgid "Message order owners with specific products"
 msgstr "Üzenet a megrendelőknek meghatározott termékekkel"
 
-#: src/components/modals/SendMessageModal/index.tsx:118
+#: src/components/modals/SendMessageModal/index.tsx:117
 msgid "Message Sent"
 msgstr "Üzenet elküldve"
 
@@ -4585,7 +4612,7 @@ msgstr "Nincs megjeleníthető résztvevő"
 
 #: src/components/routes/admin/Attribution/index.tsx:139
 msgid "No attribution data found"
-msgstr ""
+msgstr "Nem található hozzárendelési adat"
 
 #: src/components/common/CapacityAssignmentList/index.tsx:42
 msgid "No Capacity Assignments"
@@ -4648,8 +4675,8 @@ msgid "No filters available"
 msgstr "Nincsenek elérhető szűrők"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:85
-msgid "No impact on your current or past transactions"
-msgstr "Nincs hatása a jelenlegi vagy múltbeli tranzakciókra"
+#~ msgid "No impact on your current or past transactions"
+#~ msgstr "Nincs hatása a jelenlegi vagy múltbeli tranzakciókra"
 
 #: src/components/common/OrdersTable/index.tsx:299
 msgid "No invoice"
@@ -4876,8 +4903,8 @@ msgid "On sale {0}"
 msgstr "Értékesítésben {0}"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:552
-msgid "Once you complete the upgrade, your old account will only be used for refunds."
-msgstr "Miután befejezte a frissítést, a régi fiókját csak visszatérítésekre használjuk."
+#~ msgid "Once you complete the upgrade, your old account will only be used for refunds."
+#~ msgstr "Miután befejezte a frissítést, a régi fiókját csak visszatérítésekre használjuk."
 
 #: src/components/common/NoEventsBlankSlate/index.tsx:19
 msgid "Once you create an event, you'll see it here."
@@ -4887,7 +4914,7 @@ msgstr "Miután létrehozott egy eseményt, itt fogja látni."
 msgid "Once you start collecting data, you'll see it here."
 msgstr "Miután elkezd gyűjteni adatokat, itt fogja látni."
 
-#: src/components/routes/event/GettingStarted/index.tsx:184
+#: src/components/routes/event/GettingStarted/index.tsx:169
 msgid "Once you're ready, set your event live and start selling products."
 msgstr "Amikor elkészült, tegye élővé eseményét, és kezdjen el termékeket értékesíteni."
 
@@ -4911,7 +4938,11 @@ msgstr "Online esemény"
 msgid "Online Event Details"
 msgstr "Online esemény részletei"
 
-#: src/components/modals/SendMessageModal/index.tsx:217
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:89
+msgid "Online payments are processed via Razorpay. To configure your Razorpay credentials, please contact the system administrator."
+msgstr ""
+
+#: src/components/modals/SendMessageModal/index.tsx:212
 msgid "Only send to orders with these statuses"
 msgstr "Csak az ilyen státuszú megrendelésekre küldje el"
 
@@ -4924,15 +4955,15 @@ msgstr "Csak promóciós kóddal látható"
 msgid "Open Check-In Page"
 msgstr "Bejelentkezési oldal megnyitása"
 
-#: src/components/layouts/AppLayout/index.tsx:29
-msgid "Open sidebar"
-msgstr "Oldalsáv megnyitása"
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:195
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:404
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:641
-msgid "Open Razorpay Dashboard"
-msgstr "Razorpay irányítópult megnyitása"
+#~ msgid "Open Razorpay Dashboard"
+#~ msgstr "Razorpay irányítópult megnyitása"
+
+#: src/components/layouts/AppLayout/index.tsx:29
+msgid "Open sidebar"
+msgstr "Oldalsáv megnyitása"
 
 #: src/components/forms/QuestionForm/index.tsx:45
 msgid "Option {i}"
@@ -5001,7 +5032,7 @@ msgid "Order complete"
 msgstr "Rendelés befejezve"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:94
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:200
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:199
 msgid "Order Confirmation"
 msgstr "Rendelés megerősítése"
 
@@ -5089,7 +5120,7 @@ msgstr "Rendelésszám"
 msgid "Order owner"
 msgstr "Megrendelő"
 
-#: src/components/modals/SendMessageModal/index.tsx:181
+#: src/components/modals/SendMessageModal/index.tsx:176
 msgid "Order owners with a specific product"
 msgstr "Megrendelők meghatározott termékkel"
 
@@ -5115,7 +5146,7 @@ msgstr "Megrendelés visszatérítve"
 msgid "Order Status"
 msgstr "Megrendelés állapota"
 
-#: src/components/modals/SendMessageModal/index.tsx:218
+#: src/components/modals/SendMessageModal/index.tsx:213
 msgid "Order statuses"
 msgstr "Megrendelés állapotok"
 
@@ -5166,7 +5197,7 @@ msgstr "Rendelések:"
 
 #: src/components/routes/admin/Attribution/index.tsx:62
 msgid "Organic Accounts"
-msgstr ""
+msgstr "Organikus fiókok"
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:44
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:45
@@ -5199,7 +5230,7 @@ msgid "Organizer"
 msgstr "Szervező"
 
 #: src/components/layouts/Event/index.tsx:81
-#: src/components/layouts/OrganizerLayout/index.tsx:75
+#: src/components/layouts/OrganizerLayout/index.tsx:71
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:160
 msgid "Organizer Dashboard"
 msgstr "Szervezői irányítópult"
@@ -5238,16 +5269,16 @@ msgid "Organizer statistics are not available for the selected currency or an er
 msgstr "A szervezői statisztikák nem érhetők el a kiválasztott pénznemhez, vagy hiba történt."
 
 #: src/components/common/StatusToggle/index.tsx:64
-#: src/components/layouts/OrganizerLayout/index.tsx:135
+#: src/components/layouts/OrganizerLayout/index.tsx:131
 msgid "Organizer status update failed. Please try again later"
 msgstr "Szervező állapotának frissítése sikertelen. Kérjük, próbálja újra később."
 
 #: src/components/common/StatusToggle/index.tsx:56
-#: src/components/layouts/OrganizerLayout/index.tsx:132
+#: src/components/layouts/OrganizerLayout/index.tsx:128
 msgid "Organizer status updated"
 msgstr "Szervező állapota frissítve"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:212
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:211
 msgid "Organizer/default template will be used"
 msgstr "Szervező/alapértelmezett sablon lesz használva"
 
@@ -5275,8 +5306,8 @@ msgid "Padding"
 msgstr "Kitöltés"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:106
-msgid "Page no longer available"
-msgstr "Az oldal már nem elérhető"
+#~ msgid "Page no longer available"
+#~ msgstr "Az oldal már nem elérhető"
 
 #: src/components/common/ErrorDisplay/index.tsx:14
 msgid "Page not found"
@@ -5300,7 +5331,7 @@ msgstr "fizetett"
 
 #: src/components/routes/admin/Attribution/index.tsx:51
 msgid "Paid Accounts"
-msgstr ""
+msgstr "Fizetett fiókok"
 
 #: src/components/forms/ProductForm/index.tsx:154
 msgid "Paid Product"
@@ -5395,7 +5426,6 @@ msgstr "Fizessen a feloldáshoz"
 
 #: src/components/common/OrdersTable/index.tsx:368
 #: src/components/common/ProgressStepper/index.tsx:19
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:127
 msgid "Payment"
 msgstr "Fizetés"
 
@@ -5432,9 +5462,7 @@ msgstr "Fizetési mód"
 msgid "Payment Methods"
 msgstr "Fizetési módok"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:473
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:485
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:619
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:87
 msgid "Payment Processing"
 msgstr "Fizetésfeldolgozás"
 
@@ -5443,14 +5471,14 @@ msgid "Payment provider"
 msgstr "Fizetési szolgáltató"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:94
-msgid "Payment received"
-msgstr "Fizetés megérkezett"
+#~ msgid "Payment received"
+#~ msgstr "Fizetés megérkezett"
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:44
 msgid "Payment Received"
 msgstr "Fizetés beérkezett"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:815
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:105
 msgid "Payment Settings"
 msgstr "Fizetési beállítások"
 
@@ -5459,20 +5487,24 @@ msgid "Payment Status"
 msgstr "Fizetési állapot"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:60
-msgid "Payment succeeded!"
-msgstr "Fizetés sikeres!"
+#~ msgid "Payment succeeded!"
+#~ msgstr "Fizetés sikeres!"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:214
 msgid "Payment Terms"
 msgstr "Fizetési feltételek"
 
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:75
+msgid "Payment verification failed. Please contact support."
+msgstr ""
+
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:49
-msgid "Payments not available"
-msgstr "Fizetések nem elérhetők"
+#~ msgid "Payments not available"
+#~ msgstr "Fizetések nem elérhetők"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:86
-msgid "Payments will continue to flow without interruption"
-msgstr "A fizetések megszakítás nélkül folytatódnak"
+#~ msgid "Payments will continue to flow without interruption"
+#~ msgstr "A fizetések megszakítás nélkül folytatódnak"
 
 #: src/components/common/QuestionsTable/index.tsx:315
 msgid "Per Attendee"
@@ -5553,7 +5585,7 @@ msgstr "Platformdíj"
 msgid "Platform fee of {0} deducted from your payout"
 msgstr "{0} platformdíj levonva a kifizetésből"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:247
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:36
 #: src/components/routes/event/Settings/index.tsx:81
 #: src/components/routes/event/Settings/Sections/PlatformFeesSettings/index.tsx:42
 #: src/components/routes/organizer/Settings/index.tsx:73
@@ -5619,8 +5651,8 @@ msgid "Please provide an image."
 msgstr "Kérjük, adjon meg egy képet."
 
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:65
-msgid "Please restart the checkout process."
-msgstr "Kérjük, indítsa újra a pénztári folyamatot."
+#~ msgid "Please restart the checkout process."
+#~ msgstr "Kérjük, indítsa újra a pénztári folyamatot."
 
 #: src/components/layouts/Checkout/index.tsx:251
 msgid "Please return to the event page to start over."
@@ -5807,7 +5839,7 @@ msgstr "Termék sikeresen törölve"
 msgid "Product Price Type"
 msgstr "Termék ár típusa"
 
-#: src/components/routes/event/EventDashboard/index.tsx:253
+#: src/components/routes/event/EventDashboard/index.tsx:189
 #: src/components/routes/event/Reports/index.tsx:17
 msgid "Product Sales"
 msgstr "Termék értékesítés"
@@ -5842,7 +5874,7 @@ msgstr "Termékek"
 msgid "Products sold"
 msgstr "Eladott termékek"
 
-#: src/components/routes/event/EventDashboard/index.tsx:274
+#: src/components/routes/event/EventDashboard/index.tsx:210
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:125
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:68
 msgid "Products Sold"
@@ -5899,7 +5931,7 @@ msgstr "Promóciós kódok jelentés"
 msgid "Promo Only"
 msgstr "Csak promócióval"
 
-#: src/components/modals/SendMessageModal/index.tsx:292
+#: src/components/modals/SendMessageModal/index.tsx:287
 msgid "Promotional emails may result in account suspension"
 msgstr "A promóciós e-mailek fiók felfüggesztéshez vezethetnek"
 
@@ -5913,7 +5945,7 @@ msgstr "Adjon meg további kontextust vagy utasításokat ehhez a kérdéshez. E
 msgid "Publish"
 msgstr "Közzététel"
 
-#: src/components/routes/event/EventDashboard/index.tsx:195
+#: src/components/routes/event/EventDashboard/index.tsx:165
 msgid "Publish Event"
 msgstr "Esemény közzététele"
 
@@ -5967,13 +5999,32 @@ msgstr "Rádió opció"
 msgid "Rate"
 msgstr "Arány"
 
+#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
+msgid "Razorpay"
+msgstr "Razorpay"
+
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
+#~ msgid "Razorpay Connect"
+#~ msgstr "Razorpay Connect"
+
+#~ msgid "Razorpay Connected"
+#~ msgstr "Razorpay csatlakoztatva"
+
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
+#~ msgid "Razorpay payments are not enabled for this event."
+#~ msgstr "A Razorpay fizetések nincsenek engedélyezve ehhez az eseményhez."
+
+#: src/components/common/RazorpayConnectButton/index.tsx:69
+#~ msgid "Razorpay setup is already complete."
+#~ msgstr "A Razorpay beállítás már kész."
+
 #: src/components/common/MessageList/index.tsx:59
 msgid "Read less"
 msgstr "Kevesebb olvasása"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:223
-msgid "Ready to upgrade? This takes only a few minutes."
-msgstr "Készen áll a frissítésre? Ez csak néhány percet vesz igénybe."
+#~ msgid "Ready to upgrade? This takes only a few minutes."
+#~ msgstr "Készen áll a frissítésre? Ez csak néhány percet vesz igénybe."
 
 #: src/components/layouts/AuthLayout/index.tsx:40
 msgid "Real-Time Analytics"
@@ -5989,17 +6040,17 @@ msgstr "Termékfrissítések fogadása a {0}-től."
 msgid "Recent Orders"
 msgstr "Legutóbbi megrendelések"
 
-#: src/components/modals/SendMessageModal/index.tsx:37
+#: src/components/modals/SendMessageModal/index.tsx:36
 msgid "Recipient"
 msgstr "Címzett"
 
-#: src/components/modals/SendMessageModal/index.tsx:184
+#: src/components/modals/SendMessageModal/index.tsx:179
 msgid "Recipients"
 msgstr "Címzettek"
 
 #: src/components/routes/event/EventDashboard/index.tsx:135
-msgid "Reconnect Razorpay →"
-msgstr "Razorpay újracsatlakoztatása →"
+#~ msgid "Reconnect Razorpay →"
+#~ msgstr "Razorpay újracsatlakoztatása →"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
@@ -6011,12 +6062,12 @@ msgstr "Reddit"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:338
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:578
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:596
-msgid "Redirecting to Razorpay..."
-msgstr "Átirányítás a Razorpay-ra..."
+#~ msgid "Redirecting to Razorpay..."
+#~ msgstr "Átirányítás a Razorpay-ra..."
 
 #: src/components/routes/admin/Attribution/index.tsx:73
 msgid "Referral Accounts"
-msgstr ""
+msgstr "Ajánlási fiókok"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:175
 msgid "Refresh Preview"
@@ -6102,7 +6153,7 @@ msgid "Report not found"
 msgstr "Jelentés nem található"
 
 #: src/components/layouts/Event/index.tsx:94
-#: src/components/layouts/OrganizerLayout/index.tsx:78
+#: src/components/layouts/OrganizerLayout/index.tsx:74
 #: src/components/routes/event/Reports/index.tsx:39
 #: src/components/routes/organizer/Reports/index.tsx:45
 msgid "Reports"
@@ -6124,7 +6175,7 @@ msgstr "Kötelező"
 msgid "Resend code"
 msgstr "Kód újraküldése"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:292
+#: src/components/layouts/OrganizerLayout/index.tsx:272
 msgid "Resend Confirmation Email"
 msgstr "Megerősítő e-mail újraküldése"
 
@@ -6183,8 +6234,8 @@ msgstr "Esemény visszaállítása"
 
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:52
 #: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:67
-msgid "Return to Event"
-msgstr "Vissza az eseményhez"
+#~ msgid "Return to Event"
+#~ msgstr "Vissza az eseményhez"
 
 #: src/components/layouts/Checkout/index.tsx:258
 msgid "Return to Event Page"
@@ -6193,7 +6244,7 @@ msgstr "Vissza az esemény oldalára"
 #: src/components/common/AffiliateTable/index.tsx:157
 #: src/components/common/EventCard/index.tsx:235
 #: src/components/routes/admin/Attribution/index.tsx:130
-#: src/components/routes/event/EventDashboard/index.tsx:285
+#: src/components/routes/event/EventDashboard/index.tsx:221
 msgid "Revenue"
 msgstr "Bevétel"
 
@@ -6448,7 +6499,7 @@ msgstr "Összes kiválasztása"
 msgid "Select an organizer to view their dashboard and events."
 msgstr "Válasszon egy szervezőt az irányítópultjának és eseményeinek megtekintéséhez."
 
-#: src/components/modals/SendMessageModal/index.tsx:186
+#: src/components/modals/SendMessageModal/index.tsx:181
 msgid "Select attendee group"
 msgstr "Résztvevő csoport kiválasztása"
 
@@ -6497,7 +6548,7 @@ msgid "Select Product Tier"
 msgstr "Terméksor kiválasztása"
 
 #: src/components/forms/CapaciyAssigmentForm/index.tsx:49
-#: src/components/modals/SendMessageModal/index.tsx:210
+#: src/components/modals/SendMessageModal/index.tsx:205
 msgid "Select products"
 msgstr "Termékek kiválasztása"
 
@@ -6526,7 +6577,7 @@ msgid "Select Ticket"
 msgstr "Jegy kiválasztása"
 
 #: src/components/forms/CheckInListForm/index.tsx:43
-#: src/components/modals/SendMessageModal/index.tsx:198
+#: src/components/modals/SendMessageModal/index.tsx:193
 msgid "Select tickets"
 msgstr "Jegyek kiválasztása"
 
@@ -6540,7 +6591,7 @@ msgstr "Időszak kiválasztása"
 msgid "Select timezone"
 msgstr "Időzóna kiválasztása"
 
-#: src/components/modals/SendMessageModal/index.tsx:185
+#: src/components/modals/SendMessageModal/index.tsx:180
 msgid "Select which attendees should receive this message"
 msgstr "Válassza ki, mely résztvevők kapják meg ezt az üzenetet"
 
@@ -6570,11 +6621,11 @@ msgstr "Gyorsan fogy 🔥"
 msgid "Send"
 msgstr "Küldés"
 
-#: src/components/modals/SendMessageModal/index.tsx:139
+#: src/components/modals/SendMessageModal/index.tsx:138
 msgid "Send a message"
 msgstr "Üzenet küldése"
 
-#: src/components/modals/SendMessageModal/index.tsx:278
+#: src/components/modals/SendMessageModal/index.tsx:273
 msgid "Send as test"
 msgstr "Küldés tesztként"
 
@@ -6582,12 +6633,12 @@ msgstr "Küldés tesztként"
 msgid "Send emails to attendees and view your message history."
 msgstr "E-mailek küldése résztvevőknek és az üzenetek előzményeinek megtekintése."
 
-#: src/components/modals/SendMessageModal/index.tsx:285
+#: src/components/modals/SendMessageModal/index.tsx:280
 msgid "Send me a copy"
 msgstr "Küldjön nekem egy másolatot"
 
 #: src/components/common/ContactOrganizerModal/index.tsx:112
-#: src/components/modals/SendMessageModal/index.tsx:261
+#: src/components/modals/SendMessageModal/index.tsx:256
 #: src/components/routes/event/messages.tsx:43
 msgid "Send Message"
 msgstr "Üzenet küldése"
@@ -6608,7 +6659,7 @@ msgstr "Visszatérítési értesítő e-mail küldése"
 msgid "Send reset link"
 msgstr "Visszaállítási link küldése"
 
-#: src/components/modals/SendMessageModal/index.tsx:261
+#: src/components/modals/SendMessageModal/index.tsx:256
 msgid "Send Test"
 msgstr "Teszt küldése"
 
@@ -6616,11 +6667,11 @@ msgstr "Teszt küldése"
 msgid "Sending..."
 msgstr "Küldés..."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:205
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:204
 msgid "Sent to customers when they place an order"
 msgstr "Elküldve a vásárlóknak, amikor rendelést adnak le"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:206
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:205
 msgid "Sent to each attendee with their ticket details"
 msgstr "Elküldve minden résztvevőnek a jegy részleteivel"
 
@@ -6673,7 +6724,7 @@ msgstr "Állítsa be a számlaszámozás kezdő számát. Ez nem módosítható,
 msgid "Set up check-in lists for different entrances, sessions, or days."
 msgstr "Bejelentkezési listák beállítása különböző bejáratokhoz, munkamenetekhez vagy napokhoz."
 
-#: src/components/routes/event/GettingStarted/index.tsx:145
+#: src/components/routes/event/GettingStarted/index.tsx:144
 msgid "Set up your event"
 msgstr "Állítsa be eseményét"
 
@@ -6681,7 +6732,7 @@ msgstr "Állítsa be eseményét"
 msgid "Set up your organization"
 msgstr "Állítsa be szervezetét"
 
-#: src/components/routes/event/GettingStarted/index.tsx:188
+#: src/components/routes/event/GettingStarted/index.tsx:173
 msgid "Set your event live"
 msgstr "Tegye élővé eseményét"
 
@@ -6695,7 +6746,7 @@ msgstr "Beállítás frissítve"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:81
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:82
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:83
-#: src/components/layouts/OrganizerLayout/index.tsx:85
+#: src/components/layouts/OrganizerLayout/index.tsx:81
 #: src/components/modals/DuplicateEventModal/index.tsx:26
 msgid "Settings"
 msgstr "Beállítások"
@@ -6706,7 +6757,7 @@ msgstr "Beállítás és tervezés"
 
 #: src/components/common/ShareIcon/index.tsx:30
 #: src/components/layouts/EventHomepage/index.tsx:293
-#: src/components/layouts/OrganizerLayout/index.tsx:228
+#: src/components/layouts/OrganizerLayout/index.tsx:208
 #: src/components/modals/ShareModal/index.tsx:37
 #: src/components/modals/ShareModal/index.tsx:165
 #: src/components/modals/ShareModal/index.tsx:186
@@ -6723,8 +6774,8 @@ msgstr "Partnerlink megosztása"
 msgid "Share Event"
 msgstr "Esemény megosztása"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:225
-#: src/components/layouts/OrganizerLayout/index.tsx:260
+#: src/components/layouts/OrganizerLayout/index.tsx:205
+#: src/components/layouts/OrganizerLayout/index.tsx:240
 msgid "Share Organizer Page"
 msgstr "Szervezői oldal megosztása"
 
@@ -6829,7 +6880,6 @@ msgstr "Elfogyott"
 #: src/components/common/ErrorDisplay/index.tsx:15
 #: src/components/routes/auth/AcceptInvitation/index.tsx:48
 #: src/components/routes/product-widget/CollectInformation/index.tsx:377
-#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:64
 msgid "Something went wrong"
 msgstr "Valami hiba történt"
 
@@ -6847,11 +6897,11 @@ msgid "Something went wrong! Please try again"
 msgstr "Valami hiba történt! Kérjük, próbálja újra."
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:69
-msgid "Something went wrong."
-msgstr "Valami hiba történt."
+#~ msgid "Something went wrong."
+#~ msgstr "Valami hiba történt."
 
 #: src/components/layouts/Event/index.tsx:75
-#: src/components/layouts/OrganizerLayout/index.tsx:100
+#: src/components/layouts/OrganizerLayout/index.tsx:96
 #: src/components/routes/auth/Login/index.tsx:72
 #: src/components/routes/my-tickets/index.tsx:145
 #: src/components/routes/profile/ManageProfile/index.tsx:90
@@ -6860,8 +6910,8 @@ msgid "Something went wrong. Please try again."
 msgstr "Valami hiba történt. Kérjük, próbálja újra."
 
 #: src/components/routes/event/EventDashboard/index.tsx:131
-msgid "Sorry for the inconvenience."
-msgstr "Elnézést a kellemetlenségért."
+#~ msgid "Sorry for the inconvenience."
+#~ msgstr "Elnézést a kellemetlenségért."
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:284
 msgid "Sorry, this promo code is not recognized"
@@ -6869,7 +6919,7 @@ msgstr "Sajnáljuk, ez a promóciós kód nem felismerhető."
 
 #: src/components/routes/admin/Attribution/index.tsx:106
 msgid "Source"
-msgstr ""
+msgstr "Forrás"
 
 #: src/components/common/LanguageSwitcher/index.tsx:20
 msgid "Spanish"
@@ -6920,7 +6970,7 @@ msgstr "Statisztikák"
 
 #: src/components/routes/admin/Attribution/index.tsx:35
 msgid "Statistics are based on account creation date"
-msgstr ""
+msgstr "A statisztikák a fiók létrehozásának dátumán alapulnak"
 
 #: src/components/common/AdminEventsTable/index.tsx:107
 #: src/components/common/AdminOrdersTable/index.tsx:82
@@ -6940,36 +6990,23 @@ msgid "Status"
 msgstr "Állapot"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:182
-msgid "Still handling refunds for your older transactions."
-msgstr "Még mindig feldolgozza a régebbi tranzakciók visszatérítéseit."
+#~ msgid "Still handling refunds for your older transactions."
+#~ msgstr "Még mindig feldolgozza a régebbi tranzakciók visszatérítéseit."
 
 #: src/components/common/ImpersonationBanner/index.tsx:53
 msgid "Stop Impersonating"
 msgstr "Megszemélyesítés leállítása"
 
 #: src/components/common/OrdersTable/index.tsx:377
-#: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
 msgid "Razorpay"
-msgstr "Razorpay"
-
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
-msgid "Razorpay Connect"
-msgstr "Razorpay Connect"
+msgstr ""
 
 #: src/components/routes/admin/Attribution/index.tsx:128
 msgid "Razorpay Connected"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
-msgid "Razorpay payments are not enabled for this event."
-msgstr "A Razorpay fizetések nincsenek engedélyezve ehhez az eseményhez."
-
-#: src/components/common/RazorpayConnectButton/index.tsx:69
-msgid "Razorpay setup is already complete."
-msgstr "A Razorpay beállítás már kész."
-
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:127
-#: src/components/modals/SendMessageModal/index.tsx:234
+#: src/components/modals/SendMessageModal/index.tsx:229
 msgid "Subject"
 msgstr "Tárgy"
 
@@ -6981,7 +7018,7 @@ msgstr "Tárgy kötelező"
 msgid "Subject will appear here"
 msgstr "A tárgy itt fog megjelenni"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:255
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:254
 msgid "Subject:"
 msgstr "Tárgy:"
 
@@ -7148,7 +7185,7 @@ msgstr "Nyári Zenei Fesztivál 2025"
 msgid "Support Email"
 msgstr "Támogatási e-mail"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:68
+#: src/components/layouts/OrganizerLayout/index.tsx:64
 #: src/components/modals/SwitchOrganizerModal/index.tsx:33
 msgid "Switch Organizer"
 msgstr "Szervező váltása"
@@ -7162,8 +7199,8 @@ msgid "T-shirt"
 msgstr "Póló"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:84
-msgid "Takes just a few minutes"
-msgstr "Csak néhány percet vesz igénybe"
+#~ msgid "Takes just a few minutes"
+#~ msgstr "Csak néhány percet vesz igénybe"
 
 #: src/components/common/AdminOrdersTable/index.tsx:81
 #: src/components/common/OrdersTable/index.tsx:351
@@ -7258,15 +7295,15 @@ msgstr "Meséljen nekünk a szervezetéről. Ez az információ megjelenik az es
 msgid "Template Active"
 msgstr "Sablon aktív"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:164
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:163
 msgid "Template created successfully"
 msgstr "Sablon sikeresen létrehozva"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:112
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:111
 msgid "Template deleted successfully"
 msgstr "Sablon sikeresen törölve"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:133
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:132
 msgid "Template saved successfully"
 msgstr "Sablon sikeresen mentve"
 
@@ -7284,8 +7321,8 @@ msgid "Thank you for attending!"
 msgstr "Köszönjük, hogy részt vett!"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:90
-msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
-msgstr "Köszönjük támogatását, miközben tovább fejlődünk és fejlesztjük a Hi.Events-et!"
+#~ msgid "Thanks for your support as we continue to grow and improve Hi.Events!"
+#~ msgstr "Köszönjük támogatását, miközben tovább fejlődünk és fejlesztjük a Hi.Events-et!"
 
 #: src/components/routes/product-widget/SelectProducts/index.tsx:176
 #: src/components/routes/product-widget/SelectProducts/index.tsx:224
@@ -7378,8 +7415,8 @@ msgstr "Az ügyfélnek megjelenő ár nem tartalmazza az adókat és díjakat. K
 msgid "The primary brand color used for buttons and highlights"
 msgstr "Az elsődleges márka szín a gombokhoz és kiemelésekhez"
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:145
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:176
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:144
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:175
 msgid "The template body contains invalid Liquid syntax. Please correct it and try again."
 msgstr "A sablon törzse érvénytelen Liquid szintaxist tartalmaz. Kérjük, javítsa ki és próbálja újra."
 
@@ -7433,11 +7470,11 @@ msgstr "Ezek a részletek csak akkor jelennek meg, ha a megrendelés sikeresen b
 msgid "These settings apply only to copied embed code and won't be stored."
 msgstr "Ezek a beállítások csak a másolt beágyazási kódra vonatkoznak és nem lesznek mentve."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:326
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:325
 msgid "These templates will be used as defaults for all events in your organization. Individual events can override these templates with their own custom versions."
 msgstr "Ezek a sablonok alapértelmezettként lesznek használva a szervezet összes eseményéhez. Az egyes események felülírhatják ezeket a sablonokat saját egyedi verzióikkal."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:319
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:318
 msgid "These templates will override the organizer defaults for this event only. If no custom template is set here, the organizer template will be used instead."
 msgstr "Ezek a sablonok csak ennél az eseménynél írják felül a szervező alapértelmezéseit. Ha itt nincs egyedi sablon beállítva, a szervező sablonját használjuk helyette."
 
@@ -7518,8 +7555,8 @@ msgid "This name is visible to end users"
 msgstr "Ez a név látható a végfelhasználók számára"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:95
-msgid "This order has already been paid."
-msgstr "Ez a megrendelés már ki lett fizetve."
+#~ msgid "This order has already been paid."
+#~ msgstr "Ez a megrendelés már ki lett fizetve."
 
 #: src/components/modals/RefundOrderModal/index.tsx:185
 msgid "This order has already been refunded."
@@ -7542,8 +7579,8 @@ msgid "This order is complete."
 msgstr "Ez a megrendelés kész."
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:107
-msgid "This order page is no longer available."
-msgstr "Ez a megrendelési oldal már nem elérhető."
+#~ msgid "This order page is no longer available."
+#~ msgstr "Ez a megrendelési oldal már nem elérhető."
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:325
 msgid "This order was abandoned. You can start a new order anytime."
@@ -7766,14 +7803,14 @@ msgid "To edit configurations, go to the Configurations section in the admin men
 msgstr "A konfigurációk szerkesztéséhez lépjen a Konfigurációk részhez az admin menüben."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:661
-msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
-msgstr "Hitelkártyás fizetések fogadásához csatlakoztatnia kell Razorpay-fiókját. A Razorpay a fizetésfeldolgozó partnerünk, amely biztosítja a biztonságos tranzakciókat és az időben történő kifizetéseket."
+#~ msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
+#~ msgstr "Hitelkártyás fizetések fogadásához csatlakoztatnia kell Razorpay-fiókját. A Razorpay a fizetésfeldolgozó partnerünk, amely biztosítja a biztonságos tranzakciókat és az időben történő kifizetéseket."
 
 #: src/components/common/ColumnVisibilityToggle/index.tsx:26
 msgid "Toggle columns"
 msgstr "Oszlopok kapcsolása"
 
-#: src/components/layouts/OrganizerLayout/index.tsx:87
+#: src/components/layouts/OrganizerLayout/index.tsx:83
 msgid "Tools"
 msgstr "Eszközök"
 
@@ -7807,7 +7844,7 @@ msgstr "Összesen beszedve"
 msgid "Total Discount Amount"
 msgstr "Összes kedvezmény összege"
 
-#: src/components/routes/event/EventDashboard/index.tsx:311
+#: src/components/routes/event/EventDashboard/index.tsx:247
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:149
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:97
 msgid "Total Fees"
@@ -7829,11 +7866,11 @@ msgstr "Összes megrendelés"
 msgid "Total refunded"
 msgstr "Összes visszatérített"
 
-#: src/components/routes/event/EventDashboard/index.tsx:314
+#: src/components/routes/event/EventDashboard/index.tsx:250
 msgid "Total Refunded"
 msgstr "Összes visszatérített"
 
-#: src/components/routes/event/EventDashboard/index.tsx:313
+#: src/components/routes/event/EventDashboard/index.tsx:249
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:143
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:91
 msgid "Total Tax"
@@ -7845,13 +7882,13 @@ msgstr "Összes felhasználó"
 
 #: src/components/routes/admin/Attribution/index.tsx:32
 msgid "Track account growth and performance by attribution source"
-msgstr ""
+msgstr "Kövesse nyomon a fióknövekedést és teljesítményt hozzárendelési forrás szerint"
 
 #: src/components/layouts/AuthLayout/index.tsx:41
 msgid "Track sales, revenue, and attendance with detailed reports"
 msgstr "Értékesítések, bevételek és látogatottság nyomon követése részletes jelentésekkel"
 
-#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:263
+#: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:50
 msgid "Transaction Fee:"
 msgstr "Tranzakciós díj:"
 
@@ -7934,7 +7971,7 @@ msgstr "Nem sikerült frissíteni a kérdést. Kérjük, ellenőrizze adatait."
 
 #: src/components/routes/admin/Attribution/index.tsx:84
 msgid "Unattributed Accounts"
-msgstr ""
+msgstr "Nem hozzárendelt fiókok"
 
 #: src/components/routes/event/Reports/PromoCodesReport/index.tsx:30
 msgid "Unique Customers"
@@ -7979,7 +8016,7 @@ msgstr "Korlátlan felhasználás engedélyezett"
 msgid "Unpaid Order"
 msgstr "Kifizetetlen megrendelés"
 
-#: src/components/routes/event/EventDashboard/index.tsx:206
+#: src/components/routes/event/EventDashboard/index.tsx:176
 msgid "Unpublish Event"
 msgstr "Esemény visszavonása"
 
@@ -8012,8 +8049,8 @@ msgid "Update profile"
 msgstr "Profil frissítése"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:169
-msgid "Upgrade Available"
-msgstr "Frissítés elérhető"
+#~ msgid "Upgrade Available"
+#~ msgstr "Frissítés elérhető"
 
 #: src/components/routes/organizer/Settings/Sections/ImageAssetSettings/index.tsx:39
 msgid "Upload a cover image for your organizer"
@@ -8125,6 +8162,10 @@ msgstr "A felhasználók módosíthatják e-mail címüket a <0>Profilbeállít�
 msgid "UTC"
 msgstr "UTC"
 
+#: src/components/layouts/Admin/index.tsx:18
+msgid "UTM Analytics"
+msgstr "UTM elemzés"
+
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:206
 msgid "Valid"
 msgstr "Érvényes"
@@ -8230,7 +8271,7 @@ msgstr "Ellenőrző kód"
 
 #: src/components/routes/admin/Attribution/index.tsx:129
 msgid "Verified"
-msgstr ""
+msgstr "Ellenőrzött"
 
 #: src/components/routes/welcome/index.tsx:187
 msgid "Verify Email"
@@ -8306,7 +8347,6 @@ msgstr "Megtekintés a Google Térképen"
 msgid "View Order"
 msgstr "Rendelés megtekintése"
 
-#: src/components/forms/RazorpayCheckoutForm/index.tsx:96
 #: src/components/routes/product-widget/CollectInformation/index.tsx:347
 msgid "View Order Details"
 msgstr "Rendelés részleteinek megtekintése"
@@ -8315,8 +8355,8 @@ msgstr "Rendelés részleteinek megtekintése"
 msgid "View order details, issue refunds, and resend confirmations."
 msgstr "Rendelési részletek megtekintése, visszatérítések kibocsátása és megerősítések újraküldése."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:243
-#: src/components/layouts/OrganizerLayout/index.tsx:246
+#: src/components/layouts/OrganizerLayout/index.tsx:223
+#: src/components/layouts/OrganizerLayout/index.tsx:226
 msgid "View Organizer Homepage"
 msgstr "Szervezői honlap megtekintése"
 
@@ -8362,7 +8402,7 @@ msgstr "Fizetésre vár"
 msgid "Warning: This is the system default configuration. Changes will affect all accounts that don't have a specific configuration assigned."
 msgstr "Figyelmeztetés: Ez a rendszer alapértelmezett konfigurációja. A módosítások minden olyan fiókot érintenek, amelyhez nincs konkrét konfiguráció hozzárendelve."
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:89
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:68
 msgid "We could not process your payment. Please try again or contact support."
 msgstr "Nem sikerült feldolgozni a fizetését. Kérjük, próbálja újra, vagy lépjen kapcsolatba a támogatással."
 
@@ -8407,7 +8447,7 @@ msgstr "Javasolt méretek: 1950px x 650px, 3:1 arány, maximális fájlméret: 5
 msgid "We recommend dimensions of 400px by 400px, and a maximum file size of 5MB"
 msgstr "Javasolt méretek: 400px x 400px, maximális fájlméret: 5MB."
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:100
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:78
 msgid "We were unable to confirm your payment. Please try again or contact support."
 msgstr "Nem sikerült megerősíteni a fizetését. Kérjük, próbálja újra, vagy lépjen kapcsolatba a támogatással."
 
@@ -8423,17 +8463,17 @@ msgstr "Erre az e-mail címre küldjük a jegyeit"
 msgid "We'll validate your VAT number in the background. If there are any issues, we'll let you know."
 msgstr "Az ÁFA számot a háttérben érvényesítjük. Ha bármilyen probléma merül fel, értesítjük."
 
-#: src/components/routes/product-widget/PaymentReturn/index.tsx:91
+#: src/components/routes/product-widget/PaymentReturn/index.tsx:69
 msgid "We're processing your order. Please wait..."
 msgstr "Megrendelését feldolgozzuk. Kérjük, várjon..."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:73
-msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
-msgstr "Hivatalosan Írországba 🇮🇪 költöztettük a székhelyünket. Ennek az átállásnak részeként most a Razorpay Ireland-ot használjuk a Razorpay Canada helyett. A kifizetések zökkenőmentes folytatásához újra kell csatlakoztatnia a Razorpay fiókját."
+#~ msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
+#~ msgstr "Hivatalosan Írországba 🇮🇪 költöztettük a székhelyünket. Ennek az átállásnak részeként most a Razorpay Ireland-ot használjuk a Razorpay Canada helyett. A kifizetések zökkenőmentes folytatásához újra kell csatlakoztatnia a Razorpay fiókját."
 
 #: src/components/routes/event/EventDashboard/index.tsx:130
-msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
-msgstr "Átköltöztettük a székhelyünket Írországba. Ennek eredményeként újra kell csatlakoztatnia a Razorpay fiókját. Ez a gyors folyamat csak néhány percet vesz igénybe. Az értékesítései és meglévő adatai teljesen érintetlenek maradnak."
+#~ msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
+#~ msgstr "Átköltöztettük a székhelyünket Írországba. Ennek eredményeként újra kell csatlakoztatnia a Razorpay fiókját. Ez a gyors folyamat csak néhány percet vesz igénybe. Az értékesítései és meglévő adatai teljesen érintetlenek maradnak."
 
 #: src/components/routes/welcome/index.tsx:145
 msgid "We've sent a 5-digit verification code to:"
@@ -8485,7 +8525,7 @@ msgstr "Üdv a fedélzeten! Kérjük, jelentkezzen be a folytatáshoz."
 msgid "Welcome back"
 msgstr "Üdvözöljük újra"
 
-#: src/components/routes/event/EventDashboard/index.tsx:107
+#: src/components/routes/event/EventDashboard/index.tsx:100
 msgid "Welcome back{0} 👋"
 msgstr "Üdv újra, {0} 👋"
 
@@ -8768,7 +8808,7 @@ msgstr "Adók és díjak vannak hozzáadva egy ingyenes termékhez. Szeretné el
 msgid "You haven't sent any messages yet. You can send messages to all attendees, or to specific product holders."
 msgstr "Még nem küldött üzeneteket. Üzeneteket küldhet minden résztvevőnek, vagy meghatározott terméktulajdonosoknak."
 
-#: src/components/modals/SendMessageModal/index.tsx:108
+#: src/components/modals/SendMessageModal/index.tsx:107
 msgid "You must acknowledge that this email is not promotional"
 msgstr "El kell ismernie, hogy ez az e-mail nem promóciós."
 
@@ -8784,15 +8824,15 @@ msgstr "Jegy létrehozása kötelező, mielőtt manuálisan hozzáadhatna egy r�
 msgid "You must have at least one price tier"
 msgstr "Legalább egy árszintre szüksége van."
 
-#: src/components/layouts/OrganizerLayout/index.tsx:281
+#: src/components/layouts/OrganizerLayout/index.tsx:261
 msgid "You must verify your email address before you can update the organizer status."
 msgstr "Megerősítenie kell e-mail címét, mielőtt frissítheti a szervezői státuszt."
 
-#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:343
+#: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:342
 msgid "You need to verify your account email before you can modify email templates."
 msgstr "Ellenőriznie kell a fiók e-mail címét, mielőtt módosíthatná az e-mail sablonokat."
 
-#: src/components/modals/SendMessageModal/index.tsx:150
+#: src/components/modals/SendMessageModal/index.tsx:149
 msgid "You need to verify your account email before you can send messages."
 msgstr "Ellenőriznie kell fiókja e-mail címét, mielőtt üzeneteket küldhet."
 
@@ -8821,8 +8861,8 @@ msgid "You'll need at least one product to get started. Free, paid or let the us
 msgstr "Legalább egy termékre szüksége lesz a kezdéshez. Ingyenes, fizetős, vagy hagyja, hogy a felhasználó döntse el, mennyit fizet."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:181
-msgid "You're all set! Your payments are being processed smoothly."
-msgstr "Minden rendben! A fizetések simán feldolgozásra kerülnek."
+#~ msgid "You're all set! Your payments are being processed smoothly."
+#~ msgstr "Minden rendben! A fizetések simán feldolgozásra kerülnek."
 
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:118
 msgid "You're going to {0}!"
@@ -8868,7 +8908,7 @@ msgstr "Az Ön e-mail címe"
 msgid "Your email request change to <0>{0}</0> is pending. Please check your email to confirm"
 msgstr "E-mail cím módosítási kérelme a következőre: <0>{0}</0> függőben. Kérjük, ellenőrizze e-mail címét a megerősítéshez."
 
-#: src/components/routes/event/EventDashboard/index.tsx:186
+#: src/components/routes/event/EventDashboard/index.tsx:156
 msgid "Your event must be live before you can sell tickets to attendees."
 msgstr "Eseménye élőnek kell lennie, mielőtt jegyeket értékesíthetne a résztvevőknek."
 
@@ -8926,37 +8966,37 @@ msgid "Your password"
 msgstr "Az Ön jelszava"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:63
-msgid "Your payment is processing."
-msgstr "Fizetése feldolgozás alatt áll."
+#~ msgid "Your payment is processing."
+#~ msgstr "Fizetése feldolgozás alatt áll."
 
 #: src/components/common/InlineOrderSummary/index.tsx:216
 msgid "Your payment is protected with bank-level encryption"
 msgstr "A fizetése banki szintű titkosítással védett"
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:66
-msgid "Your payment was not successful, please try again."
-msgstr "Fizetése sikertelen volt, kérjük, próbálja újra."
+#~ msgid "Your payment was not successful, please try again."
+#~ msgstr "Fizetése sikertelen volt, kérjük, próbálja újra."
 
 #: src/components/forms/RazorpayCheckoutForm/index.tsx:130
-msgid "Your payment was unsuccessful. Please try again."
-msgstr "Fizetése sikertelen volt. Kérjük, próbálja újra."
+#~ msgid "Your payment was unsuccessful. Please try again."
+#~ msgstr "Fizetése sikertelen volt. Kérjük, próbálja újra."
 
 #: src/components/common/PlatformFeesSettings/index.tsx:126
 msgid "Your Plan"
 msgstr "Az Ön csomagja"
 
-#: src/components/modals/RefundOrderModal/index.tsx:58
-msgid "Your refund is processing."
-msgstr "Visszatérítése feldolgozás alatt áll."
-
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:178
-msgid "Your Razorpay account is connected and processing payments."
-msgstr "A Razorpay fiókja csatlakoztatva van és feldolgozza a fizetéseket."
+#~ msgid "Your Razorpay account is connected and processing payments."
+#~ msgstr "A Razorpay fiókja csatlakoztatva van és feldolgozza a fizetéseket."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:395
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:632
-msgid "Your Razorpay account is connected and ready to process payments."
-msgstr "Razorpay fiókja csatlakoztatva van, és készen áll a fizetések feldolgozására."
+#~ msgid "Your Razorpay account is connected and ready to process payments."
+#~ msgstr "Razorpay fiókja csatlakoztatva van, és készen áll a fizetések feldolgozására."
+
+#: src/components/modals/RefundOrderModal/index.tsx:58
+msgid "Your refund is processing."
+msgstr "Visszatérítése feldolgozás alatt áll."
 
 #: src/components/routes/product-widget/AttendeeProductAndInformation/index.tsx:36
 msgid "Your ticket for"
@@ -8991,57 +9031,3 @@ msgstr "Irányítószám vagy postai irányítószám"
 #: src/components/routes/product-widget/CollectInformation/index.tsx:523
 msgid "ZIP or Postal Code"
 msgstr "Irányítószám vagy postai irányítószám"
-
-msgid "(empty)"
-msgstr "(üres)"
-
-msgid "Attribution"
-msgstr "Hozzárendelés"
-
-msgid "Attribution Analytics"
-msgstr "Hozzárendelési elemzés"
-
-msgid "Attribution Breakdown"
-msgstr "Hozzárendelési bontás"
-
-msgid "Attribution Value"
-msgstr "Hozzárendelési érték"
-
-msgid "Campaign"
-msgstr "Kampány"
-
-msgid "Medium"
-msgstr "Médium"
-
-msgid "No attribution data found"
-msgstr "Nem található hozzárendelési adat"
-
-msgid "Organic Accounts"
-msgstr "Organikus fiókok"
-
-msgid "Paid Accounts"
-msgstr "Fizetett fiókok"
-
-msgid "Referral Accounts"
-msgstr "Ajánlási fiókok"
-
-msgid "Source"
-msgstr "Forrás"
-
-msgid "Statistics are based on account creation date"
-msgstr "A statisztikák a fiók létrehozásának dátumán alapulnak"
-
-msgid "Razorpay Connected"
-msgstr "Razorpay csatlakoztatva"
-
-msgid "Track account growth and performance by attribution source"
-msgstr "Kövesse nyomon a fióknövekedést és teljesítményt hozzárendelési forrás szerint"
-
-msgid "Unattributed Accounts"
-msgstr "Nem hozzárendelt fiókok"
-
-msgid "Verified"
-msgstr "Ellenőrzött"
-
-msgid "UTM Analytics"
-msgstr "UTM elemzés"
