@@ -23,7 +23,8 @@ COPY ./backend /app/backend
 RUN mkdir -p /app/backend/bootstrap/cache \
     && mkdir -p /app/backend/storage
 
-RUN composer install --working-dir=/app/backend \
+RUN rm -f /app/backend/composer.lock \
+    && composer update --working-dir=/app/backend \
     --ignore-platform-reqs \
     --no-interaction \
     --no-dev \
