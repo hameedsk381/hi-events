@@ -1,12 +1,12 @@
-import {useState} from 'react';
-import {ActionIcon, Alert, Badge, Button, Group, LoadingOverlay, Modal, Paper, Stack, Text} from '@mantine/core';
-import {IconAlertCircle, IconEdit, IconInfoCircle, IconMail, IconPlus, IconTrash} from '@tabler/icons-react';
-import {t, Trans} from '@lingui/macro';
-import {useDisclosure} from '@mantine/hooks';
-import {EmailTemplateEditor} from '../EmailTemplateEditor';
-import {confirmationDialog} from '../../../utilites/confirmationDialog';
-import {showSuccess, showError} from '../../../utilites/notifications';
-import {useFormErrorResponseHandler} from '../../../hooks/useFormErrorResponseHandler';
+import { useState } from 'react';
+import { ActionIcon, Alert, Badge, Button, Group, LoadingOverlay, Modal, Paper, Stack, Text } from '@mantine/core';
+import { IconAlertCircle, IconEdit, IconInfoCircle, IconMail, IconPlus, IconTrash } from '@tabler/icons-react';
+import { t, Trans } from '@lingui/macro';
+import { useDisclosure } from '@mantine/hooks';
+import { EmailTemplateEditor } from '../EmailTemplateEditor';
+import { confirmationDialog } from '../../../utilites/confirmationDialog';
+import { showSuccess, showError } from '../../../utilites/notifications';
+import { useFormErrorResponseHandler } from '../../../hooks/useFormErrorResponseHandler';
 import {
     CreateEmailTemplateRequest,
     EmailTemplate,
@@ -14,21 +14,20 @@ import {
     UpdateEmailTemplateRequest,
     DefaultEmailTemplate
 } from '../../../types';
-import {Card} from '../Card';
-import {HeadingWithDescription} from '../Card/CardHeading';
-import {useGetAccount} from '../../../queries/useGetAccount';
-import {StripeConnectButton} from '../StripeConnectButton';
+import { Card } from '../Card';
+import { HeadingWithDescription } from '../Card/CardHeading';
+import { useGetAccount } from '../../../queries/useGetAccount';
 
 interface EmailTemplateSettingsBaseProps {
     // Context 
     contextId: string | number;
     contextType: 'event' | 'organizer';
-    
+
     // Data
     templates: EmailTemplate[];
     defaultTemplates?: Record<EmailTemplateType, DefaultEmailTemplate>;
     isLoading: boolean;
-    
+
     // Mutations
     createMutation: {
         mutate: (params: any, options?: any) => void;
@@ -47,7 +46,7 @@ interface EmailTemplateSettingsBaseProps {
         isPending: boolean;
         data?: any;
     };
-    
+
     // Callbacks
     onCreateTemplate?: (type: EmailTemplateType) => void;
     onSaveSuccess?: () => void;
@@ -70,11 +69,11 @@ export const EmailTemplateSettingsBase = ({
     onDeleteSuccess,
     onError
 }: EmailTemplateSettingsBaseProps) => {
-    const [editorOpened, {open: openEditor, close: closeEditor}] = useDisclosure(false);
+    const [editorOpened, { open: openEditor, close: closeEditor }] = useDisclosure(false);
     const [editingTemplate, setEditingTemplate] = useState<EmailTemplate | null>(null);
     const [editingType, setEditingType] = useState<EmailTemplateType>('order_confirmation');
     const handleFormError = useFormErrorResponseHandler();
-    const {data: account, isFetched: isAccountFetched} = useGetAccount();
+    const { data: account, isFetched: isAccountFetched } = useGetAccount();
     const isAccountVerified = isAccountFetched && account?.is_account_email_confirmed;
     const accountRequiresManualVerification = isAccountFetched && account?.requires_manual_verification;
     const isModifyDisabled = !isAccountVerified || accountRequiresManualVerification;
@@ -96,17 +95,17 @@ export const EmailTemplateSettingsBase = ({
     };
 
     const handleDeleteTemplate = (template: EmailTemplate) => {
-        const fallbackMessage = contextType === 'event' 
+        const fallbackMessage = contextType === 'event'
             ? t`Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the organizer or default template.`
             : t`Are you sure you want to delete this template? This action cannot be undone and emails will fall back to the default template.`;
-            
+
         confirmationDialog(
             fallbackMessage,
             () => {
                 const params = contextType === 'event'
-                    ? {eventId: contextId, templateId: template.id}
-                    : {organizerId: contextId, templateId: template.id};
-                    
+                    ? { eventId: contextId, templateId: template.id }
+                    : { organizerId: contextId, templateId: template.id };
+
                 deleteMutation.mutate(params, {
                     onSuccess: () => {
                         showSuccess(t`Template deleted successfully`);
@@ -125,9 +124,9 @@ export const EmailTemplateSettingsBase = ({
     const handleSaveTemplate = (data: CreateEmailTemplateRequest | UpdateEmailTemplateRequest, editorForm?: any) => {
         if (editingTemplate) {
             const params = contextType === 'event'
-                ? {eventId: contextId, templateId: editingTemplate.id, templateData: data as UpdateEmailTemplateRequest}
-                : {organizerId: contextId, templateId: editingTemplate.id, templateData: data as UpdateEmailTemplateRequest};
-                
+                ? { eventId: contextId, templateId: editingTemplate.id, templateData: data as UpdateEmailTemplateRequest }
+                : { organizerId: contextId, templateId: editingTemplate.id, templateData: data as UpdateEmailTemplateRequest };
+
             updateMutation.mutate(params, {
                 onSuccess: () => {
                     showSuccess(t`Template saved successfully`);
@@ -137,7 +136,7 @@ export const EmailTemplateSettingsBase = ({
                 onError: (error: any) => {
                     if (error.response?.data?.errors && editorForm) {
                         const errors = error.response.data.errors;
-                        
+
                         // Check if body field has syntax error
                         if (errors.body) {
                             // Set form error for the body field and show specific message
@@ -150,15 +149,15 @@ export const EmailTemplateSettingsBase = ({
                     } else {
                         showError(t`Failed to save template`);
                     }
-                    
+
                     onError?.(error, t`Failed to save template`);
                 },
             });
         } else {
             const params = contextType === 'event'
-                ? {eventId: contextId, templateData: data as CreateEmailTemplateRequest}
-                : {organizerId: contextId, templateData: data as CreateEmailTemplateRequest};
-                
+                ? { eventId: contextId, templateData: data as CreateEmailTemplateRequest }
+                : { organizerId: contextId, templateData: data as CreateEmailTemplateRequest };
+
             createMutation.mutate(params, {
                 onSuccess: () => {
                     showSuccess(t`Template created successfully`);
@@ -168,7 +167,7 @@ export const EmailTemplateSettingsBase = ({
                 onError: (error: any) => {
                     if (error.response?.data?.errors && editorForm) {
                         const errors = error.response.data.errors;
-                        
+
                         // Check if body field has syntax error
                         if (errors.body) {
                             // Set form error for the body field and show specific message
@@ -181,7 +180,7 @@ export const EmailTemplateSettingsBase = ({
                     } else {
                         showError(t`Failed to create template`);
                     }
-                    
+
                     onError?.(error, t`Failed to create template`);
                 },
             });
@@ -190,9 +189,9 @@ export const EmailTemplateSettingsBase = ({
 
     const handlePreviewTemplate = (data: { subject: string; body: string; template_type: EmailTemplateType; ctaLabel: string }) => {
         const params = contextType === 'event'
-            ? {eventId: contextId, previewData: data}
-            : {organizerId: contextId, previewData: data};
-            
+            ? { eventId: contextId, previewData: data }
+            : { organizerId: contextId, previewData: data };
+
         previewMutation.mutate(params);
     };
 
@@ -208,7 +207,7 @@ export const EmailTemplateSettingsBase = ({
 
     const getTemplateStatusBadge = (template?: EmailTemplate) => {
         if (!template) {
-            const fallbackText = contextType === 'event' 
+            const fallbackText = contextType === 'event'
                 ? t`Organizer/default template will be used`
                 : t`Default template will be used`;
             return (
@@ -217,7 +216,7 @@ export const EmailTemplateSettingsBase = ({
                 </Badge>
             );
         }
-        
+
         return (
             <Badge size="sm" variant="light">
                 {contextType === 'event' ? t`Event custom template` : t`Custom template`}
@@ -238,9 +237,9 @@ export const EmailTemplateSettingsBase = ({
     }) => (
         <Paper p="md" withBorder>
             <Group justify="space-between" align="flex-start">
-                <div style={{flex: 1}}>
+                <div style={{ flex: 1 }}>
                     <Group gap="xs" mb="xs">
-                        <IconMail size={16}/>
+                        <IconMail size={16} />
                         <Text fw={600}>{label}</Text>
                         {getTemplateStatusBadge(template)}
                     </Group>
@@ -279,7 +278,7 @@ export const EmailTemplateSettingsBase = ({
                                 onClick={() => handleEditTemplate(template)}
                                 disabled={isModifyDisabled}
                             >
-                                <IconEdit size={16}/>
+                                <IconEdit size={16} />
                             </ActionIcon>
                             <ActionIcon
                                 variant="subtle"
@@ -288,13 +287,13 @@ export const EmailTemplateSettingsBase = ({
                                 loading={deleteMutation.isPending}
                                 disabled={isModifyDisabled}
                             >
-                                <IconTrash size={16}/>
+                                <IconTrash size={16} />
                             </ActionIcon>
                         </>
                     ) : (
                         <Button
                             size="xs"
-                            leftSection={<IconPlus size={16}/>}
+                            leftSection={<IconPlus size={16} />}
                             onClick={() => handleCreateTemplate(type)}
                             disabled={isModifyDisabled}
                         >
@@ -338,7 +337,7 @@ export const EmailTemplateSettingsBase = ({
             />
 
             {(!isAccountVerified && isAccountFetched) && (
-                <Alert icon={<IconAlertCircle size={16}/>} variant="light" mb="lg" color="orange">
+                <Alert icon={<IconAlertCircle size={16} />} variant="light" mb="lg" color="orange">
                     <Text size="sm">
                         {t`You need to verify your account email before you can modify email templates.`}
                     </Text>
@@ -346,24 +345,21 @@ export const EmailTemplateSettingsBase = ({
             )}
 
             {accountRequiresManualVerification && (
-                <Alert icon={<IconAlertCircle size={16}/>} variant="light" mb="lg" color="orange" title={t`Connect Stripe to enable email template editing`}>
+                <Alert icon={<IconAlertCircle size={16} />} variant="light" mb="lg" color="orange" title={t`Account verification required`}>
                     <Text size="sm">
-                        {t`Due to the high risk of spam, you must connect a Stripe account before you can modify email templates. This is to ensure that all event organizers are verified and accountable.`}
+                        {t`Due to the high risk of spam, you must complete account verification before you can modify email templates. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information.`}
                     </Text>
-                    <div style={{marginTop: '0.75rem'}}>
-                        <StripeConnectButton/>
-                    </div>
                 </Alert>
             )}
 
-            <Alert icon={<IconInfoCircle size={16}/>} variant="light" mb="lg">
+            <Alert icon={<IconInfoCircle size={16} />} variant="light" mb="lg">
                 <Text size="sm">
                     {getAlertMessage()}
                 </Text>
             </Alert>
 
-            <div style={{position: 'relative'}}>
-                <LoadingOverlay visible={isLoading}/>
+            <div style={{ position: 'relative' }}>
+                <LoadingOverlay visible={isLoading} />
 
                 <Stack gap="md">
                     <TemplateCard

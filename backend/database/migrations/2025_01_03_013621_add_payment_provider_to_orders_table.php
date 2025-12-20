@@ -16,7 +16,7 @@ return new class extends Migration {
         DB::table('orders')
             ->where('total_gross', '>', 0)
             ->whereNull('payment_provider')
-            ->update(['payment_provider' => PaymentProviders::STRIPE->name]);
+            ->update(['payment_provider' => 'RAZORPAY']);
     }
 
     public function down(): void

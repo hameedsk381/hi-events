@@ -22,7 +22,7 @@ class AccountFactory extends Factory
         $currencies = include base_path('data/currencies.php');
 
         return [
-            'name' => fake()->name(),
+            'payment_providers' => ['RAZORPAY'],
             'email' => fake()->unique()->safeEmail(),
             'timezone' => fake()->timezone(),
             'currency_code' => fake()->randomElement(array_values($currencies)),
@@ -31,25 +31,6 @@ class AccountFactory extends Factory
         ];
     }
 
-    /**
-     * Indicate that the model's stripe account id is set.
-     */
-    public function stripeAccount(): self
-    {
-        return $this->state(fn(array $attributes) => [
-            'stripe_account_id' => fake()->stripeConnectAccountId(),
-        ]);
-    }
-
-    /**
-     * Indicate that the model's stripe account connection setup is complete.
-     */
-    public function stripeConnectSetupComplete(bool $isComplete = true): self
-    {
-        return $this->state(fn(array $attributes) => [
-            'stripe_connect_setup_complete' => $isComplete,
-        ]);
-    }
 
     /**
      * Indicate that the model is verified.

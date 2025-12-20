@@ -14,8 +14,8 @@ return new class extends Migration {
 
         DB::table('accounts')->update(['configuration' => [
             'application_fee' => [
-                'percentage' => config('app.saas_stripe_application_fee_percent'),
-                'fixed' => config('app.saas_stripe_application_fee_fixed') ?? 0,
+                'percentage' => config('app.saas_application_fee_percent'),
+                'fixed' => config('app.saas_application_fee_fixed') ?? 0,
             ]
         ]]);
     }

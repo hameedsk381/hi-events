@@ -21,8 +21,8 @@ return new class extends Migration {
             'name' => 'Default',
             'is_system_default' => true,
             'application_fees' => json_encode([
-                'percentage' => config('app.saas_stripe_application_fee_percent'),
-                'fixed' => config('app.saas_stripe_application_fee_fixed') ?? 0,
+                'percentage' => config('app.saas_application_fee_percent'),
+                'fixed' => config('app.saas_application_fee_fixed') ?? 0,
             ], JSON_THROW_ON_ERROR),
             'created_at' => now(),
             'updated_at' => now(),

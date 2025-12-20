@@ -9,7 +9,7 @@ return new class extends Migration {
     {
         DB::table('event_settings')
             ->whereNull('payment_providers')
-            ->update(['payment_providers' => [PaymentProviders::STRIPE->name]]);
+            ->update(['payment_providers' => ['RAZORPAY']]);
     }
 
     public function down(): void

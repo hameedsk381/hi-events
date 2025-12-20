@@ -150,6 +150,12 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
                     </Alert>
                 )}
 
+                {(accountRequiresManualVerification && isAccountFetched) && (
+                    <Alert className={classes.verificationAlert} variant={'light'} icon={<IconAlertCircle size="1rem" />} color="orange" title={t`Account verification required`}>
+                        {t`Due to the high risk of spam, you must complete account verification before you can send messages. This is to ensure that all event organizers are verified and accountable. Please reach out to support for more information.`}
+                    </Alert>
+                )}
+
 
                 {!formIsDisabled && (
                     <fieldset disabled={formIsDisabled} style={{ border: 'none', padding: 0, margin: 0 }}>

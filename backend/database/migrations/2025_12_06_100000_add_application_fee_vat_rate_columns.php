@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('stripe_payments', static function (Blueprint $table) {
-            $table->decimal('application_fee_vat_rate', 5, 4)->nullable();
-        });
+        if (Schema::hasTable('stripe_payments')) {
+            Schema::table('stripe_payments', static function (Blueprint $table) {
+                $table->decimal('application_fee_vat_rate', 5, 4)->nullable();
+            });
+        }
 
         Schema::table('order_payment_platform_fees', static function (Blueprint $table) {
             $table->decimal('application_fee_vat_rate', 5, 4)->nullable();
