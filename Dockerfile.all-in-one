@@ -14,7 +14,7 @@ ENV PHP_OPCACHE_ENABLE=1
 
 RUN install-php-extensions intl
 
-RUN apk add --no-cache nodejs npm nginx supervisor
+RUN apk add --no-cache nodejs npm nginx supervisor git
 
 COPY --from=node-frontend /app/frontend /app/frontend
 
