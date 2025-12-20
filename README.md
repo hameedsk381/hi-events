@@ -101,7 +101,7 @@ Built for nightlife promoters, festival organizers, venues, community groups, an
 
 ### ⚙️ Operations
 
-Multi-user roles and permissions · Stripe Connect instant payouts · Offline payment methods · Offline event support ·
+Multi-user roles and permissions · Razorpay instant payouts · Offline payment methods · Offline event support ·
 Automatic invoicing · Event archive · Multi-language support · Full REST API
 
 </td>

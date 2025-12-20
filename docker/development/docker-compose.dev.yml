@@ -33,7 +33,7 @@ services:
             - ./../../frontend:/app
             - /app/node_modules
 
-        command: yarn dev:csr
+        command: npm run dev:csr
         environment:
             VITE_API_URL_CLIENT: 'http://localhost:${API_PORT:-1234}'
         networks:
@@ -50,11 +50,11 @@ services:
             - ./../../frontend:/app
             - /app/node_modules
 
-        command: yarn dev:ssr
+        command: npm run dev:ssr
         environment:
             VITE_API_URL_CLIENT: '${API_URL_CLIENT}'
             VITE_API_URL_SERVER: '${API_URL_SERVER}'
-            VITE_STRIPE_PUBLISHABLE_KEY: '${STRIPE_PUBLIC_KEY}'
+            VITE_RAZORPAY_KEY_ID: '${RAZORPAY_KEY_ID}'
             VITE_FRONTEND_URL: '${FRONTEND_URL}'
             VITE_APP_NAME: '${APP_NAME}'
         networks:

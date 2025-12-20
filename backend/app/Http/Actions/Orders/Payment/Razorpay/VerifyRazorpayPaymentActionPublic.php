@@ -6,7 +6,7 @@ use HiEvents\Exceptions\Razorpay\CreateRazorpayOrderFailedException;
 use HiEvents\Http\Actions\BaseAction;
 use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
 use HiEvents\Services\Application\Handlers\Order\DTO\MarkOrderAsPaidDTO;
-use HiEvents\Services\Application\Handlers\Order\MarkOrderAsPaidHandler;
+use HiEvents\Services\Application\Handlers\Order\Payment\Razorpay\RazorpayPaymentSucceededHandler;
 use HiEvents\Services\Infrastructure\Razorpay\RazorpayClientFactory;
 use Illuminate\Config\Repository;
 use Illuminate\Http\JsonResponse;
@@ -17,10 +17,10 @@ use Symfony\Component\HttpFoundation\Response;
 class VerifyRazorpayPaymentActionPublic extends BaseAction
 {
     public function __construct(
-        private readonly OrderRepositoryInterface $orderRepository,
-        private readonly MarkOrderAsPaidHandler   $markOrderAsPaidHandler,
-        private readonly RazorpayClientFactory    $clientFactory,
-        private readonly Repository               $config,
+        private readonly OrderRepositoryInterface        $orderRepository,
+        private readonly RazorpayPaymentSucceededHandler $markOrderAsPaidHandler,
+        private readonly RazorpayClientFactory           $clientFactory,
+        private readonly Repository                      $config,
     )
     {
     }
@@ -52,7 +52,9 @@ class VerifyRazorpayPaymentActionPublic extends BaseAction
             // Mark as paid
             $this->markOrderAsPaidHandler->handle(new MarkOrderAsPaidDTO(
                 eventId: $eventId,
-                orderId: $order->getId()
+                orderId: $order->getId(),
+                paymentId: $payload['razorpay_payment_id'],
+                signature: $payload['razorpay_signature'],
             ));
 
         } catch (\Exception $e) {

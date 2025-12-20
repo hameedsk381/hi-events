@@ -174,7 +174,7 @@ class EmailTokenContextBuilderTest extends TestCase
             'getCreatedAt' => '2024-01-15 10:30:00',
             'getShortId' => 'ABC123',
             'isOrderAwaitingOfflinePayment' => false,
-            'getPaymentProvider' => PaymentProviders::STRIPE->value,
+            'getPaymentProvider' => PaymentProviders::RAZORPAY->value,
             'getOrderItems' => $orderItems,
             'getCurrency' => 'USD',
             'getLocale' => 'en',

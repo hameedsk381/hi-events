@@ -4,8 +4,6 @@ namespace HiEvents\Helper;
 
 class Url
 {
-    public const STRIPE_CONNECT_RETURN_URL = 'app.frontend_urls.stripe_connect_return_url';
-    public const STRIPE_CONNECT_REFRESH_URL = 'app.frontend_urls.stripe_connect_refresh_url';
     public const RESET_PASSWORD = 'app.frontend_urls.reset_password';
     public const CONFIRM_EMAIL_CHANGE = 'app.frontend_urls.confirm_email_change';
     public const ACCEPT_INVITATION = 'app.frontend_urls.accept_invitation';

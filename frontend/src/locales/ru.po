@@ -162,7 +162,7 @@ msgid "🎨 Customize your event page"
 msgstr ""
 
 #: src/components/routes/event/GettingStarted/index.tsx:152
-msgid "💳 Connect with Stripe"
+msgid "💳 Connect with Razorpay"
 msgstr ""
 
 #: src/components/routes/event/GettingStarted/index.tsx:181
@@ -284,7 +284,7 @@ msgstr ""
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:433
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:462
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:680
-msgid "About Stripe Connect"
+msgid "About Razorpay Connect"
 msgstr ""
 
 #: src/components/common/PlatformFeesSettings/index.tsx:164
@@ -305,7 +305,7 @@ msgid "Accept bank transfers, checks, or other offline payment methods"
 msgstr ""
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
-msgid "Accept credit card payments with Stripe"
+msgid "Accept credit card payments with Razorpay"
 msgstr ""
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:87
@@ -364,8 +364,8 @@ msgid "Accounts"
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:70
-msgid "Action Required: Reconnect Your Stripe Account"
-msgstr "Требуется действие: Переподключите ваш аккаунт Stripe"
+msgid "Action Required: Reconnect Your Razorpay Account"
+msgstr "Требуется действие: Переподключите ваш аккаунт Razorpay"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/index.tsx:57
 msgid "Action Required: VAT Information Needed"
@@ -635,8 +635,8 @@ msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:204
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:416
-msgid "Almost there! Finish connecting your Stripe account to start accepting payments."
-msgstr "Почти готово! Завершите подключение аккаунта Stripe для начала приема платежей."
+msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
+msgstr "Почти готово! Завершите подключение аккаунта Razorpay для начала приема платежей."
 
 #: src/components/routes/product-widget/PaymentReturn/index.tsx:90
 msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
@@ -693,7 +693,7 @@ msgstr ""
 msgid "An optional message to display on the highlighted product, e.g. \"Selling fast 🔥\" or \"Best value\""
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:40
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:40
 msgid "An unexpected error occurred."
 msgstr ""
 
@@ -1056,7 +1056,7 @@ msgstr ""
 msgid "Back to Accounts"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:108
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:108
 #: src/components/routes/product-widget/CollectInformation/index.tsx:327
 #: src/components/routes/product-widget/CollectInformation/index.tsx:357
 #: src/components/routes/product-widget/CollectInformation/index.tsx:380
@@ -1584,9 +1584,9 @@ msgstr ""
 msgid "Complete Payment"
 msgstr ""
 
-#: src/components/common/StripeConnectButton/index.tsx:87
+#: src/components/common/RazorpayConnectButton/index.tsx:87
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Complete Stripe Setup"
+msgid "Complete Razorpay Setup"
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:114
@@ -1740,52 +1740,52 @@ msgstr ""
 
 #: src/components/layouts/OrganizerLayout/index.tsx:175
 #: src/components/layouts/OrganizerLayout/index.tsx:183
-msgid "Connect Stripe"
+msgid "Connect Razorpay"
 msgstr ""
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:349
-msgid "Connect Stripe to enable email template editing"
+msgid "Connect Razorpay to enable email template editing"
 msgstr ""
 
 #: src/components/modals/SendMessageModal/index.tsx:156
-msgid "Connect Stripe to enable messaging"
-msgstr "Подключите Stripe для включения сообщений"
+msgid "Connect Razorpay to enable messaging"
+msgstr "Подключите Razorpay для включения сообщений"
 
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Connect to Stripe"
+msgid "Connect to Razorpay"
 msgstr ""
 
-#: src/components/common/StripeConnectButton/index.tsx:85
+#: src/components/common/RazorpayConnectButton/index.tsx:85
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:453
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:670
 #: src/components/routes/event/GettingStarted/index.tsx:159
-msgid "Connect with Stripe"
+msgid "Connect with Razorpay"
 msgstr ""
 
 #: src/components/layouts/OrganizerLayout/index.tsx:176
-msgid "Connect your Stripe account to accept payments for tickets and products."
+msgid "Connect your Razorpay account to accept payments for tickets and products."
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:222
-msgid "Connect your Stripe account to accept payments."
-msgstr "Подключите ваш аккаунт Stripe для приема платежей."
+msgid "Connect your Razorpay account to accept payments."
+msgstr "Подключите ваш аккаунт Razorpay для приема платежей."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:445
-msgid "Connect your Stripe account to start accepting payments for your events."
-msgstr "Подключите ваш аккаунт Stripe для начала приема платежей за ваши мероприятия."
+msgid "Connect your Razorpay account to start accepting payments for your events."
+msgstr "Подключите ваш аккаунт Razorpay для начала приема платежей за ваши мероприятия."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:220
-msgid "Connect your Stripe account to start accepting payments."
-msgstr "Подключите ваш аккаунт Stripe для начала приема платежей."
+msgid "Connect your Razorpay account to start accepting payments."
+msgstr "Подключите ваш аккаунт Razorpay для начала приема платежей."
 
 #: src/components/routes/event/GettingStarted/index.tsx:155
-msgid "Connect your Stripe account to start receiving payments."
+msgid "Connect your Razorpay account to start receiving payments."
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:391
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:628
-msgid "Connected to Stripe"
+msgid "Connected to Razorpay"
 msgstr ""
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:98
@@ -2523,12 +2523,12 @@ msgid "Dropdown selection"
 msgstr ""
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:351
-msgid "Due to the high risk of spam, you must connect a Stripe account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
+msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
 msgstr ""
 
 #: src/components/modals/SendMessageModal/index.tsx:157
 msgid ""
-"Due to the high risk of spam, you must connect a Stripe account before you can send messages to attendees.\n"
+"Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
 "This is to ensure that all event organizers are verified and accountable."
 msgstr ""
 
@@ -3403,8 +3403,8 @@ msgstr "Завершить настройку"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:424
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:671
-msgid "Finish Stripe Setup"
-msgstr "Завершить настройку Stripe"
+msgid "Finish Razorpay Setup"
+msgstr "Завершить настройку Razorpay"
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:474
 msgid "First attendee"
@@ -3557,7 +3557,7 @@ msgid "Get Directions"
 msgstr ""
 
 #: src/components/layouts/AuthLayout/index.tsx:36
-msgid "Get paid immediately via Stripe Connect"
+msgid "Get paid immediately via Razorpay Connect"
 msgstr ""
 
 #: src/components/routes/auth/Register/index.tsx:73
@@ -3883,7 +3883,7 @@ msgid "Impersonation stopped"
 msgstr ""
 
 #: src/components/routes/event/EventDashboard/index.tsx:129
-msgid "Important: Stripe reconnection required"
+msgid "Important: Razorpay reconnection required"
 msgstr ""
 
 #: src/components/routes/admin/Dashboard/index.tsx:29
@@ -4076,8 +4076,8 @@ msgid "Join from anywhere"
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:119
-msgid "Just click the button below to reconnect your Stripe account."
-msgstr "Просто нажмите кнопку ниже для переподключения вашего аккаунта Stripe."
+msgid "Just click the button below to reconnect your Razorpay account."
+msgstr "Просто нажмите кнопку ниже для переподключения вашего аккаунта Razorpay."
 
 #: src/components/routes/auth/Login/index.tsx:121
 msgid "Just looking for your tickets?"
@@ -4197,7 +4197,7 @@ msgid "Link to ticket"
 msgstr ""
 
 #: src/components/routes/event/EventDashboard/index.tsx:230
-msgid "Link your Stripe account to receive funds from ticket sales."
+msgid "Link your Razorpay account to receive funds from ticket sales."
 msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:61
@@ -4929,8 +4929,8 @@ msgstr ""
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:195
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:404
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:641
-msgid "Open Stripe Dashboard"
-msgstr "Открыть панель Stripe"
+msgid "Open Razorpay Dashboard"
+msgstr "Открыть панель Razorpay"
 
 #: src/components/forms/QuestionForm/index.tsx:45
 msgid "Option {i}"
@@ -5272,7 +5272,7 @@ msgstr ""
 msgid "Padding"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:106
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:106
 msgid "Page no longer available"
 msgstr ""
 
@@ -5393,7 +5393,7 @@ msgstr ""
 
 #: src/components/common/OrdersTable/index.tsx:368
 #: src/components/common/ProgressStepper/index.tsx:19
-#: src/components/forms/StripeCheckoutForm/index.tsx:127
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:127
 msgid "Payment"
 msgstr ""
 
@@ -5440,7 +5440,7 @@ msgstr ""
 msgid "Payment provider"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:94
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:94
 msgid "Payment received"
 msgstr ""
 
@@ -5456,7 +5456,7 @@ msgstr ""
 msgid "Payment Status"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:60
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:60
 msgid "Payment succeeded!"
 msgstr ""
 
@@ -5464,7 +5464,7 @@ msgstr ""
 msgid "Payment Terms"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:49
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:49
 msgid "Payments not available"
 msgstr ""
 
@@ -5616,7 +5616,7 @@ msgstr ""
 msgid "Please provide an image."
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:65
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:65
 msgid "Please restart the checkout process."
 msgstr ""
 
@@ -5996,20 +5996,20 @@ msgid "Recipients"
 msgstr ""
 
 #: src/components/routes/event/EventDashboard/index.tsx:135
-msgid "Reconnect Stripe →"
+msgid "Reconnect Razorpay →"
 msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
 msgstr ""
 
-#: src/components/common/StripeConnectButton/index.tsx:59
-#: src/components/common/StripeConnectButton/index.tsx:74
+#: src/components/common/RazorpayConnectButton/index.tsx:59
+#: src/components/common/RazorpayConnectButton/index.tsx:74
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:325
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:338
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:578
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:596
-msgid "Redirecting to Stripe..."
+msgid "Redirecting to Razorpay..."
 msgstr ""
 
 #: src/components/routes/admin/Attribution/index.tsx:73
@@ -6179,8 +6179,8 @@ msgstr ""
 msgid "Restore event"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:52
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:67
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:52
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:67
 msgid "Return to Event"
 msgstr ""
 
@@ -6827,7 +6827,7 @@ msgstr ""
 #: src/components/common/ErrorDisplay/index.tsx:15
 #: src/components/routes/auth/AcceptInvitation/index.tsx:48
 #: src/components/routes/product-widget/CollectInformation/index.tsx:377
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:64
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:64
 msgid "Something went wrong"
 msgstr ""
 
@@ -6844,7 +6844,7 @@ msgstr ""
 msgid "Something went wrong! Please try again"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:69
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:69
 msgid "Something went wrong."
 msgstr ""
 
@@ -6947,23 +6947,23 @@ msgstr ""
 
 #: src/components/common/OrdersTable/index.tsx:377
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
-msgid "Stripe"
+msgid "Razorpay"
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
-msgid "Stripe Connect"
-msgstr "Stripe Connect"
+msgid "Razorpay Connect"
+msgstr "Razorpay Connect"
 
 #: src/components/routes/admin/Attribution/index.tsx:128
-msgid "Stripe Connected"
+msgid "Razorpay Connected"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:50
-msgid "Stripe payments are not enabled for this event."
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
+msgid "Razorpay payments are not enabled for this event."
 msgstr ""
 
-#: src/components/common/StripeConnectButton/index.tsx:69
-msgid "Stripe setup is already complete."
+#: src/components/common/RazorpayConnectButton/index.tsx:69
+msgid "Razorpay setup is already complete."
 msgstr ""
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:127
@@ -7515,7 +7515,7 @@ msgstr ""
 msgid "This name is visible to end users"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:95
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:95
 msgid "This order has already been paid."
 msgstr ""
 
@@ -7539,7 +7539,7 @@ msgstr ""
 msgid "This order is complete."
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:107
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:107
 msgid "This order page is no longer available."
 msgstr ""
 
@@ -7764,7 +7764,7 @@ msgid "To edit configurations, go to the Configurations section in the admin men
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:661
-msgid "To receive credit card payments, you need to connect your Stripe account. Stripe is our payment processing partner that ensures secure transactions and timely payouts."
+msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
 msgstr ""
 
 #: src/components/common/ColumnVisibilityToggle/index.tsx:26
@@ -8304,7 +8304,7 @@ msgstr ""
 msgid "View Order"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:96
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:96
 #: src/components/routes/product-widget/CollectInformation/index.tsx:347
 msgid "View Order Details"
 msgstr ""
@@ -8426,11 +8426,11 @@ msgid "We're processing your order. Please wait..."
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:73
-msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Stripe Ireland instead of Stripe Canada. To keep your payouts running smoothly, you'll need to reconnect your Stripe account."
-msgstr "Мы официально переместили наш главный офис в Ирландию 🇮🇪. В рамках этого перехода мы теперь используем Stripe Ирландия вместо Stripe Канада. Чтобы ваши выплаты проходили гладко, вам нужно переподключить ваш аккаунт Stripe."
+msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
+msgstr "Мы официально переместили наш главный офис в Ирландию 🇮🇪. В рамках этого перехода мы теперь используем Razorpay Ирландия вместо Razorpay Канада. Чтобы ваши выплаты проходили гладко, вам нужно переподключить ваш аккаунт Razorpay."
 
 #: src/components/routes/event/EventDashboard/index.tsx:130
-msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Stripe account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
+msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
 msgstr ""
 
 #: src/components/routes/welcome/index.tsx:145
@@ -8923,7 +8923,7 @@ msgstr ""
 msgid "Your password"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:63
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:63
 msgid "Your payment is processing."
 msgstr ""
 
@@ -8931,11 +8931,11 @@ msgstr ""
 msgid "Your payment is protected with bank-level encryption"
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:66
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:66
 msgid "Your payment was not successful, please try again."
 msgstr ""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:130
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:130
 msgid "Your payment was unsuccessful. Please try again."
 msgstr ""
 
@@ -8948,12 +8948,12 @@ msgid "Your refund is processing."
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:178
-msgid "Your Stripe account is connected and processing payments."
-msgstr "Ваш аккаунт Stripe подключен и обрабатывает платежи."
+msgid "Your Razorpay account is connected and processing payments."
+msgstr "Ваш аккаунт Razorpay подключен и обрабатывает платежи."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:395
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:632
-msgid "Your Stripe account is connected and ready to process payments."
+msgid "Your Razorpay account is connected and ready to process payments."
 msgstr ""
 
 #: src/components/routes/product-widget/AttendeeProductAndInformation/index.tsx:36

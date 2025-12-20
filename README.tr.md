@@ -99,7 +99,7 @@ Gece hayatı organizatörleri, festival düzenleyicileri, mekanlar, topluluk gru
 
 ### ⚙️ Operasyonlar
 
-Çok kullanıcılı roller ve izinler · Stripe Connect anında ödemeler · Çevrimdışı ödeme yöntemleri · Çevrimdışı etkinlik desteği ·
+Çok kullanıcılı roller ve izinler · Razorpay anında ödemeler · Çevrimdışı ödeme yöntemleri · Çevrimdışı etkinlik desteği ·
 Otomatik faturalama · Etkinlik arşivi · Çoklu dil desteği · Tam REST API
 
 </td>

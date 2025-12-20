@@ -14,7 +14,6 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Validation\ValidationException;
-use Stripe\Exception\ApiErrorException;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
 use Throwable;
 
@@ -42,11 +41,9 @@ class CancelOrderAction extends BaseAction
             ));
         } catch (ResourceConflictException $e) {
             return $this->errorResponse($e->getMessage(), HttpResponse::HTTP_CONFLICT);
-        } catch (ApiErrorException|RefundNotPossibleException $exception) {
+        } catch (RefundNotPossibleException|Throwable $exception) {
             throw ValidationException::withMessages([
-                'refund' => $exception instanceof ApiErrorException
-                    ? 'Stripe error: ' . $exception->getMessage()
-                    : $exception->getMessage(),
+                'refund' => $exception->getMessage(),
             ]);
         }
 

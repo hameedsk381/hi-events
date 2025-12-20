@@ -1,21 +1,20 @@
-import {GenericModalProps, IdParam, MessageType, ProductType} from "../../../types.ts";
-import {useParams} from "react-router";
-import {useGetEvent} from "../../../queries/useGetEvent.ts";
-import {useGetOrder} from "../../../queries/useGetOrder.ts";
-import {Modal} from "../../common/Modal";
-import {Alert, Button, Checkbox, ComboboxItemGroup, Group, LoadingOverlay, Menu, MultiSelect, Select, TextInput} from "@mantine/core";
-import {IconAlertCircle, IconCheck, IconChevronDown, IconCopy, IconSend, IconTestPipe} from "@tabler/icons-react";
-import {useGetMe} from "../../../queries/useGetMe.ts";
-import {useForm, UseFormReturnType} from "@mantine/form";
-import {useFormErrorResponseHandler} from "../../../hooks/useFormErrorResponseHandler.tsx";
-import {showSuccess} from "../../../utilites/notifications.tsx";
-import {t} from "@lingui/macro";
-import {Editor} from "../../common/Editor";
-import {useSendEventMessage} from "../../../mutations/useSendEventMessage.ts";
-import {ProductSelector} from "../../common/ProductSelector";
-import {useEffect} from "react";
-import {useGetAccount} from "../../../queries/useGetAccount.ts";
-import {StripeConnectButton} from "../../common/StripeConnectButton";
+import { GenericModalProps, IdParam, MessageType, ProductType } from "../../../types.ts";
+import { useParams } from "react-router";
+import { useGetEvent } from "../../../queries/useGetEvent.ts";
+import { useGetOrder } from "../../../queries/useGetOrder.ts";
+import { Modal } from "../../common/Modal";
+import { Alert, Button, Checkbox, ComboboxItemGroup, Group, LoadingOverlay, Menu, MultiSelect, Select, TextInput } from "@mantine/core";
+import { IconAlertCircle, IconCheck, IconChevronDown, IconCopy, IconSend, IconTestPipe } from "@tabler/icons-react";
+import { useGetMe } from "../../../queries/useGetMe.ts";
+import { useForm, UseFormReturnType } from "@mantine/form";
+import { useFormErrorResponseHandler } from "../../../hooks/useFormErrorResponseHandler.tsx";
+import { showSuccess } from "../../../utilites/notifications.tsx";
+import { t } from "@lingui/macro";
+import { Editor } from "../../common/Editor";
+import { useSendEventMessage } from "../../../mutations/useSendEventMessage.ts";
+import { ProductSelector } from "../../common/ProductSelector";
+import { useEffect } from "react";
+import { useGetAccount } from "../../../queries/useGetAccount.ts";
 import classes from "./SendMessageModal.module.scss";
 
 interface EventMessageModalProps extends GenericModalProps {
@@ -25,8 +24,8 @@ interface EventMessageModalProps extends GenericModalProps {
     attendeeId?: IdParam,
 }
 
-const OrderField = ({orderId, eventId}: { orderId: IdParam, eventId: IdParam }) => {
-    const {data: order} = useGetOrder(eventId, orderId);
+const OrderField = ({ orderId, eventId }: { orderId: IdParam, eventId: IdParam }) => {
+    const { data: order } = useGetOrder(eventId, orderId);
 
     if (!order) {
         return null;
@@ -41,14 +40,14 @@ const OrderField = ({orderId, eventId}: { orderId: IdParam, eventId: IdParam }) 
     )
 }
 
-const AttendeeField = ({orderId, eventId, attendeeId, form}: {
+const AttendeeField = ({ orderId, eventId, attendeeId, form }: {
     orderId: IdParam,
     eventId: IdParam,
     attendeeId: IdParam,
     form: UseFormReturnType<any>
 }) => {
-    const {data: order} = useGetOrder(eventId, orderId);
-    const {data: {products} = {}} = useGetEvent(eventId);
+    const { data: order } = useGetOrder(eventId, orderId);
+    const { data: { products } = {} } = useGetEvent(eventId);
 
     if (!order || !products || !attendeeId) {
         return null;
@@ -77,13 +76,13 @@ const AttendeeField = ({orderId, eventId, attendeeId, form}: {
 }
 
 export const SendMessageModal = (props: EventMessageModalProps) => {
-    const {onClose, orderId, productId, messageType, attendeeId} = props;
-    const {eventId} = useParams();
-    const {data: event, data: {product_categories} = {}} = useGetEvent(eventId);
-    const {data: me} = useGetMe();
+    const { onClose, orderId, productId, messageType, attendeeId } = props;
+    const { eventId } = useParams();
+    const { data: event, data: { product_categories } = {} } = useGetEvent(eventId);
+    const { data: me } = useGetMe();
     const errorHandler = useFormErrorResponseHandler();
     const isPreselectedRecipient = !!(orderId || attendeeId || productId);
-    const {data: account, isFetched: isAccountFetched} = useGetAccount();
+    const { data: account, isFetched: isAccountFetched } = useGetAccount();
     const isAccountVerified = isAccountFetched && account?.is_account_email_confirmed;
     const accountRequiresManualVerification = isAccountFetched && account?.requires_manual_verification;
     const formIsDisabled = !isAccountVerified || accountRequiresManualVerification;
@@ -128,7 +127,7 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
     }, [form.values.message_type]);
 
     if (!event || !me || !product_categories) {
-        return <LoadingOverlay visible/>;
+        return <LoadingOverlay visible />;
     }
 
     return (
@@ -140,30 +139,20 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
         >
             {!isAccountFetched && (
                 <div className={classes.loadingContainer}>
-                    <LoadingOverlay visible/>
+                    <LoadingOverlay visible />
                 </div>
             )}
 
             <form onSubmit={form.onSubmit(handleSend)}>
                 {(!isAccountVerified && isAccountFetched) && (
-                    <Alert className={classes.verificationAlert} variant={'light'} icon={<IconAlertCircle size="1rem"/>}>
+                    <Alert className={classes.verificationAlert} variant={'light'} icon={<IconAlertCircle size="1rem" />}>
                         {t`You need to verify your account email before you can send messages.`}
                     </Alert>
                 )}
 
-                {accountRequiresManualVerification && (
-                    <Alert className={classes.verificationAlert} variant={'light'} icon={<IconAlertCircle size="1rem"/>}
-                           title={t`Connect Stripe to enable messaging`}>
-                        {t`Due to the high risk of spam, you must connect a Stripe account before you can send messages to attendees.
-                         This is to ensure that all event organizers are verified and accountable.`}
-                        <div className={classes.stripeConnectButton}>
-                            <StripeConnectButton/>
-                        </div>
-                    </Alert>
-                )}
 
                 {!formIsDisabled && (
-                    <fieldset disabled={formIsDisabled} style={{border: 'none', padding: 0, margin: 0}}>
+                    <fieldset disabled={formIsDisabled} style={{ border: 'none', padding: 0, margin: 0 }}>
                         <div className={classes.formSection}>
                             {!isPreselectedRecipient && (
                                 <Select
@@ -189,7 +178,7 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
                             )}
 
                             {((form.values.message_type === MessageType.IndividualAttendees) && attendeeId && orderId) && (
-                                <AttendeeField eventId={eventId} orderId={orderId} attendeeId={attendeeId} form={form}/>
+                                <AttendeeField eventId={eventId} orderId={orderId} attendeeId={attendeeId} form={form} />
                             )}
 
                             {((form.values.message_type === MessageType.TicketHolders && event.product_categories)) && (
@@ -217,8 +206,8 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
                                         description={t`Only send to orders with these statuses`}
                                         label={t`Order statuses`}
                                         data={[
-                                            {value: 'COMPLETED', label: t`Completed`},
-                                            {value: 'AWAITING_OFFLINE_PAYMENT', label: t`Awaiting offline payment`},
+                                            { value: 'COMPLETED', label: t`Completed` },
+                                            { value: 'AWAITING_OFFLINE_PAYMENT', label: t`Awaiting offline payment` },
                                         ]}
                                         {...form.getInputProps('order_statuses')}
                                     />
@@ -226,7 +215,7 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
                             )}
 
                             {(form.values.message_type === MessageType.OrderOwner && orderId) && (
-                                <OrderField orderId={orderId} eventId={eventId}/>
+                                <OrderField orderId={orderId} eventId={eventId} />
                             )}
 
                             <TextInput
@@ -246,7 +235,7 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
 
                         <div className={classes.footerSection}>
                             <Checkbox
-                                {...form.getInputProps('acknowledgement', {type: 'checkbox'})}
+                                {...form.getInputProps('acknowledgement', { type: 'checkbox' })}
                                 label={t`I confirm this is a transactional message related to this event`}
                             />
 
@@ -255,7 +244,7 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
                                     className={classes.sendButton}
                                     loading={sendMessageMutation.isPending}
                                     type={'submit'}
-                                    leftSection={<IconSend size={16}/>}
+                                    leftSection={<IconSend size={16} />}
                                     disabled={!form.values.acknowledgement || !isAccountVerified || accountRequiresManualVerification}
                                 >
                                     {form.values.is_test ? t`Send Test` : t`Send Message`}
@@ -266,20 +255,20 @@ export const SendMessageModal = (props: EventMessageModalProps) => {
                                             className={classes.menuButton}
                                             disabled={!form.values.acknowledgement || !isAccountVerified || accountRequiresManualVerification}
                                         >
-                                            <IconChevronDown size={16}/>
+                                            <IconChevronDown size={16} />
                                         </Button>
                                     </Menu.Target>
                                     <Menu.Dropdown>
                                         <Menu.Item
-                                            leftSection={<IconTestPipe size={16}/>}
-                                            rightSection={form.values.is_test ? <IconCheck size={14}/> : null}
+                                            leftSection={<IconTestPipe size={16} />}
+                                            rightSection={form.values.is_test ? <IconCheck size={14} /> : null}
                                             onClick={() => form.setFieldValue('is_test', !form.values.is_test)}
                                         >
                                             {t`Send as test`}
                                         </Menu.Item>
                                         <Menu.Item
-                                            leftSection={<IconCopy size={16}/>}
-                                            rightSection={form.values.send_copy_to_current_user ? <IconCheck size={14}/> : null}
+                                            leftSection={<IconCopy size={16} />}
+                                            rightSection={form.values.send_copy_to_current_user ? <IconCheck size={14} /> : null}
                                             onClick={() => form.setFieldValue('send_copy_to_current_user', !form.values.send_copy_to_current_user)}
                                         >
                                             {t`Send me a copy`}

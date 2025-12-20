@@ -23,7 +23,6 @@ class OrderDomainObject extends Generated\OrderDomainObjectAbstract implements I
     /** @var Collection<AttendeeDomainObject>|null */
     public ?Collection $attendees = null;
 
-    public ?StripePaymentDomainObject $stripePayment = null;
 
     /** @var Collection<QuestionAndAnswerViewDomainObject>|null */
     public ?Collection $questionAndAnswerViews = null;
@@ -175,11 +174,6 @@ class OrderDomainObject extends Generated\OrderDomainObjectAbstract implements I
         return $this->getPaymentStatus() === OrderPaymentStatus::PAYMENT_FAILED->name;
     }
 
-    public function setStripePayment(?StripePaymentDomainObject $stripePayment): OrderDomainObject
-    {
-        $this->stripePayment = $stripePayment;
-        return $this;
-    }
 
     public function isPartiallyRefunded(): bool
     {
@@ -216,10 +210,6 @@ class OrderDomainObject extends Generated\OrderDomainObjectAbstract implements I
         return $this->getInvoices()?->sortByDesc(fn(InvoiceDomainObject $invoice) => $invoice->getId())->first();
     }
 
-    public function getStripePayment(): ?StripePaymentDomainObject
-    {
-        return $this->stripePayment;
-    }
 
     public function isFreeOrder(): bool
     {
@@ -283,7 +273,7 @@ class OrderDomainObject extends Generated\OrderDomainObjectAbstract implements I
     {
         return !$this->isFreeOrder()
             && $this->getStatus() !== OrderPaymentStatus::AWAITING_OFFLINE_PAYMENT->name
-            && $this->getPaymentProvider() === PaymentProviders::STRIPE->name
+            && $this->getPaymentProvider() === PaymentProviders::RAZORPAY->name
             && $this->getRefundStatus() !== OrderRefundStatus::REFUNDED->name;
     }
 }

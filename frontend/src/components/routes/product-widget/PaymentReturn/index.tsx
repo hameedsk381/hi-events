@@ -1,14 +1,13 @@
-import {usePollGetOrderPublic} from "../../../../queries/usePollGetOrderPublic.ts";
-import {useNavigate, useParams} from "react-router";
-import {useEffect, useRef, useState} from "react";
+import { usePollGetOrderPublic } from "../../../../queries/usePollGetOrderPublic.ts";
+import { useNavigate, useParams } from "react-router";
+import { useEffect, useRef, useState } from "react";
 import classes from './PaymentReturn.module.scss';
-import {t} from "@lingui/macro";
-import {useGetOrderStripePaymentIntentPublic} from "../../../../queries/useGetOrderStripePaymentIntentPublic.ts";
-import {CheckoutContent} from "../../../layouts/Checkout/CheckoutContent";
-import {eventCheckoutPath} from "../../../../utilites/urlHelper.ts";
-import {HomepageInfoMessage} from "../../../common/HomepageInfoMessage";
-import {isSsr} from "../../../../utilites/helpers.ts";
-import {trackEvent, AnalyticsEvents} from "../../../../utilites/analytics.ts";
+import { t } from "@lingui/macro";
+import { CheckoutContent } from "../../../layouts/Checkout/CheckoutContent";
+import { eventCheckoutPath } from "../../../../utilites/urlHelper.ts";
+import { HomepageInfoMessage } from "../../../common/HomepageInfoMessage";
+import { isSsr } from "../../../../utilites/helpers.ts";
+import { trackEvent, AnalyticsEvents } from "../../../../utilites/analytics.ts";
 
 /**
  * This component is responsible for handling the return from the payment provider.
@@ -19,11 +18,9 @@ import {trackEvent, AnalyticsEvents} from "../../../../utilites/analytics.ts";
  **/
 export const PaymentReturn = () => {
     const [shouldPoll, setShouldPoll] = useState(true);
-    const {eventId, orderShortId} = useParams();
-    const {data: order} = usePollGetOrderPublic(eventId, orderShortId, shouldPoll, ['event']);
+    const { eventId, orderShortId } = useParams();
+    const { data: order } = usePollGetOrderPublic(eventId, orderShortId, shouldPoll, ['event']);
     const navigate = useNavigate();
-    const [attemptManualConfirmation, setAttemptManualConfirmation] = useState(false);
-    const paymentIntentQuery = useGetOrderStripePaymentIntentPublic(eventId, orderShortId, attemptManualConfirmation);
     const [cannotConfirmPayment, setCannotConfirmPayment] = useState(false);
     const hasTrackedPurchase = useRef(false);
 
@@ -31,7 +28,7 @@ export const PaymentReturn = () => {
         () => {
             const timeout = setTimeout(() => {
                 setShouldPoll(false);
-                setAttemptManualConfirmation(true);
+                setCannotConfirmPayment(true);
             }, 10000); //todo - this should be a env variable
 
             return () => {
@@ -41,24 +38,6 @@ export const PaymentReturn = () => {
         []
     );
 
-    useEffect(() => {
-        if (!paymentIntentQuery.isFetched) {
-            return;
-        }
-        if (paymentIntentQuery.data?.status === 'succeeded') {
-            if (!hasTrackedPurchase.current && order) {
-                hasTrackedPurchase.current = true;
-                const totalCents = Math.round((order.total_gross || 0) * 100);
-                trackEvent(AnalyticsEvents.PURCHASE_COMPLETED_PAID, { value: totalCents });
-            }
-            navigate(eventCheckoutPath(eventId, orderShortId, 'summary'));
-        } else {
-            // At this point we've tried multiple times to confirm the payment and failed.
-            // This could be due to a network error on our end, or a problem with the payment provider (Stripe).
-            // This should be a rare occurrence, but we should handle it gracefully.
-            setCannotConfirmPayment(true);
-        }
-    }, [paymentIntentQuery.isFetched]);
 
     useEffect(() => {
         if (isSsr() || !order) {
@@ -86,8 +65,7 @@ export const PaymentReturn = () => {
                         status="processing"
                         message={(
                             <>
-                                {(!shouldPoll && paymentIntentQuery.isFetched) && t`We could not process your payment. Please try again or contact support.`}
-                                {(!shouldPoll && !paymentIntentQuery.isFetched) && t`Almost there! We're just waiting for your payment to be processed. This should only take a few seconds.`}
+                                {!shouldPoll && t`We could not process your payment. Please try again or contact support.`}
                                 {shouldPoll && t`We're processing your order. Please wait...`}
                             </>
                         )}

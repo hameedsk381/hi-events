@@ -99,7 +99,7 @@ Hầu hết các nền tảng bán vé tính phí cho mỗi vé và khóa dữ l
 
 ### ⚙️ Vận hành
 
-Vai trò và quyền đa người dùng · Thanh toán tức thì Stripe Connect · Phương thức thanh toán ngoại tuyến · Hỗ trợ sự kiện ngoại tuyến ·
+Vai trò và quyền đa người dùng · Thanh toán tức thì Razorpay · Phương thức thanh toán ngoại tuyến · Hỗ trợ sự kiện ngoại tuyến ·
 Lập hóa đơn tự động · Lưu trữ sự kiện · Hỗ trợ đa ngôn ngữ · API REST đầy đủ
 
 </td>

@@ -99,7 +99,7 @@ Conçu pour les promoteurs de vie nocturne, les organisateurs de festivals, les 
 
 ### ⚙️ Opérations
 
-Rôles et permissions multi-utilisateurs · Paiements instantanés Stripe Connect · Méthodes de paiement hors ligne · Support d'événements hors ligne ·
+Rôles et permissions multi-utilisateurs · Paiements instantanés Razorpay · Méthodes de paiement hors ligne · Support d'événements hors ligne ·
 Facturation automatique · Archivage d'événements · Support multilingue · API REST complète
 
 </td>

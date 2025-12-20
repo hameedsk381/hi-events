@@ -68,9 +68,6 @@ create table if not exists accounts
     deleted_at                    timestamp,
     name                          varchar                                     not null,
     email                         varchar                                     not null,
-    stripe_account_id             varchar(50),
-    short_id                      varchar(20)                                 not null,
-    stripe_connect_setup_complete boolean    default false,
     account_verified_at           timestamp,
     primary key (id)
 );
@@ -367,6 +364,28 @@ create index if not exists idx_orders_email_trgm
 create index if not exists idx_orders_public_id_trgm
     on orders using gin (public_id gin_trgm_ops);
 
+create table if not exists razorpay_payments
+(
+    id                  bigint generated always as identity,
+    order_id            bigint       not null,
+    razorpay_order_id   varchar(255) not null,
+    razorpay_payment_id varchar(255),
+    razorpay_signature  varchar(255),
+    amount              integer,
+    currency            varchar(3),
+    status              varchar(255),
+    method              varchar(255),
+    error_details       jsonb,
+    created_at          timestamp    not null,
+    updated_at          timestamp,
+    deleted_at          timestamp,
+    primary key (id),
+    constraint razorpay_payments_razorpay_order_id_unique
+        unique (razorpay_order_id),
+    constraint fk_razorpay_payments_order_id
+        foreign key (order_id) references orders
+);
+
 create table if not exists questions
 (
     id         bigint generated always as identity,
@@ -386,23 +405,6 @@ create table if not exists questions
         foreign key (event_id) references events
 );
 
-create table if not exists stripe_payments
-(
-    id                   bigint generated always as identity,
-    order_id             bigint  not null,
-    payment_intent_id    varchar not null,
-    charge_id            varchar,
-    payment_method_id    varchar,
-    amount_received      bigint,
-    created_at           timestamp,
-    updated_at           timestamp,
-    deleted_at           timestamp,
-    last_error           json,
-    connected_account_id varchar(50),
-    primary key (id),
-    constraint stripe_payments_orders_id_fk
-        foreign key (order_id) references orders
-);
 
 create table if not exists messages
 (

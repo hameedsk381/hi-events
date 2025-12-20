@@ -101,7 +101,7 @@ Gebouwd voor nachtleven-promotors, festivalorganisatoren, venues, gemeenschapsgr
 
 ### ⚙️ Operations
 
-Multi-gebruikersrollen en permissies · Stripe Connect directe uitbetalingen · Offline betaalmethoden · Ondersteuning voor offline evenementen ·
+Multi-gebruikersrollen en permissies · Razorpay directe uitbetalingen · Offline betaalmethoden · Ondersteuning voor offline evenementen ·
 Automatische facturering · Evenementarchief · Meertalige ondersteuning · Volledige REST API
 
 </td>

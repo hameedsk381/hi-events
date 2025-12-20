@@ -99,7 +99,7 @@ Progettato per promoter della vita notturna, organizzatori di festival, venue, g
 
 ### ⚙️ Operazioni
 
-Ruoli e permessi multi-utente · Pagamenti istantanei tramite Stripe Connect · Metodi di pagamento offline · Supporto eventi offline ·
+Ruoli e permessi multi-utente · Pagamenti istantanei tramite Razorpay · Metodi di pagamento offline · Supporto eventi offline ·
 Fatturazione automatica · Archivio eventi · Supporto multi-lingua · REST API completa
 
 </td>

@@ -2,15 +2,13 @@ FROM node:alpine as build-stage
 
 WORKDIR /app
 
-RUN apk add --no-cache yarn
+COPY package.json package-lock.json ./
 
-COPY package.json yarn.lock ./
-
-RUN yarn install
+RUN npm install
 
 COPY . .
 
-RUN yarn build:csr
+RUN npm run build:csr
 
 FROM nginx:alpine
 

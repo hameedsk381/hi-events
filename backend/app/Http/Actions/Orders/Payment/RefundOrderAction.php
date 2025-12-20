@@ -8,15 +8,14 @@ use HiEvents\Http\Actions\BaseAction;
 use HiEvents\Http\Request\Order\RefundOrderRequest;
 use HiEvents\Resources\Order\OrderResource;
 use HiEvents\Services\Application\Handlers\Order\DTO\RefundOrderDTO;
-use HiEvents\Services\Application\Handlers\Order\Payment\Stripe\RefundOrderHandler;
+use HiEvents\Services\Application\Handlers\Order\Payment\Razorpay\RazorpayRefundOrderHandler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
-use Stripe\Exception\ApiErrorException;
 use Throwable;
 
 class RefundOrderAction extends BaseAction
 {
-    public function __construct(private readonly RefundOrderHandler     $refundOrderHandler)
+    public function __construct(private readonly RazorpayRefundOrderHandler $refundOrderHandler)
     {
     }
 
@@ -35,11 +34,9 @@ class RefundOrderAction extends BaseAction
                     'order_id' => $orderId,
                 ]))
             );
-        } catch (ApiErrorException|RefundNotPossibleException $exception) {
+        } catch (RefundNotPossibleException|Throwable $exception) {
             throw ValidationException::withMessages([
-                'amount' => $exception instanceof ApiErrorException
-                    ? 'Stripe error: ' . $exception->getMessage()
-                    : $exception->getMessage(),
+                'amount' => $exception->getMessage(),
             ]);
         }
 

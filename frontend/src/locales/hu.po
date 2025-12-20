@@ -162,8 +162,8 @@ msgid "🎨 Customize your event page"
 msgstr "🎨 Eseményoldal testreszabása"
 
 #: src/components/routes/event/GettingStarted/index.tsx:152
-msgid "💳 Connect with Stripe"
-msgstr "💳 Kapcsolódás a Stripe-hoz"
+msgid "💳 Connect with Razorpay"
+msgstr "💳 Kapcsolódás a Razorpay-hoz"
 
 #: src/components/routes/event/GettingStarted/index.tsx:181
 msgid "🚀 Set your event live"
@@ -284,8 +284,8 @@ msgstr "Rólunk"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:433
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:462
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:680
-msgid "About Stripe Connect"
-msgstr "A Stripe Connectről"
+msgid "About Razorpay Connect"
+msgstr "A Razorpay Connectről"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:164
 msgid "Absorb fee"
@@ -305,8 +305,8 @@ msgid "Accept bank transfers, checks, or other offline payment methods"
 msgstr "Banki átutalások, csekkek vagy egyéb offline fizetési módok elfogadása"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
-msgid "Accept credit card payments with Stripe"
-msgstr "Hitelkártyás fizetések elfogadása a Stripe-pal"
+msgid "Accept credit card payments with Razorpay"
+msgstr "Hitelkártyás fizetések elfogadása a Razorpay-pal"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:87
 msgid "Accept invitation"
@@ -364,8 +364,8 @@ msgid "Accounts"
 msgstr "Fiókok"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:70
-msgid "Action Required: Reconnect Your Stripe Account"
-msgstr "Beavatkozás szükséges: Csatlakoztassa újra Stripe fiókját"
+msgid "Action Required: Reconnect Your Razorpay Account"
+msgstr "Beavatkozás szükséges: Csatlakoztassa újra Razorpay fiókját"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/index.tsx:57
 msgid "Action Required: VAT Information Needed"
@@ -635,8 +635,8 @@ msgstr "Engedélyezze a keresőmotoroknak az esemény indexelését"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:204
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:416
-msgid "Almost there! Finish connecting your Stripe account to start accepting payments."
-msgstr "Majdnem kész! Fejezze be Stripe fiókja csatlakoztatását a kifizetések fogadásának megkezdéséhez."
+msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
+msgstr "Majdnem kész! Fejezze be Razorpay fiókja csatlakoztatását a kifizetések fogadásának megkezdéséhez."
 
 #: src/components/routes/product-widget/PaymentReturn/index.tsx:90
 msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
@@ -693,7 +693,7 @@ msgstr "Hiba történt az oldal betöltésekor"
 msgid "An optional message to display on the highlighted product, e.g. \"Selling fast 🔥\" or \"Best value\""
 msgstr "Opcionális üzenet a kiemelt termék megjelenítéséhez, pl. \"Gyorsan fogy 🔥\" vagy \"Legjobb ár\""
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:40
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:40
 msgid "An unexpected error occurred."
 msgstr "Váratlan hiba történt."
 
@@ -1056,7 +1056,7 @@ msgstr "Awesome Organizer Kft."
 msgid "Back to Accounts"
 msgstr "Vissza a fiókokhoz"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:108
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:108
 #: src/components/routes/product-widget/CollectInformation/index.tsx:327
 #: src/components/routes/product-widget/CollectInformation/index.tsx:357
 #: src/components/routes/product-widget/CollectInformation/index.tsx:380
@@ -1584,10 +1584,10 @@ msgstr "Megrendelés befejezése"
 msgid "Complete Payment"
 msgstr "Fizetés befejezése"
 
-#: src/components/common/StripeConnectButton/index.tsx:87
+#: src/components/common/RazorpayConnectButton/index.tsx:87
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Complete Stripe Setup"
-msgstr "Stripe beállításának befejezése"
+msgid "Complete Razorpay Setup"
+msgstr "Razorpay beállításának befejezése"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:114
 msgid "Complete the setup below to continue"
@@ -1740,53 +1740,53 @@ msgstr "Fizetésfeldolgozás csatlakoztatása"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:175
 #: src/components/layouts/OrganizerLayout/index.tsx:183
-msgid "Connect Stripe"
-msgstr "Stripe csatlakoztatása"
+msgid "Connect Razorpay"
+msgstr "Razorpay csatlakoztatása"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:349
-msgid "Connect Stripe to enable email template editing"
-msgstr "Kapcsolja be a Stripe-ot az e-mail sablon szerkesztéséhez"
+msgid "Connect Razorpay to enable email template editing"
+msgstr "Kapcsolja be a Razorpay-ot az e-mail sablon szerkesztéséhez"
 
 #: src/components/modals/SendMessageModal/index.tsx:156
-msgid "Connect Stripe to enable messaging"
-msgstr "Kapcsolja be a Stripe-ot az üzenetküldéshez"
+msgid "Connect Razorpay to enable messaging"
+msgstr "Kapcsolja be a Razorpay-ot az üzenetküldéshez"
 
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Connect to Stripe"
-msgstr "Csatlakozás a Stripe-hoz"
+msgid "Connect to Razorpay"
+msgstr "Csatlakozás a Razorpay-hoz"
 
-#: src/components/common/StripeConnectButton/index.tsx:85
+#: src/components/common/RazorpayConnectButton/index.tsx:85
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:453
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:670
 #: src/components/routes/event/GettingStarted/index.tsx:159
-msgid "Connect with Stripe"
-msgstr "Csatlakozás a Stripe-hoz"
+msgid "Connect with Razorpay"
+msgstr "Csatlakozás a Razorpay-hoz"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:176
-msgid "Connect your Stripe account to accept payments for tickets and products."
-msgstr "Csatlakoztassa Stripe fiókját, hogy elfogadja a jegyek és termékek fizetését."
+msgid "Connect your Razorpay account to accept payments for tickets and products."
+msgstr "Csatlakoztassa Razorpay fiókját, hogy elfogadja a jegyek és termékek fizetését."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:222
-msgid "Connect your Stripe account to accept payments."
-msgstr "Kapcsolja össze a Stripe fiókját a fizetések fogadásához."
+msgid "Connect your Razorpay account to accept payments."
+msgstr "Kapcsolja össze a Razorpay fiókját a fizetések fogadásához."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:445
-msgid "Connect your Stripe account to start accepting payments for your events."
-msgstr "Kapcsolja össze a Stripe fiókját, hogy elkezdjen fizetéseket fogadni az eseményeihez."
+msgid "Connect your Razorpay account to start accepting payments for your events."
+msgstr "Kapcsolja össze a Razorpay fiókját, hogy elkezdjen fizetéseket fogadni az eseményeihez."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:220
-msgid "Connect your Stripe account to start accepting payments."
-msgstr "Kapcsolja össze a Stripe fiókját a fizetések fogadásának megkezdéséhez."
+msgid "Connect your Razorpay account to start accepting payments."
+msgstr "Kapcsolja össze a Razorpay fiókját a fizetések fogadásának megkezdéséhez."
 
 #: src/components/routes/event/GettingStarted/index.tsx:155
-msgid "Connect your Stripe account to start receiving payments."
-msgstr "Csatlakoztassa Stripe fiókját, hogy elkezdhesse a fizetések fogadását."
+msgid "Connect your Razorpay account to start receiving payments."
+msgstr "Csatlakoztassa Razorpay fiókját, hogy elkezdhesse a fizetések fogadását."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:391
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:628
-msgid "Connected to Stripe"
-msgstr "Csatlakoztatva a Stripe-hoz"
+msgid "Connected to Razorpay"
+msgstr "Csatlakoztatva a Razorpay-hoz"
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:98
 msgid "Connection Details"
@@ -2523,15 +2523,15 @@ msgid "Dropdown selection"
 msgstr "Legördülő menü kiválasztása"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:351
-msgid "Due to the high risk of spam, you must connect a Stripe account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
-msgstr "A spam magas kockázata miatt csatlakoztatnia kell egy Stripe fiókot, mielőtt módosíthatná az e-mail sablonokat. Ez biztosítja, hogy minden eseményszervező ellenőrzött és felelősségre vonható legyen."
+msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
+msgstr "A spam magas kockázata miatt csatlakoztatnia kell egy Razorpay fiókot, mielőtt módosíthatná az e-mail sablonokat. Ez biztosítja, hogy minden eseményszervező ellenőrzött és felelősségre vonható legyen."
 
 #: src/components/modals/SendMessageModal/index.tsx:157
 msgid ""
-"Due to the high risk of spam, you must connect a Stripe account before you can send messages to attendees.\n"
+"Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
 "This is to ensure that all event organizers are verified and accountable."
 msgstr ""
-"A spam magas kockázata miatt csatlakoztatnia kell egy Stripe fiókot, mielőtt üzeneteket küldhetne a résztvevőknek.\n"
+"A spam magas kockázata miatt csatlakoztatnia kell egy Razorpay fiókot, mielőtt üzeneteket küldhetne a résztvevőknek.\n"
 "Ez biztosítja, hogy minden eseményszervező ellenőrzött és felelősségre vonható legyen."
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:473
@@ -3405,8 +3405,8 @@ msgstr "Beállítás befejezése"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:424
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:671
-msgid "Finish Stripe Setup"
-msgstr "Stripe beállítás befejezése"
+msgid "Finish Razorpay Setup"
+msgstr "Razorpay beállítás befejezése"
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:474
 msgid "First attendee"
@@ -3559,8 +3559,8 @@ msgid "Get Directions"
 msgstr "Útvonal"
 
 #: src/components/layouts/AuthLayout/index.tsx:36
-msgid "Get paid immediately via Stripe Connect"
-msgstr "Azonnali kifizetés Stripe Connect-en keresztül"
+msgid "Get paid immediately via Razorpay Connect"
+msgstr "Azonnali kifizetés Razorpay Connect-en keresztül"
 
 #: src/components/routes/auth/Register/index.tsx:73
 msgid "Get started"
@@ -3885,8 +3885,8 @@ msgid "Impersonation stopped"
 msgstr "Megszemélyesítés leállítva"
 
 #: src/components/routes/event/EventDashboard/index.tsx:129
-msgid "Important: Stripe reconnection required"
-msgstr "Fontos: Stripe újracsatlakozás szükséges"
+msgid "Important: Razorpay reconnection required"
+msgstr "Fontos: Razorpay újracsatlakozás szükséges"
 
 #: src/components/routes/admin/Dashboard/index.tsx:29
 msgid "In {diffHours} hours"
@@ -4078,8 +4078,8 @@ msgid "Join from anywhere"
 msgstr "Csatlakozzon bárhonnan"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:119
-msgid "Just click the button below to reconnect your Stripe account."
-msgstr "Csak kattintson az alábbi gombra a Stripe fiók újracsatlakoztatásához."
+msgid "Just click the button below to reconnect your Razorpay account."
+msgstr "Csak kattintson az alábbi gombra a Razorpay fiók újracsatlakoztatásához."
 
 #: src/components/routes/auth/Login/index.tsx:121
 msgid "Just looking for your tickets?"
@@ -4199,8 +4199,8 @@ msgid "Link to ticket"
 msgstr "Link a jegyhez"
 
 #: src/components/routes/event/EventDashboard/index.tsx:230
-msgid "Link your Stripe account to receive funds from ticket sales."
-msgstr "Linkelje Stripe fiókját, hogy jegyértékesítésből származó bevételeket fogadjon."
+msgid "Link your Razorpay account to receive funds from ticket sales."
+msgstr "Linkelje Razorpay fiókját, hogy jegyértékesítésből származó bevételeket fogadjon."
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:61
 msgid "LinkedIn"
@@ -4931,8 +4931,8 @@ msgstr "Oldalsáv megnyitása"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:195
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:404
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:641
-msgid "Open Stripe Dashboard"
-msgstr "Stripe irányítópult megnyitása"
+msgid "Open Razorpay Dashboard"
+msgstr "Razorpay irányítópult megnyitása"
 
 #: src/components/forms/QuestionForm/index.tsx:45
 msgid "Option {i}"
@@ -5274,7 +5274,7 @@ msgstr "Áttekintés"
 msgid "Padding"
 msgstr "Kitöltés"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:106
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:106
 msgid "Page no longer available"
 msgstr "Az oldal már nem elérhető"
 
@@ -5395,7 +5395,7 @@ msgstr "Fizessen a feloldáshoz"
 
 #: src/components/common/OrdersTable/index.tsx:368
 #: src/components/common/ProgressStepper/index.tsx:19
-#: src/components/forms/StripeCheckoutForm/index.tsx:127
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:127
 msgid "Payment"
 msgstr "Fizetés"
 
@@ -5442,7 +5442,7 @@ msgstr "Fizetésfeldolgozás"
 msgid "Payment provider"
 msgstr "Fizetési szolgáltató"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:94
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:94
 msgid "Payment received"
 msgstr "Fizetés megérkezett"
 
@@ -5458,7 +5458,7 @@ msgstr "Fizetési beállítások"
 msgid "Payment Status"
 msgstr "Fizetési állapot"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:60
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:60
 msgid "Payment succeeded!"
 msgstr "Fizetés sikeres!"
 
@@ -5466,7 +5466,7 @@ msgstr "Fizetés sikeres!"
 msgid "Payment Terms"
 msgstr "Fizetési feltételek"
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:49
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:49
 msgid "Payments not available"
 msgstr "Fizetések nem elérhetők"
 
@@ -5618,7 +5618,7 @@ msgstr "Kérjük, vegye figyelembe"
 msgid "Please provide an image."
 msgstr "Kérjük, adjon meg egy képet."
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:65
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:65
 msgid "Please restart the checkout process."
 msgstr "Kérjük, indítsa újra a pénztári folyamatot."
 
@@ -5998,21 +5998,21 @@ msgid "Recipients"
 msgstr "Címzettek"
 
 #: src/components/routes/event/EventDashboard/index.tsx:135
-msgid "Reconnect Stripe →"
-msgstr "Stripe újracsatlakoztatása →"
+msgid "Reconnect Razorpay →"
+msgstr "Razorpay újracsatlakoztatása →"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
 msgstr "Reddit"
 
-#: src/components/common/StripeConnectButton/index.tsx:59
-#: src/components/common/StripeConnectButton/index.tsx:74
+#: src/components/common/RazorpayConnectButton/index.tsx:59
+#: src/components/common/RazorpayConnectButton/index.tsx:74
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:325
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:338
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:578
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:596
-msgid "Redirecting to Stripe..."
-msgstr "Átirányítás a Stripe-ra..."
+msgid "Redirecting to Razorpay..."
+msgstr "Átirányítás a Razorpay-ra..."
 
 #: src/components/routes/admin/Attribution/index.tsx:73
 msgid "Referral Accounts"
@@ -6181,8 +6181,8 @@ msgstr "Visszaállítás..."
 msgid "Restore event"
 msgstr "Esemény visszaállítása"
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:52
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:67
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:52
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:67
 msgid "Return to Event"
 msgstr "Vissza az eseményhez"
 
@@ -6829,7 +6829,7 @@ msgstr "Elfogyott"
 #: src/components/common/ErrorDisplay/index.tsx:15
 #: src/components/routes/auth/AcceptInvitation/index.tsx:48
 #: src/components/routes/product-widget/CollectInformation/index.tsx:377
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:64
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:64
 msgid "Something went wrong"
 msgstr "Valami hiba történt"
 
@@ -6846,7 +6846,7 @@ msgstr "Valami hiba történt, kérjük, próbálja újra, vagy vegye fel a kapc
 msgid "Something went wrong! Please try again"
 msgstr "Valami hiba történt! Kérjük, próbálja újra."
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:69
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:69
 msgid "Something went wrong."
 msgstr "Valami hiba történt."
 
@@ -6949,24 +6949,24 @@ msgstr "Megszemélyesítés leállítása"
 
 #: src/components/common/OrdersTable/index.tsx:377
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
-msgid "Stripe"
-msgstr "Stripe"
+msgid "Razorpay"
+msgstr "Razorpay"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
-msgid "Stripe Connect"
-msgstr "Stripe Connect"
+msgid "Razorpay Connect"
+msgstr "Razorpay Connect"
 
 #: src/components/routes/admin/Attribution/index.tsx:128
-msgid "Stripe Connected"
+msgid "Razorpay Connected"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:50
-msgid "Stripe payments are not enabled for this event."
-msgstr "A Stripe fizetések nincsenek engedélyezve ehhez az eseményhez."
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
+msgid "Razorpay payments are not enabled for this event."
+msgstr "A Razorpay fizetések nincsenek engedélyezve ehhez az eseményhez."
 
-#: src/components/common/StripeConnectButton/index.tsx:69
-msgid "Stripe setup is already complete."
-msgstr "A Stripe beállítás már kész."
+#: src/components/common/RazorpayConnectButton/index.tsx:69
+msgid "Razorpay setup is already complete."
+msgstr "A Razorpay beállítás már kész."
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:127
 #: src/components/modals/SendMessageModal/index.tsx:234
@@ -7517,7 +7517,7 @@ msgstr "Ez az üzenet csak akkor jelenik meg, ha a megrendelés sikeresen befeje
 msgid "This name is visible to end users"
 msgstr "Ez a név látható a végfelhasználók számára"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:95
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:95
 msgid "This order has already been paid."
 msgstr "Ez a megrendelés már ki lett fizetve."
 
@@ -7541,7 +7541,7 @@ msgstr "Ez a rendelés feldolgozás alatt áll."
 msgid "This order is complete."
 msgstr "Ez a megrendelés kész."
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:107
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:107
 msgid "This order page is no longer available."
 msgstr "Ez a megrendelési oldal már nem elérhető."
 
@@ -7766,8 +7766,8 @@ msgid "To edit configurations, go to the Configurations section in the admin men
 msgstr "A konfigurációk szerkesztéséhez lépjen a Konfigurációk részhez az admin menüben."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:661
-msgid "To receive credit card payments, you need to connect your Stripe account. Stripe is our payment processing partner that ensures secure transactions and timely payouts."
-msgstr "Hitelkártyás fizetések fogadásához csatlakoztatnia kell Stripe-fiókját. A Stripe a fizetésfeldolgozó partnerünk, amely biztosítja a biztonságos tranzakciókat és az időben történő kifizetéseket."
+msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
+msgstr "Hitelkártyás fizetések fogadásához csatlakoztatnia kell Razorpay-fiókját. A Razorpay a fizetésfeldolgozó partnerünk, amely biztosítja a biztonságos tranzakciókat és az időben történő kifizetéseket."
 
 #: src/components/common/ColumnVisibilityToggle/index.tsx:26
 msgid "Toggle columns"
@@ -8306,7 +8306,7 @@ msgstr "Megtekintés a Google Térképen"
 msgid "View Order"
 msgstr "Rendelés megtekintése"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:96
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:96
 #: src/components/routes/product-widget/CollectInformation/index.tsx:347
 msgid "View Order Details"
 msgstr "Rendelés részleteinek megtekintése"
@@ -8428,12 +8428,12 @@ msgid "We're processing your order. Please wait..."
 msgstr "Megrendelését feldolgozzuk. Kérjük, várjon..."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:73
-msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Stripe Ireland instead of Stripe Canada. To keep your payouts running smoothly, you'll need to reconnect your Stripe account."
-msgstr "Hivatalosan Írországba 🇮🇪 költöztettük a székhelyünket. Ennek az átállásnak részeként most a Stripe Ireland-ot használjuk a Stripe Canada helyett. A kifizetések zökkenőmentes folytatásához újra kell csatlakoztatnia a Stripe fiókját."
+msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
+msgstr "Hivatalosan Írországba 🇮🇪 költöztettük a székhelyünket. Ennek az átállásnak részeként most a Razorpay Ireland-ot használjuk a Razorpay Canada helyett. A kifizetések zökkenőmentes folytatásához újra kell csatlakoztatnia a Razorpay fiókját."
 
 #: src/components/routes/event/EventDashboard/index.tsx:130
-msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Stripe account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
-msgstr "Átköltöztettük a székhelyünket Írországba. Ennek eredményeként újra kell csatlakoztatnia a Stripe fiókját. Ez a gyors folyamat csak néhány percet vesz igénybe. Az értékesítései és meglévő adatai teljesen érintetlenek maradnak."
+msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
+msgstr "Átköltöztettük a székhelyünket Írországba. Ennek eredményeként újra kell csatlakoztatnia a Razorpay fiókját. Ez a gyors folyamat csak néhány percet vesz igénybe. Az értékesítései és meglévő adatai teljesen érintetlenek maradnak."
 
 #: src/components/routes/welcome/index.tsx:145
 msgid "We've sent a 5-digit verification code to:"
@@ -8925,7 +8925,7 @@ msgstr "Szervezői címe"
 msgid "Your password"
 msgstr "Az Ön jelszava"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:63
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:63
 msgid "Your payment is processing."
 msgstr "Fizetése feldolgozás alatt áll."
 
@@ -8933,11 +8933,11 @@ msgstr "Fizetése feldolgozás alatt áll."
 msgid "Your payment is protected with bank-level encryption"
 msgstr "A fizetése banki szintű titkosítással védett"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:66
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:66
 msgid "Your payment was not successful, please try again."
 msgstr "Fizetése sikertelen volt, kérjük, próbálja újra."
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:130
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:130
 msgid "Your payment was unsuccessful. Please try again."
 msgstr "Fizetése sikertelen volt. Kérjük, próbálja újra."
 
@@ -8950,13 +8950,13 @@ msgid "Your refund is processing."
 msgstr "Visszatérítése feldolgozás alatt áll."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:178
-msgid "Your Stripe account is connected and processing payments."
-msgstr "A Stripe fiókja csatlakoztatva van és feldolgozza a fizetéseket."
+msgid "Your Razorpay account is connected and processing payments."
+msgstr "A Razorpay fiókja csatlakoztatva van és feldolgozza a fizetéseket."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:395
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:632
-msgid "Your Stripe account is connected and ready to process payments."
-msgstr "Stripe fiókja csatlakoztatva van, és készen áll a fizetések feldolgozására."
+msgid "Your Razorpay account is connected and ready to process payments."
+msgstr "Razorpay fiókja csatlakoztatva van, és készen áll a fizetések feldolgozására."
 
 #: src/components/routes/product-widget/AttendeeProductAndInformation/index.tsx:36
 msgid "Your ticket for"
@@ -9031,8 +9031,8 @@ msgstr "Forrás"
 msgid "Statistics are based on account creation date"
 msgstr "A statisztikák a fiók létrehozásának dátumán alapulnak"
 
-msgid "Stripe Connected"
-msgstr "Stripe csatlakoztatva"
+msgid "Razorpay Connected"
+msgstr "Razorpay csatlakoztatva"
 
 msgid "Track account growth and performance by attribution source"
 msgstr "Kövesse nyomon a fióknövekedést és teljesítményt hozzárendelési forrás szerint"

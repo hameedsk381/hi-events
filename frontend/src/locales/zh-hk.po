@@ -162,8 +162,8 @@ msgid "🎨 Customize your event page"
 msgstr "🎨 自定義活動頁面"
 
 #: src/components/routes/event/GettingStarted/index.tsx:152
-msgid "💳 Connect with Stripe"
-msgstr "與 Stripe 連接"
+msgid "💳 Connect with Razorpay"
+msgstr "與 Razorpay 連接"
 
 #: src/components/routes/event/GettingStarted/index.tsx:181
 msgid "🚀 Set your event live"
@@ -284,8 +284,8 @@ msgstr "關於"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:433
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:462
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:680
-msgid "About Stripe Connect"
-msgstr "關於 Stripe Connect"
+msgid "About Razorpay Connect"
+msgstr "關於 Razorpay Connect"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:164
 msgid "Absorb fee"
@@ -305,8 +305,8 @@ msgid "Accept bank transfers, checks, or other offline payment methods"
 msgstr "接受銀行轉賬、支票或其他線下支付方式"
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:86
-msgid "Accept credit card payments with Stripe"
-msgstr "通過 Stripe 接受信用卡支付"
+msgid "Accept credit card payments with Razorpay"
+msgstr "通過 Razorpay 接受信用卡支付"
 
 #: src/components/routes/auth/AcceptInvitation/index.tsx:87
 msgid "Accept invitation"
@@ -364,8 +364,8 @@ msgid "Accounts"
 msgstr "賬戶"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:70
-msgid "Action Required: Reconnect Your Stripe Account"
-msgstr "需要操作：重新連接您的 Stripe 帳戶"
+msgid "Action Required: Reconnect Your Razorpay Account"
+msgstr "需要操作：重新連接您的 Razorpay 帳戶"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/index.tsx:57
 msgid "Action Required: VAT Information Needed"
@@ -635,8 +635,8 @@ msgstr "允許搜索引擎索引此事件"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:204
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:416
-msgid "Almost there! Finish connecting your Stripe account to start accepting payments."
-msgstr "快完成了！完成連接您的 Stripe 帳戶以開始接受付款。"
+msgid "Almost there! Finish connecting your Razorpay account to start accepting payments."
+msgstr "快完成了！完成連接您的 Razorpay 帳戶以開始接受付款。"
 
 #: src/components/routes/product-widget/PaymentReturn/index.tsx:90
 msgid "Almost there! We're just waiting for your payment to be processed. This should only take a few seconds."
@@ -693,7 +693,7 @@ msgstr "加載頁面時出現錯誤"
 msgid "An optional message to display on the highlighted product, e.g. \"Selling fast 🔥\" or \"Best value\""
 msgstr "顯示在突出產品上的可選訊息，例如「熱賣中 🔥」或「最佳價值」"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:40
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:40
 msgid "An unexpected error occurred."
 msgstr "出現意外錯誤。"
 
@@ -1056,7 +1056,7 @@ msgstr "Awesome Organizer Ltd."
 msgid "Back to Accounts"
 msgstr "返回帳戶"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:108
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:108
 #: src/components/routes/product-widget/CollectInformation/index.tsx:327
 #: src/components/routes/product-widget/CollectInformation/index.tsx:357
 #: src/components/routes/product-widget/CollectInformation/index.tsx:380
@@ -1584,10 +1584,10 @@ msgstr "完整訂單"
 msgid "Complete Payment"
 msgstr "完成付款"
 
-#: src/components/common/StripeConnectButton/index.tsx:87
+#: src/components/common/RazorpayConnectButton/index.tsx:87
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Complete Stripe Setup"
-msgstr "完成 Stripe 設置"
+msgid "Complete Razorpay Setup"
+msgstr "完成 Razorpay 設置"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:114
 msgid "Complete the setup below to continue"
@@ -1740,53 +1740,53 @@ msgstr "連接支付處理"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:175
 #: src/components/layouts/OrganizerLayout/index.tsx:183
-msgid "Connect Stripe"
+msgid "Connect Razorpay"
 msgstr "連接條紋"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:349
-msgid "Connect Stripe to enable email template editing"
-msgstr "連接 Stripe 以啟用電子郵件範本編輯"
+msgid "Connect Razorpay to enable email template editing"
+msgstr "連接 Razorpay 以啟用電子郵件範本編輯"
 
 #: src/components/modals/SendMessageModal/index.tsx:156
-msgid "Connect Stripe to enable messaging"
-msgstr "連接 Stripe 以啟用消息功能"
+msgid "Connect Razorpay to enable messaging"
+msgstr "連接 Razorpay 以啟用消息功能"
 
 #: src/components/routes/event/EventDashboard/index.tsx:241
-msgid "Connect to Stripe"
-msgstr "連接到 Stripe"
+msgid "Connect to Razorpay"
+msgstr "連接到 Razorpay"
 
-#: src/components/common/StripeConnectButton/index.tsx:85
+#: src/components/common/RazorpayConnectButton/index.tsx:85
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:234
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:453
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:670
 #: src/components/routes/event/GettingStarted/index.tsx:159
-msgid "Connect with Stripe"
-msgstr "與 Stripe 連接"
+msgid "Connect with Razorpay"
+msgstr "與 Razorpay 連接"
 
 #: src/components/layouts/OrganizerLayout/index.tsx:176
-msgid "Connect your Stripe account to accept payments for tickets and products."
-msgstr "連接您的 Stripe 帳戶以接受門票和商品的付款。"
+msgid "Connect your Razorpay account to accept payments for tickets and products."
+msgstr "連接您的 Razorpay 帳戶以接受門票和商品的付款。"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:222
-msgid "Connect your Stripe account to accept payments."
-msgstr "連接您的 Stripe 帳戶以接受付款。"
+msgid "Connect your Razorpay account to accept payments."
+msgstr "連接您的 Razorpay 帳戶以接受付款。"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:445
-msgid "Connect your Stripe account to start accepting payments for your events."
-msgstr "連接您的 Stripe 帳戶以開始接受您活動的付款。"
+msgid "Connect your Razorpay account to start accepting payments for your events."
+msgstr "連接您的 Razorpay 帳戶以開始接受您活動的付款。"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:220
-msgid "Connect your Stripe account to start accepting payments."
-msgstr "連接您的 Stripe 帳戶以開始接受付款。"
+msgid "Connect your Razorpay account to start accepting payments."
+msgstr "連接您的 Razorpay 帳戶以開始接受付款。"
 
 #: src/components/routes/event/GettingStarted/index.tsx:155
-msgid "Connect your Stripe account to start receiving payments."
-msgstr "連接 Stripe 賬户，開始接收付款。"
+msgid "Connect your Razorpay account to start receiving payments."
+msgstr "連接 Razorpay 賬户，開始接收付款。"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:391
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:628
-msgid "Connected to Stripe"
-msgstr "已連接到 Stripe"
+msgid "Connected to Razorpay"
+msgstr "已連接到 Razorpay"
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:98
 msgid "Connection Details"
@@ -2523,15 +2523,15 @@ msgid "Dropdown selection"
 msgstr "下拉選擇"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:351
-msgid "Due to the high risk of spam, you must connect a Stripe account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
-msgstr "由於垃圾郵件風險高，您必須先連接 Stripe 帳戶才能修改電子郵件範本。這是為了確保所有活動主辦方都經過驗證並負責。"
+msgid "Due to the high risk of spam, you must connect a Razorpay account before you can modify email templates. This is to ensure that all event organizers are verified and accountable."
+msgstr "由於垃圾郵件風險高，您必須先連接 Razorpay 帳戶才能修改電子郵件範本。這是為了確保所有活動主辦方都經過驗證並負責。"
 
 #: src/components/modals/SendMessageModal/index.tsx:157
 msgid ""
-"Due to the high risk of spam, you must connect a Stripe account before you can send messages to attendees.\n"
+"Due to the high risk of spam, you must connect a Razorpay account before you can send messages to attendees.\n"
 "This is to ensure that all event organizers are verified and accountable."
 msgstr ""
-"由於垃圾郵件風險較高，您必須先連接 Stripe 帳戶才能向參與者發送訊息。\n"
+"由於垃圾郵件風險較高，您必須先連接 Razorpay 帳戶才能向參與者發送訊息。\n"
 "這是為了確保所有活動組織者都經過驗證並承擔責任。"
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:473
@@ -3405,8 +3405,8 @@ msgstr "完成設置"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:424
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:671
-msgid "Finish Stripe Setup"
-msgstr "完成 Stripe 設置"
+msgid "Finish Razorpay Setup"
+msgstr "完成 Razorpay 設置"
 
 #: src/components/routes/product-widget/CollectInformation/index.tsx:474
 msgid "First attendee"
@@ -3559,8 +3559,8 @@ msgid "Get Directions"
 msgstr "取得路線"
 
 #: src/components/layouts/AuthLayout/index.tsx:36
-msgid "Get paid immediately via Stripe Connect"
-msgstr "透過 Stripe Connect 立即獲得付款"
+msgid "Get paid immediately via Razorpay Connect"
+msgstr "透過 Razorpay Connect 立即獲得付款"
 
 #: src/components/routes/auth/Register/index.tsx:73
 msgid "Get started"
@@ -3885,8 +3885,8 @@ msgid "Impersonation stopped"
 msgstr "模擬已停止"
 
 #: src/components/routes/event/EventDashboard/index.tsx:129
-msgid "Important: Stripe reconnection required"
-msgstr "重要：需要重新連接 Stripe"
+msgid "Important: Razorpay reconnection required"
+msgstr "重要：需要重新連接 Razorpay"
 
 #: src/components/routes/admin/Dashboard/index.tsx:29
 msgid "In {diffHours} hours"
@@ -4078,8 +4078,8 @@ msgid "Join from anywhere"
 msgstr "隨時隨地加入"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:119
-msgid "Just click the button below to reconnect your Stripe account."
-msgstr "只需點擊下面的按鈕重新連接您的 Stripe 帳戶。"
+msgid "Just click the button below to reconnect your Razorpay account."
+msgstr "只需點擊下面的按鈕重新連接您的 Razorpay 帳戶。"
 
 #: src/components/routes/auth/Login/index.tsx:121
 msgid "Just looking for your tickets?"
@@ -4199,8 +4199,8 @@ msgid "Link to ticket"
 msgstr "門票連結"
 
 #: src/components/routes/event/EventDashboard/index.tsx:230
-msgid "Link your Stripe account to receive funds from ticket sales."
-msgstr "鏈接您的 Stripe 賬户以接收售票資金。"
+msgid "Link your Razorpay account to receive funds from ticket sales."
+msgstr "鏈接您的 Razorpay 賬户以接收售票資金。"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:61
 msgid "LinkedIn"
@@ -4931,8 +4931,8 @@ msgstr "打開側邊欄"
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:195
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:404
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:641
-msgid "Open Stripe Dashboard"
-msgstr "打開 Stripe 儀表板"
+msgid "Open Razorpay Dashboard"
+msgstr "打開 Razorpay 儀表板"
 
 #: src/components/forms/QuestionForm/index.tsx:45
 msgid "Option {i}"
@@ -5274,7 +5274,7 @@ msgstr "總覽"
 msgid "Padding"
 msgstr "內邊距"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:106
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:106
 msgid "Page no longer available"
 msgstr "頁面不再可用"
 
@@ -5395,7 +5395,7 @@ msgstr "付款解鎖"
 
 #: src/components/common/OrdersTable/index.tsx:368
 #: src/components/common/ProgressStepper/index.tsx:19
-#: src/components/forms/StripeCheckoutForm/index.tsx:127
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:127
 msgid "Payment"
 msgstr "付款方式"
 
@@ -5442,7 +5442,7 @@ msgstr "支付處理"
 msgid "Payment provider"
 msgstr "支付提供商"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:94
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:94
 msgid "Payment received"
 msgstr "已收到付款"
 
@@ -5458,7 +5458,7 @@ msgstr "支付設置"
 msgid "Payment Status"
 msgstr "支付狀態"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:60
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:60
 msgid "Payment succeeded!"
 msgstr "付款成功！"
 
@@ -5466,7 +5466,7 @@ msgstr "付款成功！"
 msgid "Payment Terms"
 msgstr "付款條款"
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:49
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:49
 msgid "Payments not available"
 msgstr "付款不可用"
 
@@ -5618,7 +5618,7 @@ msgstr "請注意"
 msgid "Please provide an image."
 msgstr "請提供圖片。"
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:65
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:65
 msgid "Please restart the checkout process."
 msgstr "請重新開始結賬流程。"
 
@@ -5998,21 +5998,21 @@ msgid "Recipients"
 msgstr "收件人"
 
 #: src/components/routes/event/EventDashboard/index.tsx:135
-msgid "Reconnect Stripe →"
-msgstr "重新連接 Stripe →"
+msgid "Reconnect Razorpay →"
+msgstr "重新連接 Razorpay →"
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:80
 msgid "Reddit"
 msgstr "Reddit"
 
-#: src/components/common/StripeConnectButton/index.tsx:59
-#: src/components/common/StripeConnectButton/index.tsx:74
+#: src/components/common/RazorpayConnectButton/index.tsx:59
+#: src/components/common/RazorpayConnectButton/index.tsx:74
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:325
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:338
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:578
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:596
-msgid "Redirecting to Stripe..."
-msgstr "正在重定向到 Stripe..."
+msgid "Redirecting to Razorpay..."
+msgstr "正在重定向到 Razorpay..."
 
 #: src/components/routes/admin/Attribution/index.tsx:73
 msgid "Referral Accounts"
@@ -6181,8 +6181,8 @@ msgstr "重置中..."
 msgid "Restore event"
 msgstr "恢復活動"
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:52
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:67
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:52
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:67
 msgid "Return to Event"
 msgstr "返回活動"
 
@@ -6829,7 +6829,7 @@ msgstr "售罄"
 #: src/components/common/ErrorDisplay/index.tsx:15
 #: src/components/routes/auth/AcceptInvitation/index.tsx:48
 #: src/components/routes/product-widget/CollectInformation/index.tsx:377
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:64
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:64
 msgid "Something went wrong"
 msgstr "出了點問題"
 
@@ -6846,7 +6846,7 @@ msgstr "出現問題，請重試，或在問題持續時聯繫客服"
 msgid "Something went wrong! Please try again"
 msgstr "出錯了！請重試"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:69
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:69
 msgid "Something went wrong."
 msgstr "出問題了"
 
@@ -6949,24 +6949,24 @@ msgstr "停止模擬"
 
 #: src/components/common/OrdersTable/index.tsx:377
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:85
-msgid "Stripe"
-msgstr "Stripe"
+msgid "Razorpay"
+msgstr "Razorpay"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:161
-msgid "Stripe Connect"
-msgstr "Stripe Connect"
+msgid "Razorpay Connect"
+msgstr "Razorpay Connect"
 
 #: src/components/routes/admin/Attribution/index.tsx:128
-msgid "Stripe Connected"
+msgid "Razorpay Connected"
 msgstr ""
 
-#: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:50
-msgid "Stripe payments are not enabled for this event."
-msgstr "此活動未啟用 Stripe 支付。"
+#: src/components/routes/product-widget/Payment/PaymentMethods/Razorpay/index.tsx:50
+msgid "Razorpay payments are not enabled for this event."
+msgstr "此活動未啟用 Razorpay 支付。"
 
-#: src/components/common/StripeConnectButton/index.tsx:69
-msgid "Stripe setup is already complete."
-msgstr "Stripe設置已完成。"
+#: src/components/common/RazorpayConnectButton/index.tsx:69
+msgid "Razorpay setup is already complete."
+msgstr "Razorpay設置已完成。"
 
 #: src/components/common/EmailTemplateEditor/EmailTemplateEditor.tsx:127
 #: src/components/modals/SendMessageModal/index.tsx:234
@@ -7517,7 +7517,7 @@ msgstr "此消息僅在訂單成功完成後顯示。等待付款的訂單不會
 msgid "This name is visible to end users"
 msgstr "此名稱對最終用戶可見"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:95
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:95
 msgid "This order has already been paid."
 msgstr "此訂單已付款。"
 
@@ -7541,7 +7541,7 @@ msgstr "此訂單正在處理中。"
 msgid "This order is complete."
 msgstr "此訂單已完成。"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:107
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:107
 msgid "This order page is no longer available."
 msgstr "此訂購頁面已不可用。"
 
@@ -7766,8 +7766,8 @@ msgid "To edit configurations, go to the Configurations section in the admin men
 msgstr "要編輯配置，請前往管理選單中的配置部分。"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:661
-msgid "To receive credit card payments, you need to connect your Stripe account. Stripe is our payment processing partner that ensures secure transactions and timely payouts."
-msgstr "要接受信用卡付款，您需要連接您的 Stripe 賬户。Stripe 是我們的支付處理合作夥伴，確保安全交易和及時付款。"
+msgid "To receive credit card payments, you need to connect your Razorpay account. Razorpay is our payment processing partner that ensures secure transactions and timely payouts."
+msgstr "要接受信用卡付款，您需要連接您的 Razorpay 賬户。Razorpay 是我們的支付處理合作夥伴，確保安全交易和及時付款。"
 
 #: src/components/common/ColumnVisibilityToggle/index.tsx:26
 msgid "Toggle columns"
@@ -8306,7 +8306,7 @@ msgstr "在谷歌地圖上查看"
 msgid "View Order"
 msgstr "查看訂單"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:96
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:96
 #: src/components/routes/product-widget/CollectInformation/index.tsx:347
 msgid "View Order Details"
 msgstr "查看訂單詳情"
@@ -8428,12 +8428,12 @@ msgid "We're processing your order. Please wait..."
 msgstr "我們正在處理您的訂單。請稍候..."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:73
-msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Stripe Ireland instead of Stripe Canada. To keep your payouts running smoothly, you'll need to reconnect your Stripe account."
-msgstr "我們已正式將總部遷至愛爾蘭 🇮🇪。作為此次過渡的一部分，我們現在使用 Stripe 愛爾蘭而不是 Stripe 加拿大。為了保持您的付款順利進行，您需要重新連接您的 Stripe 帳戶。"
+msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Razorpay Ireland instead of Razorpay Canada. To keep your payouts running smoothly, you'll need to reconnect your Razorpay account."
+msgstr "我們已正式將總部遷至愛爾蘭 🇮🇪。作為此次過渡的一部分，我們現在使用 Razorpay 愛爾蘭而不是 Razorpay 加拿大。為了保持您的付款順利進行，您需要重新連接您的 Razorpay 帳戶。"
 
 #: src/components/routes/event/EventDashboard/index.tsx:130
-msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Stripe account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
-msgstr "我們已將總部搬遷至愛爾蘭。因此，我們需要您重新連接您的 Stripe 帳戶。這個快速過程只需幾分鐘。您的銷售和現有數據完全不受影響。"
+msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Razorpay account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
+msgstr "我們已將總部搬遷至愛爾蘭。因此，我們需要您重新連接您的 Razorpay 帳戶。這個快速過程只需幾分鐘。您的銷售和現有數據完全不受影響。"
 
 #: src/components/routes/welcome/index.tsx:145
 msgid "We've sent a 5-digit verification code to:"
@@ -8925,7 +8925,7 @@ msgstr "您主辦單位的地址"
 msgid "Your password"
 msgstr "您的密碼"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:63
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:63
 msgid "Your payment is processing."
 msgstr "您的付款正在處理中。"
 
@@ -8933,11 +8933,11 @@ msgstr "您的付款正在處理中。"
 msgid "Your payment is protected with bank-level encryption"
 msgstr "您的付款受到銀行級加密保護"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:66
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:66
 msgid "Your payment was not successful, please try again."
 msgstr "您的付款未成功，請重試。"
 
-#: src/components/forms/StripeCheckoutForm/index.tsx:130
+#: src/components/forms/RazorpayCheckoutForm/index.tsx:130
 msgid "Your payment was unsuccessful. Please try again."
 msgstr "您的付款未成功。請重試。"
 
@@ -8950,13 +8950,13 @@ msgid "Your refund is processing."
 msgstr "您的退款正在處理中。"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:178
-msgid "Your Stripe account is connected and processing payments."
-msgstr "您的 Stripe 帳戶已連接並正在處理付款。"
+msgid "Your Razorpay account is connected and processing payments."
+msgstr "您的 Razorpay 帳戶已連接並正在處理付款。"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:395
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:632
-msgid "Your Stripe account is connected and ready to process payments."
-msgstr "您的 Stripe 賬户已連接並準備好處理支付。"
+msgid "Your Razorpay account is connected and ready to process payments."
+msgstr "您的 Razorpay 賬户已連接並準備好處理支付。"
 
 #: src/components/routes/product-widget/AttendeeProductAndInformation/index.tsx:36
 msgid "Your ticket for"
@@ -9031,8 +9031,8 @@ msgstr "來源"
 msgid "Statistics are based on account creation date"
 msgstr "統計數據基於帳戶創建日期"
 
-msgid "Stripe Connected"
-msgstr "Stripe 已連接"
+msgid "Razorpay Connected"
+msgstr "Razorpay 已連接"
 
 msgid "Track account growth and performance by attribution source"
 msgstr "按歸因來源追蹤帳戶增長和表現"

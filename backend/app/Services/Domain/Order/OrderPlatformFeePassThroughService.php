@@ -37,12 +37,12 @@ class OrderPlatformFeePassThroughService
     }
 
     /**
-     * Calculate platform fee that exactly covers Stripe's application fee.
+     * Calculate platform fee that exactly covers the application fee.
      *
      * Formula: P = (fixed + total * r) / (1 - r)
      * Where r = percentage rate, P = platform fee
      *
-     * This ensures: Stripe fee on (total + P) = P
+     * This ensures: Payment provider fee on (total + P) = P
      */
     public function calculatePlatformFee(
         AccountConfigurationDomainObject $accountConfiguration,

@@ -131,15 +131,14 @@ Hi.Events has two main directories: `backend` (Laravel) and `frontend` (React).
 
    Visit `http://localhost:8000` to verify the backend is running.
 
-10. **Optional: Configure Stripe (for Payment Integration):**
+10. **Optional: Configure Razorpay (for Payment Integration):**
 
-If you want to test the payment functionality, configure Stripe:
+If you want to test the payment functionality, configure Razorpay:
 
-```bash
-STRIPE_PUBLIC_KEY=your_public_key
-STRIPE_SECRET_KEY=your_secret_key
-STRIPE_WEBHOOK_SECRET=your_webhook_secret
-```
+   ```bash
+   RAZORPAY_KEY_ID=your_key_id
+   RAZORPAY_KEY_SECRET=your_key_secret
+   ```
 
 ### Frontend Setup
 
@@ -160,7 +159,7 @@ Update the `.env` file with the following settings:
    VITE_API_URL_CLIENT=http://localhost:8000
    VITE_API_URL_SERVER=http://localhost:8000
    VITE_FRONTEND_URL=http://localhost:5678
-   VITE_STRIPE_PUBLISHABLE_KEY=pk_test_XXXXXXXX
+   VITE_RAZORPAY_KEY_ID=rzp_test_XXXXXXXX
    ```
 
 #### 3. **Install Dependencies:**
@@ -181,7 +180,7 @@ Set the environment variables before starting the frontend app.
   $env:VITE_API_URL_CLIENT="http://localhost:8000"
   $env:VITE_API_URL_SERVER="http://localhost:8000"
   $env:VITE_FRONTEND_URL="http://localhost:5678"
-  $env:VITE_STRIPE_PUBLISHABLE_KEY="pk_test_XXXXXXXX"
+  $env:VITE_RAZORPAY_KEY_ID=\"rzp_test_XXXXXXXX\"
   ```
 
 - **Linux/Mac:**
@@ -190,7 +189,7 @@ Set the environment variables before starting the frontend app.
   export VITE_API_URL_CLIENT="http://localhost:8000"
   export VITE_API_URL_SERVER="http://localhost:8000"
   export VITE_FRONTEND_URL="http://localhost:5678"
-  export VITE_STRIPE_PUBLISHABLE_KEY="pk_test_XXXXXXXX"
+  export VITE_RAZORPAY_KEY_ID=\"rzp_test_XXXXXXXX\"
   ```
 
 #### 5. **Build and Start the Frontend:**

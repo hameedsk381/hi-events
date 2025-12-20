@@ -31,8 +31,7 @@ const Payment = () => {
     const [submitHandler, setSubmitHandler] = useState<(() => Promise<void>) | null>(null);
     const transitionOrderToOfflinePaymentMutation = useTransitionOrderToOfflinePaymentPublic();
 
-    // Mapping STRIPE to Razorpay for this implementation
-    const isRazorpayEnabled = event?.settings?.payment_providers?.includes('STRIPE');
+    const isRazorpayEnabled = event?.settings?.payment_providers?.includes('RAZORPAY');
     const isOfflineEnabled = event?.settings?.payment_providers?.includes('OFFLINE');
 
     React.useEffect(() => {

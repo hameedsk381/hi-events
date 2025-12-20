@@ -99,7 +99,7 @@ Diseñado para promotores de eventos nocturnos, organizadores de festivales, ven
 
 ### ⚙️ Operaciones
 
-Roles y permisos multiusuario · Pagos instantáneos con Stripe Connect · Métodos de pago offline · Soporte para eventos presenciales ·
+Roles y permisos multiusuario · Pagos instantáneos con Razorpay · Métodos de pago offline · Soporte para eventos presenciales ·
 Facturación automática · Archivo de eventos · Soporte multiidioma · API REST completa
 
 </td>

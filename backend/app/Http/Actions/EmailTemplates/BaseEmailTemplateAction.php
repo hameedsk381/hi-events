@@ -40,7 +40,7 @@ abstract class BaseEmailTemplateAction extends BaseAction
 
         if (!$account->getIsManuallyVerified()) {
             throw new AccountNotVerifiedException(
-                __('Due to issues with spam, you must connect a Stripe account before you can modify email templates.')
+                __('Due to issues with spam, you must connect a payment provider before you can modify email templates.')
             );
         }
     }

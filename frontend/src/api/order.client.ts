@@ -1,14 +1,13 @@
-import {publicApi} from "./public-client.ts";
+import { publicApi } from "./public-client.ts";
 import {
     GenericDataResponse,
     GenericPaginatedResponse,
     IdParam,
     Order,
-    QueryFilters,
-    StripePaymentIntent
+    QueryFilters
 } from "../types.ts";
-import {api} from "./client.ts";
-import {queryParamsHelper} from "../utilites/queryParamsHelper.ts";
+import { api } from "./client.ts";
+import { queryParamsHelper } from "../utilites/queryParamsHelper.ts";
 
 export interface OrderDetails {
     first_name: string,
@@ -140,19 +139,6 @@ export const orderClientPublic = {
         return response.data;
     },
 
-    findOrderStripePaymentIntent: async (eventId: number, orderShortId: string) => {
-        return await publicApi.get<StripePaymentIntent>(`events/${eventId}/order/${orderShortId}/stripe/payment_intent`);
-    },
-
-    createStripePaymentIntent: async (eventId: number, orderShortId: string) => {
-        const response = await publicApi.post<{
-            client_secret: string,
-            account_id?: string,
-            public_key: string,
-            stripe_platform?: string,
-        }>(`events/${eventId}/order/${orderShortId}/stripe/payment_intent`);
-        return response.data;
-    },
 
     createRazorpayOrder: async (eventId: number, orderShortId: string) => {
         const response = await publicApi.post<{

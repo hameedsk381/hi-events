@@ -35,7 +35,6 @@ use HiEvents\Services\Application\Handlers\Order\DTO\CompleteOrderOrderDTO;
 use HiEvents\Services\Application\Handlers\Order\DTO\CompleteOrderProductDataDTO;
 use HiEvents\Services\Application\Handlers\Order\DTO\CreatedProductDataDTO;
 use HiEvents\Services\Application\Handlers\Order\DTO\OrderQuestionsDTO;
-use HiEvents\Services\Domain\Payment\Stripe\EventHandlers\PaymentIntentSucceededHandler;
 use HiEvents\Services\Domain\Product\ProductQuantityUpdateService;
 use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
 use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
@@ -88,9 +87,7 @@ class CompleteOrderHandler
 
             /**
              * If there's no payment required, immediately update the product quantities, otherwise handle
-             * this in the PaymentIntentEventHandlerService
-             *
-             * @see PaymentIntentSucceededHandler
+             * status update
              */
             if (!$order->isPaymentRequired()) {
                 $this->productQuantityUpdateService->updateQuantitiesFromOrder($updatedOrder);

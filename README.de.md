@@ -99,7 +99,7 @@ Entwickelt für Nachtleben-Promoter, Festival-Organisatoren, Veranstaltungsorte,
 
 ### ⚙️ Betrieb
 
-Multi-User-Rollen und Berechtigungen · Stripe Connect Sofortauszahlungen · Offline-Zahlungsmethoden · Offline-Event-Unterstützung ·
+Multi-User-Rollen und Berechtigungen · Razorpay Sofortauszahlungen · Offline-Zahlungsmethoden · Offline-Event-Unterstützung ·
 Automatische Rechnungsstellung · Event-Archiv · Mehrsprachige Unterstützung · Vollständige REST-API
 
 </td>

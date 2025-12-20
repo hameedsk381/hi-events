@@ -101,7 +101,7 @@ Készült szórakozóhelyi promóterek, fesztiválszervezők, helyszínek, köz�
 
 ### ⚙️ Műveletek
 
-Többfelhasználós szerepek és jogosultságok · Stripe Connect azonnali kifizetések · Offline fizetési módok · Offline eseménytámogatás ·
+Többfelhasználós szerepek és jogosultságok · Razorpay azonnali kifizetések · Offline fizetési módok · Offline eseménytámogatás ·
 Automatikus számlázás · Eseményarchívum · Többnyelvű támogatás · Teljes REST API
 
 </td>

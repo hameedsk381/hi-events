@@ -14,9 +14,10 @@ use Throwable;
 class RazorpayOrderCreationService
 {
     public function __construct(
-        private readonly LoggerInterface       $logger,
-        private readonly RazorpayClientFactory $clientFactory,
-        private readonly Repository            $config,
+        private readonly LoggerInterface                    $logger,
+        private readonly RazorpayClientFactory              $clientFactory,
+        private readonly Repository                         $config,
+        private readonly RazorpayPaymentRepositoryInterface $razorpayPaymentRepository,
     )
     {
     }
@@ -41,6 +42,14 @@ class RazorpayOrderCreationService
             ];
 
             $order = $client->order->create($orderData);
+
+            $this->razorpayPaymentRepository->createFromArray([
+                'order_id' => $dto->order->getId(),
+                'razorpay_order_id' => $order->id,
+                'amount' => $orderData['amount'],
+                'currency' => $orderData['currency'],
+                'status' => $order->status,
+            ]);
 
             $this->logger->info('Razorpay order created', [
                 'razorpay_order_id' => $order->id,

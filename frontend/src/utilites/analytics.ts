@@ -16,7 +16,6 @@ export const AnalyticsEvents = {
     ORGANIZER_CREATED: 'organizer_created',
     FIRST_EVENT_CREATED: 'first_event_created',
     EVENT_PUBLISHED: 'event_published',
-    STRIPE_CONNECTED: 'stripe_connected',
     PURCHASE_COMPLETED_PAID: 'purchase_completed_paid',
     PURCHASE_COMPLETED_OFFLINE: 'purchase_completed_offline',
     PURCHASE_COMPLETED_FREE: 'purchase_completed_free',

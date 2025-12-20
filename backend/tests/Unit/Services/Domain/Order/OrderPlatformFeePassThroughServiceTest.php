@@ -131,7 +131,7 @@ class OrderPlatformFeePassThroughServiceTest extends TestCase
         $this->assertEqualsWithDelta(6.59, $result, 0.01);
     }
 
-    public function testPlatformFeeExactlyCoversStripeApplicationFee(): void
+    public function testPlatformFeeExactlyCoversPaymentProviderApplicationFee(): void
     {
         $this->config->method('get')->willReturn(true);
 
@@ -150,18 +150,18 @@ class OrderPlatformFeePassThroughServiceTest extends TestCase
             'USD'
         );
 
-        // The new total that Stripe sees
+        // The new total that the payment provider sees
         $newTotal = $totalBeforePlatformFee + $platformFee;
 
-        // What Stripe would calculate as application fee
-        $stripeAppFee = $fixedFee + ($newTotal * $percentageRate / 100);
+        // What the payment provider would calculate as application fee
+        $providerAppFee = $fixedFee + ($newTotal * $percentageRate / 100);
 
-        // Platform fee should equal Stripe app fee
+        // Platform fee should equal provider app fee
         $this->assertEqualsWithDelta(
             $platformFee,
-            $stripeAppFee,
+            $providerAppFee,
             0.01,
-            "Platform fee ({$platformFee}) should equal Stripe app fee ({$stripeAppFee})"
+            "Platform fee ({$platformFee}) should equal provider app fee ({$providerAppFee})"
         );
     }
 
@@ -192,13 +192,13 @@ class OrderPlatformFeePassThroughServiceTest extends TestCase
             );
 
             $newTotal = $testCase['total'] + $platformFee;
-            $stripeAppFee = $fixedFee + ($newTotal * $percentageRate / 100);
+            $providerAppFee = $fixedFee + ($newTotal * $percentageRate / 100);
 
             $this->assertEqualsWithDelta(
                 $platformFee,
-                $stripeAppFee,
+                $providerAppFee,
                 0.01,
-                "Failed for {$testCase['desc']}: Platform fee ({$platformFee}) != Stripe fee ({$stripeAppFee})"
+                "Failed for {$testCase['desc']}: Platform fee ({$platformFee}) != provider fee ({$providerAppFee})"
             );
         }
     }
@@ -262,10 +262,10 @@ class OrderPlatformFeePassThroughServiceTest extends TestCase
 
         $this->assertGreaterThan(0, $platformFee);
 
-        // Verify Stripe coverage
+        // Verify provider coverage
         $newTotal = 100.00 + $platformFee;
-        $stripeAppFee = 0.0 + ($newTotal * 2.9 / 100);
-        $this->assertEqualsWithDelta($platformFee, $stripeAppFee, 0.01);
+        $providerAppFee = 0.0 + ($newTotal * 2.9 / 100);
+        $this->assertEqualsWithDelta($platformFee, $providerAppFee, 0.01);
     }
 
     public function testZeroPercentageOnlyFixedFee(): void

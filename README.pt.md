@@ -99,7 +99,7 @@ Desenvolvido para promotores de vida noturna, organizadores de festivais, locais
 
 ### ⚙️ Operações
 
-Funções e permissões multiusuário · Pagamentos instantâneos via Stripe Connect · Métodos de pagamento offline · Suporte para eventos offline ·
+Funções e permissões multiusuário · Pagamentos instantâneos via Razorpay · Métodos de pagamento offline · Suporte para eventos offline ·
 Faturamento automático · Arquivo de eventos · Suporte multilíngue · API REST completa
 
 </td>

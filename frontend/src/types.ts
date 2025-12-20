@@ -1,9 +1,9 @@
 /**
  * @todo - This file needs to be organized better. Split into multiple files.
  */
-import {SupportedLocales} from "./locales.ts";
+import { SupportedLocales } from "./locales.ts";
 
-export type ConfigKeys = 
+export type ConfigKeys =
     | 'VITE_API_URL_SERVER'
     | 'VITE_API_URL_CLIENT'
     | 'VITE_FRONTEND_URL'
@@ -19,14 +19,9 @@ export type ConfigKeys =
     | 'VITE_TOS_URL'
     | 'VITE_PRIVACY_URL'
     | 'VITE_PLATFORM_SUPPORT_EMAIL'
-    | 'VITE_STRIPE_PUBLISHABLE_KEY'
     | 'VITE_I_HAVE_PURCHASED_A_LICENCE'
     | 'VITE_DEFAULT_IMAGE_URL';
 
-export enum StripePlatform {
-    Canada = 'ca',
-    Ireland = 'ie',
-}
 
 export type IdParam = string | undefined | number;
 
@@ -113,14 +108,10 @@ export interface Account {
     timezone?: string;
     currency_code?: string;
     password?: string;
-    stripe_connect_setup_complete?: boolean;
-    stripe_account_id?: string;
     is_account_email_confirmed?: boolean;
     is_saas_mode_enabled?: boolean;
     configuration?: AccountConfiguration;
     requires_manual_verification?: boolean;
-    stripe_platform: string;
-    stripe_hi_events_primary_platform?: string;
 }
 
 export interface AccountConfiguration {
@@ -133,32 +124,6 @@ export interface AccountConfiguration {
     is_system_default: boolean;
 }
 
-export interface StripeConnectDetails {
-    account: Account;
-    stripe_account_id: string;
-    is_connect_setup_complete: boolean;
-    connect_url: string | null;
-}
-
-export interface StripeConnectAccount {
-    stripe_account_id: string;
-    connect_url: string | null;
-    is_setup_complete: boolean;
-    platform: string | null;
-    account_type: string | null;
-    is_primary: boolean;
-    country?: string;
-}
-
-export interface StripeConnectAccountsResponse {
-    account: {
-        id: IdParam;
-        stripe_platform: string | null;
-    };
-    stripe_connect_accounts: StripeConnectAccount[];
-    primary_stripe_account_id: string | null;
-    has_completed_setup: boolean;
-}
 
 export interface LoginData {
     email: string;
@@ -180,7 +145,7 @@ export interface Image {
 
 export type ImageType = 'EVENT_COVER' | 'EDITOR_IMAGE' | 'ORGANIZER_LOGO' | 'ORGANIZER_COVER' | 'ORGANIZER_IMAGE' | 'TICKET_LOGO';
 
-export type PaymentProvider = 'STRIPE' | 'OFFLINE';
+export type PaymentProvider = 'RAZORPAY' | 'OFFLINE';
 
 export type AttendeeDetailsCollectionMethod = 'PER_TICKET' | 'PER_ORDER';
 
@@ -660,11 +625,6 @@ export interface OrderItem {
     quantity: number;
 }
 
-export interface StripePaymentIntent {
-    status: string;
-    paymentIntentId: string;
-    amount: number;
-}
 
 export interface Question {
     id?: number;
@@ -719,8 +679,8 @@ export interface CheckInList {
 export type CheckInListRequest =
     Omit<CheckInList, 'event_id' | 'short_id' | 'id' | 'products' | 'total_attendees' | 'checked_in_attendees' | 'is_expired' | 'is_active'>
     & {
-    product_ids: IdParam[];
-};
+        product_ids: IdParam[];
+    };
 
 export interface QuestionRequestData {
     title: string;

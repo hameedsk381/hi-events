@@ -42,10 +42,6 @@ class Account extends BaseModel
         );
     }
 
-    public function account_stripe_platforms(): HasMany
-    {
-        return $this->hasMany(AccountStripePlatform::class);
-    }
 
     public function account_vat_setting(): HasOne
     {
