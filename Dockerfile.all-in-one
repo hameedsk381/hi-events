@@ -24,7 +24,6 @@ RUN mkdir -p /app/backend/bootstrap/cache \
     && mkdir -p /app/backend/storage
 
 RUN git config --global url."https://github.com/".insteadOf git@github.com: \
-    && rm -f /app/backend/composer.lock \
     && composer update --working-dir=/app/backend \
     --ignore-platform-reqs \
     --no-interaction \
