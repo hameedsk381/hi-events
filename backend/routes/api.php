@@ -460,7 +460,7 @@ $router->prefix('/public')->group(
         $router->get('/ticket-lookup/{token}', GetOrdersByLookupTokenAction::class);
 
         // Webhooks
-        $router->post('/razorpay/webhook', \HiEvents\Http\Actions\Orders\Payment\Razorpay\HandleRazorpayWebhookAction::class);
+        $router->post('/webhooks/razorpay', \HiEvents\Http\Actions\Orders\Payment\Razorpay\HandleRazorpayWebhookAction::class);
 
         // Sitemap
         $router->get('/sitemap.xml', GetSitemapIndexAction::class);
