@@ -1,0 +1,49 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.all-in-one
+    ports:
+      - "8080:80"
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - APP_KEY=base64:TestKey12345678901234567890123456789012=
+      - JWT_SECRET=TestSecret123
+      - APP_URL=http://localhost:8080
+      - VITE_FRONTEND_URL=http://localhost:8080
+      - VITE_API_URL_CLIENT=http://localhost:8080/api
+      - VITE_API_URL_SERVER=http://localhost:80/api
+      - LOG_CHANNEL=stderr
+      - DB_CONNECTION=pgsql
+      # Connecting to the postgres service defined below
+      - DATABASE_URL=postgresql://postgres:secret@postgres:5432/hi-events
+      - QUEUE_CONNECTION=redis
+      - REDIS_URL=redis://redis:6379
+      - FILESYSTEM_PUBLIC_DISK=public
+      - MAIL_MAILER=log
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: hi-events
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5

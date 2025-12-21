@@ -14,8 +14,6 @@ class RazorpayPaymentRepository extends BaseRepository implements RazorpayPaymen
 
     public function getDomainObject(): string
     {
-        // For now, we use the model directly as it's a simple mapping.
-        // If needed, we can create RazorpayPaymentDomainObject.
-        return RazorpayPayment::class;
+        return \HiEvents\DomainObjects\RazorpayPaymentDomainObject::class;
     }
 }
