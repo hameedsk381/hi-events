@@ -32,6 +32,7 @@ class RazorpayPaymentSucceededHandler
             $dto->eventId,
             $dto->paymentId,
             $dto->signature,
+            $dto->razorpayOrderId,
         );
     }
 }

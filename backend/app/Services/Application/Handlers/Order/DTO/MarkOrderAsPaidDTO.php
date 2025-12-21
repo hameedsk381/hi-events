@@ -11,6 +11,7 @@ class MarkOrderAsPaidDTO extends BaseDTO
         public readonly int     $orderId,
         public readonly ?string $paymentId = null,
         public readonly ?string $signature = null,
+        public readonly ?string $razorpayOrderId = null,
     )
     {
     }

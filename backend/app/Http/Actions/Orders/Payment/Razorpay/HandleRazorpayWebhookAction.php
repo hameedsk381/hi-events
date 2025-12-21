@@ -95,7 +95,8 @@ class HandleRazorpayWebhookAction extends BaseAction
                 orderId: $orderId,
                 eventId: $order->getEventId(),
                 paymentId: $paymentEntity['id'] ?? null,
-                signature: null 
+                signature: null,
+                razorpayOrderId: $razorpayOrderId
             );
             Log::info('Order marked as paid via Razorpay webhook', ['order_id' => $orderId]);
         } catch (\Exception $e) {

@@ -66,9 +66,10 @@ class RazorpayPaymentSucceededService
         int     $eventId,
         ?string $paymentId = null,
         ?string $signature = null,
+        ?string $razorpayOrderId = null,
     ): OrderDomainObject
     {
-        return $this->databaseManager->transaction(function () use ($orderId, $eventId) {
+        return $this->databaseManager->transaction(function () use ($orderId, $eventId, $paymentId, $signature, $razorpayOrderId) {
             /** @var OrderDomainObject $order */
             $order = $this->orderRepository
                 ->loadRelation(OrderItemDomainObject::class)
@@ -134,21 +135,25 @@ class RazorpayPaymentSucceededService
                 invoice: $order->getLatestInvoice(),
             );
 
-            $this->updateRazorpayPaymentDetails($orderId, $paymentId, $signature);
+            $this->updateRazorpayPaymentDetails($orderId, $paymentId, $signature, $razorpayOrderId);
 
             return $updatedOrder;
         });
     }
 
-    private function updateRazorpayPaymentDetails(int $orderId, ?string $paymentId, ?string $signature): void
+    private function updateRazorpayPaymentDetails(int $orderId, ?string $paymentId, ?string $signature, ?string $razorpayOrderId): void
     {
         if (!$paymentId) {
             return;
         }
 
-        $razorpayPayment = $this->razorpayPaymentRepository->findFirstWhere([
-            'order_id' => $orderId,
-        ]);
+        $query = ['order_id' => $orderId];
+
+        if ($razorpayOrderId) {
+            $query['razorpay_order_id'] = $razorpayOrderId;
+        }
+
+        $razorpayPayment = $this->razorpayPaymentRepository->findFirstWhere($query);
 
         if ($razorpayPayment) {
             $api = $this->clientFactory->createClient();

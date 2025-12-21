@@ -55,9 +55,17 @@ class VerifyRazorpayPaymentActionPublic extends BaseAction
                 orderId: $order->getId(),
                 paymentId: $payload['razorpay_payment_id'],
                 signature: $payload['razorpay_signature'],
+                razorpayOrderId: $payload['razorpay_order_id'],
             ));
 
         } catch (\Exception $e) {
+            \Illuminate\Support\Facades\Log::error('Razorpay payment verification failed', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+                'order_short_id' => $orderShortId,
+                'payload' => $payload,
+            ]);
+
              return $this->errorResponse(__('Payment verification failed'), Response::HTTP_BAD_REQUEST);
         }
 

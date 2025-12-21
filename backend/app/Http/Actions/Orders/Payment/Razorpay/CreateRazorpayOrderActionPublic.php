@@ -3,6 +3,8 @@
 namespace HiEvents\Http\Actions\Orders\Payment\Razorpay;
 
 use HiEvents\Exceptions\Razorpay\CreateRazorpayOrderFailedException;
+use HiEvents\Exceptions\ResourceConflictException;
+use HiEvents\Exceptions\UnauthorizedException;
 use HiEvents\Http\Actions\BaseAction;
 use HiEvents\Services\Application\Handlers\Order\Payment\Razorpay\CreateRazorpayOrderHandler;
 use Illuminate\Http\JsonResponse;
@@ -22,6 +24,10 @@ class CreateRazorpayOrderActionPublic extends BaseAction
             $response = $this->createOrderHandler->handle($orderShortId);
         } catch (CreateRazorpayOrderFailedException $e) {
             return $this->errorResponse($e->getMessage(), Response::HTTP_UNPROCESSABLE_ENTITY);
+        } catch (ResourceConflictException $e) {
+            return $this->errorResponse($e->getMessage(), Response::HTTP_CONFLICT);
+        } catch (UnauthorizedException $e) {
+            return $this->errorResponse($e->getMessage(), Response::HTTP_UNAUTHORIZED);
         }
 
         return $this->jsonResponse([
