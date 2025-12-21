@@ -190,7 +190,6 @@ export interface UtmAttributionStats {
     total_accounts: number;
     total_events: number;
     live_events: number;
-    stripe_connected: number;
     verified_accounts: number;
     total_revenue: number;
     total_orders: number;

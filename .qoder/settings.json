@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "ask": [
+      "Read(!C:\\Users\\cogni\\Hi.Events/**)",
+      "Edit(!C:\\Users\\cogni\\Hi.Events/**)"
+    ],
+    "allow": [
+      "Read(C:\\Users\\cogni\\Hi.Events/**)",
+      "Edit(C:\\Users\\cogni\\Hi.Events/**)"
+    ]
+  },
+  "memoryImport": {},
+  "monitoring": {}
+}

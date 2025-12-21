@@ -11,7 +11,7 @@ import { trackEvent, AnalyticsEvents } from "../../../../utilites/analytics.ts";
 
 /**
  * This component is responsible for handling the return from the payment provider.
- * Stripe should send a webhook to the backend to update the order status to 'COMPLETED'
+ * The payment provider should send a webhook to the backend to update the order status to 'COMPLETED'
  * However, if this fails, we will poll the order status to check if the payment has been processed.
  * This is a rare occurrence, but we should handle it gracefully.
  * It will also make local development easier in times when the webhook is not configured correctly.

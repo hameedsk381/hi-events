@@ -32,7 +32,7 @@ const FeePlanDisplay = ({ configuration }: FeePlanDisplayProps) => {
     if (!configuration) return null;
 
     return (
-        <div className={paymentClasses.stripeInfo}>
+        <div className={paymentClasses.paymentInfo}>
             <Title mb={10} order={3}>{t`Platform Fees`}</Title>
 
             <Text size="sm" c="dimmed" mb="lg">
@@ -83,7 +83,7 @@ const FeePlanDisplay = ({ configuration }: FeePlanDisplayProps) => {
 
 const PaymentSettingsContent = () => {
     return (
-        <div className={paymentClasses.stripeInfo}>
+        <div className={paymentClasses.paymentInfo}>
             <Title mb={10} order={3}>{t`Payment Processing`}</Title>
             <Text size="sm" c="dimmed" mb="lg">
                 {t`Online payments are processed via Razorpay. To configure your Razorpay credentials, please contact the system administrator.`}
@@ -102,8 +102,8 @@ const PaymentSettings = () => {
     return (
         <>
             <HeadingCard
-                title={t`Payment Settings`}
-                description={t`Manage your payment processing and fee structure.`}
+                heading={t`Payment Settings`}
+                subHeading={t`Manage your payment processing and fee structure.`}
             />
 
             <Card>

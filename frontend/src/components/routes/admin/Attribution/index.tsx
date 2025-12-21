@@ -134,7 +134,7 @@ const Attribution = () => {
                                     <Table.Tbody>
                                         {stats.length === 0 ? (
                                             <Table.Tr>
-                                                <Table.Td colSpan={8}>
+                                                <Table.Td colSpan={7}>
                                                     <Text ta="center" c="dimmed" py="xl">
                                                         <Trans>No attribution data found</Trans>
                                                     </Text>
@@ -157,9 +157,7 @@ const Attribution = () => {
                                                     <Table.Td>
                                                         <Text size="sm">{stat.live_events.toLocaleString()}</Text>
                                                     </Table.Td>
-                                                    <Table.Td>
-                                                        <Text size="sm">{stat.stripe_connected.toLocaleString()}</Text>
-                                                    </Table.Td>
+                                                  
                                                     <Table.Td>
                                                         <Text size="sm">{stat.verified_accounts.toLocaleString()}</Text>
                                                     </Table.Td>
