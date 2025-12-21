@@ -6,11 +6,14 @@ import { t } from "@lingui/macro";
 import { showError } from "../../../../../../utilites/notifications.tsx";
 import { LoadingMask } from "../../../../../common/LoadingMask";
 import { trackEvent, AnalyticsEvents } from "../../../../../../utilites/analytics.ts";
+import { Event, Order } from "../../../../../../types.ts";
 
 
 interface RazorpayPaymentMethodProps {
     enabled: boolean;
     setSubmitHandler: (submitHandler: () => () => Promise<void>) => void;
+    order: Order;
+    event: Event;
 }
 
 const loadScript = (src: string) => {
@@ -27,7 +30,7 @@ const loadScript = (src: string) => {
     });
 };
 
-export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler }: RazorpayPaymentMethodProps) => {
+export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler, order, event }: RazorpayPaymentMethodProps) => {
     const { eventId, orderShortId } = useParams();
     const navigate = useNavigate();
     const [isScriptLoaded, setIsScriptLoaded] = useState(false);
@@ -58,8 +61,8 @@ export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler }: RazorpayPay
                         key: orderData.key_id,
                         amount: orderData.amount,
                         currency: orderData.currency,
-                        name: "Hi.Events",
-                        description: "Ticket Purchase",
+                        name: event.title,
+                        description: t`Order #${order.short_id}`,
                         order_id: orderData.order_id,
                         handler: async function (response: any) {
                             try {
@@ -82,10 +85,12 @@ export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler }: RazorpayPay
                             }
                         },
                         prefill: {
-                            // We could prepopulate user details here if we have them from the order
+                            name: `${order.first_name} ${order.last_name}`,
+                            email: order.email,
+                            contact: '' // Phone number is not currently collected in the order object
                         },
                         theme: {
-                            color: "#3399cc"
+                            color: (event as any).homepage_theme_settings?.accent || "#3399cc"
                         }
                     };
 
@@ -97,7 +102,7 @@ export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler }: RazorpayPay
                 }
             });
         });
-    }, [enabled, isScriptLoaded, eventId, orderShortId, createOrderMutation, verifyPaymentMutation, navigate, setSubmitHandler]);
+    }, [enabled, isScriptLoaded, eventId, orderShortId, createOrderMutation, verifyPaymentMutation, navigate, setSubmitHandler, order, event]);
 
     if (!isScriptLoaded) {
         return <LoadingMask />;

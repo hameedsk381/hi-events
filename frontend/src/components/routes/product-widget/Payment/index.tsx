@@ -4,7 +4,7 @@ import { useGetEventPublic } from "../../../../queries/useGetEventPublic.ts";
 import { CheckoutContent } from "../../../layouts/Checkout/CheckoutContent";
 import { RazorpayPaymentMethod } from "./PaymentMethods/Razorpay";
 import { OfflinePaymentMethod } from "./PaymentMethods/Offline";
-import { Event } from "../../../../types.ts";
+import { Event, Order } from "../../../../types.ts";
 import { Button, Group, Text } from "@mantine/core";
 import { IconBuildingBank, IconLock, IconWallet } from "@tabler/icons-react";
 import { formatCurrency } from "../../../../utilites/currency.ts";
@@ -98,7 +98,12 @@ const Payment = () => {
                 )}
                 {isRazorpayEnabled && (
                     <div style={{ display: activePaymentMethod === 'RAZORPAY' ? 'block' : 'none' }}>
-                        <RazorpayPaymentMethod enabled={true} setSubmitHandler={setSubmitHandler} />
+                        <RazorpayPaymentMethod 
+                            enabled={true} 
+                            setSubmitHandler={setSubmitHandler} 
+                            order={order as Order}
+                            event={event as Event}
+                        />
                     </div>
                 )}
 
