@@ -6,6 +6,7 @@ use HiEvents\Exceptions\Razorpay\CreateRazorpayOrderFailedException;
 use HiEvents\Services\Domain\Payment\Razorpay\DTOs\CreateRazorpayOrderRequestDTO;
 use HiEvents\Services\Domain\Payment\Razorpay\DTOs\CreateRazorpayOrderResponseDTO;
 use HiEvents\Services\Infrastructure\Razorpay\RazorpayClientFactory;
+use HiEvents\Repository\Interfaces\RazorpayPaymentRepositoryInterface;
 use Illuminate\Config\Repository;
 use Psr\Log\LoggerInterface;
 use Razorpay\Api\Api;

@@ -18,6 +18,10 @@ RUN apk add --no-cache nodejs npm nginx supervisor git
 
 COPY --from=node-frontend /app/frontend /app/frontend
 
+WORKDIR /app/frontend
+RUN rm -rf node_modules && npm install --omit=dev
+WORKDIR /app
+
 COPY ./backend /app/backend
 
 RUN mkdir -p /app/backend/bootstrap/cache \
