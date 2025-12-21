@@ -37,8 +37,12 @@ class CheckoutSessionManagementService
         return $this->sessionId;
     }
 
-    public function verifySession(string $identifier): bool
+    public function verifySession(?string $identifier): bool
     {
+        if ($identifier === null) {
+            return false;
+        }
+
         return $this->getSessionId() === $identifier;
     }
 

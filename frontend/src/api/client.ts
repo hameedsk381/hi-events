@@ -30,7 +30,8 @@ const ALLOWED_UNAUTHENTICATED_PATHS = [
 export const api = axios.create({
     baseURL: BASE_URL,
     headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
     },
     withCredentials: true,
 });

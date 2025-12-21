@@ -24,13 +24,14 @@ RUN mkdir -p /app/backend/bootstrap/cache \
     && mkdir -p /app/backend/storage
 
 RUN git config --global url."https://github.com/".insteadOf git@github.com: \
-    && composer update --working-dir=/app/backend \
+    && COMPOSER_MEMORY_LIMIT=-1 composer update --working-dir=/app/backend \
     --ignore-platform-reqs \
     --no-interaction \
     --no-dev \
     --no-scripts \
     --optimize-autoloader \
-    --prefer-dist
+    --prefer-dist \
+    -v
 
 RUN chown -R www-data:www-data /app/backend \
     && find /app/backend -type d -exec chmod 755 {} \; \

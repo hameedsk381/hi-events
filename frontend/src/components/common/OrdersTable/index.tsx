@@ -132,7 +132,7 @@ export const OrdersTable = ({orders, event}: OrdersTableProps) => {
     const ActionMenu = ({order}: { order: Order }) => {
         const isRefundable = !order.is_free_order
             && order.status !== 'AWAITING_OFFLINE_PAYMENT'
-            && order.payment_provider === 'STRIPE'
+            && order.payment_provider === 'RAZORPAY'
             && order.refund_status !== 'REFUNDED';
 
         return (

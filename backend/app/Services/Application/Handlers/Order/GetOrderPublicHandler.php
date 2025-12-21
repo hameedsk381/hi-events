@@ -47,9 +47,9 @@ class GetOrderPublicHandler
         return $order;
     }
 
-    private function verifySessionId(string $orderSessionId): void
+    private function verifySessionId(?string $orderSessionId): void
     {
-        if (!$this->sessionIdentifierService->verifySession($orderSessionId)) {
+        if (!$orderSessionId || !$this->sessionIdentifierService->verifySession($orderSessionId)) {
             throw new UnauthorizedException(
                 __('Sorry, we could not verify your session. Please restart your order.')
             );
