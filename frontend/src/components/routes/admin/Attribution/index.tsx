@@ -125,7 +125,6 @@ const Attribution = () => {
                                             <Table.Th>{t`Accounts`}</Table.Th>
                                             <Table.Th>{t`Events`}</Table.Th>
                                             <Table.Th>{t`Live Events`}</Table.Th>
-                                            <Table.Th>{t`Stripe Connected`}</Table.Th>
                                             <Table.Th>{t`Verified`}</Table.Th>
                                             <Table.Th>{t`Revenue`}</Table.Th>
                                             <Table.Th>{t`Orders`}</Table.Th>

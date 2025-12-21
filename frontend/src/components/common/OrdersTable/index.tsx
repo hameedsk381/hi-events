@@ -371,12 +371,12 @@ export const OrdersTable = ({orders, event}: OrdersTableProps) => {
                     const order = info.row.original;
                     return (
                         <div className={classes.paymentStatus}>
-                            {order.payment_provider === 'STRIPE' ? (
-                                <>
-                                    <IconCreditCard size={16}/>
-                                    <Text>{t`Stripe`}</Text>
-                                </>
-                            ) : order.payment_provider === 'OFFLINE' ? (
+                            {order.payment_provider === 'RAZORPAY' ? (
+                            <>
+                                <IconCreditCard size={16}/>
+                                <Text>{t`Razorpay`}</Text>
+                            </>
+                        ) : order.payment_provider === 'OFFLINE' ? (
                                 <>
                                     <IconCash size={16}/>
                                     <Text>{t`Offline`}</Text>
