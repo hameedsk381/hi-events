@@ -44,12 +44,13 @@ class RazorpayOrderCreationService
 
             $order = $client->order->create($orderData);
 
-            $this->razorpayPaymentRepository->createFromArray([
+            $this->razorpayPaymentRepository->create([
                 'order_id' => $dto->order->getId(),
                 'razorpay_order_id' => $order->id,
                 'amount' => $orderData['amount'],
                 'currency' => $orderData['currency'],
                 'status' => $order->status,
+                'method' => 'unknown', // Default value as method is not available in order creation response
             ]);
 
             $this->logger->info('Razorpay order created', [
