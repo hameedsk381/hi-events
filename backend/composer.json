@@ -39,7 +39,6 @@
         "ext-imagick": "Required for image dimension extraction and LQIP generation"
     },
     "require-dev": {
-        "druc/laravel-langscanner": "dev-l12-compatibility",
         "fakerphp/faker": "^1.9.1",
         "gettext/gettext": "^5.7",
         "laravel/pint": "^1.0",
