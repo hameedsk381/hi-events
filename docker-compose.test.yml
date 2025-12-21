@@ -14,6 +14,7 @@ services:
       - VITE_FRONTEND_URL=http://localhost:8080
       - VITE_API_URL_CLIENT=http://localhost:8080/api
       - VITE_API_URL_SERVER=http://localhost:80/api
+      - VITE_RAZORPAY_KEY_ID=rzp_test_1234567890
       - LOG_CHANNEL=stderr
       - DB_CONNECTION=pgsql
       # Connecting to the postgres service defined below
