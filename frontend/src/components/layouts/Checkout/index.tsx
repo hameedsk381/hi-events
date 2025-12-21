@@ -111,6 +111,8 @@ const Checkout = () => {
                 blocker.proceed();
             } else if (pendingNavigation) {
                 navigate(pendingNavigation);
+            } else if (event) {
+                navigate(eventHomepagePath(event));
             }
 
             setPendingNavigation(null);
