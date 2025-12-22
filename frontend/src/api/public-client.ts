@@ -7,13 +7,18 @@ export const publicApi = axios.create({
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
-    }
+    },
+    timeout: isSsr() ? 20000 : 0,
 });
 
 publicApi.interceptors.request.use((config) => {
     const baseUrl = isSsr()
         ? getConfig('VITE_API_URL_SERVER')
         : getConfig('VITE_API_URL_CLIENT');
+
+    if (!baseUrl) {
+        return Promise.reject(new Error('API base URL is not configured'));
+    }
 
     config.baseURL = `${baseUrl}/public`;
     return config;
