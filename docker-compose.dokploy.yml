@@ -50,6 +50,8 @@ services:
       - RAZORPAY_WEBHOOK_SECRET=${RAZORPAY_WEBHOOK_SECRET}
       - WEBHOOK_QUEUE_NAME=webhook-queue
 
+    volumes:
+      - storage_data:/app/backend/storage
     depends_on:
       postgres:
         condition: service_healthy
@@ -93,3 +95,4 @@ networks:
 volumes:
   pgdata:
   redisdata:
+  storage_data:

@@ -271,7 +271,7 @@ const euroZoneCountries = [
 ] as const;
 
 export const getUserCurrency = (): CurrencyCode => {
-    if (typeof window === 'undefined') return 'USD';
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') return 'USD';
 
     try {
         const userLocales = [

@@ -1,4 +1,9 @@
 export const getSessionIdentifier = (): string => {
+    // Return a default identifier for SSR
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+        return 'ssr-session-id';
+    }
+
     const hashString = (str: string): string => {
         let hash = 2166136261;
         for (let i = 0; i < str.length; i++) {
