@@ -62,6 +62,11 @@ async function main() {
         return JSON.stringify(envVars);
     };
 
+    // Health check endpoint for Nginx and monitoring
+    app.get('/health', (req, res) => {
+        res.status(200).json({ status: 'ok', service: 'ssr' });
+    });
+
     app.get('/robots.txt', (req, res) => {
         const frontendUrl = process.env.VITE_FRONTEND_URL || `${req.protocol}://${req.get('host')}`;
         const robotsTxt = `User-agent: *
@@ -138,6 +143,10 @@ Sitemap: ${frontendUrl}/sitemap.xml
 
     app.listen(port, "0.0.0.0", () => {
         console.info(`SSR Serving at http://0.0.0.0:${port}`);
+        // Signal that server is ready (for startup scripts)
+        if (process.send) {
+            process.send('ready');
+        }
     });
 
     const dynamicImport = async (path) => {
