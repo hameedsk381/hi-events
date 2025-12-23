@@ -136,18 +136,53 @@ Sitemap: ${frontendUrl}/sitemap.xml
                 }
             }
 
-            console.error(error);
-            res.status(500).send("Internal Server Error");
+            // Log error with context
+            console.error('SSR Error:', {
+                url: req.originalUrl,
+                method: req.method,
+                error: error.message,
+                stack: isProduction ? undefined : error.stack
+            });
+
+            // Handle specific error types
+            if (error.code === 'ENOENT') {
+                return res.status(404).send("Not Found");
+            }
+            
+            if (error.message?.includes('timeout') || error.message?.includes('ETIMEDOUT')) {
+                return res.status(504).send("Gateway Timeout");
+            }
+
+            // In production, don't expose error details
+            res.status(500).send(isProduction ? "Internal Server Error" : error.message);
         }
     });
 
-    app.listen(port, "0.0.0.0", () => {
+    const server = app.listen(port, "0.0.0.0", () => {
         console.info(`SSR Serving at http://0.0.0.0:${port}`);
         // Signal that server is ready (for startup scripts)
         if (process.send) {
             process.send('ready');
         }
     });
+
+    // Graceful shutdown handling
+    const gracefulShutdown = (signal) => {
+        console.info(`${signal} received, shutting down gracefully`);
+        server.close(() => {
+            console.info('Server closed');
+            process.exit(0);
+        });
+        
+        // Force close after 10s
+        setTimeout(() => {
+            console.error('Forced shutdown after timeout');
+            process.exit(1);
+        }, 10000);
+    };
+
+    process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+    process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 
     const dynamicImport = async (path) => {
         return import(

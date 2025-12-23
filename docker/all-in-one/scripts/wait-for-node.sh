@@ -8,9 +8,10 @@ NODE_PORT=${NODE_PORT:-5678}
 echo "Waiting for Node SSR server to be ready on port $NODE_PORT..."
 
 while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
+    # Check if port is listening
     if nc -z localhost $NODE_PORT 2>/dev/null; then
-        # Check if health endpoint responds
-        if wget -q -O- http://localhost:$NODE_PORT/health > /dev/null 2>&1; then
+        # Check if health endpoint responds with proper status code
+        if wget --spider --quiet --tries=1 --timeout=2 http://localhost:$NODE_PORT/health 2>/dev/null; then
             echo "Node SSR server is ready!"
             exit 0
         fi
