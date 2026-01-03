@@ -180,6 +180,10 @@ use Illuminate\Routing\Router;
 /** @var Router|Router $router */
 $router = app()->get('router');
 
+$router->get('/health', function () {
+    return response()->json(['status' => 'ok', 'service' => 'backend']);
+});
+
 $router->prefix('/auth')->group(
     function (Router $router): void {
         // Auth
