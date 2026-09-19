@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router";
+import { useCallback, useEffect, useState } from "react";
+import { useLocation, useParams, useNavigate } from "react-router";
 import { useMutation } from "@tanstack/react-query";
 import { orderClientPublic } from "../../../../../../api/order.client.ts";
 import { t } from "@lingui/macro";
 import { showError } from "../../../../../../utilites/notifications.tsx";
 import { LoadingMask } from "../../../../../common/LoadingMask";
+import { Button, Text } from "@mantine/core";
 import { trackEvent, AnalyticsEvents } from "../../../../../../utilites/analytics.ts";
 import { Event, Order } from "../../../../../../types.ts";
 
@@ -20,6 +21,7 @@ const loadScript = (src: string) => {
     return new Promise((resolve) => {
         const script = document.createElement("script");
         script.src = src;
+        script.async = true;
         script.onload = () => {
             resolve(true);
         };
@@ -33,7 +35,10 @@ const loadScript = (src: string) => {
 export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler, order, event }: RazorpayPaymentMethodProps) => {
     const { eventId, orderShortId } = useParams();
     const navigate = useNavigate();
+    const location = useLocation();
     const [isScriptLoaded, setIsScriptLoaded] = useState(false);
+    const [isScriptLoading, setIsScriptLoading] = useState(true);
+    const [scriptLoadFailed, setScriptLoadFailed] = useState(false);
 
     const createOrderMutation = useMutation({
         mutationFn: () => orderClientPublic.createRazorpayOrder(Number(eventId!), orderShortId!),
@@ -43,11 +48,19 @@ export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler, order, event 
         mutationFn: (payload: any) => orderClientPublic.verifyRazorpayPayment(Number(eventId!), orderShortId!, payload),
     });
 
-    useEffect(() => {
+    const loadRazorpayScript = useCallback(() => {
+        setIsScriptLoading(true);
+        setScriptLoadFailed(false);
         loadScript("https://checkout.razorpay.com/v1/checkout.js").then((res) => {
             setIsScriptLoaded(!!res);
+            setScriptLoadFailed(!res);
+            setIsScriptLoading(false);
         });
     }, []);
+
+    useEffect(() => {
+        loadRazorpayScript();
+    }, [loadRazorpayScript]);
 
     useEffect(() => {
         if (!enabled || !isScriptLoaded) return;
@@ -72,7 +85,7 @@ export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler, order, event 
                                     razorpay_signature: response.razorpay_signature
                                 });
                                 trackEvent(AnalyticsEvents.PURCHASE_COMPLETED_PAID, { value: orderData.amount });
-                                navigate(`/checkout/${eventId}/${orderShortId}/summary`);
+                                 navigate(`/checkout/${eventId}/${orderShortId}/summary${location.search}`);
                                 resolve();
                             } catch (error) {
                                 showError(t`Payment verification failed. Please contact support.`);
@@ -95,6 +108,10 @@ export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler, order, event 
                     };
 
                     const rzp1 = new (window as any).Razorpay(options);
+                    rzp1.on('payment.failed', () => {
+                        showError(t`Payment failed. Please try again or use another payment method.`);
+                        reject(new Error('Razorpay payment failed'));
+                    });
                     rzp1.open();
                 } catch (err: any) {
                     showError(err?.message || t`Failed to initialize payment.`);
@@ -102,10 +119,21 @@ export const RazorpayPaymentMethod = ({ enabled, setSubmitHandler, order, event 
                 }
             });
         });
-    }, [enabled, isScriptLoaded, eventId, orderShortId, createOrderMutation, verifyPaymentMutation, navigate, setSubmitHandler, order, event]);
+    }, [enabled, isScriptLoaded, eventId, orderShortId, createOrderMutation, verifyPaymentMutation, navigate, location.search, setSubmitHandler, order, event]);
 
-    if (!isScriptLoaded) {
+    if (isScriptLoading) {
         return <LoadingMask />;
+    }
+
+    if (scriptLoadFailed) {
+        return (
+            <div>
+                <Text c="red">{t`Payment checkout could not be loaded.`}</Text>
+                <Button mt="sm" variant="light" onClick={loadRazorpayScript}>
+                    {t`Retry`}
+                </Button>
+            </div>
+        );
     }
 
     return null; // Razorpay is a modal, no inline UI needed except maybe a message

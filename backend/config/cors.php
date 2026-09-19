@@ -19,16 +19,18 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => explode(',', env('CORS_ALLOWED_ORIGINS', '*')),
+    'allowed_origins' => array_values(array_filter(array_map(
+        'trim',
+        explode(',', env('CORS_ALLOWED_ORIGINS', env('APP_FRONTEND_URL', ''))),
+    ))),
 
     'allowed_origins_patterns' => [],
 
     'allowed_headers' => ['*'],
 
-    'exposed_headers' => ['X-Auth-Token', 'Set-Cookie'],
+    'exposed_headers' => ['X-Auth-Token'],
 
     'max_age' => 0,
 
     'supports_credentials' => true,
 ];
-

@@ -20,6 +20,7 @@ use HiEvents\Services\Infrastructure\DomainEvents\DomainEventDispatcherService;
 use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use HiEvents\Services\Infrastructure\DomainEvents\Events\OrderEvent;
 use Illuminate\Database\DatabaseManager;
+use HiEvents\Services\Infrastructure\Session\CheckoutSessionManagementService;
 
 class TransitionOrderToOfflinePaymentHandler
 {
@@ -29,6 +30,7 @@ class TransitionOrderToOfflinePaymentHandler
         private readonly DatabaseManager                  $databaseManager,
         private readonly EventSettingsRepositoryInterface $eventSettingsRepository,
         private readonly DomainEventDispatcherService     $domainEventDispatcherService,
+        private readonly CheckoutSessionManagementService $sessionIdentifierService,
 
     )
     {
@@ -40,7 +42,14 @@ class TransitionOrderToOfflinePaymentHandler
             /** @var OrderDomainObjectAbstract $order */
             $order = $this->orderRepository
                 ->loadRelation(OrderItemDomainObject::class)
-                ->findByShortId($dto->orderShortId);
+                ->findFirstWhere([
+                    'short_id' => $dto->orderShortId,
+                    'event_id' => $dto->eventId,
+                ]);
+
+            if (!$order || !$this->sessionIdentifierService->verifySession($order->getSessionId())) {
+                throw new UnauthorizedException(__('Sorry, we could not verify your session. Please create a new order.'));
+            }
 
             /** @var EventSettingDomainObject $eventSettings */
             $eventSettings = $this->eventSettingsRepository->findFirstWhere([

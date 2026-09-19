@@ -36,6 +36,7 @@ import {promoCodeClientPublic} from "../../../../api/promo-code.client.ts";
 import {IconChevronRight, IconX} from "@tabler/icons-react"
 import {getSessionIdentifier} from "../../../../utilites/sessionIdentifier.ts";
 import {Constants} from "../../../../constants.ts";
+import {sanitizeHtml} from "../../../../utilites/sanitizeHtml.ts";
 
 const AFFILIATE_EXPIRY_DAYS = 30;
 
@@ -412,7 +413,7 @@ const SelectProducts = (props: SelectProductsProps) => {
                                     {category.description && (
                                         <div className={'hi-product-category-description'}>
                                             <Spoiler maxHeight={500} showLabel={t`Show more`} hideLabel={t`Hide`}>
-                                                <div dangerouslySetInnerHTML={{__html: category.description}}/>
+                                                <div dangerouslySetInnerHTML={{__html: sanitizeHtml(category.description)}}/>
                                             </Spoiler>
                                         </div>
                                     )}
@@ -513,7 +514,7 @@ const SelectProducts = (props: SelectProductsProps) => {
                                                                 <Spoiler maxHeight={87} showLabel={t`Show more`}
                                                                          hideLabel={t`Hide`}>
                                                                     <div dangerouslySetInnerHTML={{
-                                                                        __html: product.description
+                                                                         __html: sanitizeHtml(product.description)
                                                                     }}/>
                                                                 </Spoiler>
                                                             </div>
@@ -531,7 +532,7 @@ const SelectProducts = (props: SelectProductsProps) => {
                     <div className={'hi-footer-row'}>
                         {event?.settings?.product_page_message && (
                             <div dangerouslySetInnerHTML={{
-                                __html: event.settings.product_page_message.replace(/\n/g, '<br/>')
+                                __html: sanitizeHtml(event.settings.product_page_message.replace(/\n/g, '<br/>'))
                             }} className={'hi-product-page-message'}/>
                         )}
                         <Button disabled={isButtonDisabled} fullWidth className={'hi-continue-button'}

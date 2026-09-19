@@ -7,6 +7,7 @@ use HiEvents\Exceptions\Razorpay\CreateRazorpayOrderFailedException;
 use HiEvents\Services\Domain\Payment\Razorpay\DTOs\CreateRazorpayOrderRequestDTO;
 use HiEvents\Services\Domain\Payment\Razorpay\RazorpayOrderCreationService;
 use HiEvents\Services\Infrastructure\Razorpay\RazorpayClientFactory;
+use HiEvents\Repository\Interfaces\RazorpayPaymentRepositoryInterface;
 use HiEvents\Values\MoneyValue;
 use Illuminate\Config\Repository;
 use Psr\Log\LoggerInterface;
@@ -18,6 +19,7 @@ class RazorpayOrderCreationServiceTest extends TestCase
     private LoggerInterface $logger;
     private RazorpayClientFactory $clientFactory;
     private Repository $config;
+    private RazorpayPaymentRepositoryInterface $paymentRepository;
     private RazorpayOrderCreationService $service;
 
     protected function setUp(): void
@@ -26,11 +28,13 @@ class RazorpayOrderCreationServiceTest extends TestCase
         $this->logger = $this->createMock(LoggerInterface::class);
         $this->clientFactory = $this->createMock(RazorpayClientFactory::class);
         $this->config = $this->createMock(Repository::class);
+        $this->paymentRepository = $this->createMock(RazorpayPaymentRepositoryInterface::class);
 
         $this->service = new RazorpayOrderCreationService(
             $this->logger,
             $this->clientFactory,
-            $this->config
+            $this->config,
+            $this->paymentRepository,
         );
     }
 

@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Razorpay\Api\Api;
 use Razorpay\Api\Errors\SignatureVerificationError;
+use RuntimeException;
 
 class HandleRazorpayWebhookAction extends BaseAction
 {
@@ -71,7 +72,7 @@ class HandleRazorpayWebhookAction extends BaseAction
         $razorpayOrderId = $orderEntity['id'] ?? $paymentEntity['order_id'] ?? null;
 
         if (!$razorpayOrderId) {
-            Log::error('Razorpay order id missing in webhook payload', ['data' => $data]);
+            Log::error('Razorpay order id missing in webhook payload');
             return;
         }
 
@@ -80,6 +81,28 @@ class HandleRazorpayWebhookAction extends BaseAction
         if (!$razorpayPayment) {
             Log::warning('Razorpay payment record not found for webhook order id', ['razorpay_order_id' => $razorpayOrderId]);
             return;
+        }
+
+        $providerAmount = $paymentEntity['amount'] ?? $orderEntity['amount'] ?? null;
+        $providerCurrency = $paymentEntity['currency'] ?? $orderEntity['currency'] ?? null;
+        $providerStatus = $paymentEntity['status'] ?? $orderEntity['status'] ?? null;
+
+        if ($providerAmount === null || (int)$providerAmount !== $razorpayPayment->getAmount()) {
+            throw new RuntimeException('Razorpay webhook amount does not match the local payment.');
+        }
+
+        if (!$providerCurrency || strcasecmp($providerCurrency, (string)$razorpayPayment->getCurrency()) !== 0) {
+            throw new RuntimeException('Razorpay webhook currency does not match the local payment.');
+        }
+
+        if ($eventStatus = $data['event'] ?? null) {
+            $validStatus = $eventStatus === 'payment.captured'
+                ? $providerStatus === 'captured'
+                : in_array($providerStatus, ['paid', 'captured'], true);
+
+            if (!$validStatus) {
+                throw new RuntimeException('Razorpay webhook payment is not in a payable status.');
+            }
         }
 
         $orderId = $razorpayPayment->getOrderId();
@@ -101,6 +124,7 @@ class HandleRazorpayWebhookAction extends BaseAction
             Log::info('Order marked as paid via Razorpay webhook', ['order_id' => $orderId]);
         } catch (\Exception $e) {
             Log::error('Failed to mark order as paid via webhook', ['error' => $e->getMessage(), 'order_id' => $orderId]);
+            throw $e;
         }
     }
 }

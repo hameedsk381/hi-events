@@ -2,9 +2,10 @@
 
 namespace HiEvents\Http\Actions\Orders\Payment\Razorpay;
 
-use HiEvents\Exceptions\Razorpay\CreateRazorpayOrderFailedException;
 use HiEvents\Http\Actions\BaseAction;
 use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
+use HiEvents\Repository\Interfaces\RazorpayPaymentRepositoryInterface;
+use HiEvents\Services\Infrastructure\Session\CheckoutSessionManagementService;
 use HiEvents\Services\Application\Handlers\Order\DTO\MarkOrderAsPaidDTO;
 use HiEvents\Services\Application\Handlers\Order\Payment\Razorpay\RazorpayPaymentSucceededHandler;
 use HiEvents\Services\Infrastructure\Razorpay\RazorpayClientFactory;
@@ -21,6 +22,8 @@ class VerifyRazorpayPaymentActionPublic extends BaseAction
         private readonly RazorpayPaymentSucceededHandler $markOrderAsPaidHandler,
         private readonly RazorpayClientFactory           $clientFactory,
         private readonly Repository                      $config,
+        private readonly RazorpayPaymentRepositoryInterface $razorpayPaymentRepository,
+        private readonly CheckoutSessionManagementService $sessionService,
     )
     {
     }
@@ -33,10 +36,26 @@ class VerifyRazorpayPaymentActionPublic extends BaseAction
             'razorpay_signature' => 'required|string',
         ]);
 
-        $order = $this->orderRepository->findByShortId($orderShortId);
+        $order = $this->orderRepository->findFirstWhere([
+            'short_id' => $orderShortId,
+            'event_id' => $eventId,
+        ]);
 
         if (!$order) {
             return $this->errorResponse(__('Order not found'), Response::HTTP_NOT_FOUND);
+        }
+
+        if (!$this->sessionService->verifySession($order->getSessionId())) {
+            return $this->errorResponse(__('Sorry, we could not verify your session.'), Response::HTTP_UNAUTHORIZED);
+        }
+
+        $payment = $this->razorpayPaymentRepository->findFirstWhere([
+            'order_id' => $order->getId(),
+            'razorpay_order_id' => $payload['razorpay_order_id'],
+        ]);
+
+        if (!$payment) {
+            return $this->errorResponse(__('Payment does not belong to this order.'), Response::HTTP_BAD_REQUEST);
         }
 
         try {
@@ -61,9 +80,9 @@ class VerifyRazorpayPaymentActionPublic extends BaseAction
         } catch (\Exception $e) {
             \Illuminate\Support\Facades\Log::error('Razorpay payment verification failed', [
                 'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString(),
-                'order_short_id' => $orderShortId,
-                'payload' => $payload,
+                 'order_short_id' => $orderShortId,
+                 'razorpay_order_id' => $payload['razorpay_order_id'],
+                 'razorpay_payment_id' => $payload['razorpay_payment_id'],
             ]);
 
              return $this->errorResponse(__('Payment verification failed'), Response::HTTP_BAD_REQUEST);

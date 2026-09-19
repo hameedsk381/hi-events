@@ -1,5 +1,6 @@
 import {t} from "@lingui/macro";
-import {NavLink, useNavigate, useParams} from "react-router";
+import {NavLink, useLocation, useNavigate, useParams} from "react-router";
+import {useEffect} from "react";
 import {ActionIcon, Button, Group, SimpleGrid, Text, Tooltip} from "@mantine/core";
 import {
     IconBuilding,
@@ -22,6 +23,7 @@ import {eventCheckoutPath} from "../../../../utilites/urlHelper.ts";
 import {dateToBrowserTz} from "../../../../utilites/dates.ts";
 import {formatAddress} from "../../../../utilites/addressUtilities.ts";
 import {getAttendeeProductTitle} from "../../../../utilites/products.ts";
+import {sanitizeHtml} from "../../../../utilites/sanitizeHtml.ts";
 
 import {Card} from "../../../common/Card";
 import {LoadingMask} from "../../../common/LoadingMask";
@@ -294,7 +296,7 @@ const PostCheckoutMessage = ({ message }: { message: string }) => (
     <div style={{ marginTop: '20px', marginBottom: '40px' }}>
         <h1 className={classes.heading}>{t`Additional Information`}</h1>
         <Card>
-            <div dangerouslySetInnerHTML={{ __html: message }} />
+            <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(message) }} />
         </Card>
     </div>
 );
@@ -305,7 +307,7 @@ const OfflinePaymentInstructions = ({ event }: { event: Event }) => (
         <Card>
             <div
                 dangerouslySetInnerHTML={{
-                    __html: event?.settings?.offline_payment_instructions || "",
+                    __html: sanitizeHtml(event?.settings?.offline_payment_instructions),
                 }}
             />
         </Card>
@@ -317,15 +319,19 @@ export const OrderSummaryAndProducts = () => {
     const {data: order, isFetched: orderIsFetched} = useGetOrderPublic(eventId, orderShortId, ['event']);
     const event = order?.event;
     const navigate = useNavigate();
+    const location = useLocation();
+
+    useEffect(() => {
+        if (order && (location.search.includes('failed') || order.payment_status === 'PAYMENT_FAILED')) {
+            navigate(`${eventCheckoutPath(eventId, orderShortId, 'payment')}?payment_failed=true`, {replace: true});
+        }
+    }, [eventId, location.search, navigate, order, orderShortId]);
 
     if (!orderIsFetched || !order || !event) {
         return <LoadingMask/>;
     }
 
-    if (window?.location.search.includes('failed') || order?.payment_status === 'PAYMENT_FAILED') {
-        navigate(eventCheckoutPath(eventId, orderShortId, 'payment') + '?payment_failed=true');
-        return;
-    }
+    if (location.search.includes('failed') || order.payment_status === 'PAYMENT_FAILED') return <LoadingMask/>;
 
     if (order?.status !== 'COMPLETED' && order?.status !== 'CANCELLED' && order?.status !== 'AWAITING_OFFLINE_PAYMENT') {
         return <OrderStatus order={order}/>;

@@ -101,9 +101,7 @@ const Checkout = () => {
                 eventId: Number(eventId),
                 orderShortId: String(orderShortId),
             });
-        } catch (error) {
-            showError(t`Failed to abandon order. Please try again.`);
-        } finally {
+
             setShowAbandonDialog(false);
             showInfo(t`Your order has been cancelled.`);
 
@@ -116,6 +114,9 @@ const Checkout = () => {
             }
 
             setPendingNavigation(null);
+        } catch (error) {
+            showError(t`Failed to abandon order. Please try again.`);
+        } finally {
             setIsAbandoning(false);
         }
     };

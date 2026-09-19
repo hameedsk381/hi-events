@@ -93,7 +93,22 @@ class RazorpayPaymentSucceededService
                 return $order;
             }
 
-            $this->updateOrderStatus($orderId);
+            $claimed = $this->orderRepository->updateWhere(
+                attributes: [
+                    OrderDomainObjectAbstract::STATUS => OrderStatus::COMPLETED->name,
+                    OrderDomainObjectAbstract::PAYMENT_STATUS => OrderPaymentStatus::PAYMENT_RECEIVED->name,
+                    OrderDomainObjectAbstract::PAYMENT_PROVIDER => PaymentProviders::RAZORPAY->value,
+                ],
+                where: [
+                    OrderDomainObjectAbstract::ID => $orderId,
+                    OrderDomainObjectAbstract::EVENT_ID => $eventId,
+                    OrderDomainObjectAbstract::STATUS => OrderStatus::RESERVED->name,
+                ],
+            );
+
+            if ($claimed === 0) {
+                return $this->orderRepository->findById($orderId);
+            }
 
             $this->updateOrderInvoice($orderId);
 
@@ -159,6 +174,12 @@ class RazorpayPaymentSucceededService
             $api = $this->clientFactory->createClient();
             $payment = $api->payment->fetch($paymentId);
 
+            if ((int)$payment->amount !== $razorpayPayment->getAmount()
+                || strcasecmp((string)$payment->currency, (string)$razorpayPayment->getCurrency()) !== 0
+                || $payment->status !== 'captured') {
+                throw new ResourceConflictException(__('Razorpay payment details do not match the order.'));
+            }
+
             $this->razorpayPaymentRepository->updateFromArray($razorpayPayment->id, [
                 'razorpay_payment_id' => $paymentId,
                 'razorpay_signature' => $signature,
@@ -177,15 +198,6 @@ class RazorpayPaymentSucceededService
                 'status' => InvoiceStatus::PAID->name,
             ]);
         }
-    }
-
-    private function updateOrderStatus(int $orderId): void
-    {
-        $this->orderRepository->updateFromArray($orderId, [
-            OrderDomainObjectAbstract::STATUS => OrderStatus::COMPLETED->name,
-            OrderDomainObjectAbstract::PAYMENT_STATUS => OrderPaymentStatus::PAYMENT_RECEIVED->name,
-            OrderDomainObjectAbstract::PAYMENT_PROVIDER => PaymentProviders::RAZORPAY->value,
-        ]);
     }
 
     private function updateAttendeeStatuses(OrderDomainObject $updatedOrder): void

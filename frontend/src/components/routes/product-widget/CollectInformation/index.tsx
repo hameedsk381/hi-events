@@ -1,6 +1,6 @@
 import {useMutation} from "@tanstack/react-query";
 import {FinaliseOrderPayload, orderClientPublic} from "../../../../api/order.client.ts";
-import {useNavigate, useParams} from "react-router";
+import {useLocation, useNavigate, useParams} from "react-router";
 import {
     Button,
     Checkbox,
@@ -32,6 +32,7 @@ import {showInfo} from "../../../../utilites/notifications.tsx";
 import countries from "../../../../../data/countries.json";
 import classes from "./CollectInformation.module.scss";
 import {trackEvent, AnalyticsEvents} from "../../../../utilites/analytics.ts";
+import {sanitizeHtml} from "../../../../utilites/sanitizeHtml.ts";
 
 const LoadingSkeleton = () =>
     (
@@ -44,6 +45,7 @@ const LoadingSkeleton = () =>
 
 export const CollectInformation = () => {
     const {eventId, orderShortId} = useParams();
+    const location = useLocation();
     const navigate = useNavigate();
     const {
         isFetched: isOrderFetched,
@@ -214,7 +216,9 @@ export const CollectInformation = () => {
             if (nextPage === 'summary') {
                 trackEvent(AnalyticsEvents.PURCHASE_COMPLETED_FREE);
             }
-            navigate(eventCheckoutPath(eventId, data.data.short_id, nextPage));
+            const sessionIdentifier = new URLSearchParams(location.search).get('session_identifier');
+            const nextPath = eventCheckoutPath(eventId, data.data.short_id, nextPage);
+            navigate(sessionIdentifier ? `${nextPath}?session_identifier=${encodeURIComponent(sessionIdentifier)}` : nextPath);
         },
 
         onError: (error: any) => {
@@ -671,7 +675,7 @@ export const CollectInformation = () => {
 
                 {!!event?.settings?.pre_checkout_message && (
                     <Card>
-                        <div dangerouslySetInnerHTML={{__html: event?.settings?.pre_checkout_message}}/>
+                        <div dangerouslySetInnerHTML={{__html: sanitizeHtml(event?.settings?.pre_checkout_message)}}/>
                     </Card>
                 )}
 

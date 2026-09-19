@@ -1,6 +1,7 @@
 import {Event} from "../../../../../../types.ts";
 import {Card} from "../../../../../common/Card";
 import {t} from "@lingui/macro";
+import {sanitizeHtml} from "../../../../../../utilites/sanitizeHtml.ts";
 
 interface OfflinePaymentMethodProps {
     event: Event;
@@ -15,7 +16,7 @@ export const OfflinePaymentMethod = ({event}: OfflinePaymentMethodProps) => {
             <Card>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: eventSettings?.offline_payment_instructions || "",
+                        __html: sanitizeHtml(eventSettings?.offline_payment_instructions),
                     }}
                 />
             </Card>

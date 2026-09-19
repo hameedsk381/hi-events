@@ -26,7 +26,7 @@ export const CancelOrderModal = ({onClose, orderId}: RefundOrderModalProps) => {
 
     const isRefundable = order && !order.is_free_order
         && order.status !== 'AWAITING_OFFLINE_PAYMENT'
-        && order.payment_provider === 'STRIPE'
+        && order.payment_provider === 'RAZORPAY'
         && order.refund_status !== 'REFUNDED';
 
     const handleCancelOrder = () => {

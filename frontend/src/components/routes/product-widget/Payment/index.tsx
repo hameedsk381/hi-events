@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import { useLocation, useNavigate, useParams } from "react-router";
 import { useGetEventPublic } from "../../../../queries/useGetEventPublic.ts";
 import { CheckoutContent } from "../../../layouts/Checkout/CheckoutContent";
 import { RazorpayPaymentMethod } from "./PaymentMethods/Razorpay";
 import { OfflinePaymentMethod } from "./PaymentMethods/Offline";
 import { Event, Order } from "../../../../types.ts";
-import { Button, Group, Text } from "@mantine/core";
+import { Alert, Button, Group, Text } from "@mantine/core";
 import { IconBuildingBank, IconLock, IconWallet } from "@tabler/icons-react";
 import { formatCurrency } from "../../../../utilites/currency.ts";
 import { t, Trans } from "@lingui/macro";
@@ -22,6 +22,7 @@ import { trackEvent, AnalyticsEvents } from "../../../../utilites/analytics.ts";
 
 const Payment = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const { eventId, orderShortId } = useParams();
     const { data: event, isFetched: isEventFetched } = useGetEventPublic(eventId);
     const { data: order, isFetched: isOrderFetched } = useGetOrderPublic(eventId, orderShortId, ['event']);
@@ -30,6 +31,7 @@ const Payment = () => {
     const [activePaymentMethod, setActivePaymentMethod] = useState<'RAZORPAY' | 'OFFLINE' | null>(null);
     const [submitHandler, setSubmitHandler] = useState<(() => Promise<void>) | null>(null);
     const transitionOrderToOfflinePaymentMutation = useTransitionOrderToOfflinePaymentPublic();
+    const paymentFailed = new URLSearchParams(location.search).get('payment_failed') === 'true';
 
     const isRazorpayEnabled = event?.settings?.payment_providers?.includes('RAZORPAY');
     const isOfflineEnabled = event?.settings?.payment_providers?.includes('OFFLINE');
@@ -53,7 +55,9 @@ const Payment = () => {
     const handleParentSubmit = () => {
         if (submitHandler) {
             setIsPaymentLoading(true);
-            submitHandler().finally(() => setIsPaymentLoading(false));
+            void submitHandler()
+                .catch(() => undefined)
+                .finally(() => setIsPaymentLoading(false));
         }
     };
 
@@ -63,20 +67,19 @@ const Payment = () => {
         } else if (activePaymentMethod === 'OFFLINE') {
             setIsPaymentLoading(true);
 
-            await transitionOrderToOfflinePaymentMutation.mutateAsync({
-                eventId,
-                orderShortId
-            }, {
-                onSuccess: () => {
-                    const totalCents = Math.round((order?.total_gross || 0) * 100);
-                    trackEvent(AnalyticsEvents.PURCHASE_COMPLETED_OFFLINE, { value: totalCents });
-                    navigate(`/checkout/${eventId}/${orderShortId}/summary`);
-                },
-                onError: (error: any) => {
-                    setIsPaymentLoading(false);
-                    showError(error.response?.data?.message || t`Offline payment failed. Please try again or contact the event organizer.`);
-                }
-            });
+            try {
+                await transitionOrderToOfflinePaymentMutation.mutateAsync({
+                    eventId,
+                    orderShortId
+                });
+                const totalCents = Math.round((order?.total_gross || 0) * 100);
+                trackEvent(AnalyticsEvents.PURCHASE_COMPLETED_OFFLINE, { value: totalCents });
+                navigate(`/checkout/${eventId}/${orderShortId}/summary${location.search}`);
+            } catch (error: any) {
+                showError(error.response?.data?.message || t`Offline payment failed. Please try again or contact the event organizer.`);
+            } finally {
+                setIsPaymentLoading(false);
+            }
         }
     };
 
@@ -93,6 +96,11 @@ const Payment = () => {
     return (
         <>
             <CheckoutContent>
+                {paymentFailed && (
+                    <Alert color="red" mb="md" title={t`Payment failed`}>
+                        {t`Your payment was not completed. Please try again or use another payment method.`}
+                    </Alert>
+                )}
                 {(event && order) && (
                     <InlineOrderSummary event={event} order={order} defaultExpanded={false} />
                 )}
@@ -143,6 +151,7 @@ const Payment = () => {
                     <Button
                         className={classes.continueButton}
                         loading={isLoading || isPaymentLoading}
+                        disabled={activePaymentMethod === 'RAZORPAY' && !submitHandler}
                         onClick={handleSubmit}
                     >
                         {order?.is_payment_required ? (

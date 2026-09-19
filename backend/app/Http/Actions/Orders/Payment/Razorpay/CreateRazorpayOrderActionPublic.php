@@ -21,7 +21,7 @@ class CreateRazorpayOrderActionPublic extends BaseAction
     public function __invoke(int $eventId, string $orderShortId): JsonResponse
     {
         try {
-            $response = $this->createOrderHandler->handle($orderShortId);
+            $response = $this->createOrderHandler->handle($eventId, $orderShortId);
         } catch (CreateRazorpayOrderFailedException $e) {
             return $this->errorResponse($e->getMessage(), Response::HTTP_UNPROCESSABLE_ENTITY);
         } catch (ResourceConflictException $e) {
